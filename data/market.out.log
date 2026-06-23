@@ -48,3 +48,56 @@ published:
   /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/CHANGELOG.md
   /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/feed.xml
   /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/index.html
+[main e979c87] Live update: EDGAR sync 2026-06-23T19:33:08Z
+ 40 files changed, 43457 insertions(+), 42 deletions(-)
+ create mode 100644 charts/BACKTEST_house_catalyst.png
+ create mode 100644 charts/BACKTEST_retail_flow.png
+ create mode 100644 data/approval_state.json
+ create mode 100644 data/backtest_house_catalyst.json
+ create mode 100644 data/backtest_retail_flow.json
+ create mode 100644 data/bot_config.json
+ create mode 100644 data/bot_state.json
+ create mode 100644 data/data_sources_status.json
+ create mode 100644 data/ibkr_account.json
+ create mode 100644 data/ibkr_live/equity_series.jsonl
+ create mode 100644 data/ibkr_live/latest.json
+ create mode 100644 data/ibkr_live/snapshot_20260623_121712.json
+ create mode 100644 data/ibkr_status.json
+ create mode 100644 data/regime.json
+ create mode 100644 data/retail_prices/AAPL.csv
+ create mode 100644 data/retail_prices/AMD.csv
+ create mode 100644 data/retail_prices/AMZN.csv
+ create mode 100644 data/retail_prices/IBIT.csv
+ create mode 100644 data/retail_prices/INTC.csv
+ create mode 100644 data/retail_prices/META.csv
+ create mode 100644 data/retail_prices/MSFT.csv
+ create mode 100644 data/retail_prices/MSTR.csv
+ create mode 100644 data/retail_prices/MU.csv
+ create mode 100644 data/retail_prices/NVDA.csv
+ create mode 100644 data/retail_prices/PLTR.csv
+ create mode 100644 data/retail_prices/QQQ.csv
+ create mode 100644 data/retail_prices/SPY.csv
+ create mode 100644 data/retail_prices/TSLA.csv
+ create mode 100644 data/retail_prices/manifest.json
+ create mode 100644 data/trade_card.json
+ create mode 100644 public/charts/BACKTEST_house_catalyst.png
+ create mode 100644 public/charts/BACKTEST_retail_flow.png
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../data/spacex_events.json
+bond: Senior unsecured notes offering cash=100.8B url=https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../data/spcx_market.json
+bond (EDGAR): Senior unsecured notes offering acc=0001628280-26-044489
+SPCX $156.11 (+1.0% 1d) vs IPO +15.6%
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../data/portfolio_live.json
+net worth proxy: $1314.19B
+  TSLA: $381.61 -> $270.94B
+  SPCX: $156.11 -> $1003.27B
+copied 6 chart PNGs
+exhibit: V3_three_leg_refinancing.svg + V3_three_leg_refinancing.png
+exhibit: V4_value_flow_loop.svg + V4_value_flow_loop.png
+exhibit: V5_lockup_calendar.svg + V5_lockup_calendar.png
+assets: 6
+published:
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/status.json
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/CHANGELOG.md
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/feed.xml
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/index.html
