@@ -28,7 +28,13 @@ ul,ol{padding-left:1.35rem;margin:.5rem 0 .75rem}
 li{margin:.35rem 0}
 li+li{margin-top:.4rem}
 figure{margin:1.5rem 0 0;padding:0}
-figure img,figure object{display:block;width:100%;max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff}
+figure img{display:block;width:100%;max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff}
+.exhibits-grid{display:grid;gap:1.75rem;margin-top:1rem}
+.exhibit-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem 1.15rem}
+.exhibit-card h4{margin:0 0 .35rem;font-size:1rem;color:#7a2230}
+.exhibit-card .exhibit-desc{margin:0 0 .85rem;font-size:.88rem;color:#555;line-height:1.45}
+.exhibit-card img{width:100%;height:auto;border:1px solid #e0e0e0;border-radius:4px}
+.exhibit-card .exhibit-link{font-size:.8rem;margin-top:.5rem;display:inline-block}
 figcaption{font-size:.84rem;color:#555;margin-top:.45rem;line-height:1.45}
 nav.toc{display:flex;flex-wrap:wrap;gap:.35rem .65rem;font-size:.88rem;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #eee}
 nav.toc a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
@@ -48,7 +54,7 @@ code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
 </head><body>
 <header>
 <p><span class="badge">LIVE</span> <span class="badge badge-auto">AUTO</span>
-<span class="muted">Updated 2026-06-23T17:50:20Z · GitHub Actions every 30 min</span></p>
+<span class="muted">Updated 2026-06-23T18:09:37Z · GitHub Actions every 30 min</span></p>
 <h1>Musk infrastructure watch</h1>
 <p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
 Updated automatically from EDGAR every 30 minutes.</p>
@@ -229,10 +235,7 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 <figure><img src="charts/JOURNEY_companies.png" alt="Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO." loading="lazy"/><figcaption>Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO.</figcaption></figure>
 
 <h3>SPCX structural exhibits</h3>
-<figure><object data="exhibits/V5_lockup_calendar.svg" type="image/svg+xml" aria-label="SPCX lock-up calendar: when insider supply hits the market."><img src="exhibits/V5_lockup_calendar.svg" alt="SPCX lock-up calendar: when insider supply hits the market."/></object><figcaption>SPCX lock-up calendar: when insider supply hits the market.</figcaption></figure>
-<figure><object data="exhibits/V4_value_flow_loop.svg" type="image/svg+xml" aria-label="Value flows between Tesla, SpaceX, Valor, and public shareholders."><img src="exhibits/V4_value_flow_loop.svg" alt="Value flows between Tesla, SpaceX, Valor, and public shareholders."/></object><figcaption>Value flows between Tesla, SpaceX, Valor, and public shareholders.</figcaption></figure>
-<figure><object data="exhibits/V3_three_leg_refinancing.svg" type="image/svg+xml" aria-label="Three-leg refinance: bridge loan, IPO, senior notes."><img src="exhibits/V3_three_leg_refinancing.svg" alt="Three-leg refinance: bridge loan, IPO, senior notes."/></object><figcaption>Three-leg refinance: bridge loan, IPO, senior notes.</figcaption></figure>
-
+<div class="exhibits-grid"><article class="exhibit-card"><h4>Lock-up calendar</h4><p class="exhibit-desc">Pre-registered supply steps from the SPCX prospectus. Aug 20 is the first clean test of the scarcity premium.</p><a href="exhibits/V5_lockup_calendar.png"><img src="exhibits/V5_lockup_calendar.png" alt="Lock-up calendar: when insider supply hits the market." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V5_lockup_calendar.png">Open full size</a></p></article><article class="exhibit-card"><h4>Value-flow loop</h4><p class="exhibit-desc">Related-party routes: Tesla Megapacks, Valor leases, IPO proceeds, affiliate billings.</p><a href="exhibits/V4_value_flow_loop.png"><img src="exhibits/V4_value_flow_loop.png" alt="Value flows between Tesla, SpaceX, Valor, and public shareholders." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V4_value_flow_loop.png">Open full size</a></p></article><article class="exhibit-card"><h4>Three-leg refinance</h4><p class="exhibit-desc">How ~$13B Twitter debt became a Goldman bridge, then IPO cash, then senior notes.</p><a href="exhibits/V3_three_leg_refinancing.png"><img src="exhibits/V3_three_leg_refinancing.png" alt="Three-leg refinance: bridge loan, IPO, senior notes." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V3_three_leg_refinancing.png">Open full size</a></p></article></div>
 </section>
 
 <footer class="muted" style="margin-top:2rem;border-top:1px solid #ddd;padding-top:1rem">

@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 186 1600 558">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" preserveAspectRatio="xMidYMid meet">
 <rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" rx="0" opacity="1"/>
 <rect x="120" y="320" width="420" height="180" fill="#FFFFFF" rx="12" opacity="1"/>
 <rect x="120" y="320" width="420" height="180" rx="12" fill="none" stroke="#C0392B" stroke-width="3"/>
 <text x="330.0" y="376" font-family="Helvetica, Arial, sans-serif" font-size="36.0" fill="#C0392B" font-weight="bold" text-anchor="middle" letter-spacing="0">INHERITED LBO TOWER</text>
 <text x="330.0" y="420" font-family="Helvetica, Arial, sans-serif" font-size="31.5" fill="#1A1A1A" font-weight="normal" text-anchor="middle" letter-spacing="0">~$17.5B of Twitter/xAI debt</text>
-<text x="330.0" y="460" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">9.5% – 12.5% coupons</text>
+<text x="330.0" y="460" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">9.5% - 12.5% coupons</text>
 <path d="M 548 410 l 46 0 m -14 -12 l 14 12 l -14 12" stroke="#5A5A5A" stroke-width="3" fill="none"/>
 <rect x="610" y="320" width="420" height="180" fill="#FFFFFF" rx="12" opacity="1"/>
 <rect x="610" y="320" width="420" height="180" rx="12" fill="none" stroke="#B8860B" stroke-width="3"/>

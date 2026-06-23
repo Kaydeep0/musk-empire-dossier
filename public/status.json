@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T17:50:20Z",
+  "updated_at": "2026-06-23T18:09:37Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -610,8 +610,8 @@
     "charts/JOURNEY_companies.png"
   ],
   "exhibits": [
-    "exhibits/V5_lockup_calendar.svg",
-    "exhibits/V4_value_flow_loop.svg",
-    "exhibits/V3_three_leg_refinancing.svg"
+    "exhibits/V5_lockup_calendar.png",
+    "exhibits/V4_value_flow_loop.png",
+    "exhibits/V3_three_leg_refinancing.png"
   ]
 }

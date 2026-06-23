@@ -45,7 +45,13 @@ ul,ol{padding-left:1.35rem;margin:.5rem 0 .75rem}
 li{margin:.35rem 0}
 li+li{margin-top:.4rem}
 figure{margin:1.5rem 0 0;padding:0}
-figure img,figure object{display:block;width:100%;max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff}
+figure img{display:block;width:100%;max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff}
+.exhibits-grid{display:grid;gap:1.75rem;margin-top:1rem}
+.exhibit-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem 1.15rem}
+.exhibit-card h4{margin:0 0 .35rem;font-size:1rem;color:#7a2230}
+.exhibit-card .exhibit-desc{margin:0 0 .85rem;font-size:.88rem;color:#555;line-height:1.45}
+.exhibit-card img{width:100%;height:auto;border:1px solid #e0e0e0;border-radius:4px}
+.exhibit-card .exhibit-link{font-size:.8rem;margin-top:.5rem;display:inline-block}
 figcaption{font-size:.84rem;color:#555;margin-top:.45rem;line-height:1.45}
 nav.toc{display:flex;flex-wrap:wrap;gap:.35rem .65rem;font-size:.88rem;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #eee}
 nav.toc a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
@@ -72,9 +78,19 @@ CHART_CAPTIONS = {
     "JOURNEY_companies.png": "Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO.",
 }
 EXHIBIT_CAPTIONS = {
-    "V5_lockup_calendar.svg": "SPCX lock-up calendar: when insider supply hits the market.",
-    "V4_value_flow_loop.svg": "Value flows between Tesla, SpaceX, Valor, and public shareholders.",
-    "V3_three_leg_refinancing.svg": "Three-leg refinance: bridge loan, IPO, senior notes.",
+    "V5_lockup_calendar.png": "Lock-up calendar: when insider supply hits the market.",
+    "V4_value_flow_loop.png": "Value flows between Tesla, SpaceX, Valor, and public shareholders.",
+    "V3_three_leg_refinancing.png": "Three-leg refinance: bridge loan, IPO, senior notes.",
+}
+EXHIBIT_TITLES = {
+    "V5_lockup_calendar.png": "Lock-up calendar",
+    "V4_value_flow_loop.png": "Value-flow loop",
+    "V3_three_leg_refinancing.png": "Three-leg refinance",
+}
+EXHIBIT_DESCS = {
+    "V5_lockup_calendar.png": "Pre-registered supply steps from the SPCX prospectus. Aug 20 is the first clean test of the scarcity premium.",
+    "V4_value_flow_loop.png": "Related-party routes: Tesla Megapacks, Valor leases, IPO proceeds, affiliate billings.",
+    "V3_three_leg_refinancing.png": "How ~$13B Twitter debt became a Goldman bridge, then IPO cash, then senior notes.",
 }
 
 
@@ -203,8 +219,9 @@ def build_status():
             "charts/H2_cumulative_cash.png", "charts/JOURNEY_companies.png",
         ],
         "exhibits": [
-            "exhibits/V5_lockup_calendar.svg", "exhibits/V4_value_flow_loop.svg",
-            "exhibits/V3_three_leg_refinancing.svg",
+            "exhibits/V5_lockup_calendar.png",
+            "exhibits/V4_value_flow_loop.png",
+            "exhibits/V3_three_leg_refinancing.png",
         ],
     }
 
@@ -432,16 +449,35 @@ def write_index(status):
             f'<figcaption>{_esc(cap)}</figcaption></figure>\n'
         )
     exhibits_html = ""
-    for rel in status.get("exhibits", []):
-        if not os.path.isfile(os.path.join(PUBLIC, rel)):
-            continue
-        base = os.path.basename(rel)
-        cap = EXHIBIT_CAPTIONS.get(base, base)
-        exhibits_html += (
-            f'<figure><object data="{rel}" type="image/svg+xml" aria-label="{_esc(cap)}">'
-            f'<img src="{rel}" alt="{_esc(cap)}"/></object>'
-            f'<figcaption>{_esc(cap)}</figcaption></figure>\n'
+    exhibit_files = [
+        "V5_lockup_calendar.png",
+        "V4_value_flow_loop.png",
+        "V3_three_leg_refinancing.png",
+    ]
+    cards = []
+    for fname in exhibit_files:
+        rel = f"exhibits/{fname}"
+        pub_path = os.path.join(PUBLIC, rel)
+        if not os.path.isfile(pub_path):
+            svg_rel = rel.replace(".png", ".svg")
+            if os.path.isfile(os.path.join(PUBLIC, svg_rel)):
+                rel = svg_rel
+                fname = fname.replace(".png", ".svg")
+            else:
+                continue
+        title = EXHIBIT_TITLES.get(fname, fname)
+        desc = EXHIBIT_DESCS.get(fname, EXHIBIT_CAPTIONS.get(fname, ""))
+        cap = EXHIBIT_CAPTIONS.get(fname, title)
+        cards.append(
+            f'<article class="exhibit-card">'
+            f'<h4>{_esc(title)}</h4>'
+            f'<p class="exhibit-desc">{_esc(desc)}</p>'
+            f'<a href="{rel}"><img src="{rel}" alt="{_esc(cap)}" loading="lazy"/></a>'
+            f'<p class="exhibit-link"><a href="{rel}">Open full size</a></p>'
+            f'</article>'
         )
+    if cards:
+        exhibits_html = f'<div class="exhibits-grid">{"".join(cards)}</div>'
 
     intro = _intro_html(sales.get("total_usd_b", 0))
 

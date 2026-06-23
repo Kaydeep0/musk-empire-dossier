@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 186 1600 558">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" preserveAspectRatio="xMidYMid meet">
 <rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" rx="0" opacity="1"/>
-<text x="120" y="250" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">THE SUPPLY SCHEDULE — when locked stock can legally sell</text>
+<text x="120" y="250" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">THE SUPPLY SCHEDULE  -  when locked stock can legally sell</text>
 <line x1="120" y1="300" x2="1480" y2="300" stroke="#5A5A5A" stroke-width="3"/>
 <circle cx="120" cy="300" r="9" fill="#1B7A4B"/>
 <text x="120" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Jun 11'26</text>
@@ -23,7 +23,7 @@
 <circle cx="1412" cy="300" r="9" fill="#1A1A1A"/>
 <text x="1412" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Jun 12'27</text>
 <text x="1412" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#1A1A1A" font-weight="normal" text-anchor="middle" letter-spacing="0">Musk ~6.4B</text>
-<text x="280" y="398" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">PRICE  vs  TRADABLE FLOAT — each unlock slides the price down the demand curve</text>
+<text x="280" y="398" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">PRICE  vs  TRADABLE FLOAT  -  each unlock slides the price down the demand curve</text>
 <line x1="320" y1="700" x2="1010" y2="700" stroke="#1A1A1A" stroke-width="2"/>
 <line x1="320" y1="700" x2="320" y2="422" stroke="#1A1A1A" stroke-width="2"/>
 <text x="665.0" y="734" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">tradable float (share of company)</text>

@@ -23,7 +23,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install chart dependencies
-        run: pip install matplotlib
+        run: pip install matplotlib cairosvg
 
       - name: Full EDGAR + market sync
         run: python3 build/run_full_sync.py
