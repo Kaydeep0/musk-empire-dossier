@@ -28,7 +28,7 @@ def build_draft(reason, details=None):
         f"LIVE DOSSIER UPDATE ({reason})",
         f"Site: {SITE}",
         "",
-        "Suggested LinkedIn post (edit + WSP review before posting):",
+        "Suggested LinkedIn post (edit before posting):",
         "",
         "Update on the live EDGAR dossier. Every load-bearing number still traces to a primary filing.",
         "",
@@ -53,7 +53,8 @@ def build_draft(reason, details=None):
         f"Full dossier: {SITE}",
         f"RSS: {SITE}feed.xml",
         "",
-        "Educational only. Not investment advice. [Add IAR disclosure after Gary clears]",
+        "Educational only. Not investment advice.",
+        "Money in Motion: https://www.linkedin.com/newsletters/money-in-motion-7054180694628995073",
     ]
     return "\n".join(lines)
 

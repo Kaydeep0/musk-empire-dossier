@@ -16,6 +16,8 @@ REGISTRY = os.path.join(ROOT, "registry", "entities.csv")
 
 SITE_TITLE = "Elon Musk: Empire & Exit (Live EDGAR dossier)"
 SITE_URL = os.environ.get("MUSK_DOSSIER_URL", "https://example.com/musk-dossier")
+LINKEDIN_PROFILE = "https://www.linkedin.com/in/ksekhon44"
+LINKEDIN_NEWSLETTER = "https://www.linkedin.com/newsletters/money-in-motion-7054180694628995073"
 UA_NOTE = "Educational only. Not investment advice."
 
 
@@ -279,7 +281,7 @@ Re-pull before citing. Bond/cash from SpaceX 8-K (June 22, 2026).</p>
 <h2>Subscribe</h2>
 <p>RSS: <a href="feed.xml">feed.xml</a> · JSON: <a href="status.json">status.json</a></p>
 
-<p class="muted">Money in Motion · Eigenstate Research · IAR disclosure pending WSP</p>
+<p class="muted"><a href="{LINKEDIN_NEWSLETTER}">Money in Motion</a> on LinkedIn · <a href="{LINKEDIN_PROFILE}">Kiran Sekhon</a> · Eigenstate Research</p>
 </body>
 </html>
 """

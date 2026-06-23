@@ -1,4 +1,4 @@
-# LinkedIn launch post (copy/paste, WSP review before posting)
+# LinkedIn launch post (copy/paste before posting)
 
 **Live dossier URL:** https://kaydeep0.github.io/musk-empire-dossier/  
 **Attach images:** `charts/EMPIRE_actors.png` + `charts/H3_sells_into_strength.png` (or screenshot from live site)
@@ -32,7 +32,7 @@ This is educational commentary only. Not investment advice, not an offer or soli
 Subscribe to the RSS feed if you cover Musk/SEC/governance. It alerts on every new Musk CIK filing and the site rebuilds automatically.
 
 Money in Motion · Eigenstate Research  
-[IAR / firm / FINRA-SIPC disclosure line: insert after Gary clears]
+https://www.linkedin.com/newsletters/money-in-motion-7054180694628995073
 
 ---
 
