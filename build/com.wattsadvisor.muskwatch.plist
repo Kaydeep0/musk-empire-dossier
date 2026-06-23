@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.wattsadvisor.muskwatch</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/opt/homebrew/bin/python3</string>
+        <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/watch_musk_filings.py</string>
+    </array>
+
+    <!-- Run every 15 minutes (900 seconds) -->
+    <key>StartInterval</key>
+    <integer>900</integer>
+
+    <!-- Also run once at load / login -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Phone push via ntfy.sh (private topic). Pipeline rebuilds public/ on new filings. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>MUSK_WATCH_NTFY</key>
+        <string>https://ntfy.sh/musk-sec-9053334806</string>
+        <key>MUSK_WATCH_PIPELINE</key>
+        <string>1</string>
+        <key>MUSK_DOSSIER_URL</key>
+        <string>https://kaydeep0.github.io/musk-empire-dossier/</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/data/watch.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/data/watch.err.log</string>
+</dict>
+</plist>

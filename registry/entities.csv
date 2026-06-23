@@ -1,0 +1,11 @@
+entity,ticker,cik,kind,public_status,musk_role,start_year,end_year,v1_scope,notes
+Elon Musk (reporting person),,0001494730,person,n/a,reporting insider,2010,,yes,"Section 16 + 13D/G filer identity; spine of the sell timeline"
+Tesla Inc,TSLA,0001318605,issuer,public,"co-founder / CEO / Chairman (former)",2010,,yes,"IPO 2010-06; 2018 & 2025 comp packages; 2021/2022 sale waves; pledged shares"
+Twitter Inc,TWTR,0001418091,issuer,public->private,"13D filer / acquirer",2022,2022,yes,"2022 stake build (late 13G/13D), tender, going-private; debt later travels to X/xAI/SpaceX"
+SolarCity Corp,SCTY,0001408356,issuer,public->acquired,"Chairman / largest shareholder",2012,2016,yes,"IPO 2012; acquired by Tesla 2016 (related-party)"
+Space Exploration Technologies (SpaceX),SPCX,0001181412,issuer,private->public,"founder / CEO / controlling holder",2025,,yes,"SPCX listing already analyzed in ../Spacexsec; latest iteration of the loop"
+PayPal Inc (2002),PYPL,0001103415,issuer,public->acquired,"largest shareholder (~11-12%)",2002,2002,later,"IPO 2002-02, acquired by eBay 2002-10; first major cash event; CIK to verify"
+X.com / Zip2,,,,private,founder,1995,2000,later,"no SEC record; press/secondary only"
+The Boring Company,,,,private,founder,2016,,later,"private; valuation from funding rounds only"
+Neuralink,,,,private,founder,2016,,later,"private; valuation from funding rounds only"
+xAI,,,,private->absorbed,founder,2023,2025,later,"absorbed X then folded into SpaceX per SPCX prospectus"

@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+.python-version
+data/watch.out.log
+data/watch.err.log
+data/pipeline.log
+data/_tsla_yahoo.json
+.env

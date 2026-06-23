@@ -1,0 +1,8 @@
+date,entity,event,debt_outstanding_b,basis,note
+2022-10-27,Twitter,LBO closes; ~$13B acquisition debt loaded,13.0,c,bank syndicate (Morgan Stanley et al.); banks could not syndicate
+2023-04-01,X,Twitter renamed X; debt carried,13.0,c,lenders hold the loans on balance sheet
+2025-03-28,xAI,X folded into xAI (X.AI Holdings),13.0,b,common-control combination (SPCX 424(b)(4))
+2026-02-02,SpaceX,xAI(+X) folded into SpaceX; debt recast,13.0,b,common-control combination #2
+2026-03-02,SpaceX,+$20B Goldman bridge loan added,30.3,b,total debt ~$30.3B; bridge matures 2027-09-02
+2026-06-15,SpaceX,IPO repays inherited debt,11.4,b,$18.9B repaid + $1.16B prepayment penalty; bridge remainder stays
+2027-09-02,SpaceX,Bridge maturity (refinancing cliff),11.4,b,the single largest near-term deadline

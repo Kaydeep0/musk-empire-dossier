@@ -1,0 +1,40 @@
+{
+  "updated_at": "2026-06-23T17:11:17Z",
+  "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
+  "disclaimer": "Educational only \u2014 not investment advice.",
+  "latest_filing": {
+    "filing_date": "2026-06-17",
+    "form": "4",
+    "accession": "0001628280-26-044069",
+    "primary_document": "xslF345X06/wk-form4_1781740812.xml",
+    "url": "https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml"
+  },
+  "sales": {
+    "total_usd_b": 39.98,
+    "by_year_usd_b": {
+      "2010": 0.02,
+      "2016": 0.59,
+      "2021": 16.43,
+      "2022": 22.93,
+      "2026": 0.0
+    }
+  },
+  "watch": {
+    "last_poll": "2026-06-23T08:29:36",
+    "filings_tracked": 172
+  },
+  "recent_alerts": [],
+  "charts": [
+    "charts/H2_cumulative_cash.png",
+    "charts/H3_sells_into_strength.png",
+    "charts/CLIMB_networth.png",
+    "charts/JOURNEY_companies.png",
+    "charts/H12_debt_chain.png",
+    "charts/EMPIRE_actors.png"
+  ],
+  "research": [
+    "research/EMPIRE_MECHANICS.md",
+    "research/STRUCTURE_BRIEF.md",
+    "research/HYPOTHESIS.md"
+  ]
+}

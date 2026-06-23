@@ -1,0 +1,23 @@
+date,entity,event,type
+1995-11-01,Zip2,Founded (with brother Kimbal),found
+1999-02-01,Zip2,Sold to Compaq for ~$307M (Musk ~$22M),exit
+1999-03-01,X.com,Founded (online bank),found
+2000-03-01,PayPal,X.com merges with Confinity -> PayPal,event
+2002-02-15,PayPal,IPO on Nasdaq,ipo
+2002-05-01,SpaceX,Founded,found
+2002-10-03,PayPal,Acquired by eBay ~$1.5B (Musk ~$176M),exit
+2004-02-01,Tesla,Musk leads Series A; later CEO/Chair,found
+2006-07-04,SolarCity,Co-founded (Musk chairman/largest holder),found
+2010-06-29,Tesla,IPO on Nasdaq,ipo
+2012-12-13,SolarCity,IPO on Nasdaq,ipo
+2015-12-01,OpenAI,Co-founded (later departs board 2018),found
+2016-11-21,SolarCity,Acquired by Tesla ~$2.6B (related-party),exit
+2018-03-21,Tesla,2018 CEO performance award approved (~$56B),event
+2020-03-01,Tesla,COVID-era share-price surge begins,event
+2021-01-07,Tesla,Musk becomes world's richest person,event
+2021-11-06,Tesla,"""Should I sell 10%?"" Twitter poll",event
+2022-04-04,Twitter,Musk discloses 9.2% stake,event
+2022-10-27,Twitter,Acquisition closes (~$44B, ~$13B debt),acq
+2023-07-12,xAI,Founded,found
+2025-11-06,Tesla,~$1T pay package approved by holders,event
+2026-06-16,SpaceX,IPO as SPCX (largest in history),ipo
