@@ -477,7 +477,7 @@ def detect_patterns(events, canon):
                 upcoming.append((delta, c))
         except ValueError:
             pass
-    upcoming.sort()
+    upcoming.sort(key=lambda x: (x[0], x[1].get("date") or "", x[1].get("id") or ""))
     if len(upcoming) >= 2:
         patterns.append({
             "id": "supply_staircase_2026",

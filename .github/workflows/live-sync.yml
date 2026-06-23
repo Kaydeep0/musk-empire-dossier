@@ -2,7 +2,7 @@ name: Live EDGAR sync
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
@@ -54,4 +54,5 @@ jobs:
             exit 0
           fi
           git commit -m "Live sync: EDGAR bot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git pull --rebase origin main
           git push
