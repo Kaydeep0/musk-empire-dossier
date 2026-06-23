@@ -1,0 +1,164 @@
+{
+  "musk": {
+    "key": "musk",
+    "label": "Elon Musk (reporting person)",
+    "cik": "0001494730",
+    "kind": "person",
+    "ticker": "",
+    "canon": {
+      "role": "Reporting insider CIK 1494730; spine of sell timeline",
+      "loop_position": "Operator at center of hype -> vehicle -> exit loop",
+      "liquidity": "TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16",
+      "control": "Super-voting / trust structures across TSLA and SPCX",
+      "watch": [
+        "Form 4 clusters",
+        "13D/G",
+        "lock-up adjacent sales"
+      ]
+    },
+    "event_count": 5,
+    "last_event_date": "2026-12-31",
+    "last_event_summary": "TSLA open-market sales 2026: 1 trades, $0.00B",
+    "themes": [
+      {
+        "tag": "H2",
+        "count": 5
+      },
+      {
+        "tag": "insider_sale",
+        "count": 5
+      },
+      {
+        "tag": "tesla",
+        "count": 5
+      }
+    ],
+    "updated": "2026-06-23T22:38:36Z"
+  },
+  "tesla": {
+    "key": "tesla",
+    "label": "Tesla Inc",
+    "cik": "0001318605",
+    "kind": "issuer",
+    "ticker": "TSLA",
+    "canon": {
+      "ticker": "TSLA",
+      "role": "Primary public cash-extraction vehicle historically",
+      "loop_position": "SolarCity absorption prototype 2016",
+      "liquidity": "Form 4 sales into strength (H3)",
+      "watch": [
+        "Form 4",
+        "DEF 14A comp",
+        "Megapack sales to SpaceX"
+      ]
+    },
+    "event_count": 0,
+    "last_event_date": null,
+    "last_event_summary": null,
+    "themes": [],
+    "updated": "2026-06-23T22:38:36Z"
+  },
+  "twitter": {
+    "key": "twitter",
+    "label": "Twitter Inc",
+    "cik": "0001418091",
+    "kind": "issuer",
+    "ticker": "TWTR",
+    "canon": {
+      "ticker": "TWTR (defunct)",
+      "role": "2022 LBO; debt carrier into X/xAI/SpaceX chain",
+      "loop_position": "Going-private step in loop",
+      "watch": [
+        "Historical; debt now on SpaceX"
+      ]
+    },
+    "event_count": 3,
+    "last_event_date": "2025-03-28",
+    "last_event_summary": "X folded into xAI (X.AI Holdings)",
+    "themes": [
+      {
+        "tag": "debt_travel",
+        "count": 3
+      },
+      {
+        "tag": "H12",
+        "count": 3
+      }
+    ],
+    "updated": "2026-06-23T22:38:36Z"
+  },
+  "solarcity": {
+    "key": "solarcity",
+    "label": "SolarCity Corp",
+    "cik": "0001408356",
+    "kind": "issuer",
+    "ticker": "SCTY",
+    "canon": {
+      "ticker": "SCTY (acquired)",
+      "role": "2016 Tesla absorption; related-party prototype",
+      "loop_position": "Early loop iteration"
+    },
+    "event_count": 0,
+    "last_event_date": null,
+    "last_event_summary": null,
+    "themes": [],
+    "updated": "2026-06-23T22:38:36Z"
+  },
+  "spacex": {
+    "key": "spacex",
+    "label": "Space Exploration Technologies (SpaceX)",
+    "cik": "0001181412",
+    "kind": "issuer",
+    "ticker": "SPCX",
+    "canon": {
+      "ticker": "SPCX",
+      "role": "Latest public vehicle; absorbed X and xAI",
+      "loop_position": "IPO Jun 2026 at $135; ~5% float initially",
+      "debt": "Twitter $13B traveled here; $20B Goldman bridge; notes offering Jun 2026",
+      "supply": "Lock-ups Aug 2026, Dec 2026, Musk block Jun 2027",
+      "watch": [
+        "8-K bond/refi",
+        "unlock calendar",
+        "Valor leases"
+      ]
+    },
+    "event_count": 21,
+    "last_event_date": "2027-09-02",
+    "last_event_summary": "Goldman bridge maturity cliff (~$11.4B remaining)",
+    "themes": [
+      {
+        "tag": "catalyst",
+        "count": 19
+      },
+      {
+        "tag": "supply",
+        "count": 14
+      },
+      {
+        "tag": "H12",
+        "count": 5
+      },
+      {
+        "tag": "debt_travel",
+        "count": 4
+      },
+      {
+        "tag": "bond_offering",
+        "count": 3
+      },
+      {
+        "tag": "H12 bridge repayment",
+        "count": 2
+      },
+      {
+        "tag": "H5/H6 scarcity premi",
+        "count": 2
+      },
+      {
+        "tag": "H12 debt / refi timi",
+        "count": 2
+      }
+    ],
+    "updated": "2026-06-23T22:38:36Z"
+  }
+}

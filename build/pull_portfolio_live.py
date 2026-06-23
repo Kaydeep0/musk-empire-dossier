@@ -159,7 +159,13 @@ def main():
     for h in out["holdings"]:
         if h.get("price"):
             print(f"  {h['ticker']}: ${h['price']} -> ${h.get('value_usd_b')}B")
+    # Feed live time series
+    ts = os.path.join(HERE, "build_timeseries.py")
+    if os.path.isfile(ts):
+        import subprocess
+        subprocess.run([sys.executable, ts], cwd=os.path.join(HERE, ".."), check=False)
 
 
 if __name__ == "__main__":
+    import sys
     main()

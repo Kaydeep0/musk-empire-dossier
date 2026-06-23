@@ -1,0 +1,92 @@
+[
+  {
+    "id": "H12_debt_relay",
+    "name": "Debt travels across vehicles",
+    "strength": "confirmed",
+    "hypothesis": "H12",
+    "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
+    "entities": [
+      "spacex",
+      "twitter"
+    ],
+    "evidence_ids": [
+      "debt-2023-04-01-twitter",
+      "debt-2025-03-28-twitter",
+      "debt-2026-02-02-spacex",
+      "debt-2026-03-02-spacex",
+      "debt-2026-06-15-spacex",
+      "debt-2027-09-02-spacex"
+    ]
+  },
+  {
+    "id": "refi_before_supply",
+    "name": "Infrastructure before supply step",
+    "strength": "emerging",
+    "hypothesis": "H12 + H5",
+    "summary": "Bond/refi filings (bridge repayment) landed before the first major lock-up unlock (Aug 2026). Company clears bank overhang before tradable float expands \u2014 reduces forced-sale risk, does not reduce insider share count.",
+    "entities": [
+      "spacex"
+    ],
+    "evidence_ids": [
+      "filing-brief-0001628280-26-044955",
+      "catalyst-2026-08-20-spacex"
+    ]
+  },
+  {
+    "id": "H2_cumulative_extraction",
+    "name": "Payday is the sale (TSLA)",
+    "strength": "confirmed",
+    "hypothesis": "H2",
+    "summary": "Parsed Form 4 open-market sales total ~$40.0B across 5 years. Primary personal liquidity channel while SPCX economic stake remains lock-up gated.",
+    "entities": [
+      "musk",
+      "tesla"
+    ],
+    "evidence_ids": [
+      "form4-year-2021",
+      "form4-year-2022",
+      "form4-year-2026"
+    ]
+  },
+  {
+    "id": "supply_staircase_2026",
+    "name": "Supply staircase H1 2026-27",
+    "strength": "watch",
+    "hypothesis": "H5/H6",
+    "summary": "2 catalysts in next 120 days: 2026-08-20 First major lock-up unlock (~7% pool; ro; 2026-09-02 Goldman bridge $175.50 trigger window en. Pattern to watch: each step tests whether retail absorbs insider-adjacent supply.",
+    "entities": [
+      "spacex",
+      "musk"
+    ],
+    "evidence_ids": [
+      "catalyst-2026-08-20-spacex",
+      "catalyst-2026-09-02-spacex"
+    ]
+  },
+  {
+    "id": "infrastructure_not_exit",
+    "name": "Debt print \u2260 equity exit",
+    "strength": "confirmed",
+    "hypothesis": "loop mechanics",
+    "summary": "Recent bond pricing 8-K adds ~$25B notes and retires bridge \u2014 classified as cap-structure infrastructure. Musk personal exit channel (Form 4 / unlock) not activated by this filing.",
+    "entities": [
+      "spacex",
+      "musk"
+    ],
+    "evidence_ids": [
+      "filing-brief-0001628280-26-044955"
+    ]
+  },
+  {
+    "id": "loop_repetition",
+    "name": "Repeatable empire loop",
+    "strength": "emerging",
+    "hypothesis": "master thesis",
+    "summary": "Same structural moves recur: SolarCity into Tesla (2016), Twitter debt into SpaceX IPO (2026). Hype -> vehicle -> control wedge -> belief premium -> exit -> roll. Testing whether SPCX follows the same supply calendar as prior vehicles.",
+    "entities": [
+      "twitter",
+      "spacex"
+    ],
+    "evidence_ids": []
+  }
+]

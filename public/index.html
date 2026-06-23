@@ -55,28 +55,257 @@ code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
 .loop{font-family:ui-monospace,monospace;font-size:.72rem;line-height:1.45;background:#f5f5f5;border:1px solid #ddd;border-radius:6px;padding:.85rem 1rem;overflow-x:auto;white-space:pre;margin:1rem 0}
 .section-note{font-size:.88rem;color:#555;margin-bottom:.75rem}
 @media(max-width:640px){body{padding:.85rem} h1{font-size:1.35rem} .box{padding:.9rem}}
+.lens-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.55rem;margin:1rem 0}
+.lens-card{background:#fff;border:2px solid #e8e8e8;border-radius:8px;padding:.65rem .75rem;cursor:pointer;font-size:.82rem;line-height:1.4;transition:border-color .15s}
+.lens-card:hover,.lens-card.active{border-color:#7a2230;background:#fffafa}
+.lens-card strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:#7a2230;margin-bottom:.2rem}
+.lens-hint{font-size:.88rem;color:#444;background:#f8f8f8;border-left:3px solid #7a2230;padding:.65rem .85rem;margin:.75rem 0;border-radius:0 6px 6px 0;display:none}
+.lens-hint.visible{display:block}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.65rem;margin:1rem 0}
+.kpi{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:.75rem;text-align:center}
+.kpi .val{font-size:1.35rem;font-weight:700;color:#7a2230;line-height:1.2}
+.kpi .lbl{font-size:.72rem;color:#666;text-transform:uppercase;letter-spacing:.03em;margin-top:.25rem}
+.chart-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin:1rem 0}
+@media(min-width:720px){.chart-grid{grid-template-columns:1fr 1fr}}
+.chart-panel{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem}
+.chart-panel h3{margin:0 0 .35rem;font-size:.95rem}
+.chart-panel .chart-note{font-size:.78rem;color:#666;margin:0 0 .65rem}
+.chart-wrap{position:relative;height:220px;width:100%}
+.brief-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;margin:1rem 0}
+.brief-card h3{margin:0 0 .35rem;font-size:1rem}
+.brief-meta{font-size:.82rem;color:#666;margin-bottom:.75rem}
+.brief-lenses{display:grid;gap:.85rem}
+@media(min-width:640px){.brief-lenses{grid-template-columns:1fr 1fr}}
+.brief-lens{background:#fafafa;border:1px solid #eee;border-radius:6px;padding:.65rem .75rem;font-size:.84rem;line-height:1.45}
+.brief-lens .bl-title{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#7a2230;margin-bottom:.3rem}
+.pattern-card{background:#fff;border-left:4px solid #7a2230;border:1px solid #ddd;border-left-width:4px;border-radius:6px;padding:.75rem .9rem;margin:.65rem 0;font-size:.88rem}
+.pattern-card.emerging{border-left-color:#b8860b}
+.pattern-card.watch{border-left-color:#888}
+.pattern-card .pc-strength{font-size:.68rem;font-weight:700;text-transform:uppercase;color:#666}
+.memory-entity{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:.75rem;font-size:.84rem}
+.memory-entity h4{margin:0 0 .35rem;font-size:.92rem;color:#7a2230}
+.timeline-list{list-style:none;padding:0;margin:0}
+.timeline-list li{border-left:3px solid #ddd;padding:.45rem 0 .45rem .85rem;margin-left:.5rem;font-size:.84rem;line-height:1.4}
+.timeline-list li.recent{border-left-color:#7a2230}
+.timeline-list .tl-date{font-weight:600;color:#333;margin-right:.35rem}
+.section-tag{display:inline-block;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;background:#eee;color:#555;padding:.15rem .4rem;border-radius:3px;margin-left:.4rem;vertical-align:middle}
+body{max-width:1040px}
 </style>
 </head><body>
 <header>
 <p><span class="badge">LIVE</span> <span class="badge badge-auto">AUTO</span>
-<span class="muted">Updated 2026-06-23T21:45:50Z · GitHub Actions every 30 min</span></p>
+<span class="muted">Updated 2026-06-23T22:38:36Z · GitHub Actions every 30 min</span></p>
 <h1>Musk infrastructure watch</h1>
 <p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
 Updated automatically from EDGAR every 30 minutes.</p>
 <nav class="toc">
+<a href="#lens">Reading guide</a>
+<a href="#memory">Memory agent</a>
+<a href="#live-charts">Live charts</a>
 <a href="#start">Start here</a>
 <a href="#portfolio">Portfolio</a>
 <a href="#spcx">SPCX / IPO</a>
+<a href="#briefs">Filing briefs</a>
 <a href="#catalysts">Catalysts</a>
 <a href="#debt">Debt chain</a>
 <a href="#parties">Related parties</a>
 <a href="#watch">Watch list</a>
 <a href="#alerts">Alerts</a>
-<a href="#charts">Charts</a>
+<a href="#charts">Evidence</a>
 <a href="feed.xml">RSS</a>
 <a href="status.json">JSON</a>
+<a href="timeseries.json">Time series</a>
 </nav>
 </header>
+
+
+<section id="lens" class="box box-intro">
+<h2>Who are you reading as? <span class="section-tag">5 lenses</span></h2>
+<p class="section-note">Same data, different emphasis. Pick a lens and the hint below tells you where to look on this page.</p>
+<div class="lens-grid"><button type="button" class="lens-card" data-lens="everyone" aria-pressed="false"><strong>Everyone</strong>Tap for reading guide</button>
+<button type="button" class="lens-card" data-lens="investor" aria-pressed="false"><strong>Investor</strong>Tap for reading guide</button>
+<button type="button" class="lens-card" data-lens="trader" aria-pressed="false"><strong>Trader</strong>Tap for reading guide</button>
+<button type="button" class="lens-card" data-lens="cfa" aria-pressed="false"><strong>CFA / analyst</strong>Tap for reading guide</button>
+<button type="button" class="lens-card" data-lens="engineer" aria-pressed="false"><strong>Engineer</strong>Tap for reading guide</button>
+</div>
+<div class="lens-hint" id="lens-everyone">Start with the live charts and catalyst calendar. Plain English: we track when Musk-linked companies file with the SEC and when locked-up shares can hit the market.</div>
+<div class="lens-hint" id="lens-investor">Focus on net-worth proxy, lock-up calendar (V5 exhibit), and debt chain. Ask: where does cash exit to insiders vs stay in the cap structure?</div>
+<div class="lens-hint" id="lens-trader">Focus on SPCX price vs IPO, catalyst dates (supply steps), and filing briefs demand/supply boxes. Debt prints are not the same as float events.</div>
+<div class="lens-hint" id="lens-cfa">Focus on debt chain, bond 8-K use of proceeds, related-party table, and basis tags (b=filing, m=market). Reconcile every dollar to EDGAR.</div>
+<div class="lens-hint" id="lens-engineer">Focus on infrastructure loop diagram, three-leg refinance exhibit, and bridge maturity cliff. Capital moves vehicle-to-vehicle like a systems diagram.</div>
+
+</section>
+
+<div class="kpi-row"><div class="kpi"><div class="val">$1314.19B</div><div class="lbl">Net-worth proxy</div></div>
+<div class="kpi"><div class="val">$156.11</div><div class="lbl">SPCX</div></div>
+<div class="kpi"><div class="val">$381.61</div><div class="lbl">TSLA</div></div>
+<div class="kpi"><div class="val">$39.98B</div><div class="lbl">Cash from sales</div></div>
+<div class="kpi"><div class="val">1</div><div class="lbl">Sync points</div></div>
+</div>
+
+<section id="memory" class="box">
+<h2>Empire memory agent <span class="section-tag">longitudinal</span></h2>
+<p class="section-note">Reads every filing brief, alert, catalyst, and debt step. Tracks Musk, SPCX, Tesla, and related entities over time and surfaces larger patterns.</p>
+<p><strong>Current read:</strong> As of 2026-06-23, the memory agent tracks 22 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print ≠ equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.</p>
+<p class="muted">Updated 2026-06-23T22:02:43Z · 22 events · 6 patterns · <a href="empire_memory.json">JSON</a></p>
+
+<h3>Patterns emerging</h3>
+
+<div class="pattern-card ">
+<div class="pc-strength">confirmed · H12</div>
+<strong>Debt travels across vehicles</strong>
+<p style="margin:.35rem 0 0">7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.</p>
+</div>
+<div class="pattern-card emerging">
+<div class="pc-strength">emerging · H12 + H5</div>
+<strong>Infrastructure before supply step</strong>
+<p style="margin:.35rem 0 0">Bond/refi filings (bridge repayment) landed before the first major lock-up unlock (Aug 2026). Company clears bank overhang before tradable float expands — reduces forced-sale risk, does not reduce insider share count.</p>
+</div>
+<div class="pattern-card ">
+<div class="pc-strength">confirmed · H2</div>
+<strong>Payday is the sale (TSLA)</strong>
+<p style="margin:.35rem 0 0">Parsed Form 4 open-market sales total ~$40.0B across 5 years. Primary personal liquidity channel while SPCX economic stake remains lock-up gated.</p>
+</div>
+<div class="pattern-card watch">
+<div class="pc-strength">watch · H5/H6</div>
+<strong>Supply staircase H1 2026-27</strong>
+<p style="margin:.35rem 0 0">2 catalysts in next 120 days: 2026-08-20 First major lock-up unlock (~7% pool; ro; 2026-09-02 Goldman bridge $175.50 trigger window en. Pattern to watch: each step tests whether retail absorbs insider-adjacent supply.</p>
+</div>
+<div class="pattern-card ">
+<div class="pc-strength">confirmed · loop mechanics</div>
+<strong>Debt print ≠ equity exit</strong>
+<p style="margin:.35rem 0 0">Recent bond pricing 8-K adds ~$25B notes and retires bridge — classified as cap-structure infrastructure. Musk personal exit channel (Form 4 / unlock) not activated by this filing.</p>
+</div>
+<div class="pattern-card emerging">
+<div class="pc-strength">emerging · master thesis</div>
+<strong>Repeatable empire loop</strong>
+<p style="margin:.35rem 0 0">Same structural moves recur: SolarCity into Tesla (2016), Twitter debt into SpaceX IPO (2026). Hype -&gt; vehicle -&gt; control wedge -&gt; belief premium -&gt; exit -&gt; roll. Testing whether SPCX follows the same supply calendar as prior vehicles.</p>
+</div>
+
+<h3>Entities the agent knows</h3>
+<div class="grid">
+<div class="memory-entity">
+<h4>Elon Musk (reporting person)</h4>
+<p class="muted">Reporting insider CIK 1494730; spine of sell timeline</p>
+<p><strong>Last:</strong> 2026-12-31 — TSLA open-market sales 2026: 1 trades, $0.00B</p>
+<p class="muted">5 events · themes: H2, insider_sale, tesla</p>
+</div>
+<div class="memory-entity">
+<h4>Space Exploration Technologies (SpaceX)</h4>
+<p class="muted">Latest public vehicle; absorbed X and xAI</p>
+<p><strong>Last:</strong> 2027-09-02 — Goldman bridge maturity cliff (~$11.4B remaining)</p>
+<p class="muted">13 events · themes: supply, catalyst, debt_travel, H12</p>
+</div>
+<div class="memory-entity">
+<h4>Tesla Inc</h4>
+<p class="muted">Primary public cash-extraction vehicle historically</p>
+<p><strong>Last:</strong> - — </p>
+<p class="muted">0 events · themes: none</p>
+</div>
+<div class="memory-entity">
+<h4>Twitter Inc</h4>
+<p class="muted">2022 LBO; debt carrier into X/xAI/SpaceX chain</p>
+<p><strong>Last:</strong> 2025-03-28 — X folded into xAI (X.AI Holdings)</p>
+<p class="muted">3 events · themes: debt_travel, H12</p>
+</div></div>
+
+<h3>Event timeline (memory)</h3>
+<ul class="timeline-list"><li class="recent"><span class="tl-date">2027-09-02</span><span class="entity-tag">spacex</span> Bridge maturity (refinancing cliff)</li>
+<li class="recent"><span class="tl-date">2027-09-02</span><span class="entity-tag">spacex</span> Goldman bridge maturity cliff (~$11.4B remaining)</li>
+<li class="recent"><span class="tl-date">2027-06-16</span><span class="entity-tag">spacex</span> Musk block unlock (~6.4B shares, largest tranche)</li>
+<li class="recent"><span class="tl-date">2026-12-31</span><span class="entity-tag">musk</span> TSLA open-market sales 2026: 1 trades, $0.00B</li>
+<li class="recent"><span class="tl-date">2026-12-08</span><span class="entity-tag">spacex</span> Remainder lock-up release (180-day customary expiry)</li>
+<li class=""><span class="tl-date">2026-09-02</span><span class="entity-tag">spacex</span> Goldman bridge $175.50 trigger window ends</li>
+<li class=""><span class="tl-date">2026-08-20</span><span class="entity-tag">spacex</span> First major lock-up unlock (~7% pool; roughly doubles tradable float)</li>
+<li class=""><span class="tl-date">2026-06-23</span><span class="entity-tag">spacex</span> Senior unsecured notes offering <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm">source</a></li>
+<li class=""><span class="tl-date">2026-06-23</span><span class="entity-tag">spacex</span> Bond offering priced (coupon and maturity set) <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm">source</a></li>
+<li class=""><span class="tl-date">2026-06-23</span><span class="entity-tag">portfolio</span> SPCX $156.11 TSLA $381.61 NW $1314.19B</li>
+<li class=""><span class="tl-date">2026-06-22</span><span class="entity-tag">spacex</span> Senior unsecured notes offering; ~$100.8B cash disclosed</li>
+<li class=""><span class="tl-date">2026-06-22</span><span class="entity-tag">spacex</span> Senior unsecured notes offering <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm">source</a></li>
+<li class=""><span class="tl-date">2026-06-15</span><span class="entity-tag">spacex</span> IPO repays inherited debt</li>
+<li class=""><span class="tl-date">2026-03-02</span><span class="entity-tag">spacex</span> +$20B Goldman bridge loan added</li>
+<li class=""><span class="tl-date">2026-02-02</span><span class="entity-tag">spacex</span> xAI(+X) folded into SpaceX; debt recast</li>
+<li class=""><span class="tl-date">2025-03-28</span><span class="entity-tag">twitter</span> X folded into xAI (X.AI Holdings)</li>
+<li class=""><span class="tl-date">2023-04-01</span><span class="entity-tag">twitter</span> Twitter renamed X; debt carried</li>
+<li class=""><span class="tl-date">2022-12-31</span><span class="entity-tag">musk</span> TSLA open-market sales 2022: 404 trades, $22.93B</li>
+<li class=""><span class="tl-date">2022-10-27</span><span class="entity-tag">twitter</span> LBO closes; ~$13B acquisition debt loaded</li>
+<li class=""><span class="tl-date">2021-12-31</span><span class="entity-tag">musk</span> TSLA open-market sales 2021: 875 trades, $16.43B</li>
+</ul>
+</section>
+
+
+<section id="live-charts" class="box">
+<h2>Live time series <span class="section-tag">updates every sync</span></h2>
+<p class="section-note">Daily Yahoo history plus a new point every ~30 minutes when GitHub Actions runs. Net-worth proxy = Tesla stake + ~36% SPCX economic stake + cumulative Form 4 cash (private names excluded).</p>
+<div class="chart-grid">
+<div class="chart-panel"><h3>SPCX vs IPO ($135)</h3><p class="chart-note">Price (basis m). Red line = IPO reference.</p><div class="chart-wrap"><canvas id="chart-spcx"></canvas></div></div>
+<div class="chart-panel"><h3>TSLA (Musk stake mark)</h3><p class="chart-note">Live quote feeding Tesla component of net-worth proxy.</p><div class="chart-wrap"><canvas id="chart-tsla"></canvas></div></div>
+<div class="chart-panel"><h3>Net-worth proxy ($B)</h3><p class="chart-note">Sum of priced components only. Not Forbes; our filing-backed model.</p><div class="chart-wrap"><canvas id="chart-nw"></canvas></div></div>
+<div class="chart-panel"><h3>Stake components ($B)</h3><p class="chart-note">SpaceX vs Tesla vs realized cash over time.</p><div class="chart-wrap"><canvas id="chart-comp"></canvas></div></div>
+</div>
+<p class="muted" id="ts-updated">Loading timeseries.json...</p>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  const hints = document.querySelectorAll('.lens-hint');
+  document.querySelectorAll('.lens-card').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lens-card').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
+      hints.forEach(h => h.classList.remove('visible'));
+      const el = document.getElementById('lens-' + btn.dataset.lens);
+      if (el) el.classList.add('visible');
+    });
+  });
+  document.querySelector('.lens-card[data-lens="everyone"]')?.click();
+
+  fetch('timeseries.json').then(r => r.json()).then(data => {
+    const s = data.series || [];
+    const labels = s.map(r => r.date);
+    const ipo = data.ipo_price || 135;
+    document.getElementById('ts-updated').textContent =
+      'Updated ' + (data.updated_at || '') + ' · ' + s.length + ' daily points · ' + (data.live_sync_count||0) + ' sync snapshots';
+
+    const baseOpts = {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { maxTicksLimit: 8, font: { size: 10 } } }, y: { ticks: { font: { size: 10 } } } }
+    };
+
+    new Chart(document.getElementById('chart-spcx'), {
+      type: 'line',
+      data: { labels, datasets: [
+        { data: s.map(r => r.spcx), borderColor: '#7a2230', backgroundColor: 'rgba(122,34,48,.08)', fill: true, tension: .25, pointRadius: 0 },
+        { data: labels.map(() => ipo), borderColor: '#999', borderDash: [4,4], pointRadius: 0, fill: false }
+      ]},
+      options: baseOpts
+    });
+    new Chart(document.getElementById('chart-tsla'), {
+      type: 'line',
+      data: { labels, datasets: [{ data: s.map(r => r.tsla), borderColor: '#1a5c42', tension: .25, pointRadius: 0, fill: false }] },
+      options: baseOpts
+    });
+    new Chart(document.getElementById('chart-nw'), {
+      type: 'line',
+      data: { labels, datasets: [{ data: s.map(r => r.net_worth_b), borderColor: '#333', backgroundColor: 'rgba(0,0,0,.06)', fill: true, tension: .25, pointRadius: 0 }] },
+      options: baseOpts
+    });
+    new Chart(document.getElementById('chart-comp'), {
+      type: 'line',
+      data: { labels, datasets: [
+        { label: 'SpaceX', data: s.map(r => r.spacex_stake_b), borderColor: '#7a2230', tension: .25, pointRadius: 0 },
+        { label: 'Tesla', data: s.map(r => r.tesla_stake_b), borderColor: '#1a5c42', tension: .25, pointRadius: 0 },
+        { label: 'Cash', data: s.map(r => r.cash_b), borderColor: '#b8860b', tension: .25, pointRadius: 0 }
+      ]},
+      options: { ...baseOpts, plugins: { legend: { display: true, position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } } }
+    });
+  }).catch(() => {
+    document.getElementById('ts-updated').textContent = 'Run build_timeseries.py to seed charts.';
+  });
+})();
+</script>
+
 
 
 <section id="start" class="box box-intro">
@@ -136,7 +365,7 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 <h2>Live portfolio and net-worth proxy</h2>
 
 <p class="networth-hero">~$1314.19B net-worth proxy</p>
-<p class="muted">As of 2026-06-23T21:45:49Z UTC. Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.</p>
+<p class="muted">As of 2026-06-23T22:00:11Z UTC. Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.</p>
 <div class="networth-breakdown"><span><strong>Tesla stake:</strong> $270.94B</span><span><strong>SpaceX stake:</strong> $1003.27B</span><span><strong>Cash (sales):</strong> $39.98B</span></div>
 <p class="section-note">Counts only what has a public mark today: Tesla shares (Form 4 anchor × live TSLA), SpaceX economic stake (~36% × SPCX price), and cumulative cash from Tesla sales. Private stakes (X, xAI, Boring, Neuralink) are listed but not priced.</p>
 <div class="table-wrap"><table>
@@ -162,17 +391,51 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 
 </section>
 
+<section id="briefs" class="box">
+<h2>Filing briefs <span class="section-tag">multi-lens</span></h2>
+<p class="section-note">Auto-generated when the SEC watcher fires. Same perspectives as email alerts: engineer, trader, CFA, Elon personally, demand and supply.</p>
+
+<article class="brief-card">
+<h3>Space Exploration Technologies (SPCX) · 8-K · 2026-06-23</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm">EDGAR filing</a> · generated 2026-06-23T22:38:09Z</p>
+<p><strong>In one line:</strong> Bond offering priced (coupon and maturity set) Total priced: ~$25.0B across 5 tranches:   • $7.0B @ 5.350% due 2031   • $6.0B @ 5.650% due 2033…</p>
+<div class="brief-lenses">
+<div class="brief-lens"><div class="bl-title">Everyone</div>Bond offering priced (coupon and maturity set)</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Capital stack move: unsecured notes replace short-dated bridge bank debt. Operationally this buys runway to fund Starlink, Starship, and xAI compute without issuing new equity today.<br>Engineering implication: proceeds retire the bridge facility that was funding the post-IPO debt overhang from the Twitter/X/xAI chain. Fixed-rate tranches lock in cost of capital out to 2031–2056 instead of floating bank exposure.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
+<div class="brief-lens"><div class="bl-title">Trader</div>Tradeable read: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape.<br>Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price if market was discounting refi risk. Medium-term: adds ~$25B fixed coupons to the capital structure.<br>Watch: bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
+<div class="brief-lens"><div class="bl-title">CFA</div>Credit / structure: senior unsecured notes rank pari passu with existing unsubordinated debt. This extends duration and fixes coupons.<br>Blended coupon on priced tranches: ~5.86% (simple size-weighted).<br>Use of proceeds (bridge repayment + fees + general corporate) implies IPO cash and note proceeds are closing the Goldman bridge chapter, not returning capital to shareholders.<br>Equity holder lens: no dilution from this filing, but higher financial leverage and future interest burden. Monitor coverage once 10-Q debt footnotes update.<br>Debt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).</div>
+<div class="brief-lens"><div class="bl-title">Elon personally</div>This is a company-level bond print, not a Musk Form 4. He does not receive cash from it personally today. His ~36% economic SPCX stake still cannot be sold until lock-up releases (largest block unlock: Jun 16, 2027 per prospectus).<br>Personally, the win is balance-sheet cleanup: the Goldman bridge tied to the Twitter -&gt; X -&gt; xAI -&gt; SpaceX debt relay gets retired with public-market notes. That removes a near-term refi sword over the vehicle he controls.<br>Loop read (H2/H12): Musk builds hype, takes the empire public, retains control, then realizes personal cash by selling existing stake into retail demand at dated unlock steps. This filing is infrastructure (debt refi), not the exit step.<br>Watch his personal ledger separately: TSLA Form 4 sales (~$40B cumulative in our dossier) remain the active personal liquidity channel while SPCX is gated.</div>
+<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• EQUITY SUPPLY: unchanged by this filing. Lock-up calendar still drives tradable float (next step Aug 20, 2026 ~7% pool per prospectus).<br>• EQUITY DEMAND: debt deal can attract institutional credit buyers, not retail share buyers. Indirect bid possible if refi overhang clears.<br>• DEBT SUPPLY: +~$25.0B new notes to market (institutional allocation).<br>• FLOAT PSYCHOLOGY: removing bridge uncertainty may reduce forced-sale risk premium; does not add insider shares.</div>
+</div>
+</article>
+
+</section>
+
 <section id="catalysts" class="box box-warn">
-<h2>Dated catalyst calendar</h2>
-<p class="section-note">Pre-registered dates from prospectuses and debt docs. These confirm or break the thesis (lock-ups, refi cliffs), not price targets.</p>
+<h2>Material dates calendar</h2>
+<p class="section-note">Manual catalyst dates plus filing-extracted dates (settlements). Each row includes what it means in plain English. Email reminders fire 7 and 1 days before major supply and debt dates.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Date</th><th>Entity</th><th>Event</th><th>Tests</th></tr></thead>
-<tbody><tr class="muted"><td>2026-06-22<span class="badge badge-past">past</span></td><td>SpaceX</td><td>Senior unsecured notes offering; ~$100.8B cash disclosed</td><td class="muted">H12 bridge repayment</td></tr>
-<tr class="upcoming"><td>2026-08-20<span class="muted"> (58d)</span></td><td>SPCX</td><td>First major lock-up unlock (~7% pool; roughly doubles tradable float)</td><td class="muted">H5/H6 scarcity premium test</td></tr>
-<tr class="upcoming"><td>2026-09-02<span class="muted"> (71d)</span></td><td>SPCX</td><td>Goldman bridge $175.50 trigger window ends</td><td class="muted">H12 debt / refi timing</td></tr>
-<tr class="upcoming"><td>2026-12-08<span class="muted"> (168d)</span></td><td>SPCX</td><td>Remainder lock-up release (180-day customary expiry)</td><td class="muted">H5 supply step</td></tr>
-<tr class="upcoming"><td>2027-06-16<span class="muted"> (358d)</span></td><td>SPCX</td><td>Musk block unlock (~6.4B shares, largest tranche)</td><td class="muted">H2 exit / H5 supply</td></tr>
-<tr class="upcoming"><td>2027-09-02<span class="muted"> (436d)</span></td><td>SpaceX</td><td>Goldman bridge maturity cliff (~$11.4B remaining)</td><td class="muted">H12+H7 debt chain</td></tr>
+<thead><tr><th>Date</th><th>Entity</th><th>Event · what it means</th><th>Type · Tests</th></tr></thead>
+<tbody><tr class="muted"><td>2026-06-22<span class="badge badge-past">past</span></td><td>SpaceX</td><td><strong>Senior unsecured notes offering; ~$100.8B cash disclosed</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">The Musk empire thesis is date-driven: hype, listing, lock-ups, refi, and personal sales each have filing-backed timestamps. This date is on</div></td><td class="muted">catalyst · H12 bridge repayment</td></tr>
+<tr class="upcoming"><td>2026-06-26<span class="badge badge-soon">3d</span></td><td>SPCX</td><td><strong>Bond offering expected settlement (June 26, 2026)</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X</div></td><td class="muted">settlement · H12</td></tr>
+<tr class="upcoming"><td>2026-08-20<span class="muted"> (58d)</span></td><td>SPCX</td><td><strong>First major lock-up unlock (~7% pool; roughly doubles tradable float)</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if th</div></td><td class="muted">catalyst · H5/H6 scarcity premium test</td></tr>
+<tr class="upcoming"><td>2026-09-02<span class="muted"> (71d)</span></td><td>SPCX</td><td><strong>Goldman bridge $175.50 trigger window ends</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">The bridge was the short-dated debt left from the Twitter acquisition chain. Missing this window can mean repricing, extension, or forced re</div></td><td class="muted">catalyst · H12 debt / refi timing</td></tr>
+<tr class="upcoming"><td>2026-12-08<span class="muted"> (168d)</span></td><td>SPCX</td><td><strong>Remainder lock-up release (180-day customary expiry)</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if th</div></td><td class="muted">catalyst · H5 supply step</td></tr>
+<tr class="upcoming"><td>2027-06-16<span class="muted"> (358d)</span></td><td>SPCX</td><td><strong>Musk block unlock (~6.4B shares, largest tranche)</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">Musk's economic stake is gated until these dates. When the block unlocks, the question is not whether he can sell, but whether retail demand</div></td><td class="muted">catalyst · H2 exit / H5 supply</td></tr>
+<tr class="upcoming"><td>2027-09-02<span class="muted"> (436d)</span></td><td>SpaceX</td><td><strong>Goldman bridge maturity cliff (~$11.4B remaining)</strong><div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">If cash and market access are insufficient, the issuer must refinance, renegotiate, or sell assets/equity. At ~$11B+ scale this is an infras</div></td><td class="muted">catalyst · H12+H7 debt chain</td></tr>
+</tbody>
+</table></div>
+</section>
+
+<section id="timeline" class="box">
+<h2>Dossier timeline <span class="section-tag">evolves over time</span></h2>
+<p class="section-note">Logged reminders and passed catalysts. This is the longitudinal record of how dates played out against the thesis.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Logged</th><th>Date</th><th>Entity</th><th>Event</th></tr></thead>
+<tbody><tr><td class="muted">2026-06-23</td><td>2026-06-26</td><td>SPCX</td><td><span class="entity-tag">date_outcome</span> <span style="color:#666;font-weight:700;">[neutral]</span> Bond offering expected settlement (June 26, 2026)<div class="muted" style="font-size:12px;margin-top:4px;">Price still at or above IPO after refi settlement; no equity supply added.</div></td></tr>
+<tr><td class="muted">2026-06-23</td><td>2026-08-20</td><td>SPCX</td><td><span class="entity-tag">reminder_sent</span> First major lock-up unlock (~7% pool; roughly doubles tradable float)<div class="muted" style="font-size:12px;margin-top:4px;">Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.</div></td></tr>
+<tr><td class="muted">2026-06-23</td><td>2026-06-26</td><td>SPCX</td><td><span class="entity-tag">reminder_sent</span> Bond offering expected settlement (June 26, 2026)<div class="muted" style="font-size:12px;margin-top:4px;">This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can </div></td></tr>
+<tr><td class="muted">2026-06-23</td><td>2026-06-26</td><td>SPCX</td><td><span class="entity-tag">reminder_sent</span> Bond offering expected settlement (June 26, 2026)<div class="muted" style="font-size:12px;margin-top:4px;">This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can </div></td></tr>
 </tbody>
 </table></div>
 </section>
@@ -249,12 +512,13 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 
 <section id="alerts" class="box">
 <h2>Recent SEC alerts</h2>
-<ul><li class="muted">No new filings detected since watcher seeded. Next alert appears here, by email, and by SMS.</li></ul>
+<ul><li><span class="entity-tag">Space Exploration Technologies (SPCX)</span> <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"><strong>8-K</strong></a> 2026-06-23: Material event report</li>
+</ul>
 </section>
 
 <section id="charts" class="box">
-<h2>Evidence charts</h2>
-<p class="section-note">Generated from parsed Form 4 data and filing-backed debt / actor maps. Not price predictions.</p>
+<h2>Evidence charts <span class="section-tag">static</span></h2>
+<p class="section-note">Generated from parsed Form 4 data and filing-backed debt / actor maps. Complement the live charts above; not price predictions.</p>
 <figure><img src="charts/H3_sells_into_strength.png" alt="H3: Tesla sales vs share price. Do Form 4 sales cluster into strength?" loading="lazy"/><figcaption>H3: Tesla sales vs share price. Do Form 4 sales cluster into strength?</figcaption></figure>
 <figure><img src="charts/H12_debt_chain.png" alt="H12: Debt that started at Twitter now sits on SpaceX. Bridge cliff 2027-09-02." loading="lazy"/><figcaption>H12: Debt that started at Twitter now sits on SpaceX. Bridge cliff 2027-09-02.</figcaption></figure>
 <figure><img src="charts/EMPIRE_actors.png" alt="Recurring cast wearing multiple hats (board, lender, seller, counterparty)." loading="lazy"/><figcaption>Recurring cast wearing multiple hats (board, lender, seller, counterparty).</figcaption></figure>

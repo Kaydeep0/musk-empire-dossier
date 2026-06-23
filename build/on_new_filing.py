@@ -13,17 +13,12 @@ import subprocess
 import sys
 import time
 
+from dossier_constants import MATERIAL_FORMS
+
 HERE = os.path.dirname(__file__)
 ROOT = os.path.join(HERE, "..")
 DATA = os.path.join(ROOT, "data")
 LOG = os.path.join(DATA, "pipeline.log")
-
-# Forms that trigger full data + chart rebuild
-MATERIAL_FORMS = {
-    "4", "4/A", "3", "5",
-    "SC 13D", "SC 13D/A", "SC 13G", "SC 13G/A", "SCHEDULE 13G/A",
-    "8-K", "DEF 14A", "DEFA14A", "DEFM14A", "S-1", "S-4", "424B4", "424B5",
-}
 
 
 def log(msg):
@@ -98,6 +93,7 @@ def main():
             run([sys.executable, os.path.join(HERE, "debt_chain_chart.py")])
             run([sys.executable, os.path.join(HERE, "empire_mechanics_chart.py")])
     run([sys.executable, os.path.join(HERE, "pull_spcx_market.py")])
+    run([sys.executable, os.path.join(HERE, "empire_memory.py"), "--sync"])
     os.environ["MUSK_LINKEDIN_ALERT"] = "0"
     run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
     _finish(entities_arg, forms_arg)
@@ -109,13 +105,7 @@ def _finish(entities_arg, forms_arg):
         push = os.path.join(HERE, "push_live_site.sh")
         if os.path.isfile(push):
             run(["bash", push])
-    if os.environ.get("MUSK_LINKEDIN_ALERT", "1") != "0":
-        reason = "site published"
-        if "spacex" in entities_arg:
-            reason = "SpaceX issuer filing detected"
-        elif forms_arg and forms_arg & {"8-K", "8-K/A"}:
-            reason = "8-K material event"
-        run([sys.executable, os.path.join(HERE, "linkedin_alert.py"), reason])
+    # LinkedIn draft is included in editorial packet from alert_filing / watcher.
 
 
 if __name__ == "__main__":

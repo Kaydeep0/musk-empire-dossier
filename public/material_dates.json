@@ -1,0 +1,263 @@
+{
+  "updated": "2026-06-23T22:38:36Z",
+  "site": "https://kaydeep0.github.io/musk-empire-dossier/",
+  "dates": [
+    {
+      "date": "2026-06-22",
+      "entity": "SpaceX",
+      "event": "Senior unsecured notes offering; ~$100.8B cash disclosed",
+      "type": "catalyst",
+      "hypothesis": "H12 bridge repayment",
+      "basis": "b",
+      "source_kind": "manual",
+      "source": "SpaceX 8-K accession 0001628280-26-044489",
+      "url": null,
+      "accession": null,
+      "days_until": -1,
+      "status": "past",
+      "context": {
+        "what_it_is": "A pre-registered date for SpaceX from SEC docs or the dossier calendar.",
+        "why_it_matters": "The Musk empire thesis is date-driven: hype, listing, lock-ups, refi, and personal sales each have filing-backed timestamps. This date is one of those tests.",
+        "what_to_watch": "New EDGAR filings around the date, price/volume, and memory-agent pattern flags.",
+        "thesis_note": "H12 bridge repayment"
+      },
+      "major": false,
+      "remind_days": [
+        1,
+        3
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": []
+    },
+    {
+      "date": "2026-06-26",
+      "entity": "SPCX",
+      "event": "Bond offering expected settlement (June 26, 2026)",
+      "type": "settlement",
+      "hypothesis": "H12",
+      "basis": "b",
+      "source_kind": "filing",
+      "source": "SEC 8-K filed 2026-06-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+      "accession": "0001628280-26-044955",
+      "days_until": 3,
+      "status": "soon",
+      "context": {
+        "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
+        "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?' Per the filing: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price i....",
+        "what_to_watch": "bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.",
+        "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
+      },
+      "major": true,
+      "remind_days": [
+        1,
+        3,
+        7
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": [
+        7
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "entity": "SPCX",
+      "event": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
+      "type": "catalyst",
+      "hypothesis": "H5/H6 scarcity premium test",
+      "basis": "b",
+      "source_kind": "manual",
+      "source": "SPCX 424(b)(4) lock-up schedule; Spacexsec V5",
+      "url": null,
+      "accession": null,
+      "days_until": 58,
+      "status": "upcoming",
+      "context": {
+        "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
+        "why_it_matters": "Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.",
+        "what_to_watch": "Float change vs prospectus pool size, first-week volume, price reaction, and any Form 4 or 8-K confirming sales or transfers.",
+        "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
+      },
+      "major": true,
+      "remind_days": [
+        1,
+        3,
+        7
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": [
+        7
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "SPCX",
+      "event": "Goldman bridge $175.50 trigger window ends",
+      "type": "catalyst",
+      "hypothesis": "H12 debt / refi timing",
+      "basis": "b",
+      "source_kind": "manual",
+      "source": "SPCX prospectus; distribution STRATEGY_360",
+      "url": null,
+      "accession": null,
+      "days_until": 71,
+      "status": "future",
+      "context": {
+        "what_it_is": "A contractual window tied to the Goldman bridge facility ends. Pricing or refi triggers tied to the stock price may no longer apply the same way.",
+        "why_it_matters": "The bridge was the short-dated debt left from the Twitter acquisition chain. Missing this window can mean repricing, extension, or forced refi at worse terms.",
+        "what_to_watch": "New debt 8-Ks, bridge balance in footnotes, credit spread moves, and whether bond proceeds already retired the facility.",
+        "thesis_note": "H12 debt buys time; this is a timing hinge on the traveling-debt chain (H7)."
+      },
+      "major": true,
+      "remind_days": [
+        1,
+        3,
+        7
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": [
+        7
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "entity": "SPCX",
+      "event": "Remainder lock-up release (180-day customary expiry)",
+      "type": "catalyst",
+      "hypothesis": "H5 supply step",
+      "basis": "b",
+      "source_kind": "manual",
+      "source": "SPCX 424(b)(4)",
+      "url": null,
+      "accession": null,
+      "days_until": 168,
+      "status": "future",
+      "context": {
+        "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
+        "why_it_matters": "Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.",
+        "what_to_watch": "Float change vs prospectus pool size, first-week volume, price reaction, and any Form 4 or 8-K confirming sales or transfers.",
+        "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
+      },
+      "major": true,
+      "remind_days": [
+        1,
+        3,
+        7
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": [
+        7
+      ]
+    },
+    {
+      "date": "2027-06-16",
+      "entity": "SPCX",
+      "event": "Musk block unlock (~6.4B shares, largest tranche)",
+      "type": "catalyst",
+      "hypothesis": "H2 exit / H5 supply",
+      "basis": "b",
+      "source_kind": "manual",
+      "source": "SPCX lock-up schedule",
+      "url": null,
+      "accession": null,
+      "days_until": 358,
+      "status": "future",
+      "context": {
+        "what_it_is": "The largest Musk-linked SPCX lock-up tranche becomes eligible to sell. This is the biggest single supply step on the calendar.",
+        "why_it_matters": "Musk's economic stake is gated until these dates. When the block unlocks, the question is not whether he can sell, but whether retail demand absorbs supply without breaking the scarcity premium built at IPO.",
+        "what_to_watch": "Form 4 filings (personal ledger), volume spikes, price vs $135 IPO and day-one high, 10b5-1 plan disclosures, and whether selling clusters after strength.",
+        "thesis_note": "Core H2 exit channel + H5 supply step at empire scale."
+      },
+      "major": true,
+      "remind_days": [
+        1,
+        3,
+        7
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": [
+        7
+      ]
+    },
+    {
+      "date": "2027-09-02",
+      "entity": "SpaceX",
+      "event": "Goldman bridge maturity cliff (~$11.4B remaining)",
+      "type": "catalyst",
+      "hypothesis": "H12+H7 debt chain",
+      "basis": "b",
+      "source_kind": "manual",
+      "source": "data/debt_chain.csv; SPCX filings",
+      "url": null,
+      "accession": null,
+      "days_until": 436,
+      "status": "future",
+      "context": {
+        "what_it_is": "A large debt facility comes due or must be refinanced. This is a balance-sheet cliff, not a share unlock.",
+        "why_it_matters": "If cash and market access are insufficient, the issuer must refinance, renegotiate, or sell assets/equity. At ~$11B+ scale this is an infrastructure event for the whole empire loop.",
+        "what_to_watch": "New bond prints, bridge extensions, covenant waivers, equity issuance rumors, and credit rating commentary.",
+        "thesis_note": "H12+H7: debt travels across vehicles until public markets absorb it."
+      },
+      "major": true,
+      "remind_days": [
+        1,
+        3,
+        7
+      ],
+      "remind_instant": [
+        1,
+        3
+      ],
+      "remind_digest": [
+        7
+      ]
+    }
+  ],
+  "timeline_log": "data/material_dates_log.jsonl",
+  "outcomes": [
+    {
+      "date": "2026-06-26",
+      "entity": "SPCX",
+      "type": "settlement",
+      "event": "Bond offering expected settlement (June 26, 2026)",
+      "hypothesis": "H12",
+      "grade": "neutral",
+      "summary": "Price still at or above IPO after refi settlement; no equity supply added.",
+      "metrics": {
+        "spcx_event_day": "2026-06-23",
+        "spcx_price_event": 156.11,
+        "spcx_price_now": 156.11,
+        "ipo_price": 135.0,
+        "pct_vs_ipo_event": 15.6,
+        "pct_vs_ipo": 15.6,
+        "change_1d_pct": 0.0,
+        "new_filings": []
+      },
+      "context": {
+        "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
+        "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?' Per the filing: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price i....",
+        "what_to_watch": "bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.",
+        "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
+      },
+      "assessed_at": "2026-06-23T22:26:27Z"
+    }
+  ]
+}

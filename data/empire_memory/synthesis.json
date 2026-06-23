@@ -1,0 +1,82 @@
+{
+  "updated_at": "2026-06-23T22:02:43Z",
+  "disclaimer": "Educational research memory. Not investment advice.",
+  "narrative": "As of 2026-06-23, the memory agent tracks 22 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+  "recent_events": [
+    {
+      "date": "2027-09-02",
+      "entity": "SpaceX",
+      "headline": "Bridge maturity (refinancing cliff)",
+      "type": "debt_chain"
+    },
+    {
+      "date": "2027-09-02",
+      "entity": "SpaceX",
+      "headline": "Goldman bridge maturity cliff (~$11.4B remaining)",
+      "type": "catalyst"
+    },
+    {
+      "date": "2027-06-16",
+      "entity": "SPCX",
+      "headline": "Musk block unlock (~6.4B shares, largest tranche)",
+      "type": "catalyst"
+    },
+    {
+      "date": "2026-12-31",
+      "entity": "Elon Musk",
+      "headline": "TSLA open-market sales 2026: 1 trades, $0.00B",
+      "type": "form4_aggregate"
+    },
+    {
+      "date": "2026-12-08",
+      "entity": "SPCX",
+      "headline": "Remainder lock-up release (180-day customary expiry)",
+      "type": "catalyst"
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "SPCX",
+      "headline": "Goldman bridge $175.50 trigger window ends",
+      "type": "catalyst"
+    },
+    {
+      "date": "2026-08-20",
+      "entity": "SPCX",
+      "headline": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
+      "type": "catalyst"
+    },
+    {
+      "date": "2026-06-23",
+      "entity": "Space Exploration Technologies (SPCX)",
+      "headline": "Senior unsecured notes offering",
+      "type": "issuer_filing"
+    },
+    {
+      "date": "2026-06-23",
+      "entity": "Space Exploration Technologies (SPCX)",
+      "headline": "Bond offering priced (coupon and maturity set)",
+      "type": "filing_brief"
+    },
+    {
+      "date": "2026-06-23",
+      "entity": "Portfolio proxy",
+      "headline": "SPCX $156.11 TSLA $381.61 NW $1314.19B",
+      "type": "market_sync"
+    },
+    {
+      "date": "2026-06-22",
+      "entity": "SpaceX",
+      "headline": "Senior unsecured notes offering; ~$100.8B cash disclosed",
+      "type": "catalyst"
+    },
+    {
+      "date": "2026-06-22",
+      "entity": "Space Exploration Technologies (SPCX)",
+      "headline": "Senior unsecured notes offering",
+      "type": "issuer_filing"
+    }
+  ],
+  "pattern_count": 6,
+  "entity_count": 5,
+  "event_count": 22
+}

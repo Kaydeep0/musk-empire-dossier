@@ -3,6 +3,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import time
 import urllib.request
 
@@ -132,20 +133,61 @@ def post_ntfy(title, body, priority="default", tags=""):
 def alert_filing(entity_label, filing, trigger_linkedin=False):
     form = filing["form"]
     desc = FORM_DESC.get(form, form)
-    title = f"New {entity_label} SEC filing"
+    title = f"{entity_label}: {form} - SEC filing brief"
     subtitle = f"{form} · {filing['filingDate']}"
-    body = f"{desc}\n{filing['filingDate']}\n{filing['url']}"
-    notify_mac(title, subtitle, f"{desc} ({filing['filingDate']})")
+
+    brief = None
+    email_body = None
+    html_body = None
+    sms_body = None
+    use_editorial = os.environ.get("MUSK_EDITORIAL_PACKET", "1") != "0"
+    try:
+        from filing_analysis import build_brief, format_email, save_brief, sms_teaser
+        brief = build_brief(entity_label, filing)
+        if brief:
+            save_brief(brief)
+            if use_editorial:
+                from editorial_packet import send_editorial_packet
+                send_editorial_packet(brief, desc, filing, sms_teaser)
+            else:
+                email_body, html_body = format_email(brief, desc)
+                sms_body = sms_teaser(brief)
+            try:
+                subprocess.run(
+                    [sys.executable, os.path.join(HERE, "empire_memory.py"), "--ingest", "--synthesize"],
+                    cwd=os.path.join(HERE, ".."),
+                    timeout=120,
+                    check=False,
+                )
+            except Exception as mem_err:
+                print(f"empire memory update failed: {mem_err}")
+    except Exception as e:
+        print(f"filing analysis failed: {e}")
+
+    if use_editorial and brief:
+        notify_mac(f"Editorial packet: {entity_label}", subtitle, brief["summary"].split("\n")[0])
+        log_alert(entity_label, filing, desc)
+        print(f"ALERT [{entity_label}] {subtitle}  editorial packet\n       {filing['url']}")
+        return
+
+    if not email_body:
+        email_body = f"{desc}\n{filing['filingDate']}\n{filing['url']}\n\n(Analysis unavailable — fetch failed.)"
+        sms_body = f"{entity_label} {form}\n{desc}\n{filing['url']}"
+
+    notify_mac(title, subtitle, brief["summary"].split("\n")[0] if brief else desc)
     log_alert(entity_label, filing, desc)
     print(f"ALERT [{entity_label}] {subtitle}  {desc}\n       {filing['url']}")
+    if brief:
+        print(f"       analysis saved — {brief['summary'].split(chr(10))[0][:80]}")
+
     priority = "high" if trigger_linkedin else "default"
     tags = "memo" if trigger_linkedin else "sec"
     try:
         from notify_channels import alert_all
-        alert_all(f"{entity_label}: {form}", body, priority=priority, tags=tags)
+        alert_all(title, email_body, priority=priority, tags=tags, sms_body=sms_body, ntfy_body=sms_body, html_body=html_body)
     except Exception as e:
         print(f"notify channels failed: {e}")
-        post_ntfy(f"{entity_label}: {form} filed", body, priority=priority, tags=tags)
+        post_ntfy(title, email_body[:3500], priority=priority, tags=tags)
         hook = os.environ.get("MUSK_WATCH_WEBHOOK")
         if hook:
             post_json(hook, {"text": f"*{title}*\n{subtitle}: {desc}\n{filing['url']}"})

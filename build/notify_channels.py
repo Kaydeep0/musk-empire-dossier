@@ -1,20 +1,5 @@
 #!/usr/bin/env python3
-"""Deliver alerts via email, SMS, ntfy, and optional webhook.
-
-Defaults (override with env):
-  MUSK_ALERT_EMAIL=kiran@wattsadvisor.com
-  MUSK_ALERT_SMS=+12792692780
-
-Email (SMTP):
-  MUSK_SMTP_HOST, MUSK_SMTP_PORT (587), MUSK_SMTP_USER, MUSK_SMTP_PASS
-  MUSK_SMTP_FROM (defaults to MUSK_SMTP_USER)
-
-SMS (Twilio):
-  TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_FROM (+1...)
-
-Optional:
-  MUSK_WATCH_NTFY, MUSK_WATCH_WEBHOOK, MUSK_NOTIFY_DISABLED=1
-"""
+"""Deliver alerts via email, SMS, ntfy, and optional webhook."""
 import json
 import os
 import smtplib
@@ -29,11 +14,26 @@ DEFAULT_EMAIL = "kiran@wattsadvisor.com"
 DEFAULT_SMS = "+12792692780"
 
 
+def _load_notify_env():
+    root = os.path.join(os.path.dirname(__file__), "..")
+    notify = os.path.join(root, "data", ".notify.env")
+    if os.path.isfile(notify):
+        for line in open(notify, encoding="utf-8"):
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, _, v = line.partition("=")
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+
+
+_load_notify_env()
+
+
 def _disabled():
     return os.environ.get("MUSK_NOTIFY_DISABLED", "0") == "1"
 
 
-def send_email(subject, body, to=None):
+def send_email(subject, body, to=None, html_body=None):
     if _disabled():
         return False
     to = to or os.environ.get("MUSK_ALERT_EMAIL", DEFAULT_EMAIL)
@@ -50,6 +50,8 @@ def send_email(subject, body, to=None):
     msg["From"] = from_addr
     msg["To"] = to
     msg.attach(MIMEText(body, "plain", "utf-8"))
+    if html_body:
+        msg.attach(MIMEText(html_body, "html", "utf-8"))
     try:
         ctx = ssl.create_default_context()
         with smtplib.SMTP(host, port, timeout=30) as smtp:
@@ -96,7 +98,7 @@ def send_ntfy(title, body, priority="default", tags=""):
     ntfy = os.environ.get("MUSK_WATCH_NTFY")
     if not ntfy:
         return False
-    headers = {"User-Agent": UA, "Title": title[:250], "Priority": priority}
+    headers = {"User-Agent": UA, "Title": title[:250].encode("utf-8", "replace").decode("latin-1", "replace"), "Priority": priority}
     if tags:
         headers["Tags"] = tags
     try:
@@ -125,25 +127,14 @@ def send_webhook(text):
         return False
 
 
-def alert_all(title, body, *, priority="high", tags="sec", email=True, sms=True, ntfy=True):
+def alert_all(title, body, *, priority="high", tags="sec", email=True, sms=True, ntfy=True, sms_body=None, ntfy_body=None, html_body=None):
     """Fan out to every configured channel."""
+    ntfy_text = ntfy_body or sms_body or body[:2000]
     if ntfy:
-        send_ntfy(title, body, priority=priority, tags=tags)
+        send_ntfy(title, ntfy_text, priority=priority, tags=tags)
     if email:
-        send_email(title, body)
+        send_email(title, body, html_body=html_body)
     if sms:
-        short = f"{title}\n{body[:320]}"
-        send_sms(short)
+        send_sms(sms_body or body[:1500])
     send_webhook(f"*{title}*\n{body}")
     return True
-
-
-if __name__ == "__main__":
-    import sys
-    msg = sys.argv[1] if len(sys.argv) > 1 else "Musk dossier alert test"
-    ok_email = send_email("Dossier alert test", msg)
-    ok_sms = send_sms(f"Dossier alert test\n{msg[:320]}")
-    ok_ntfy = send_ntfy("Dossier alert test", msg, priority="high", tags="test")
-    print(f"results: email={ok_email} sms={ok_sms} ntfy={ok_ntfy}")
-    if not (ok_email and ok_sms):
-        sys.exit(1)

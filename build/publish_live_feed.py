@@ -72,6 +72,41 @@ code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
 .loop{font-family:ui-monospace,monospace;font-size:.72rem;line-height:1.45;background:#f5f5f5;border:1px solid #ddd;border-radius:6px;padding:.85rem 1rem;overflow-x:auto;white-space:pre;margin:1rem 0}
 .section-note{font-size:.88rem;color:#555;margin-bottom:.75rem}
 @media(max-width:640px){body{padding:.85rem} h1{font-size:1.35rem} .box{padding:.9rem}}
+.lens-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.55rem;margin:1rem 0}
+.lens-card{background:#fff;border:2px solid #e8e8e8;border-radius:8px;padding:.65rem .75rem;cursor:pointer;font-size:.82rem;line-height:1.4;transition:border-color .15s}
+.lens-card:hover,.lens-card.active{border-color:#7a2230;background:#fffafa}
+.lens-card strong{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:#7a2230;margin-bottom:.2rem}
+.lens-hint{font-size:.88rem;color:#444;background:#f8f8f8;border-left:3px solid #7a2230;padding:.65rem .85rem;margin:.75rem 0;border-radius:0 6px 6px 0;display:none}
+.lens-hint.visible{display:block}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.65rem;margin:1rem 0}
+.kpi{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:.75rem;text-align:center}
+.kpi .val{font-size:1.35rem;font-weight:700;color:#7a2230;line-height:1.2}
+.kpi .lbl{font-size:.72rem;color:#666;text-transform:uppercase;letter-spacing:.03em;margin-top:.25rem}
+.chart-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin:1rem 0}
+@media(min-width:720px){.chart-grid{grid-template-columns:1fr 1fr}}
+.chart-panel{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem}
+.chart-panel h3{margin:0 0 .35rem;font-size:.95rem}
+.chart-panel .chart-note{font-size:.78rem;color:#666;margin:0 0 .65rem}
+.chart-wrap{position:relative;height:220px;width:100%}
+.brief-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem;margin:1rem 0}
+.brief-card h3{margin:0 0 .35rem;font-size:1rem}
+.brief-meta{font-size:.82rem;color:#666;margin-bottom:.75rem}
+.brief-lenses{display:grid;gap:.85rem}
+@media(min-width:640px){.brief-lenses{grid-template-columns:1fr 1fr}}
+.brief-lens{background:#fafafa;border:1px solid #eee;border-radius:6px;padding:.65rem .75rem;font-size:.84rem;line-height:1.45}
+.brief-lens .bl-title{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:#7a2230;margin-bottom:.3rem}
+.pattern-card{background:#fff;border-left:4px solid #7a2230;border:1px solid #ddd;border-left-width:4px;border-radius:6px;padding:.75rem .9rem;margin:.65rem 0;font-size:.88rem}
+.pattern-card.emerging{border-left-color:#b8860b}
+.pattern-card.watch{border-left-color:#888}
+.pattern-card .pc-strength{font-size:.68rem;font-weight:700;text-transform:uppercase;color:#666}
+.memory-entity{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:.75rem;font-size:.84rem}
+.memory-entity h4{margin:0 0 .35rem;font-size:.92rem;color:#7a2230}
+.timeline-list{list-style:none;padding:0;margin:0}
+.timeline-list li{border-left:3px solid #ddd;padding:.45rem 0 .45rem .85rem;margin-left:.5rem;font-size:.84rem;line-height:1.4}
+.timeline-list li.recent{border-left-color:#7a2230}
+.timeline-list .tl-date{font-weight:600;color:#333;margin-right:.35rem}
+.section-tag{display:inline-block;font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;background:#eee;color:#555;padding:.15rem .4rem;border-radius:3px;margin-left:.4rem;vertical-align:middle}
+body{max-width:1040px}
 """
 
 CHART_CAPTIONS = {
@@ -176,14 +211,27 @@ def registry_entities():
 
 
 def catalysts():
-    items = load_json(os.path.join(DATA, "catalyst_calendar.json"), [])
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    for c in items:
-        c["status"] = "past" if c["date"] < today else ("soon" if c["date"] <= today[:8] + "31" else "future")
-        if c["date"] >= today and (c.get("status") != "past"):
+    try:
+        from material_dates import sync_material_dates
+        items = sync_material_dates()
+    except Exception:
+        items = load_json(os.path.join(DATA, "catalyst_calendar.json"), [])
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        for c in items:
             delta = (datetime.strptime(c["date"], "%Y-%m-%d") - datetime.strptime(today, "%Y-%m-%d")).days
             c["days_until"] = delta
-    return sorted(items, key=lambda x: x["date"])
+            c["status"] = "past" if delta < 0 else ("soon" if delta <= 14 else "future")
+            c["type"] = "catalyst"
+        items = sorted(items, key=lambda x: x["date"])
+    return items
+
+
+def _material_timeline(limit=25):
+    try:
+        from material_dates import load_timeline
+        return load_timeline(limit)
+    except Exception:
+        return []
 
 
 def parties_summary():
@@ -198,6 +246,24 @@ def parties_summary():
         {"party": "Musk revocable trust + GRATs", "role": "Control + economic extraction",
          "flow": "Form 4 sales ~$40B (TSLA); SPCX lock-ups", "vehicle": "CIK 1494730"},
     ]
+
+
+def load_filing_analyses(limit=5):
+    d = os.path.join(DATA, "filing_analyses")
+    if not os.path.isdir(d):
+        return []
+    files = sorted(
+        [os.path.join(d, f) for f in os.listdir(d) if f.endswith(".json")],
+        key=os.path.getmtime,
+        reverse=True,
+    )
+    out = []
+    for path in files[:limit]:
+        try:
+            out.append(json.load(open(path, encoding="utf-8")))
+        except Exception:
+            pass
+    return out
 
 
 def build_status():
@@ -215,10 +281,14 @@ def build_status():
         "tesla_events": load_json(os.path.join(DATA, "tesla_events.json"), {}),
         "debt_chain": read_csv(os.path.join(DATA, "debt_chain.csv")),
         "catalysts": catalysts(),
+        "material_timeline": _material_timeline(),
         "watch": watch_entities_status(),
         "registry": registry_entities(),
         "parties": parties_summary(),
         "recent_alerts": alerts(30),
+        "filing_analyses": load_filing_analyses(8),
+        "timeseries": load_json(os.path.join(PUBLIC, "timeseries.json"), {}),
+        "empire_memory": load_json(os.path.join(PUBLIC, "empire_memory.json"), {}),
         "charts": [
             "charts/H3_sells_into_strength.png", "charts/H12_debt_chain.png",
             "charts/EMPIRE_actors.png", "charts/CLIMB_networth.png",
@@ -457,6 +527,239 @@ def _portfolio_html(portfolio):
 """
 
 
+LENS_HINTS = {
+    "everyone": "Start with the live charts and catalyst calendar. Plain English: we track when Musk-linked companies file with the SEC and when locked-up shares can hit the market.",
+    "investor": "Focus on net-worth proxy, lock-up calendar (V5 exhibit), and debt chain. Ask: where does cash exit to insiders vs stay in the cap structure?",
+    "trader": "Focus on SPCX price vs IPO, catalyst dates (supply steps), and filing briefs demand/supply boxes. Debt prints are not the same as float events.",
+    "cfa": "Focus on debt chain, bond 8-K use of proceeds, related-party table, and basis tags (b=filing, m=market). Reconcile every dollar to EDGAR.",
+    "engineer": "Focus on infrastructure loop diagram, three-leg refinance exhibit, and bridge maturity cliff. Capital moves vehicle-to-vehicle like a systems diagram.",
+}
+
+
+def _audience_lens_html():
+    cards = ""
+    for key, label in (
+        ("everyone", "Everyone"),
+        ("investor", "Investor"),
+        ("trader", "Trader"),
+        ("cfa", "CFA / analyst"),
+        ("engineer", "Engineer"),
+    ):
+        cards += (
+            f'<button type="button" class="lens-card" data-lens="{key}" aria-pressed="false">'
+            f'<strong>{label}</strong>Tap for reading guide</button>\n'
+        )
+    hints = ""
+    for key, text in LENS_HINTS.items():
+        hints += f'<div class="lens-hint" id="lens-{key}">{_esc(text)}</div>\n'
+    return f"""
+<section id="lens" class="box box-intro">
+<h2>Who are you reading as? <span class="section-tag">5 lenses</span></h2>
+<p class="section-note">Same data, different emphasis. Pick a lens and the hint below tells you where to look on this page.</p>
+<div class="lens-grid">{cards}</div>
+{hints}
+</section>
+"""
+
+
+def _kpi_row(status):
+    port = status.get("portfolio") or {}
+    spcx = (status.get("spcx") or {}).get("market") or {}
+    sales = status.get("sales") or {}
+    comps = port.get("components_usd_b") or {}
+    kpis = [
+        ("Net-worth proxy", f"${port.get('net_worth_proxy_usd_b', '-')}B"),
+        ("SPCX", f"${spcx.get('price', '-')}"),
+        ("TSLA", f"${next((h.get('price') for h in port.get('holdings', []) if h.get('ticker')=='TSLA'), '-')}"),
+        ("Cash from sales", f"${sales.get('total_usd_b', '-')}B"),
+        ("Sync points", str((status.get('timeseries') or {}).get('live_sync_count', 0))),
+    ]
+    cells = ""
+    for lbl, val in kpis:
+        cells += f'<div class="kpi"><div class="val">{_esc(val)}</div><div class="lbl">{_esc(lbl)}</div></div>\n'
+    return f'<div class="kpi-row">{cells}</div>'
+
+
+def _timeseries_section_html():
+    return """
+<section id="live-charts" class="box">
+<h2>Live time series <span class="section-tag">updates every sync</span></h2>
+<p class="section-note">Daily Yahoo history plus a new point every ~30 minutes when GitHub Actions runs. Net-worth proxy = Tesla stake + ~36% SPCX economic stake + cumulative Form 4 cash (private names excluded).</p>
+<div class="chart-grid">
+<div class="chart-panel"><h3>SPCX vs IPO ($135)</h3><p class="chart-note">Price (basis m). Red line = IPO reference.</p><div class="chart-wrap"><canvas id="chart-spcx"></canvas></div></div>
+<div class="chart-panel"><h3>TSLA (Musk stake mark)</h3><p class="chart-note">Live quote feeding Tesla component of net-worth proxy.</p><div class="chart-wrap"><canvas id="chart-tsla"></canvas></div></div>
+<div class="chart-panel"><h3>Net-worth proxy ($B)</h3><p class="chart-note">Sum of priced components only. Not Forbes; our filing-backed model.</p><div class="chart-wrap"><canvas id="chart-nw"></canvas></div></div>
+<div class="chart-panel"><h3>Stake components ($B)</h3><p class="chart-note">SpaceX vs Tesla vs realized cash over time.</p><div class="chart-wrap"><canvas id="chart-comp"></canvas></div></div>
+</div>
+<p class="muted" id="ts-updated">Loading timeseries.json...</p>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+(function(){
+  const hints = document.querySelectorAll('.lens-hint');
+  document.querySelectorAll('.lens-card').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lens-card').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
+      hints.forEach(h => h.classList.remove('visible'));
+      const el = document.getElementById('lens-' + btn.dataset.lens);
+      if (el) el.classList.add('visible');
+    });
+  });
+  document.querySelector('.lens-card[data-lens="everyone"]')?.click();
+
+  fetch('timeseries.json').then(r => r.json()).then(data => {
+    const s = data.series || [];
+    const labels = s.map(r => r.date);
+    const ipo = data.ipo_price || 135;
+    document.getElementById('ts-updated').textContent =
+      'Updated ' + (data.updated_at || '') + ' · ' + s.length + ' daily points · ' + (data.live_sync_count||0) + ' sync snapshots';
+
+    const baseOpts = {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { maxTicksLimit: 8, font: { size: 10 } } }, y: { ticks: { font: { size: 10 } } } }
+    };
+
+    new Chart(document.getElementById('chart-spcx'), {
+      type: 'line',
+      data: { labels, datasets: [
+        { data: s.map(r => r.spcx), borderColor: '#7a2230', backgroundColor: 'rgba(122,34,48,.08)', fill: true, tension: .25, pointRadius: 0 },
+        { data: labels.map(() => ipo), borderColor: '#999', borderDash: [4,4], pointRadius: 0, fill: false }
+      ]},
+      options: baseOpts
+    });
+    new Chart(document.getElementById('chart-tsla'), {
+      type: 'line',
+      data: { labels, datasets: [{ data: s.map(r => r.tsla), borderColor: '#1a5c42', tension: .25, pointRadius: 0, fill: false }] },
+      options: baseOpts
+    });
+    new Chart(document.getElementById('chart-nw'), {
+      type: 'line',
+      data: { labels, datasets: [{ data: s.map(r => r.net_worth_b), borderColor: '#333', backgroundColor: 'rgba(0,0,0,.06)', fill: true, tension: .25, pointRadius: 0 }] },
+      options: baseOpts
+    });
+    new Chart(document.getElementById('chart-comp'), {
+      type: 'line',
+      data: { labels, datasets: [
+        { label: 'SpaceX', data: s.map(r => r.spacex_stake_b), borderColor: '#7a2230', tension: .25, pointRadius: 0 },
+        { label: 'Tesla', data: s.map(r => r.tesla_stake_b), borderColor: '#1a5c42', tension: .25, pointRadius: 0 },
+        { label: 'Cash', data: s.map(r => r.cash_b), borderColor: '#b8860b', tension: .25, pointRadius: 0 }
+      ]},
+      options: { ...baseOpts, plugins: { legend: { display: true, position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } } }
+    });
+  }).catch(() => {
+    document.getElementById('ts-updated').textContent = 'Run build_timeseries.py to seed charts.';
+  });
+})();
+</script>
+"""
+
+
+def _brief_lens_block(title, text):
+    if not text:
+        return ""
+    lines = [_esc(line) for line in text.split("\n") if line.strip()]
+    body = "<br>".join(lines)
+    return (
+        f'<div class="brief-lens"><div class="bl-title">{_esc(title)}</div>{body}</div>'
+    )
+
+
+def _filing_briefs_html(analyses):
+    if not analyses:
+        return '<p class="muted">When the bot alerts on a new filing, a multi-lens brief appears here automatically.</p>'
+    blocks = ""
+    for b in analyses:
+        summary_lines = (b.get("summary") or "").split("\n")[:4]
+        summary_short = " ".join(summary_lines)[:280]
+        blocks += f"""
+<article class="brief-card">
+<h3>{_esc(b.get('entity','?'))} · {_esc(b.get('form','?'))} · {_esc(b.get('filing_date',''))}</h3>
+<p class="brief-meta"><a href="{_esc(b.get('url','#'))}">EDGAR filing</a> · generated {_esc(b.get('generated_utc',''))}</p>
+<p><strong>In one line:</strong> {_esc(summary_short)}…</p>
+<div class="brief-lenses">
+{_brief_lens_block('Everyone', summary_lines[0] if summary_lines else '')}
+{_brief_lens_block('Engineer', b.get('engineer',''))}
+{_brief_lens_block('Trader', b.get('trader',''))}
+{_brief_lens_block('CFA', b.get('cfa',''))}
+{_brief_lens_block('Elon personally', b.get('elon',''))}
+{_brief_lens_block('Demand & supply', b.get('supply_demand',''))}
+</div>
+</article>
+"""
+    return blocks
+
+
+def _memory_section_html(mem):
+    if not mem or not mem.get("synthesis"):
+        return """
+<section id="memory" class="box">
+<h2>Empire memory agent <span class="section-tag">building</span></h2>
+<p class="muted">Run <code>python3 build/empire_memory.py --sync</code> to seed longitudinal memory and pattern detection.</p>
+</section>
+"""
+    syn = mem.get("synthesis") or {}
+    patterns = mem.get("patterns") or []
+    entities = mem.get("entities") or {}
+    timeline = mem.get("timeline") or []
+
+    pattern_html = ""
+    for p in patterns:
+        cls = p.get("strength", "watch")
+        pc = "emerging" if cls == "emerging" else ("watch" if cls == "watch" else "")
+        pattern_html += f"""
+<div class="pattern-card {pc}">
+<div class="pc-strength">{_esc(p.get('strength',''))} · {_esc(p.get('hypothesis',''))}</div>
+<strong>{_esc(p.get('name',''))}</strong>
+<p style="margin:.35rem 0 0">{_esc(p.get('summary',''))}</p>
+</div>"""
+
+    ent_cards = ""
+    for key in ("musk", "spacex", "tesla", "twitter"):
+        e = entities.get(key)
+        if not e:
+            continue
+        canon = e.get("canon") or {}
+        themes = ", ".join(t.get("tag", "") for t in (e.get("themes") or [])[:4])
+        ent_cards += f"""
+<div class="memory-entity">
+<h4>{_esc(e.get('label', key))}</h4>
+<p class="muted">{_esc(canon.get('role') or canon.get('loop_position') or '')}</p>
+<p><strong>Last:</strong> {_esc(e.get('last_event_date') or '-')} — {_esc((e.get('last_event_summary') or '')[:90])}</p>
+<p class="muted">{e.get('event_count', 0)} events · themes: {_esc(themes or 'none')}</p>
+</div>"""
+
+    tl_html = ""
+    for i, ev in enumerate(timeline[:20]):
+        cls = "recent" if i < 5 else ""
+        url = ev.get("url")
+        link = f' <a href="{_esc(url)}">source</a>' if url else ""
+        tl_html += (
+            f'<li class="{cls}"><span class="tl-date">{_esc(ev.get("date"))}</span>'
+            f'<span class="entity-tag">{_esc(ev.get("entity_key"))}</span> '
+            f'{_esc(ev.get("headline", "")[:100])}{link}</li>\n'
+        )
+
+    return f"""
+<section id="memory" class="box">
+<h2>Empire memory agent <span class="section-tag">longitudinal</span></h2>
+<p class="section-note">Reads every filing brief, alert, catalyst, and debt step. Tracks Musk, SPCX, Tesla, and related entities over time and surfaces larger patterns.</p>
+<p><strong>Current read:</strong> {_esc(syn.get('narrative', ''))}</p>
+<p class="muted">Updated {_esc(mem.get('updated_at',''))} · {syn.get('event_count', 0)} events · {syn.get('pattern_count', 0)} patterns · <a href="empire_memory.json">JSON</a></p>
+
+<h3>Patterns emerging</h3>
+{pattern_html or '<p class="muted">No patterns yet.</p>'}
+
+<h3>Entities the agent knows</h3>
+<div class="grid">{ent_cards}</div>
+
+<h3>Event timeline (memory)</h3>
+<ul class="timeline-list">{tl_html}</ul>
+</section>
+"""
+
+
 def write_index(status):
     path = os.path.join(PUBLIC, "index.html")
     spcx = status.get("spcx") or {}
@@ -508,10 +811,32 @@ def write_index(status):
     for c in status.get("catalysts", []):
         cls = "upcoming" if c["date"] >= today else "muted"
         badge = _catalyst_badge(c, today)
+        ctx = c.get("context") or {}
+        why = _esc((ctx.get("why_it_matters") or "")[:140])
         cat_rows += (
             f'<tr class="{cls}"><td>{_esc(c["date"])}{badge}</td>'
-            f'<td>{_esc(c["entity"])}</td><td>{_esc(c["event"])}</td>'
-            f'<td class="muted">{_esc(c.get("hypothesis"))}</td></tr>\n'
+            f'<td>{_esc(c["entity"])}</td>'
+            f'<td><strong>{_esc(c["event"])}</strong>'
+            f'<div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">{why}</div></td>'
+            f'<td class="muted">{_esc(c.get("type") or "catalyst")} · {_esc(c.get("hypothesis"))}</td></tr>\n'
+        )
+
+    timeline_rows = ""
+    for ev in status.get("material_timeline", []):
+        kind = ev.get("kind", "event")
+        grade = ev.get("grade")
+        grade_badge = ""
+        if grade:
+            colors = {"supports": "#16a34a", "contradicts": "#dc2626", "watch": "#d97706", "neutral": "#666"}
+            grade_badge = f' <span style="color:{colors.get(grade,"#666")};font-weight:700;">[{_esc(grade)}]</span>'
+        ctx = ev.get("context") or {}
+        note = _esc(ev.get("summary") or ctx.get("why_it_matters") or ev.get("note") or "")[:200]
+        timeline_rows += (
+            f'<tr><td class="muted">{_esc(ev.get("ts", "")[:10])}</td>'
+            f'<td>{_esc(ev.get("date"))}</td>'
+            f'<td>{_esc(ev.get("entity"))}</td>'
+            f'<td><span class="entity-tag">{_esc(kind)}</span>{grade_badge} {_esc(ev.get("event", "")[:80])}'
+            f'<div class="muted" style="font-size:12px;margin-top:4px;">{note}</div></td></tr>\n'
         )
 
     # Debt chain
@@ -587,6 +912,11 @@ def write_index(status):
 
     intro = _intro_html(sales.get("total_usd_b", 0))
     portfolio_html = _portfolio_html(status.get("portfolio") or {})
+    lens_html = _audience_lens_html()
+    kpi_html = _kpi_row(status)
+    charts_ts_html = _timeseries_section_html()
+    briefs_html = _filing_briefs_html(status.get("filing_analyses") or [])
+    memory_html = _memory_section_html(status.get("empire_memory") or {})
 
     html = f"""<!DOCTYPE html>
 <html lang="en"><head>
@@ -603,19 +933,29 @@ def write_index(status):
 <p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
 Updated automatically from EDGAR every 30 minutes.</p>
 <nav class="toc">
+<a href="#lens">Reading guide</a>
+<a href="#memory">Memory agent</a>
+<a href="#live-charts">Live charts</a>
 <a href="#start">Start here</a>
 <a href="#portfolio">Portfolio</a>
 <a href="#spcx">SPCX / IPO</a>
+<a href="#briefs">Filing briefs</a>
 <a href="#catalysts">Catalysts</a>
 <a href="#debt">Debt chain</a>
 <a href="#parties">Related parties</a>
 <a href="#watch">Watch list</a>
 <a href="#alerts">Alerts</a>
-<a href="#charts">Charts</a>
+<a href="#charts">Evidence</a>
 <a href="feed.xml">RSS</a>
 <a href="status.json">JSON</a>
+<a href="timeseries.json">Time series</a>
 </nav>
 </header>
+
+{lens_html}
+{kpi_html}
+{memory_html}
+{charts_ts_html}
 
 {intro}
 
@@ -630,12 +970,27 @@ Updated automatically from EDGAR every 30 minutes.</p>
 {spcx_html or '<p class="muted">Market and bond data refresh on each sync.</p>'}
 </section>
 
+<section id="briefs" class="box">
+<h2>Filing briefs <span class="section-tag">multi-lens</span></h2>
+<p class="section-note">Auto-generated when the SEC watcher fires. Same perspectives as email alerts: engineer, trader, CFA, Elon personally, demand and supply.</p>
+{briefs_html}
+</section>
+
 <section id="catalysts" class="box box-warn">
-<h2>Dated catalyst calendar</h2>
-<p class="section-note">Pre-registered dates from prospectuses and debt docs. These confirm or break the thesis (lock-ups, refi cliffs), not price targets.</p>
+<h2>Material dates calendar</h2>
+<p class="section-note">Manual catalyst dates plus filing-extracted dates (settlements). Each row includes what it means in plain English. Email reminders fire 7 and 1 days before major supply and debt dates.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>Date</th><th>Entity</th><th>Event</th><th>Tests</th></tr></thead>
+<thead><tr><th>Date</th><th>Entity</th><th>Event · what it means</th><th>Type · Tests</th></tr></thead>
 <tbody>{cat_rows}</tbody>
+</table></div>
+</section>
+
+<section id="timeline" class="box">
+<h2>Dossier timeline <span class="section-tag">evolves over time</span></h2>
+<p class="section-note">Logged reminders and passed catalysts. This is the longitudinal record of how dates played out against the thesis.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Logged</th><th>Date</th><th>Entity</th><th>Event</th></tr></thead>
+<tbody>{timeline_rows if timeline_rows else '<tr><td colspan="4" class="muted">Timeline fills as reminders send and dates pass.</td></tr>'}</tbody>
 </table></div>
 </section>
 
@@ -693,8 +1048,8 @@ Updated automatically from EDGAR every 30 minutes.</p>
 </section>
 
 <section id="charts" class="box">
-<h2>Evidence charts</h2>
-<p class="section-note">Generated from parsed Form 4 data and filing-backed debt / actor maps. Not price predictions.</p>
+<h2>Evidence charts <span class="section-tag">static</span></h2>
+<p class="section-note">Generated from parsed Form 4 data and filing-backed debt / actor maps. Complement the live charts above; not price predictions.</p>
 {charts_html or '<p class="muted">Charts regenerate on each full sync.</p>'}
 <h3>SPCX structural exhibits</h3>
 {exhibits_html or '<p class="muted">Lock-up calendar and value-flow maps from the SpaceX dossier.</p>'}
@@ -729,6 +1084,11 @@ def copy_assets(status):
 
 
 def main():
+    # Empire memory (before publish so site has latest)
+    mem = os.path.join(HERE, "empire_memory.py")
+    if os.path.isfile(mem):
+        import subprocess
+        subprocess.run([sys.executable, mem, "--sync"], cwd=ROOT, check=False, timeout=180)
     status = build_status()
     paths = [write_json(status), write_changelog(status), write_rss(status), write_index(status)]
     # Run asset sync if available
@@ -742,12 +1102,7 @@ def main():
     print("published:")
     for p in paths:
         print(" ", p)
-    if os.environ.get("MUSK_LINKEDIN_ALERT", "1") != "0":
-        import subprocess
-        subprocess.run(
-            [sys.executable, os.path.join(HERE, "linkedin_alert.py"), "site published"],
-            cwd=ROOT, check=False, timeout=30,
-        )
+    # LinkedIn only fires from on_new_filing.py on material forms, not every site rebuild.
 
 
 if __name__ == "__main__":

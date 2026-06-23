@@ -31,8 +31,13 @@ def main():
         if os.path.isfile(p):
             run([py, p])
     run([py, os.path.join(HERE, "sync_public_assets.py")])
+    run([py, os.path.join(HERE, "empire_memory.py"), "--sync"])
     os.environ["MUSK_LINKEDIN_ALERT"] = "0"
     run([py, os.path.join(HERE, "publish_live_feed.py")])
+    run([py, os.path.join(HERE, "filing_followups.py")])
+    run([py, os.path.join(HERE, "date_reminders.py")])
+    run([py, os.path.join(HERE, "date_outcomes.py")])
+    run([py, os.path.join(HERE, "daily_digest.py")])
 
 
 if __name__ == "__main__":
