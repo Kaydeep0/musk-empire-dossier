@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pull SPCX market snapshot from Yahoo + merge known 8-K bond facts. Writes data/spcx_market.json."""
+"""Pull SPCX market snapshot from Yahoo + bond facts from parsed SpaceX 8-K."""
 import json
 import os
 import urllib.request
@@ -8,22 +8,30 @@ from datetime import datetime, timezone
 HERE = os.path.dirname(__file__)
 DATA = os.path.join(HERE, "..", "data")
 OUT = os.path.join(DATA, "spcx_market.json")
+SPACEX_EVENTS = os.path.join(DATA, "spacex_events.json")
 IPO_PRICE = 135.0
 UA = "Watts Advisor research kiran@conformingcredit.org"
 
-# From SpaceX 8-K / press release (June 22, 2026) - basis b/c
-BOND_EVENT = {
-    "date": "2026-06-22",
-    "event": "Inaugural senior unsecured notes offering (target at least $20B)",
-    "cash_disclosed_b": 100.8,
-    "cash_as_of": "2026-06-19",
-    "use_of_proceeds": "Repay $20B bridge loan in full; fees; general corporate purposes",
-    "basis": "b",
-    "sources": [
-        "SpaceX 8-K material event (June 22, 2026)",
-        "https://finance.yahoo.com/markets/stocks/articles/spacex-debuts-bond-sale-raise-134201086.html",
-    ],
-}
+
+def load_bond_from_edgar():
+    if not os.path.exists(SPACEX_EVENTS):
+        return None
+    data = json.load(open(SPACEX_EVENTS, encoding="utf-8"))
+    bond = data.get("bond")
+    if not bond:
+        return None
+    event = bond.get("event") or "SpaceX material 8-K event"
+    out = {
+        "date": bond.get("date"),
+        "event": event,
+        "cash_disclosed_b": bond.get("cash_disclosed_b"),
+        "cash_as_of": bond.get("cash_as_of"),
+        "use_of_proceeds": bond.get("use_of_proceeds"),
+        "basis": "b",
+        "url": bond.get("url"),
+        "accession": bond.get("accession"),
+    }
+    return out
 
 
 def fetch_spcx():
@@ -31,7 +39,6 @@ def fetch_spcx():
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     raw = json.loads(urllib.request.urlopen(req, timeout=30).read())
     r = raw["chart"]["result"][0]
-    meta = r["meta"]
     ts = r["timestamp"]
     closes = r["indicators"]["quote"][0]["close"]
     pairs = [(t, c) for t, c in zip(ts, closes) if c is not None]
@@ -57,13 +64,18 @@ def fetch_spcx():
 
 
 def main():
-    snap = {"bond": BOND_EVENT, "market": fetch_spcx()}
+    bond = load_bond_from_edgar()
+    snap = {"bond": bond, "market": fetch_spcx()}
+    if os.path.exists(SPACEX_EVENTS):
+        snap["spacex_edgar"] = json.load(open(SPACEX_EVENTS, encoding="utf-8"))
     os.makedirs(DATA, exist_ok=True)
     json.dump(snap, open(OUT, "w"), indent=2)
     print("wrote", OUT)
+    if bond:
+        print(f"bond (EDGAR): {bond.get('event')} acc={bond.get('accession')}")
     if snap.get("market"):
         m = snap["market"]
-        print(f"SPCX ${m['price']} ({m['change_pct_1d']:+.1f}% 1d) vs IPO {m['pct_vs_ipo']:+.1f}% vs ATH {m['pct_vs_ath']:+.1f}%")
+        print(f"SPCX ${m['price']} ({m['change_pct_1d']:+.1f}% 1d) vs IPO {m['pct_vs_ipo']:+.1f}%")
 
 
 if __name__ == "__main__":

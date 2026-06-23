@@ -67,31 +67,54 @@ def needs_full_rebuild(forms_filter=None):
 
 def main():
     forms_arg = None
+    entities_arg = set()
     if "--forms" in sys.argv:
         i = sys.argv.index("--forms")
         if i + 1 < len(sys.argv):
             forms_arg = set(sys.argv[i + 1].split(","))
+    if "--entities" in sys.argv:
+        i = sys.argv.index("--entities")
+        if i + 1 < len(sys.argv):
+            entities_arg = set(sys.argv[i + 1].split(","))
+
+    # Always refresh SpaceX issuer EDGAR + market on any pipeline run
+    run([sys.executable, os.path.join(HERE, "pull_spacex_edgar.py")])
 
     if forms_arg and not needs_full_rebuild(forms_arg):
         log("Non-material forms only: publishing feed without full rebuild")
         run([sys.executable, os.path.join(HERE, "pull_spcx_market.py")])
+        os.environ["MUSK_LINKEDIN_ALERT"] = "0"
         run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
+        _finish(entities_arg, forms_arg)
         return
 
     log("=== pipeline start (material filing) ===")
-    ok = run([sys.executable, os.path.join(HERE, "pull_musk_filings.py")])
-    if ok:
-        run([sys.executable, os.path.join(HERE, "phase3_analyze.py")])
-        run([sys.executable, os.path.join(HERE, "networth_timeline.py")])
-        run([sys.executable, os.path.join(HERE, "debt_chain_chart.py")])
-        run([sys.executable, os.path.join(HERE, "empire_mechanics_chart.py")])
+    if "musk" in entities_arg or not entities_arg:
+        ok = run([sys.executable, os.path.join(HERE, "pull_musk_filings.py")])
+        if ok:
+            run([sys.executable, os.path.join(HERE, "phase3_analyze.py")])
+            run([sys.executable, os.path.join(HERE, "networth_timeline.py")])
+            run([sys.executable, os.path.join(HERE, "debt_chain_chart.py")])
+            run([sys.executable, os.path.join(HERE, "empire_mechanics_chart.py")])
     run([sys.executable, os.path.join(HERE, "pull_spcx_market.py")])
+    os.environ["MUSK_LINKEDIN_ALERT"] = "0"
     run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
+    _finish(entities_arg, forms_arg)
+    log("=== pipeline done ===")
+
+
+def _finish(entities_arg, forms_arg):
     if os.environ.get("MUSK_WATCH_GIT_PUSH", "1") != "0":
         push = os.path.join(HERE, "push_live_site.sh")
         if os.path.isfile(push):
             run(["bash", push])
-    log("=== pipeline done ===")
+    if os.environ.get("MUSK_LINKEDIN_ALERT", "1") != "0":
+        reason = "site published"
+        if "spacex" in entities_arg:
+            reason = "SpaceX issuer filing detected"
+        elif forms_arg and forms_arg & {"8-K", "8-K/A"}:
+            reason = "8-K material event"
+        run([sys.executable, os.path.join(HERE, "linkedin_alert.py"), reason])
 
 
 if __name__ == "__main__":

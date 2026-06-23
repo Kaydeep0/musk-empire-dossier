@@ -13,7 +13,9 @@ def run(cmd):
 
 
 if __name__ == "__main__":
+    run([sys.executable, os.path.join(HERE, "pull_spacex_edgar.py")])
     run([sys.executable, os.path.join(HERE, "pull_spcx_market.py")])
+    os.environ["MUSK_LINKEDIN_ALERT"] = "0"
     run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
     if os.environ.get("MUSK_WATCH_GIT_PUSH", "1") != "0":
         run(["bash", os.path.join(HERE, "push_live_site.sh")])

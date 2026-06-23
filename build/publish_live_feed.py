@@ -80,6 +80,7 @@ def alerts(limit=30):
                 "form": parts[2],
                 "description": parts[3],
                 "url": parts[4],
+                "entity": parts[5] if len(parts) >= 6 else "Elon Musk",
             })
     return out
 
@@ -212,15 +213,18 @@ def write_index(status):
     alerts_html = ""
     for a in status.get("recent_alerts", [])[:8]:
         alerts_html += (
-            f'<li><a href="{a["url"]}"><strong>{a["form"]}</strong></a> '
+            f'<li><strong>{a.get("entity","?")}</strong>: '
+            f'<a href="{a["url"]}"><strong>{a["form"]}</strong></a> '
             f'{a["filing_date"]}: {a["description"]}</li>\n'
         )
     spcx_html = ""
     if b:
+        url = b.get("url") or "#"
         spcx_html += (
             f'<p><strong>{b.get("event")}</strong> ({b.get("date")}, basis {b.get("basis","b")}). '
             f'Disclosed ~${b.get("cash_disclosed_b")}B cash as of {b.get("cash_as_of")}. '
-            f'{b.get("use_of_proceeds")}.</p>\n'
+            f'{b.get("use_of_proceeds") or ""} '
+            f'<a href="{url}">View SpaceX 8-K on EDGAR</a></p>\n'
         )
     if m:
         spcx_html += (

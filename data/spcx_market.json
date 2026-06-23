@@ -1,28 +1,63 @@
 {
   "bond": {
     "date": "2026-06-22",
-    "event": "Inaugural senior unsecured notes offering (target at least $20B)",
+    "event": "Senior unsecured notes offering",
     "cash_disclosed_b": 100.8,
     "cash_as_of": "2026-06-19",
-    "use_of_proceeds": "Repay $20B bridge loan in full; fees; general corporate purposes",
+    "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
     "basis": "b",
-    "sources": [
-      "SpaceX 8-K material event (June 22, 2026)",
-      "https://finance.yahoo.com/markets/stocks/articles/spacex-debuts-bond-sale-raise-134201086.html"
-    ]
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+    "accession": "0001628280-26-044489"
   },
   "market": {
     "ticker": "SPCX",
-    "price": 164.28,
+    "price": 163.12,
     "previous_close": 154.6,
-    "change_pct_1d": 6.26,
+    "change_pct_1d": 5.51,
     "ipo_price": 135.0,
-    "pct_vs_ipo": 21.69,
+    "pct_vs_ipo": 20.83,
     "ath_price": 211.39,
     "ath_date": "2026-06-16",
-    "pct_vs_ath": -22.29,
-    "as_of_utc": "2026-06-23T17:22:47Z",
+    "pct_vs_ath": -22.83,
+    "as_of_utc": "2026-06-23T17:34:37Z",
     "basis": "m",
     "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
+  },
+  "spacex_edgar": {
+    "cik": "0001181412",
+    "issuer": "Space Exploration Technologies Corp. (SPCX)",
+    "latest_8k": {
+      "accession": "0001628280-26-044489",
+      "form": "8-K",
+      "filingDate": "2026-06-22",
+      "primaryDocument": "spcx8-kxlaunchseniornotes.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+    },
+    "bond": {
+      "date": "2026-06-22",
+      "event": "Senior unsecured notes offering",
+      "cash_disclosed_b": 100.8,
+      "cash_as_of": "2026-06-19",
+      "target_b": null,
+      "bridge_loan_b": null,
+      "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
+      "basis": "b",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+      "accession": "0001628280-26-044489"
+    },
+    "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-044489",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+        "filing_date": "2026-06-22",
+        "form": "8-K",
+        "cash_disclosed_b": 100.8,
+        "cash_as_of": "2026-06-19",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true,
+        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
+      }
+    ]
   }
 }

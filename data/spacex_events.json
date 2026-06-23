@@ -1,0 +1,37 @@
+{
+  "cik": "0001181412",
+  "issuer": "Space Exploration Technologies Corp. (SPCX)",
+  "latest_8k": {
+    "accession": "0001628280-26-044489",
+    "form": "8-K",
+    "filingDate": "2026-06-22",
+    "primaryDocument": "spcx8-kxlaunchseniornotes.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+  },
+  "bond": {
+    "date": "2026-06-22",
+    "event": "Senior unsecured notes offering",
+    "cash_disclosed_b": 100.8,
+    "cash_as_of": "2026-06-19",
+    "target_b": null,
+    "bridge_loan_b": null,
+    "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
+    "basis": "b",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+    "accession": "0001628280-26-044489"
+  },
+  "events": [
+    {
+      "basis": "b",
+      "accession": "0001628280-26-044489",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+      "filing_date": "2026-06-22",
+      "form": "8-K",
+      "cash_disclosed_b": 100.8,
+      "cash_as_of": "2026-06-19",
+      "event": "Senior unsecured notes offering",
+      "bond_offering": true,
+      "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+name: Live EDGAR sync
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Watch Musk, SpaceX, Tesla filings
+        run: python3 build/watch_entities.py
+        env:
+          MUSK_WATCH_NO_MAC: "1"
+          MUSK_WATCH_PIPELINE: "1"
+          MUSK_WATCH_GIT_PUSH: "0"
+          MUSK_LINKEDIN_ALERT: "0"
+          MUSK_DOSSIER_URL: https://kaydeep0.github.io/musk-empire-dossier/
+
+      - name: Refresh SpaceX EDGAR + market snapshot
+        run: |
+          python3 build/pull_spacex_edgar.py
+          python3 build/pull_spcx_market.py
+          MUSK_LINKEDIN_ALERT=0 python3 build/publish_live_feed.py
+        env:
+          MUSK_DOSSIER_URL: https://kaydeep0.github.io/musk-empire-dossier/
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/ data/spcx_market.json data/spacex_events.json data/spacex_filings_index.csv \
+            data/.watch_state_*.json data/filing_alerts.log data/pipeline.log 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "no changes"
+            exit 0
+          fi
+          git commit -m "Live sync: EDGAR + market $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push

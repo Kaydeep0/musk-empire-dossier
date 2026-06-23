@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/opt/homebrew/bin/python3</string>
-        <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/watch_musk_filings.py</string>
+        <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/watch_entities.py</string>
     </array>
 
     <!-- Run every 15 minutes (900 seconds) -->
