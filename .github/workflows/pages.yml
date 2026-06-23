@@ -25,9 +25,13 @@ jobs:
           python-version: "3.11"
 
       - name: Build public site
-        run: python3 build/publish_live_feed.py
+        run: |
+          pip install cairosvg
+          python3 build/sync_public_assets.py
+          python3 build/publish_live_feed.py
         env:
           MUSK_DOSSIER_URL: https://kaydeep0.github.io/musk-empire-dossier/
+          MUSK_LINKEDIN_ALERT: "0"
 
       - uses: actions/upload-pages-artifact@v3
         with:
