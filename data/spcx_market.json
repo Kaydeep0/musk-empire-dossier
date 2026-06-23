@@ -19,7 +19,7 @@
     "ath_price": 211.39,
     "ath_date": "2026-06-16",
     "pct_vs_ath": -26.15,
-    "as_of_utc": "2026-06-23T20:00:53Z",
+    "as_of_utc": "2026-06-23T21:47:38Z",
     "basis": "m",
     "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
   },
@@ -27,11 +27,11 @@
     "cik": "0001181412",
     "issuer": "Space Exploration Technologies Corp. (SPCX)",
     "latest_8k": {
-      "accession": "0001628280-26-044489",
+      "accession": "0001628280-26-044955",
       "form": "8-K",
-      "filingDate": "2026-06-22",
-      "primaryDocument": "spcx8-kxlaunchseniornotes.htm",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+      "filingDate": "2026-06-23",
+      "primaryDocument": "spcx-pricing8xk.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"
     },
     "bond": {
       "date": "2026-06-22",
@@ -46,6 +46,16 @@
       "accession": "0001628280-26-044489"
     },
     "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-044955",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+        "filing_date": "2026-06-23",
+        "form": "8-K",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true,
+        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
+      },
       {
         "basis": "b",
         "accession": "0001628280-26-044489",

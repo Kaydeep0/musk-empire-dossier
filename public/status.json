@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T20:00:58Z",
+  "updated_at": "2026-06-23T21:47:43Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -10,10 +10,10 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml"
   },
   "latest_spacex_filing": {
-    "filing_date": "2026-06-22",
+    "filing_date": "2026-06-23",
     "form": "8-K",
-    "accession": "0001628280-26-044489",
-    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+    "accession": "0001628280-26-044955",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"
   },
   "latest_tesla_filing": {
     "filing_date": "2026-06-17",
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -26.15,
-      "as_of_utc": "2026-06-23T20:00:53Z",
+      "as_of_utc": "2026-06-23T21:47:38Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -60,11 +60,11 @@
       "cik": "0001181412",
       "issuer": "Space Exploration Technologies Corp. (SPCX)",
       "latest_8k": {
-        "accession": "0001628280-26-044489",
+        "accession": "0001628280-26-044955",
         "form": "8-K",
-        "filingDate": "2026-06-22",
-        "primaryDocument": "spcx8-kxlaunchseniornotes.htm",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+        "filingDate": "2026-06-23",
+        "primaryDocument": "spcx-pricing8xk.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"
       },
       "bond": {
         "date": "2026-06-22",
@@ -81,6 +81,16 @@
       "events": [
         {
           "basis": "b",
+          "accession": "0001628280-26-044955",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+          "filing_date": "2026-06-23",
+          "form": "8-K",
+          "event": "Senior unsecured notes offering",
+          "bond_offering": true,
+          "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
+        },
+        {
+          "basis": "b",
           "accession": "0001628280-26-044489",
           "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
           "filing_date": "2026-06-22",
@@ -95,7 +105,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-06-23T20:00:53Z",
+    "as_of_utc": "2026-06-23T21:47:38Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1314.19,
     "components_usd_b": {
@@ -176,11 +186,11 @@
     "cik": "0001181412",
     "issuer": "Space Exploration Technologies Corp. (SPCX)",
     "latest_8k": {
-      "accession": "0001628280-26-044489",
+      "accession": "0001628280-26-044955",
       "form": "8-K",
-      "filingDate": "2026-06-22",
-      "primaryDocument": "spcx8-kxlaunchseniornotes.htm",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+      "filingDate": "2026-06-23",
+      "primaryDocument": "spcx-pricing8xk.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"
     },
     "bond": {
       "date": "2026-06-22",
@@ -195,6 +205,16 @@
       "accession": "0001628280-26-044489"
     },
     "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-044955",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+        "filing_date": "2026-06-23",
+        "form": "8-K",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true,
+        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
+      },
       {
         "basis": "b",
         "accession": "0001628280-26-044489",
@@ -501,27 +521,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-06-23T19:58:41"
+      "updated": "2026-06-23T21:46:29"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-06-23T19:58:41"
+      "updated": "2026-06-23T21:46:29"
     },
     {
       "key": "spacex",
-      "tracked": 60,
-      "updated": "2026-06-23T19:58:41"
+      "tracked": 61,
+      "updated": "2026-06-23T21:46:31"
     },
     {
       "key": "tesla",
       "tracked": 120,
-      "updated": "2026-06-23T19:58:41"
+      "updated": "2026-06-23T21:46:29"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-06-23T19:58:41"
+      "updated": "2026-06-23T21:46:29"
     }
   ],
   "registry": [
@@ -678,7 +698,16 @@
       "vehicle": "CIK 1494730"
     }
   ],
-  "recent_alerts": [],
+  "recent_alerts": [
+    {
+      "seen_at": "2026-06-23T21:46:30",
+      "filing_date": "2026-06-23",
+      "form": "8-K",
+      "description": "Material event report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+      "entity": "Space Exploration Technologies (SpaceX)"
+    }
+  ],
   "charts": [
     "charts/H3_sells_into_strength.png",
     "charts/H12_debt_chain.png",
