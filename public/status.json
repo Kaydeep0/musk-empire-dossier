@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T17:41:46Z",
+  "updated_at": "2026-06-23T17:50:20Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -423,27 +423,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-06-23T10:40:11"
+      "updated": "2026-06-23T10:41:46"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-06-23T10:40:12"
+      "updated": "2026-06-23T10:41:47"
     },
     {
       "key": "spacex",
       "tracked": 60,
-      "updated": "2026-06-23T10:40:12"
+      "updated": "2026-06-23T10:41:47"
     },
     {
       "key": "tesla",
       "tracked": 120,
-      "updated": "2026-06-23T10:40:11"
+      "updated": "2026-06-23T10:41:47"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-06-23T10:40:11"
+      "updated": "2026-06-23T10:41:47"
     }
   ],
   "registry": [

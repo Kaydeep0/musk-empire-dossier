@@ -5,108 +5,206 @@
 <meta name="description" content="Live bot watching Musk, SpaceX, Tesla and related-party SEC filings. Infrastructure moves, debt chain, catalyst calendar."/>
 <link rel="alternate" type="application/rss+xml" title="Musk infrastructure alerts" href="feed.xml"/>
 <style>
-body{font-family:system-ui,-apple-system,sans-serif;max-width:960px;margin:0 auto;padding:1rem 1.25rem 3rem;line-height:1.55;color:#111;background:#fff}
-header{border-bottom:2px solid #7a2230;padding-bottom:1rem;margin-bottom:1.5rem}
-h1{font-size:1.5rem;margin:.25rem 0} h2{font-size:1.1rem;margin:0 0 .5rem;color:#7a2230}
-h3{font-size:.95rem;margin:1rem 0 .35rem}
-.muted{color:#555;font-size:.88rem}
-.badge{display:inline-block;background:#7a2230;color:#fff;padding:.15rem .45rem;border-radius:4px;font-size:.72rem;font-weight:600;letter-spacing:.03em}
-.badge-auto{background:#1a5c42}.badge-soon{background:#b8860b}.badge-past{background:#666}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1rem 0}
-.box{background:#fafafa;border:1px solid #ddd;border-radius:6px;padding:1rem;margin:1rem 0}
-.box-warn{border-color:#b8860b;background:#fffbf0}
-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0}
-th,td{border:1px solid #ddd;padding:.4rem .5rem;text-align:left;vertical-align:top}
-th{background:#f0f0f0}
-ul{padding-left:1.2rem;margin:.4rem 0}
-img,svg.img{max-width:100%;height:auto;border:1px solid #ddd;border-radius:4px}
-nav.toc{font-size:.9rem;margin:.75rem 0}
-nav.toc a{margin-right:.75rem}
-.entity-tag{font-size:.75rem;background:#eee;padding:.1rem .35rem;border-radius:3px;white-space:nowrap}
-.upcoming{font-weight:600;color:#7a2230}
+*,*::before,*::after{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;max-width:920px;margin:0 auto;padding:1rem 1.25rem 3rem;line-height:1.6;color:#111;background:#fff}
+header{border-bottom:2px solid #7a2230;padding-bottom:1.25rem;margin-bottom:1.25rem}
+h1{font-size:1.55rem;margin:.35rem 0 .5rem;line-height:1.25}
+h2{font-size:1.12rem;margin:0 0 .6rem;color:#7a2230;line-height:1.3}
+h3{font-size:.95rem;margin:1.1rem 0 .4rem;color:#333}
+p{margin:.55rem 0}
+.muted{color:#555;font-size:.9rem}
+.badge{display:inline-block;background:#7a2230;color:#fff;padding:.18rem .5rem;border-radius:4px;font-size:.7rem;font-weight:600;letter-spacing:.04em;margin-left:.35rem;vertical-align:middle}
+.badge-auto{background:#1a5c42}.badge-soon{background:#b8860b}.badge-past{background:#888}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+.box{background:#fafafa;border:1px solid #ddd;border-radius:8px;padding:1.1rem 1.25rem;margin:1.25rem 0}
+.box-intro{background:#fff;border-color:#7a2230;border-width:1px 1px 1px 4px}
+.box-warn{border-color:#c9a227;background:#fffbf0}
+.table-wrap{overflow-x:auto;margin:.6rem 0;-webkit-overflow-scrolling:touch}
+table{width:100%;min-width:520px;border-collapse:collapse;font-size:.86rem}
+th,td{border:1px solid #ddd;padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{background:#eee;font-weight:600;white-space:nowrap}
+td code{font-size:.82em}
+ul,ol{padding-left:1.35rem;margin:.5rem 0 .75rem}
+li{margin:.35rem 0}
+li+li{margin-top:.4rem}
+figure{margin:1.5rem 0 0;padding:0}
+figure img,figure object{display:block;width:100%;max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff}
+figcaption{font-size:.84rem;color:#555;margin-top:.45rem;line-height:1.45}
+nav.toc{display:flex;flex-wrap:wrap;gap:.35rem .65rem;font-size:.88rem;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #eee}
+nav.toc a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
+nav.toc a:hover{border-bottom-color:#7a2230}
+.entity-tag{font-size:.74rem;background:#e8e8e8;padding:.12rem .4rem;border-radius:3px;margin-right:.35rem}
+.upcoming td:first-child{font-weight:600;color:#7a2230}
 a{color:#7a2230}
+code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
+.intro-lead{font-size:1.02rem;line-height:1.65;margin:.75rem 0 1rem}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.65rem;margin:1rem 0}
+.pillar{background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:.7rem .85rem;font-size:.86rem;line-height:1.45}
+.pillar strong{display:block;color:#7a2230;margin-bottom:.25rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}
+.loop{font-family:ui-monospace,monospace;font-size:.72rem;line-height:1.45;background:#f5f5f5;border:1px solid #ddd;border-radius:6px;padding:.85rem 1rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.section-note{font-size:.88rem;color:#555;margin-bottom:.75rem}
+@media(max-width:640px){body{padding:.85rem} h1{font-size:1.35rem} .box{padding:.9rem}}
 </style>
 </head><body>
 <header>
 <p><span class="badge">LIVE</span> <span class="badge badge-auto">AUTO</span>
-<span class="muted">Updated 2026-06-23T17:41:46Z · GitHub Actions every 30 min</span></p>
+<span class="muted">Updated 2026-06-23T17:50:20Z · GitHub Actions every 30 min</span></p>
 <h1>Musk infrastructure watch</h1>
-<p class="muted">A bot that polls SEC EDGAR for Musk and every public vehicle he acts through.
-Every number links to a primary filing. Dated calls graded on the calendar.
-<strong>Educational only. Not investment advice.</strong></p>
+<p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
+Updated automatically from EDGAR every 30 minutes.</p>
 <nav class="toc">
-<a href="#watch">Watch list</a><a href="#spcx">SPCX</a><a href="#catalysts">Catalysts</a>
-<a href="#debt">Debt chain</a><a href="#parties">Related parties</a><a href="#alerts">Alerts</a>
-<a href="#charts">Charts</a><a href="feed.xml">RSS</a><a href="status.json">JSON</a>
+<a href="#start">Start here</a>
+<a href="#spcx">SPCX / IPO</a>
+<a href="#catalysts">Catalysts</a>
+<a href="#debt">Debt chain</a>
+<a href="#parties">Related parties</a>
+<a href="#watch">Watch list</a>
+<a href="#alerts">Alerts</a>
+<a href="#charts">Charts</a>
+<a href="feed.xml">RSS</a>
+<a href="status.json">JSON</a>
 </nav>
 </header>
 
-<section id="watch" class="box">
-<h2>What the bot watches</h2>
-<p class="muted">Registry-driven CIKs from <code>registry/entities.csv</code>. New filings trigger email, SMS, ntfy, site rebuild, and git push.</p>
-<table><tr><th>Entity key</th><th>Filings tracked</th><th>Last poll</th></tr><tr><td>musk</td><td>120</td><td class="muted">2026-06-23T10:40:11</td></tr>
-<tr><td>solarcity</td><td>66</td><td class="muted">2026-06-23T10:40:12</td></tr>
-<tr><td>spacex</td><td>60</td><td class="muted">2026-06-23T10:40:12</td></tr>
-<tr><td>tesla</td><td>120</td><td class="muted">2026-06-23T10:40:11</td></tr>
-<tr><td>twitter</td><td>38</td><td class="muted">2026-06-23T10:40:11</td></tr>
-</table>
-<h3>Registered parties (v1 scope)</h3>
-<table><tr><th>Entity</th><th>Ticker</th><th>CIK</th><th>Kind</th></tr><tr><td>Elon Musk (reporting person)</td><td></td><td><code>0001494730</code></td><td>person</td></tr>
-<tr><td>Tesla Inc</td><td>TSLA</td><td><code>0001318605</code></td><td>issuer</td></tr>
-<tr><td>Twitter Inc</td><td>TWTR</td><td><code>0001418091</code></td><td>issuer</td></tr>
-<tr><td>SolarCity Corp</td><td>SCTY</td><td><code>0001408356</code></td><td>issuer</td></tr>
-<tr><td>Space Exploration Technologies (SpaceX)</td><td>SPCX</td><td><code>0001181412</code></td><td>issuer</td></tr>
-</table>
+
+<section id="start" class="box box-intro">
+<h2>What you are looking at</h2>
+<p class="intro-lead">This page is a <strong>live research dossier</strong>, not a news feed or a trading signal.
+An automated bot polls the SEC every 30 minutes for filings tied to Elon Musk and the public companies he
+has founded, acquired, or controlled. When something new lands, the site rebuilds itself from primary
+records. Every dollar figure here is meant to trace back to a filing, proxy, or market snapshot labeled
+by basis (<strong>b</strong> = filing, <strong>m</strong> = market data).</p>
+
+<h3>The hypothesis we are testing</h3>
+<p>Across a chain of companies, Musk may run a <strong>repeatable loop</strong>: build real-economy hype,
+own the channel that broadcasts it, list or absorb into a vehicle he controls, let belief inflate the
+stock, then <strong>sell his stake into the demand that loop created</strong> and roll proceeds into the
+next venture. We are not claiming fraud or intent. We are testing whether the same structural moves
+recur and whether dated public events confirm or falsify each piece.</p>
+
+<div class="loop">Frontier (Tesla, SpaceX, Twitter/X)
+  → Megaphone (X, Grok, owned disclosure channels)
+  → Public vehicle (IPO or absorption)
+  → Control wedge (vote ≫ economics)
+  → Belief premium (high multiple funds the gap)
+  → Exit (Form 4 sales, lock-up releases)
+  → Roll (debt + cash into next vehicle)</div>
+
+<h3>Why the SpaceX IPO (SPCX) matters now</h3>
+<p>SpaceX listed as <strong>SPCX on June 16, 2026</strong> at $135/share. It is the latest turn of the loop:
+xAI and X were folded in, ~$13B of Twitter LBO debt traveled with them, a $20B Goldman bridge was added,
+and IPO proceeds repaid ~$19B of that stack. Only ~5% of shares trade; the rest unlock on a public calendar.
+The first big test is <strong>August 20, 2026</strong>, when tradable float roughly doubles. The debt cliff
+is <strong>September 2, 2027</strong>, when the remaining bridge matures.</p>
+
+<h3>Four pillars (each graded separately)</h3>
+<div class="pillars">
+<div class="pillar"><strong>P1 · Megaphone</strong>He produces, broadcasts, and helps price the belief later sold into.</div>
+<div class="pillar"><strong>P2 · Control</strong>Voting power far exceeds economic ownership; public funds, limited steer.</div>
+<div class="pillar"><strong>P3 · Transfer</strong>Cash exits to insiders via sales; junior risk migrates to retail/index.</div>
+<div class="pillar"><strong>P4 · Engineering</strong>Debt and related-party flows travel vehicle to vehicle.</div>
+</div>
+
+<h3>What is already supported from filings</h3>
+<ul>
+<li><strong>H2 (payday is the sale):</strong> ~$39.98B cumulative Tesla open-market sales parsed from Form 4s, not salary or dividends.</li>
+<li><strong>H11 (absorb + restate):</strong> SolarCity 2016 prototype; xAI/X into SpaceX 2025–26 at larger scale.</li>
+<li><strong>H12 (debt travels):</strong> Twitter $13B → X → xAI → SpaceX bridge → IPO repay → notes offering (see debt chain below).</li>
+<li><strong>H13 (related parties):</strong> Tesla↔SpaceX↔Valor loops (~$235M/yr proxy; ~$20B Valor leases in SPCX filings).</li>
+</ul>
+
+<p class="section-note"><strong>How to read the rest of the page:</strong> SPCX box = live price + latest issuer 8-K.
+Catalyst calendar = pre-registered dates that stress-test the thesis. Debt chain = how leverage moved between entities.
+Related parties = channels he can act through without a headline "Musk sold." Charts = evidence, not opinion.
+<strong>Educational only. Not investment advice.</strong></p>
 </section>
 
+
 <section id="spcx" class="box">
-<h2>SPCX live (market + issuer 8-K)</h2>
-<p><strong>Senior unsecured notes offering</strong> (2026-06-22, basis b). Cash ~$100.8B as of 2026-06-19. <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm">SpaceX 8-K</a></p><p>SPCX <strong>$162.62</strong> (+5.2% 1d, basis m). Vs IPO $135.0: +20.5%. Vs ATH $211.39 (2026-06-16): -23.1%.</p>
-<p class="muted">Full structural dossier: <a href="https://github.com/Kaydeep0/musk-empire-dossier">repo</a> · Spacexsec research in sibling folder.</p>
+<h2>SPCX live: SpaceX IPO + latest issuer filing</h2>
+<p class="section-note">Space Exploration Technologies listed as SPCX on June 16, 2026. This box pulls the live stock price (basis m) and the latest material 8-K from issuer CIK 1181412 (basis b).</p>
+<p><strong>Senior unsecured notes offering</strong> (<time>2026-06-22</time>, basis b). Disclosed ~$100.8B cash as of 2026-06-19. Use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.. <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm">Read SpaceX 8-K on EDGAR</a></p>
+<p>SPCX last <strong>$162.62</strong> (+5.2% 1d, basis m, as of 2026-06-23T17:41:44Z). Vs IPO $135.0: +20.5%. Vs all-time high $211.39 (2026-06-16): -23.1%.</p>
+
 </section>
 
 <section id="catalysts" class="box box-warn">
 <h2>Dated catalyst calendar</h2>
-<p class="muted">Pre-registered tests from filings. The bot surfaces these before they hit.</p>
-<table><tr><th>Date</th><th>Entity</th><th>Event</th><th>Hypothesis</th></tr><tr class="muted"><td>2026-06-22<span class="badge badge-past"></span></td><td>SpaceX</td><td>Senior unsecured notes offering; ~$100.8B cash disclosed</td><td class="muted">H12 bridge repayment</td></tr>
-<tr class="upcoming"><td>2026-08-20<span class="badge "> · 58d</span></td><td>SPCX</td><td>First major lock-up unlock (~7% pool; roughly doubles tradable float)</td><td class="muted">H5/H6 scarcity premium test</td></tr>
-<tr class="upcoming"><td>2026-09-02<span class="badge "> · 71d</span></td><td>SPCX</td><td>Goldman bridge $175.50 trigger window ends</td><td class="muted">H12 debt / refi timing</td></tr>
-<tr class="upcoming"><td>2026-12-08<span class="badge "> · 168d</span></td><td>SPCX</td><td>Remainder lock-up release (180-day customary expiry)</td><td class="muted">H5 supply step</td></tr>
-<tr class="upcoming"><td>2027-06-16<span class="badge "> · 358d</span></td><td>SPCX</td><td>Musk block unlock (~6.4B shares, largest tranche)</td><td class="muted">H2 exit / H5 supply</td></tr>
-<tr class="upcoming"><td>2027-09-02<span class="badge "> · 436d</span></td><td>SpaceX</td><td>Goldman bridge maturity cliff (~$11.4B remaining)</td><td class="muted">H12+H7 debt chain</td></tr>
-</table>
+<p class="section-note">Pre-registered dates from prospectuses and debt docs. These confirm or break the thesis (lock-ups, refi cliffs), not price targets.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Date</th><th>Entity</th><th>Event</th><th>Tests</th></tr></thead>
+<tbody><tr class="muted"><td>2026-06-22<span class="badge badge-past">past</span></td><td>SpaceX</td><td>Senior unsecured notes offering; ~$100.8B cash disclosed</td><td class="muted">H12 bridge repayment</td></tr>
+<tr class="upcoming"><td>2026-08-20<span class="muted"> (58d)</span></td><td>SPCX</td><td>First major lock-up unlock (~7% pool; roughly doubles tradable float)</td><td class="muted">H5/H6 scarcity premium test</td></tr>
+<tr class="upcoming"><td>2026-09-02<span class="muted"> (71d)</span></td><td>SPCX</td><td>Goldman bridge $175.50 trigger window ends</td><td class="muted">H12 debt / refi timing</td></tr>
+<tr class="upcoming"><td>2026-12-08<span class="muted"> (168d)</span></td><td>SPCX</td><td>Remainder lock-up release (180-day customary expiry)</td><td class="muted">H5 supply step</td></tr>
+<tr class="upcoming"><td>2027-06-16<span class="muted"> (358d)</span></td><td>SPCX</td><td>Musk block unlock (~6.4B shares, largest tranche)</td><td class="muted">H2 exit / H5 supply</td></tr>
+<tr class="upcoming"><td>2027-09-02<span class="muted"> (436d)</span></td><td>SpaceX</td><td>Goldman bridge maturity cliff (~$11.4B remaining)</td><td class="muted">H12+H7 debt chain</td></tr>
+</tbody>
+</table></div>
 </section>
 
 <section id="debt" class="box">
-<h2>Debt chain (Twitter → X → xAI → SpaceX)</h2>
-<p class="muted">Traveling debt buys time between vehicles. Next cliff: <strong>2027-09-02</strong> bridge maturity.</p>
-<table><tr><th>Date</th><th>Entity</th><th>Event</th><th>Debt out</th></tr><tr><td>2022-10-27</td><td>Twitter</td><td>LBO closes; ~$13B acquisition debt loaded</td><td>$13.0B</td></tr>
+<h2>Debt chain: Twitter → X → xAI → SpaceX</h2>
+<p class="section-note">The ~$13B Twitter LBO debt was recast through common-control mergers until SpaceX IPO proceeds repaid part of it. The bridge maturing in 2027 is the next infrastructure cliff.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Date</th><th>Entity</th><th>Event</th><th>Debt out</th></tr></thead>
+<tbody><tr><td>2022-10-27</td><td>Twitter</td><td>LBO closes; ~$13B acquisition debt loaded</td><td>$13.0B</td></tr>
 <tr><td>2023-04-01</td><td>X</td><td>Twitter renamed X; debt carried</td><td>$13.0B</td></tr>
 <tr><td>2025-03-28</td><td>xAI</td><td>X folded into xAI (X.AI Holdings)</td><td>$13.0B</td></tr>
 <tr><td>2026-02-02</td><td>SpaceX</td><td>xAI(+X) folded into SpaceX; debt recast</td><td>$13.0B</td></tr>
 <tr><td>2026-03-02</td><td>SpaceX</td><td>+$20B Goldman bridge loan added</td><td>$30.3B</td></tr>
 <tr><td>2026-06-15</td><td>SpaceX</td><td>IPO repays inherited debt</td><td>$11.4B</td></tr>
 <tr><td>2027-09-02</td><td>SpaceX</td><td>Bridge maturity (refinancing cliff)</td><td>$11.4B</td></tr>
-</table>
+</tbody>
+</table></div>
 </section>
 
 <section id="parties" class="box">
-<h2>Related parties &amp; channels Musk acts through</h2>
-<table><tr><th>Party</th><th>Role</th><th>Flow</th><th>Source</th></tr><tr><td><strong>Valor / Antonio Gracias</strong></td><td>Director + #2 owner + AI compute lessor</td><td>~$20B life-of-lease; ~$885M paid FY25</td><td>SpaceX (SPCX)</td></tr>
+<h2>Related parties and channels</h2>
+<p class="section-note">Musk rarely acts alone on a Form 4. Value also moves through directors, trusts, lenders, and affiliates listed here.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Party</th><th>Role</th><th>Flow</th><th>Source</th></tr></thead>
+<tbody><tr><td><strong>Valor / Antonio Gracias</strong></td><td>Director + #2 owner + AI compute lessor</td><td>~$20B life-of-lease; ~$885M paid FY25</td><td>SpaceX (SPCX)</td></tr>
 <tr><td><strong>Tesla Inc</strong></td><td>Megapacks, vehicles, services to SpaceX</td><td>~$778M/yr net to Tesla (2025 proxy)</td><td>TSLA DEF 14A</td></tr>
 <tr><td><strong>Tesla → xAI</strong></td><td>Capital rotation</td><td>$2.0B Series E</td><td>Tesla / xAI</td></tr>
 <tr><td><strong>Goldman Sachs</strong></td><td>Bridge lender + IPO underwriter</td><td>$20B bridge; matures 2027-09-02</td><td>SpaceX debt chain</td></tr>
 <tr><td><strong>Musk revocable trust + GRATs</strong></td><td>Control + economic extraction</td><td>Form 4 sales ~$40B (TSLA); SPCX lock-ups</td><td>CIK 1494730</td></tr>
-</table>
+</tbody>
+</table></div>
+</section>
+
+<section id="watch" class="box">
+<h2>What the bot watches (technical)</h2>
+<p class="section-note">Five SEC identities polled on a schedule. Form 4s come from Musk CIK 1494730; issuer filings come from company CIKs.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Entity key</th><th>Filings tracked</th><th>Last poll</th></tr></thead>
+<tbody><tr><td>musk</td><td>120</td><td class="muted">2026-06-23T10:41:46</td></tr>
+<tr><td>solarcity</td><td>66</td><td class="muted">2026-06-23T10:41:47</td></tr>
+<tr><td>spacex</td><td>60</td><td class="muted">2026-06-23T10:41:47</td></tr>
+<tr><td>tesla</td><td>120</td><td class="muted">2026-06-23T10:41:47</td></tr>
+<tr><td>twitter</td><td>38</td><td class="muted">2026-06-23T10:41:47</td></tr>
+</tbody>
+</table></div>
+<h3>Registered parties (v1 scope)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Entity</th><th>Ticker</th><th>CIK</th><th>Kind</th></tr></thead>
+<tbody><tr><td>Elon Musk (reporting person)</td><td></td><td><code>0001494730</code></td><td>person</td></tr>
+<tr><td>Tesla Inc</td><td>TSLA</td><td><code>0001318605</code></td><td>issuer</td></tr>
+<tr><td>Twitter Inc</td><td>TWTR</td><td><code>0001418091</code></td><td>issuer</td></tr>
+<tr><td>SolarCity Corp</td><td>SCTY</td><td><code>0001408356</code></td><td>issuer</td></tr>
+<tr><td>Space Exploration Technologies (SpaceX)</td><td>SPCX</td><td><code>0001181412</code></td><td>issuer</td></tr>
+</tbody>
+</table></div>
 </section>
 
 <div class="grid">
 <section class="box">
-<h2>Latest Musk filing (CIK 1494730)</h2>
+<h2>Latest Musk filing</h2>
+<p class="section-note">Personal CIK 1494730: every buy, sell, option exercise.</p>
 <p><strong>4</strong> · 2026-06-17<br/>
-<a href="https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml">EDGAR</a></p>
-<h3>Sales ledger</h3>
-<p><strong>~$39.98B</strong> cumulative open-market sales (Form 4).</p>
+<a href="https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml">View on EDGAR</a></p>
+<h3>Sales ledger (H2)</h3>
+<p><strong>~$39.98B</strong> cumulative open-market sales parsed from Form 4 code S.</p>
 </section>
 <section class="box">
 <h2>Latest issuer filings</h2>
@@ -117,26 +215,28 @@ Every number links to a primary filing. Dated calls graded on the calendar.
 
 <section id="alerts" class="box">
 <h2>Recent SEC alerts</h2>
-<ul><li class="muted">No alerts logged yet. First detection will email + SMS + appear here.</li></ul>
+<ul><li class="muted">No new filings detected since watcher seeded. Next alert appears here, by email, and by SMS.</li></ul>
 </section>
 
-<section id="charts">
-<h2>Charts &amp; exhibits</h2>
-<figure><img src="charts/H3_sells_into_strength.png" alt="H3_sells_into_strength.png"/></figure>
-<figure><img src="charts/H12_debt_chain.png" alt="H12_debt_chain.png"/></figure>
-<figure><img src="charts/EMPIRE_actors.png" alt="EMPIRE_actors.png"/></figure>
-<figure><img src="charts/CLIMB_networth.png" alt="CLIMB_networth.png"/></figure>
-<figure><img src="charts/H2_cumulative_cash.png" alt="H2_cumulative_cash.png"/></figure>
-<figure><img src="charts/JOURNEY_companies.png" alt="JOURNEY_companies.png"/></figure>
+<section id="charts" class="box">
+<h2>Evidence charts</h2>
+<p class="section-note">Generated from parsed Form 4 data and filing-backed debt / actor maps. Not price predictions.</p>
+<figure><img src="charts/H3_sells_into_strength.png" alt="H3: Tesla sales vs share price. Do Form 4 sales cluster into strength?" loading="lazy"/><figcaption>H3: Tesla sales vs share price. Do Form 4 sales cluster into strength?</figcaption></figure>
+<figure><img src="charts/H12_debt_chain.png" alt="H12: Debt that started at Twitter now sits on SpaceX. Bridge cliff 2027-09-02." loading="lazy"/><figcaption>H12: Debt that started at Twitter now sits on SpaceX. Bridge cliff 2027-09-02.</figcaption></figure>
+<figure><img src="charts/EMPIRE_actors.png" alt="Recurring cast wearing multiple hats (board, lender, seller, counterparty)." loading="lazy"/><figcaption>Recurring cast wearing multiple hats (board, lender, seller, counterparty).</figcaption></figure>
+<figure><img src="charts/CLIMB_networth.png" alt="Net-worth proxy over time (Tesla stake + SpaceX marks + cash from sales)." loading="lazy"/><figcaption>Net-worth proxy over time (Tesla stake + SpaceX marks + cash from sales).</figcaption></figure>
+<figure><img src="charts/H2_cumulative_cash.png" alt="H2: Cumulative cash from open-market sales (~$40B), not salary or dividends." loading="lazy"/><figcaption>H2: Cumulative cash from open-market sales (~$40B), not salary or dividends.</figcaption></figure>
+<figure><img src="charts/JOURNEY_companies.png" alt="Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO." loading="lazy"/><figcaption>Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO.</figcaption></figure>
 
-<h3>From SPCX structural dossier</h3>
-<figure><img class="img" src="exhibits/V5_lockup_calendar.svg" alt="V5_lockup_calendar.svg"/></figure>
-<figure><img class="img" src="exhibits/V4_value_flow_loop.svg" alt="V4_value_flow_loop.svg"/></figure>
-<figure><img class="img" src="exhibits/V3_three_leg_refinancing.svg" alt="V3_three_leg_refinancing.svg"/></figure>
+<h3>SPCX structural exhibits</h3>
+<figure><object data="exhibits/V5_lockup_calendar.svg" type="image/svg+xml" aria-label="SPCX lock-up calendar: when insider supply hits the market."><img src="exhibits/V5_lockup_calendar.svg" alt="SPCX lock-up calendar: when insider supply hits the market."/></object><figcaption>SPCX lock-up calendar: when insider supply hits the market.</figcaption></figure>
+<figure><object data="exhibits/V4_value_flow_loop.svg" type="image/svg+xml" aria-label="Value flows between Tesla, SpaceX, Valor, and public shareholders."><img src="exhibits/V4_value_flow_loop.svg" alt="Value flows between Tesla, SpaceX, Valor, and public shareholders."/></object><figcaption>Value flows between Tesla, SpaceX, Valor, and public shareholders.</figcaption></figure>
+<figure><object data="exhibits/V3_three_leg_refinancing.svg" type="image/svg+xml" aria-label="Three-leg refinance: bridge loan, IPO, senior notes."><img src="exhibits/V3_three_leg_refinancing.svg" alt="Three-leg refinance: bridge loan, IPO, senior notes."/></object><figcaption>Three-leg refinance: bridge loan, IPO, senior notes.</figcaption></figure>
 
 </section>
 
 <footer class="muted" style="margin-top:2rem;border-top:1px solid #ddd;padding-top:1rem">
+<p>Educational only. Not investment advice.</p>
 <p><a href="https://www.linkedin.com/newsletters/money-in-motion-7054180694628995073">Money in Motion</a> · <a href="https://www.linkedin.com/in/ksekhon44">Kiran Sekhon</a> · Watts Advisor</p>
 </footer>
 </body></html>

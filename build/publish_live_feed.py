@@ -22,27 +22,60 @@ LINKEDIN_NEWSLETTER = "https://www.linkedin.com/newsletters/money-in-motion-7054
 UA_NOTE = "Educational only. Not investment advice."
 
 CSS = """
-body{font-family:system-ui,-apple-system,sans-serif;max-width:960px;margin:0 auto;padding:1rem 1.25rem 3rem;line-height:1.55;color:#111;background:#fff}
-header{border-bottom:2px solid #7a2230;padding-bottom:1rem;margin-bottom:1.5rem}
-h1{font-size:1.5rem;margin:.25rem 0} h2{font-size:1.1rem;margin:0 0 .5rem;color:#7a2230}
-h3{font-size:.95rem;margin:1rem 0 .35rem}
-.muted{color:#555;font-size:.88rem}
-.badge{display:inline-block;background:#7a2230;color:#fff;padding:.15rem .45rem;border-radius:4px;font-size:.72rem;font-weight:600;letter-spacing:.03em}
-.badge-auto{background:#1a5c42}.badge-soon{background:#b8860b}.badge-past{background:#666}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin:1rem 0}
-.box{background:#fafafa;border:1px solid #ddd;border-radius:6px;padding:1rem;margin:1rem 0}
-.box-warn{border-color:#b8860b;background:#fffbf0}
-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:.5rem 0}
-th,td{border:1px solid #ddd;padding:.4rem .5rem;text-align:left;vertical-align:top}
-th{background:#f0f0f0}
-ul{padding-left:1.2rem;margin:.4rem 0}
-img,svg.img{max-width:100%;height:auto;border:1px solid #ddd;border-radius:4px}
-nav.toc{font-size:.9rem;margin:.75rem 0}
-nav.toc a{margin-right:.75rem}
-.entity-tag{font-size:.75rem;background:#eee;padding:.1rem .35rem;border-radius:3px;white-space:nowrap}
-.upcoming{font-weight:600;color:#7a2230}
+*,*::before,*::after{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;max-width:920px;margin:0 auto;padding:1rem 1.25rem 3rem;line-height:1.6;color:#111;background:#fff}
+header{border-bottom:2px solid #7a2230;padding-bottom:1.25rem;margin-bottom:1.25rem}
+h1{font-size:1.55rem;margin:.35rem 0 .5rem;line-height:1.25}
+h2{font-size:1.12rem;margin:0 0 .6rem;color:#7a2230;line-height:1.3}
+h3{font-size:.95rem;margin:1.1rem 0 .4rem;color:#333}
+p{margin:.55rem 0}
+.muted{color:#555;font-size:.9rem}
+.badge{display:inline-block;background:#7a2230;color:#fff;padding:.18rem .5rem;border-radius:4px;font-size:.7rem;font-weight:600;letter-spacing:.04em;margin-left:.35rem;vertical-align:middle}
+.badge-auto{background:#1a5c42}.badge-soon{background:#b8860b}.badge-past{background:#888}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1rem 0}
+.box{background:#fafafa;border:1px solid #ddd;border-radius:8px;padding:1.1rem 1.25rem;margin:1.25rem 0}
+.box-intro{background:#fff;border-color:#7a2230;border-width:1px 1px 1px 4px}
+.box-warn{border-color:#c9a227;background:#fffbf0}
+.table-wrap{overflow-x:auto;margin:.6rem 0;-webkit-overflow-scrolling:touch}
+table{width:100%;min-width:520px;border-collapse:collapse;font-size:.86rem}
+th,td{border:1px solid #ddd;padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{background:#eee;font-weight:600;white-space:nowrap}
+td code{font-size:.82em}
+ul,ol{padding-left:1.35rem;margin:.5rem 0 .75rem}
+li{margin:.35rem 0}
+li+li{margin-top:.4rem}
+figure{margin:1.5rem 0 0;padding:0}
+figure img,figure object{display:block;width:100%;max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;background:#fff}
+figcaption{font-size:.84rem;color:#555;margin-top:.45rem;line-height:1.45}
+nav.toc{display:flex;flex-wrap:wrap;gap:.35rem .65rem;font-size:.88rem;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #eee}
+nav.toc a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
+nav.toc a:hover{border-bottom-color:#7a2230}
+.entity-tag{font-size:.74rem;background:#e8e8e8;padding:.12rem .4rem;border-radius:3px;margin-right:.35rem}
+.upcoming td:first-child{font-weight:600;color:#7a2230}
 a{color:#7a2230}
+code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
+.intro-lead{font-size:1.02rem;line-height:1.65;margin:.75rem 0 1rem}
+.pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.65rem;margin:1rem 0}
+.pillar{background:#fff;border:1px solid #e0e0e0;border-radius:6px;padding:.7rem .85rem;font-size:.86rem;line-height:1.45}
+.pillar strong{display:block;color:#7a2230;margin-bottom:.25rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}
+.loop{font-family:ui-monospace,monospace;font-size:.72rem;line-height:1.45;background:#f5f5f5;border:1px solid #ddd;border-radius:6px;padding:.85rem 1rem;overflow-x:auto;white-space:pre;margin:1rem 0}
+.section-note{font-size:.88rem;color:#555;margin-bottom:.75rem}
+@media(max-width:640px){body{padding:.85rem} h1{font-size:1.35rem} .box{padding:.9rem}}
 """
+
+CHART_CAPTIONS = {
+    "H3_sells_into_strength.png": "H3: Tesla sales vs share price. Do Form 4 sales cluster into strength?",
+    "H12_debt_chain.png": "H12: Debt that started at Twitter now sits on SpaceX. Bridge cliff 2027-09-02.",
+    "EMPIRE_actors.png": "Recurring cast wearing multiple hats (board, lender, seller, counterparty).",
+    "CLIMB_networth.png": "Net-worth proxy over time (Tesla stake + SpaceX marks + cash from sales).",
+    "H2_cumulative_cash.png": "H2: Cumulative cash from open-market sales (~$40B), not salary or dividends.",
+    "JOURNEY_companies.png": "Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO.",
+}
+EXHIBIT_CAPTIONS = {
+    "V5_lockup_calendar.svg": "SPCX lock-up calendar: when insider supply hits the market.",
+    "V4_value_flow_loop.svg": "Value flows between Tesla, SpaceX, Valor, and public shareholders.",
+    "V3_three_leg_refinancing.svg": "Three-leg refinance: bridge loan, IPO, senior notes.",
+}
 
 
 def read_csv(path):
@@ -233,6 +266,80 @@ def _esc(s):
     return xml.escape(str(s or ""))
 
 
+def _capitalize_first(s):
+    s = (s or "").strip()
+    if not s:
+        return ""
+    return s[0].upper() + s[1:]
+
+
+def _catalyst_badge(c, today):
+    if c["date"] < today:
+        return '<span class="badge badge-past">past</span>'
+    days = c.get("days_until")
+    if days is None:
+        return ""
+    if days <= 30:
+        return f'<span class="badge badge-soon">{days}d</span>'
+    return f'<span class="muted"> ({days}d)</span>'
+
+
+def _intro_html(sales_total):
+    return f"""
+<section id="start" class="box box-intro">
+<h2>What you are looking at</h2>
+<p class="intro-lead">This page is a <strong>live research dossier</strong>, not a news feed or a trading signal.
+An automated bot polls the SEC every 30 minutes for filings tied to Elon Musk and the public companies he
+has founded, acquired, or controlled. When something new lands, the site rebuilds itself from primary
+records. Every dollar figure here is meant to trace back to a filing, proxy, or market snapshot labeled
+by basis (<strong>b</strong> = filing, <strong>m</strong> = market data).</p>
+
+<h3>The hypothesis we are testing</h3>
+<p>Across a chain of companies, Musk may run a <strong>repeatable loop</strong>: build real-economy hype,
+own the channel that broadcasts it, list or absorb into a vehicle he controls, let belief inflate the
+stock, then <strong>sell his stake into the demand that loop created</strong> and roll proceeds into the
+next venture. We are not claiming fraud or intent. We are testing whether the same structural moves
+recur and whether dated public events confirm or falsify each piece.</p>
+
+<div class="loop">Frontier (Tesla, SpaceX, Twitter/X)
+  → Megaphone (X, Grok, owned disclosure channels)
+  → Public vehicle (IPO or absorption)
+  → Control wedge (vote ≫ economics)
+  → Belief premium (high multiple funds the gap)
+  → Exit (Form 4 sales, lock-up releases)
+  → Roll (debt + cash into next vehicle)</div>
+
+<h3>Why the SpaceX IPO (SPCX) matters now</h3>
+<p>SpaceX listed as <strong>SPCX on June 16, 2026</strong> at $135/share. It is the latest turn of the loop:
+xAI and X were folded in, ~$13B of Twitter LBO debt traveled with them, a $20B Goldman bridge was added,
+and IPO proceeds repaid ~$19B of that stack. Only ~5% of shares trade; the rest unlock on a public calendar.
+The first big test is <strong>August 20, 2026</strong>, when tradable float roughly doubles. The debt cliff
+is <strong>September 2, 2027</strong>, when the remaining bridge matures.</p>
+
+<h3>Four pillars (each graded separately)</h3>
+<div class="pillars">
+<div class="pillar"><strong>P1 · Megaphone</strong>He produces, broadcasts, and helps price the belief later sold into.</div>
+<div class="pillar"><strong>P2 · Control</strong>Voting power far exceeds economic ownership; public funds, limited steer.</div>
+<div class="pillar"><strong>P3 · Transfer</strong>Cash exits to insiders via sales; junior risk migrates to retail/index.</div>
+<div class="pillar"><strong>P4 · Engineering</strong>Debt and related-party flows travel vehicle to vehicle.</div>
+</div>
+
+<h3>What is already supported from filings</h3>
+<ul>
+<li><strong>H2 (payday is the sale):</strong> ~${sales_total}B cumulative Tesla open-market sales parsed from Form 4s, not salary or dividends.</li>
+<li><strong>H11 (absorb + restate):</strong> SolarCity 2016 prototype; xAI/X into SpaceX 2025–26 at larger scale.</li>
+<li><strong>H12 (debt travels):</strong> Twitter $13B → X → xAI → SpaceX bridge → IPO repay → notes offering (see debt chain below).</li>
+<li><strong>H13 (related parties):</strong> Tesla↔SpaceX↔Valor loops (~$235M/yr proxy; ~$20B Valor leases in SPCX filings).</li>
+</ul>
+
+<p class="section-note"><strong>How to read the rest of the page:</strong> SPCX box = live price + latest issuer 8-K.
+Catalyst calendar = pre-registered dates that stress-test the thesis. Debt chain = how leverage moved between entities.
+Related parties = channels he can act through without a headline "Musk sold." Charts = evidence, not opinion.
+<strong>{UA_NOTE}</strong></p>
+</section>
+"""
+
+
 def write_index(status):
     path = os.path.join(PUBLIC, "index.html")
     spcx = status.get("spcx") or {}
@@ -244,16 +351,21 @@ def write_index(status):
     # SPCX box
     spcx_html = ""
     if b:
+        proceeds = _capitalize_first(b.get("use_of_proceeds") or "")
+        proc = f" {proceeds}." if proceeds else ""
         spcx_html += (
-            f'<p><strong>{_esc(b.get("event"))}</strong> ({_esc(b.get("date"))}, basis b). '
-            f'Cash ~${_esc(b.get("cash_disclosed_b"))}B as of {_esc(b.get("cash_as_of"))}. '
-            f'<a href="{_esc(b.get("url","#"))}">SpaceX 8-K</a></p>'
+            f'<p><strong>{_esc(b.get("event"))}</strong> '
+            f'(<time>{_esc(b.get("date"))}</time>, basis b). '
+            f'Disclosed ~${_esc(b.get("cash_disclosed_b"))}B cash as of {_esc(b.get("cash_as_of"))}.{proc} '
+            f'<a href="{_esc(b.get("url","#"))}">Read SpaceX 8-K on EDGAR</a></p>\n'
         )
     if m:
         spcx_html += (
-            f'<p>SPCX <strong>${_esc(m.get("price"))}</strong> ({m.get("change_pct_1d",0):+.1f}% 1d, basis m). '
+            f'<p>SPCX last <strong>${_esc(m.get("price"))}</strong> '
+            f'({m.get("change_pct_1d",0):+.1f}% 1d, basis m, as of {_esc(m.get("as_of_utc"))}). '
             f'Vs IPO ${_esc(m.get("ipo_price"))}: {m.get("pct_vs_ipo",0):+.1f}%. '
-            f'Vs ATH ${_esc(m.get("ath_price"))} ({_esc(m.get("ath_date"))}): {m.get("pct_vs_ath",0):+.1f}%.</p>'
+            f'Vs all-time high ${_esc(m.get("ath_price"))} ({_esc(m.get("ath_date"))}): '
+            f'{m.get("pct_vs_ath",0):+.1f}%.</p>\n'
         )
 
     # Watch table
@@ -274,10 +386,9 @@ def write_index(status):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     for c in status.get("catalysts", []):
         cls = "upcoming" if c["date"] >= today else "muted"
-        badge = "badge-soon" if c.get("days_until", 999) <= 30 and c["date"] >= today else ("badge-past" if c["date"] < today else "")
-        du = f' · {c["days_until"]}d' if c.get("days_until") is not None and c["date"] >= today else ""
+        badge = _catalyst_badge(c, today)
         cat_rows += (
-            f'<tr class="{cls}"><td>{_esc(c["date"])}<span class="badge {badge}">{du}</span></td>'
+            f'<tr class="{cls}"><td>{_esc(c["date"])}{badge}</td>'
             f'<td>{_esc(c["entity"])}</td><td>{_esc(c["event"])}</td>'
             f'<td class="muted">{_esc(c.get("hypothesis"))}</td></tr>\n'
         )
@@ -310,12 +421,29 @@ def write_index(status):
     # Charts
     charts_html = ""
     for rel in status.get("charts", []):
-        if os.path.isfile(os.path.join(PUBLIC, rel)) or os.path.isfile(os.path.join(ROOT, rel)):
-            charts_html += f'<figure><img src="{rel}" alt="{_esc(os.path.basename(rel))}"/></figure>\n'
+        base = os.path.basename(rel)
+        pub = os.path.join(PUBLIC, rel)
+        root = os.path.join(ROOT, rel)
+        if not (os.path.isfile(pub) or os.path.isfile(root)):
+            continue
+        cap = CHART_CAPTIONS.get(base, base)
+        charts_html += (
+            f'<figure><img src="{rel}" alt="{_esc(cap)}" loading="lazy"/>'
+            f'<figcaption>{_esc(cap)}</figcaption></figure>\n'
+        )
     exhibits_html = ""
     for rel in status.get("exhibits", []):
-        if os.path.isfile(os.path.join(PUBLIC, rel)):
-            exhibits_html += f'<figure><img class="img" src="{rel}" alt="{_esc(os.path.basename(rel))}"/></figure>\n'
+        if not os.path.isfile(os.path.join(PUBLIC, rel)):
+            continue
+        base = os.path.basename(rel)
+        cap = EXHIBIT_CAPTIONS.get(base, base)
+        exhibits_html += (
+            f'<figure><object data="{rel}" type="image/svg+xml" aria-label="{_esc(cap)}">'
+            f'<img src="{rel}" alt="{_esc(cap)}"/></object>'
+            f'<figcaption>{_esc(cap)}</figcaption></figure>\n'
+        )
+
+    intro = _intro_html(sales.get("total_usd_b", 0))
 
     html = f"""<!DOCTYPE html>
 <html lang="en"><head>
@@ -329,54 +457,79 @@ def write_index(status):
 <p><span class="badge">LIVE</span> <span class="badge badge-auto">AUTO</span>
 <span class="muted">Updated {_esc(status['updated_at'])} · GitHub Actions every 30 min</span></p>
 <h1>Musk infrastructure watch</h1>
-<p class="muted">A bot that polls SEC EDGAR for Musk and every public vehicle he acts through.
-Every number links to a primary filing. Dated calls graded on the calendar.
-<strong>{UA_NOTE}</strong></p>
+<p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
+Updated automatically from EDGAR every 30 minutes.</p>
 <nav class="toc">
-<a href="#watch">Watch list</a><a href="#spcx">SPCX</a><a href="#catalysts">Catalysts</a>
-<a href="#debt">Debt chain</a><a href="#parties">Related parties</a><a href="#alerts">Alerts</a>
-<a href="#charts">Charts</a><a href="feed.xml">RSS</a><a href="status.json">JSON</a>
+<a href="#start">Start here</a>
+<a href="#spcx">SPCX / IPO</a>
+<a href="#catalysts">Catalysts</a>
+<a href="#debt">Debt chain</a>
+<a href="#parties">Related parties</a>
+<a href="#watch">Watch list</a>
+<a href="#alerts">Alerts</a>
+<a href="#charts">Charts</a>
+<a href="feed.xml">RSS</a>
+<a href="status.json">JSON</a>
 </nav>
 </header>
 
-<section id="watch" class="box">
-<h2>What the bot watches</h2>
-<p class="muted">Registry-driven CIKs from <code>registry/entities.csv</code>. New filings trigger email, SMS, ntfy, site rebuild, and git push.</p>
-<table><tr><th>Entity key</th><th>Filings tracked</th><th>Last poll</th></tr>{watch_rows or '<tr><td colspan="3">Run watch_entities.py</td></tr>'}</table>
-<h3>Registered parties (v1 scope)</h3>
-<table><tr><th>Entity</th><th>Ticker</th><th>CIK</th><th>Kind</th></tr>{reg_rows}</table>
-</section>
+{intro}
 
 <section id="spcx" class="box">
-<h2>SPCX live (market + issuer 8-K)</h2>
-{spcx_html or '<p class="muted">Run pull_spcx_market.py</p>'}
-<p class="muted">Full structural dossier: <a href="https://github.com/Kaydeep0/musk-empire-dossier">repo</a> · Spacexsec research in sibling folder.</p>
+<h2>SPCX live: SpaceX IPO + latest issuer filing</h2>
+<p class="section-note">Space Exploration Technologies listed as SPCX on June 16, 2026. This box pulls the live stock price (basis m) and the latest material 8-K from issuer CIK 1181412 (basis b).</p>
+{spcx_html or '<p class="muted">Market and bond data refresh on each sync.</p>'}
 </section>
 
 <section id="catalysts" class="box box-warn">
 <h2>Dated catalyst calendar</h2>
-<p class="muted">Pre-registered tests from filings. The bot surfaces these before they hit.</p>
-<table><tr><th>Date</th><th>Entity</th><th>Event</th><th>Hypothesis</th></tr>{cat_rows}</table>
+<p class="section-note">Pre-registered dates from prospectuses and debt docs. These confirm or break the thesis (lock-ups, refi cliffs), not price targets.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Date</th><th>Entity</th><th>Event</th><th>Tests</th></tr></thead>
+<tbody>{cat_rows}</tbody>
+</table></div>
 </section>
 
 <section id="debt" class="box">
-<h2>Debt chain (Twitter → X → xAI → SpaceX)</h2>
-<p class="muted">Traveling debt buys time between vehicles. Next cliff: <strong>2027-09-02</strong> bridge maturity.</p>
-<table><tr><th>Date</th><th>Entity</th><th>Event</th><th>Debt out</th></tr>{debt_rows}</table>
+<h2>Debt chain: Twitter → X → xAI → SpaceX</h2>
+<p class="section-note">The ~$13B Twitter LBO debt was recast through common-control mergers until SpaceX IPO proceeds repaid part of it. The bridge maturing in 2027 is the next infrastructure cliff.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Date</th><th>Entity</th><th>Event</th><th>Debt out</th></tr></thead>
+<tbody>{debt_rows}</tbody>
+</table></div>
 </section>
 
 <section id="parties" class="box">
-<h2>Related parties &amp; channels Musk acts through</h2>
-<table><tr><th>Party</th><th>Role</th><th>Flow</th><th>Source</th></tr>{party_rows}</table>
+<h2>Related parties and channels</h2>
+<p class="section-note">Musk rarely acts alone on a Form 4. Value also moves through directors, trusts, lenders, and affiliates listed here.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Party</th><th>Role</th><th>Flow</th><th>Source</th></tr></thead>
+<tbody>{party_rows}</tbody>
+</table></div>
+</section>
+
+<section id="watch" class="box">
+<h2>What the bot watches (technical)</h2>
+<p class="section-note">Five SEC identities polled on a schedule. Form 4s come from Musk CIK 1494730; issuer filings come from company CIKs.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Entity key</th><th>Filings tracked</th><th>Last poll</th></tr></thead>
+<tbody>{watch_rows or '<tr><td colspan="3">Watcher not run yet</td></tr>'}</tbody>
+</table></div>
+<h3>Registered parties (v1 scope)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Entity</th><th>Ticker</th><th>CIK</th><th>Kind</th></tr></thead>
+<tbody>{reg_rows}</tbody>
+</table></div>
 </section>
 
 <div class="grid">
 <section class="box">
-<h2>Latest Musk filing (CIK 1494730)</h2>
+<h2>Latest Musk filing</h2>
+<p class="section-note">Personal CIK 1494730: every buy, sell, option exercise.</p>
 <p><strong>{_esc(lf.get('form','n/a'))}</strong> · {_esc(lf.get('filing_date','n/a'))}<br/>
-<a href="{_esc(lf.get('url','#'))}">EDGAR</a></p>
-<h3>Sales ledger</h3>
-<p><strong>~${sales.get('total_usd_b',0)}B</strong> cumulative open-market sales (Form 4).</p>
+<a href="{_esc(lf.get('url','#'))}">View on EDGAR</a></p>
+<h3>Sales ledger (H2)</h3>
+<p><strong>~${sales.get('total_usd_b',0)}B</strong> cumulative open-market sales parsed from Form 4 code S.</p>
 </section>
 <section class="box">
 <h2>Latest issuer filings</h2>
@@ -387,17 +540,19 @@ Every number links to a primary filing. Dated calls graded on the calendar.
 
 <section id="alerts" class="box">
 <h2>Recent SEC alerts</h2>
-<ul>{alerts_html or '<li class="muted">No alerts logged yet. First detection will email + SMS + appear here.</li>'}</ul>
+<ul>{alerts_html or '<li class="muted">No new filings detected since watcher seeded. Next alert appears here, by email, and by SMS.</li>'}</ul>
 </section>
 
-<section id="charts">
-<h2>Charts &amp; exhibits</h2>
-{charts_html or '<p class="muted">Charts generate on sync (phase3, debt_chain, empire_mechanics).</p>'}
-<h3>From SPCX structural dossier</h3>
-{exhibits_html}
+<section id="charts" class="box">
+<h2>Evidence charts</h2>
+<p class="section-note">Generated from parsed Form 4 data and filing-backed debt / actor maps. Not price predictions.</p>
+{charts_html or '<p class="muted">Charts regenerate on each full sync.</p>'}
+<h3>SPCX structural exhibits</h3>
+{exhibits_html or '<p class="muted">Lock-up calendar and value-flow maps from the SpaceX dossier.</p>'}
 </section>
 
 <footer class="muted" style="margin-top:2rem;border-top:1px solid #ddd;padding-top:1rem">
+<p>{UA_NOTE}</p>
 <p><a href="{LINKEDIN_NEWSLETTER}">Money in Motion</a> · <a href="{LINKEDIN_PROFILE}">Kiran Sekhon</a> · Watts Advisor</p>
 </footer>
 </body></html>"""
