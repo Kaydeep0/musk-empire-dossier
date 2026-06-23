@@ -1,0 +1,28 @@
+{
+  "bond": {
+    "date": "2026-06-22",
+    "event": "Inaugural senior unsecured notes offering (target at least $20B)",
+    "cash_disclosed_b": 100.8,
+    "cash_as_of": "2026-06-19",
+    "use_of_proceeds": "Repay $20B bridge loan in full; fees; general corporate purposes",
+    "basis": "b",
+    "sources": [
+      "SpaceX 8-K material event (June 22, 2026)",
+      "https://finance.yahoo.com/markets/stocks/articles/spacex-debuts-bond-sale-raise-134201086.html"
+    ]
+  },
+  "market": {
+    "ticker": "SPCX",
+    "price": 164.28,
+    "previous_close": 154.6,
+    "change_pct_1d": 6.26,
+    "ipo_price": 135.0,
+    "pct_vs_ipo": 21.69,
+    "ath_price": 211.39,
+    "ath_date": "2026-06-16",
+    "pct_vs_ath": -22.29,
+    "as_of_utc": "2026-06-23T17:22:47Z",
+    "basis": "m",
+    "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
+  }
+}

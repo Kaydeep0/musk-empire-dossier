@@ -73,7 +73,8 @@ def main():
             forms_arg = set(sys.argv[i + 1].split(","))
 
     if forms_arg and not needs_full_rebuild(forms_arg):
-        log("Non-material forms only — publishing feed without full rebuild")
+        log("Non-material forms only: publishing feed without full rebuild")
+        run([sys.executable, os.path.join(HERE, "pull_spcx_market.py")])
         run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
         return
 
@@ -84,6 +85,7 @@ def main():
         run([sys.executable, os.path.join(HERE, "networth_timeline.py")])
         run([sys.executable, os.path.join(HERE, "debt_chain_chart.py")])
         run([sys.executable, os.path.join(HERE, "empire_mechanics_chart.py")])
+    run([sys.executable, os.path.join(HERE, "pull_spcx_market.py")])
     run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
     if os.environ.get("MUSK_WATCH_GIT_PUSH", "1") != "0":
         push = os.path.join(HERE, "push_live_site.sh")

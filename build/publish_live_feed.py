@@ -4,6 +4,7 @@ import csv
 import json
 import os
 import shutil
+import sys
 import xml.sax.saxutils as xml
 from datetime import datetime, timezone
 
@@ -13,7 +14,7 @@ DATA = os.path.join(ROOT, "data")
 PUBLIC = os.path.join(ROOT, "public")
 REGISTRY = os.path.join(ROOT, "registry", "entities.csv")
 
-SITE_TITLE = "Elon Musk — Empire & Exit (Live EDGAR dossier)"
+SITE_TITLE = "Elon Musk: Empire & Exit (Live EDGAR dossier)"
 SITE_URL = os.environ.get("MUSK_DOSSIER_URL", "https://example.com/musk-dossier")
 UA_NOTE = "Educational only — not investment advice."
 
@@ -81,6 +82,10 @@ def alerts(limit=30):
     return out
 
 
+def spcx_snapshot():
+    return load_json(os.path.join(DATA, "spcx_market.json"), {})
+
+
 def watch_state():
     st = load_json(os.path.join(DATA, ".watch_state.json"), {})
     return {"last_poll": st.get("updated"), "filings_tracked": len(st.get("seen", []))}
@@ -89,12 +94,14 @@ def watch_state():
 def build_status():
     lf = latest_filing()
     sales = sale_stats()
+    spcx = spcx_snapshot()
     return {
         "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "site_url": SITE_URL,
         "disclaimer": UA_NOTE,
         "latest_filing": lf,
         "sales": sales,
+        "spcx": spcx,
         "watch": watch_state(),
         "recent_alerts": alerts(20),
         "charts": [
@@ -151,7 +158,7 @@ def write_changelog(status):
         lines.append(f"- {y}: ~${v}B")
     lines += ["", "## Recent alerts", ""]
     for a in status.get("recent_alerts", [])[:10]:
-        lines.append(f"- `{a['seen_at']}` **{a['form']}** ({a['filing_date']}) — [{a['description']}]({a['url']})")
+        lines.append(f"- `{a['seen_at']}` **{a['form']}** ({a['filing_date']}) - [{a['description']}]({a['url']})")
     lines += ["", "---", UA_NOTE, ""]
     open(path, "w", encoding="utf-8").write("\n".join(lines))
     return path
@@ -162,7 +169,7 @@ def write_rss(status):
     now = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     items = []
     for a in status.get("recent_alerts", [])[:25]:
-        title = xml.escape(f"{a['form']} — {a['description']} ({a['filing_date']})")
+        title = xml.escape(f"{a['form']}: {a['description']} ({a['filing_date']})")
         link = xml.escape(a["url"])
         desc = xml.escape(f"Detected {a['seen_at']}. {a['description']}")
         items.append(
@@ -197,12 +204,32 @@ def write_index(status):
     path = os.path.join(PUBLIC, "index.html")
     lf = status.get("latest_filing") or {}
     sales = status.get("sales", {})
+    spcx = status.get("spcx") or {}
+    m = spcx.get("market") or {}
+    b = spcx.get("bond") or {}
     alerts_html = ""
     for a in status.get("recent_alerts", [])[:8]:
         alerts_html += (
             f'<li><a href="{a["url"]}"><strong>{a["form"]}</strong></a> '
-            f'{a["filing_date"]} — {a["description"]}</li>\n'
+            f'{a["filing_date"]}: {a["description"]}</li>\n'
         )
+    spcx_html = ""
+    if b:
+        spcx_html += (
+            f'<p><strong>{b.get("event")}</strong> ({b.get("date")}, basis {b.get("basis","b")}). '
+            f'Disclosed ~${b.get("cash_disclosed_b")}B cash as of {b.get("cash_as_of")}. '
+            f'{b.get("use_of_proceeds")}.</p>\n'
+        )
+    if m:
+        spcx_html += (
+            f'<p>SPCX <strong>${m.get("price")}</strong> '
+            f'({m.get("change_pct_1d"):+.1f}% 1d, basis {m.get("basis","m")}, '
+            f'as of {m.get("as_of_utc")}). '
+            f'Vs IPO ${m.get("ipo_price")}: {m.get("pct_vs_ipo"):+.1f}%. '
+            f'Vs ATH ${m.get("ath_price")} ({m.get("ath_date")}): {m.get("pct_vs_ath"):+.1f}%.</p>'
+        )
+    if not spcx_html:
+        spcx_html = '<p class="muted">Run pull_spcx_market.py to refresh SPCX price and bond snapshot.</p>'
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -216,24 +243,32 @@ body{{font-family:system-ui,sans-serif;max-width:820px;margin:2rem auto;padding:
 h1{{font-size:1.4rem}} .muted{{color:#666;font-size:.9rem}}
 .badge{{display:inline-block;background:#7a2230;color:#fff;padding:.2rem .5rem;border-radius:4px;font-size:.75rem}}
 ul{{padding-left:1.2rem}} img{{max-width:100%;height:auto;border:1px solid #ddd}}
+.box{{background:#fafafa;border:1px solid #ddd;padding:1rem;margin:1rem 0}}
 </style>
 </head>
 <body>
 <p><span class="badge">LIVE</span> <span class="muted">Updated {status['updated_at']}</span></p>
-<h1>Empire &amp; Exit — live from EDGAR</h1>
+<h1>Empire &amp; Exit: live from EDGAR</h1>
 <p>Every load-bearing number traces to a primary SEC filing. Strongest counter-argument stated first.
 Dated calls graded on the calendar. <strong>{UA_NOTE}</strong></p>
 
+<div class="box">
+<h2>SPCX snapshot (market + bond)</h2>
+{spcx_html}
+<p class="muted">Market cap wipeout figures from social posts are not on this page unless we can source them.
+Re-pull before citing. Bond/cash from SpaceX 8-K (June 22, 2026).</p>
+</div>
+
 <h2>Latest Musk filing</h2>
-<p><strong>{lf.get('form','—')}</strong> · {lf.get('filing_date','—')}<br/>
-<a href="{lf.get('url','#')}">View on SEC EDGAR →</a></p>
+<p><strong>{lf.get('form','n/a')}</strong> · {lf.get('filing_date','n/a')}<br/>
+<a href="{lf.get('url','#')}">View on SEC EDGAR</a></p>
 
 <h2>Sales ledger (Form 4)</h2>
-<p><strong>~${sales.get('total_usd_b',0)}B</strong> cumulative open-market sales parsed from filings.</p>
+<p><strong>~${sales.get('total_usd_b',0)}B</strong> cumulative open-market sales parsed from Musk CIK filings.</p>
 
 <h2>Recent SEC alerts</h2>
 <ul>
-{alerts_html or '<li>No alerts yet — watcher will populate this.</li>'}
+{alerts_html or '<li>No alerts yet. Watcher will populate this.</li>'}
 </ul>
 
 <h2>Key charts</h2>
@@ -244,7 +279,7 @@ Dated calls graded on the calendar. <strong>{UA_NOTE}</strong></p>
 <h2>Subscribe</h2>
 <p>RSS: <a href="feed.xml">feed.xml</a> · JSON: <a href="status.json">status.json</a></p>
 
-<p class="muted">Money in Motion · Eigenstate Research · [IAR disclosure pending WSP]</p>
+<p class="muted">Money in Motion · Eigenstate Research · IAR disclosure pending WSP</p>
 </body>
 </html>
 """
@@ -277,6 +312,15 @@ def main():
     print("published:")
     for p in paths:
         print(" ", p)
+    if os.environ.get("MUSK_LINKEDIN_ALERT", "1") != "0":
+        try:
+            import subprocess
+            subprocess.run(
+                [sys.executable, os.path.join(HERE, "linkedin_alert.py"), "site published"],
+                cwd=ROOT, check=False, timeout=30,
+            )
+        except Exception as e:
+            print(f"linkedin alert skipped: {e}")
 
 
 if __name__ == "__main__":
