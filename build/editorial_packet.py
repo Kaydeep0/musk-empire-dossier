@@ -55,19 +55,8 @@ def _linkedin_post(brief, form):
 
 
 def _brief_sections_plain(brief):
-    from filing_analysis import _section_plain, DISCLAIMER
-
-    sections = [
-        ("WHAT HAPPENED", brief["summary"]),
-        ("TRADER (price / positioning)", brief["trader"]),
-        ("DEMAND & SUPPLY", brief["supply_demand"]),
-        ("ELON (personal / control)", brief["elon"]),
-    ]
-    parts = []
-    for title, body in sections:
-        parts.append(_section_plain(title, body))
-    parts.append(DISCLAIMER)
-    return "\n".join(parts)
+    from filing_analysis import brief_sections_plain
+    return brief_sections_plain(brief, include_disclaimer=True)
 
 
 def _queue_item(brief, linkedin_post, form):
@@ -211,9 +200,8 @@ def _packet_html(brief, form_desc, linkedin, next_ev, next_why, watch):
             watch_block += f"<li>{esc(w)}</li>"
         watch_block += "</ul>"
 
-    trader = esc(brief.get("trader", ""))
-    supply = esc(brief.get("supply_demand", ""))
-    summary = esc(brief.get("summary", ""))
+    from filing_analysis import brief_html_sections
+    brief_html = brief_html_sections(brief)
 
     return f"""<!DOCTYPE html>
 <html><body style="font-family:-apple-system,sans-serif;max-width:600px;margin:0 auto;padding:16px;">
@@ -221,12 +209,8 @@ def _packet_html(brief, form_desc, linkedin, next_ev, next_why, watch):
 <h1 style="font-size:20px;">{esc(brief.get('entity'))} · {esc(brief.get('form'))}</h1>
 <p style="color:#666;">{esc(brief.get('filing_date'))} · {esc(form_desc)}</p>
 {li_block}
-<h2 style="font-size:14px;margin-top:24px;">What happened</h2>
-<p style="line-height:1.55;">{summary}</p>
-<h2 style="font-size:14px;">Trader</h2>
-<p style="line-height:1.55;">{trader}</p>
-<h2 style="font-size:14px;">Demand &amp; supply</h2>
-<p style="line-height:1.55;">{supply}</p>
+<h2 style="font-size:14px;margin-top:24px;">Filing brief</h2>
+{brief_html}
 {next_block}
 {watch_block}
 <p style="margin-top:24px;"><a href="{esc(brief.get('url'))}">EDGAR filing</a> · <a href="{DOSSIER_SITE}">Live dossier</a></p>

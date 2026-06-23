@@ -16,6 +16,8 @@ ROOT = os.path.join(HERE, "..")
 
 
 def form_allowed(entity, form):
+    if entity.get("key") == "musk":
+        return True
     allowed = entity.get("forms") or MATERIAL_FORMS
     return form in allowed or form.split("/")[0] in allowed
 

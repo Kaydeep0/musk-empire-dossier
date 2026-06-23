@@ -173,7 +173,7 @@ def build_digest_body(items):
         check_followups()
         fu = digest_lines(5)
         if fu:
-            lines += ["FOLLOW-UP QUEUE (SpaceX public)", ""]
+            lines += ["FOLLOW-UP QUEUE (SpaceX public + Musk personal)", ""]
             for row in fu:
                 lines.append(f"• {row}")
             lines.append("")

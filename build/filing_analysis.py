@@ -405,16 +405,74 @@ def _section_plain(title, body):
     return f"{title}\n{'-' * len(title)}\n{body}\n"
 
 
+BRIEF_SECTIONS = [
+    ("WHAT HAPPENED", "summary"),
+    ("ENGINEER (ops / infrastructure)", "engineer"),
+    ("TRADER (price / positioning)", "trader"),
+    ("CFA (capital structure)", "cfa"),
+    ("ELON (personal / control / liquidity)", "elon"),
+    ("DEMAND & SUPPLY", "supply_demand"),
+]
+
+
+def brief_signal_block(brief):
+    """One crisp line per lens before the full sections."""
+    labels = [
+        ("Engineer", "engineer"),
+        ("Trader", "trader"),
+        ("CFA", "cfa"),
+        ("Elon", "elon"),
+        ("Supply/demand", "supply_demand"),
+    ]
+    lines = ["SIGNAL (one line per lens)", ""]
+    summary = (brief.get("summary") or "").split("\n")[0].strip()
+    if summary:
+        lines.append(f"What happened: {summary[:160]}")
+    for label, key in labels:
+        text = (brief.get(key) or "").split("\n")[0].strip()
+        if text:
+            lines.append(f"{label}: {text[:160]}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def brief_sections_plain(brief, include_disclaimer=True):
+    parts = [brief_signal_block(brief)]
+    for title, key in BRIEF_SECTIONS:
+        parts.append(_section_plain(title, brief.get(key, "")))
+    if include_disclaimer:
+        parts.append(DISCLAIMER)
+    return "\n".join(parts)
+
+
+def brief_html_sections(brief):
+    def esc(s):
+        return (
+            _ascii(s)
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace("\n", "<br>\n")
+        )
+
+    signal = brief_signal_block(brief).replace("\n", "<br>\n")
+    html = f"""
+<div style="margin:0 0 20px;padding:12px;background:#f0f9ff;border-radius:8px;font-size:14px;line-height:1.5;">
+  <div style="font-weight:700;color:#2563eb;margin-bottom:6px;">Signal</div>
+  {esc(signal)}
+</div>"""
+    for title, key in BRIEF_SECTIONS:
+        html += f"""
+<div style="margin: 20px 0 16px;">
+  <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #1a1a1a; border-bottom: 2px solid #2563eb; padding-bottom: 6px; margin-bottom: 10px;">{esc(title)}</div>
+  <div style="font-size: 15px; line-height: 1.55; color: #333;">{esc(brief.get(key, ""))}</div>
+</div>"""
+    return html
+
+
 def format_email(brief, form_desc):
     """Return (plain_text, html) for multipart email."""
-    sections = [
-        ("WHAT HAPPENED", brief["summary"]),
-        ("ENGINEER (ops / infrastructure)", brief["engineer"]),
-        ("TRADER (price / positioning)", brief["trader"]),
-        ("CFA (capital structure)", brief["cfa"]),
-        ("ELON (personal / control / liquidity)", brief["elon"]),
-        ("DEMAND & SUPPLY", brief["supply_demand"]),
-    ]
+    sections = [(title, brief[key]) for title, key in BRIEF_SECTIONS]
 
     plain_parts = [
         "PERSONAL SEC BRIEF - read before reacting\n",
@@ -427,6 +485,7 @@ def format_email(brief, form_desc):
         "",
         f"GitHub repo (data + source):\n{brief['github_url']}",
         "",
+        brief_signal_block(brief),
     ]
     for title, body in sections:
         plain_parts.append(_section_plain(title, body))
@@ -442,14 +501,7 @@ def format_email(brief, form_desc):
             .replace("\n", "<br>\n")
         )
 
-    html_sections = ""
-    for title, body in sections:
-        html_sections += f"""
-<div style="margin: 20px 0 16px;">
-  <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.04em; color: #1a1a1a; border-bottom: 2px solid #2563eb; padding-bottom: 6px; margin-bottom: 10px;">{esc(title)}</div>
-  <div style="font-size: 15px; line-height: 1.55; color: #333;">{esc(body)}</div>
-</div>"""
-
+    html_sections = brief_html_sections(brief)
     html = f"""<!DOCTYPE html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <body style="margin:0;padding:16px;background:#f4f4f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
