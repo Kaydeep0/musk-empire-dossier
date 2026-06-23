@@ -16,7 +16,7 @@ REGISTRY = os.path.join(ROOT, "registry", "entities.csv")
 
 SITE_TITLE = "Elon Musk: Empire & Exit (Live EDGAR dossier)"
 SITE_URL = os.environ.get("MUSK_DOSSIER_URL", "https://example.com/musk-dossier")
-UA_NOTE = "Educational only — not investment advice."
+UA_NOTE = "Educational only. Not investment advice."
 
 
 def read_csv(path):

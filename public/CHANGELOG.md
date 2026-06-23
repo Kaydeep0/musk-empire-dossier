@@ -1,6 +1,6 @@
 # Live changelog
 
-**Last rebuilt:** 2026-06-23T17:22:47Z (UTC)
+**Last rebuilt:** 2026-06-23T17:23:06Z (UTC)
 
 ## Latest SEC filing (Musk CIK)
 
@@ -21,4 +21,4 @@
 
 
 ---
-Educational only — not investment advice.
+Educational only. Not investment advice.
