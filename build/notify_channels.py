@@ -141,4 +141,9 @@ def alert_all(title, body, *, priority="high", tags="sec", email=True, sms=True,
 if __name__ == "__main__":
     import sys
     msg = sys.argv[1] if len(sys.argv) > 1 else "Musk dossier alert test"
-    alert_all("Dossier alert test", msg, tags="test")
+    ok_email = send_email("Dossier alert test", msg)
+    ok_sms = send_sms(f"Dossier alert test\n{msg[:320]}")
+    ok_ntfy = send_ntfy("Dossier alert test", msg, priority="high", tags="test")
+    print(f"results: email={ok_email} sms={ok_sms} ntfy={ok_ntfy}")
+    if not (ok_email and ok_sms):
+        sys.exit(1)

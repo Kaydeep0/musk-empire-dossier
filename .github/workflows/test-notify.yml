@@ -1,0 +1,61 @@
+name: Test notify channels
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Test message body
+        required: false
+        default: "End-to-end alert test from GitHub Actions (email + SMS + ntfy)."
+
+permissions:
+  contents: read
+
+jobs:
+  test-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Send test alert (email + SMS + ntfy)
+        run: python3 build/notify_channels.py "${{ github.event.inputs.message }}"
+        env:
+          MUSK_ALERT_EMAIL: kiran@wattsadvisor.com
+          MUSK_ALERT_SMS: "+12792692780"
+          MUSK_WATCH_NTFY: https://ntfy.sh/musk-sec-9053334806
+          MUSK_SMTP_HOST: ${{ secrets.MUSK_SMTP_HOST }}
+          MUSK_SMTP_PORT: ${{ secrets.MUSK_SMTP_PORT }}
+          MUSK_SMTP_USER: ${{ secrets.MUSK_SMTP_USER }}
+          MUSK_SMTP_PASS: ${{ secrets.MUSK_SMTP_PASS }}
+          MUSK_SMTP_FROM: ${{ secrets.MUSK_SMTP_FROM }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+
+      - name: Simulate filing alert path
+        run: |
+          python3 - <<'PY'
+          import os, sys
+          sys.path.insert(0, "build")
+          from edgar_common import alert_filing
+          alert_filing("TEST (GitHub Actions)", {
+              "form": "8-K",
+              "filingDate": "2026-06-23",
+              "url": "https://kaydeep0.github.io/musk-empire-dossier/",
+              "accession": "TEST-E2E-000001",
+          }, trigger_linkedin=False)
+          print("filing alert path OK")
+          PY
+        env:
+          MUSK_WATCH_NO_MAC: "1"
+          MUSK_ALERT_EMAIL: kiran@wattsadvisor.com
+          MUSK_ALERT_SMS: "+12792692780"
+          MUSK_WATCH_NTFY: https://ntfy.sh/musk-sec-9053334806
+          MUSK_SMTP_HOST: ${{ secrets.MUSK_SMTP_HOST }}
+          MUSK_SMTP_PORT: ${{ secrets.MUSK_SMTP_PORT }}
+          MUSK_SMTP_USER: ${{ secrets.MUSK_SMTP_USER }}
+          MUSK_SMTP_PASS: ${{ secrets.MUSK_SMTP_PASS }}
+          MUSK_SMTP_FROM: ${{ secrets.MUSK_SMTP_FROM }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
