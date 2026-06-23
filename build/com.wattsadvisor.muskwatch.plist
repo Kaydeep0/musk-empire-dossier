@@ -26,6 +26,8 @@
         <string>https://ntfy.sh/musk-sec-9053334806</string>
         <key>MUSK_WATCH_PIPELINE</key>
         <string>1</string>
+        <key>MUSK_WATCH_GIT_PUSH</key>
+        <string>1</string>
         <key>MUSK_DOSSIER_URL</key>
         <string>https://kaydeep0.github.io/musk-empire-dossier/</string>
     </dict>

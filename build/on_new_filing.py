@@ -85,6 +85,10 @@ def main():
         run([sys.executable, os.path.join(HERE, "debt_chain_chart.py")])
         run([sys.executable, os.path.join(HERE, "empire_mechanics_chart.py")])
     run([sys.executable, os.path.join(HERE, "publish_live_feed.py")])
+    if os.environ.get("MUSK_WATCH_GIT_PUSH", "1") != "0":
+        push = os.path.join(HERE, "push_live_site.sh")
+        if os.path.isfile(push):
+            run(["bash", push])
     log("=== pipeline done ===")
 
 
