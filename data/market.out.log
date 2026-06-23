@@ -154,3 +154,25 @@ published:
   /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/CHANGELOG.md
   /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/feed.xml
   /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/index.html
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../data/spacex_events.json
+bond: Senior unsecured notes offering cash=100.8B url=https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../data/spcx_market.json
+bond (EDGAR): Senior unsecured notes offering acc=0001628280-26-044489
+SPCX $156.11 (+1.0% 1d) vs IPO +15.6%
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/timeseries.json (63 points, 2 sync rows)
+  latest SPCX $156.11 TSLA $381.61 NW $1314.19B
+wrote /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../data/portfolio_live.json
+net worth proxy: $1314.19B
+  TSLA: $381.61 -> $270.94B
+  SPCX: $156.11 -> $1003.27B
+ingested 1 new events (31 total)
+copied 6 chart PNGs
+exhibit: V3_three_leg_refinancing.svg + V3_three_leg_refinancing.png
+exhibit: V4_value_flow_loop.svg + V4_value_flow_loop.png
+exhibit: V5_lockup_calendar.svg + V5_lockup_calendar.png
+assets: 6
+published:
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/status.json
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/CHANGELOG.md
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/feed.xml
+  /Users/kiran/Desktop/Company Dossiers /Elon Musk/build/../public/index.html

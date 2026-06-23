@@ -1,0 +1,26 @@
+{
+  "entity": "Elon Musk (CIK 1494730)",
+  "form": "4",
+  "filing_date": "2026-06-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml",
+  "accession": "0001628280-26-044069",
+  "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
+  "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
+  "generated_utc": "2026-06-23T22:49:03Z",
+  "summary": "Insider transaction reported (Form 4)",
+  "engineer": "Insider ledger update: mechanical SEC reporting of ownership changes. Check whether sale is 10b5-1, tax, or discretionary.",
+  "trader": "Form 4: check size vs 20-day volume, cluster with other insiders, and whether price is into strength (dossier H2/H6).\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
+  "cfa": "Treat as corporate finance or governance signal until quantified in financials.",
+  "elon": "Form 4 is direct personal ledger: shares sold, exercised, or gifted change his cash and control. Size and timing vs price strength test H2 (sell into demand).\nCluster with other insiders and catalyst calendar before inferring intent (10b5-1 plan vs discretionary).",
+  "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 SUPPLY: insider sale increases free float available at the margin; clustered Form 4s are the dossier's primary supply signal (H2/H5).\n\u2022 DEMAND: depends on retail/institutional absorption that day; cross-check vs unlock windows and hype cycle.",
+  "facts": {
+    "headline": "Insider transaction reported (Form 4)",
+    "items": [],
+    "tranches": [],
+    "total_offering_b": null,
+    "use_of_proceeds": "",
+    "settlement": "",
+    "has_bridge_repay": false,
+    "has_cash_disclosure": false
+  }
+}

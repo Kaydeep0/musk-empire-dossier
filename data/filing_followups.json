@@ -1,0 +1,76 @@
+{
+  "active": [
+    {
+      "accession": "0001628280-26-044955",
+      "entity": "Space Exploration Technologies (SPCX)",
+      "form": "8-K",
+      "filed": "2026-06-23",
+      "headline": "Bond offering priced (coupon and maturity set)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+      "settlement": "June 26, 2026",
+      "expect": [
+        "Confirm settlement or bridge payoff in a follow-on 8-K",
+        "Watch SPCX price and credit reception after bond pricing",
+        "Next supply step on material dates calendar (Aug 20 unlock)"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-06-24",
+          "sent": false
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-06-26",
+          "sent": false
+        },
+        {
+          "kind": "d+7",
+          "due": "2026-06-30",
+          "sent": false
+        },
+        {
+          "kind": "settlement",
+          "due": "2026-06-26",
+          "sent": false
+        }
+      ],
+      "status": "watching",
+      "created": "2026-06-23T22:38:09Z"
+    },
+    {
+      "lane": "musk",
+      "accession": "0001628280-26-044069",
+      "entity": "Elon Musk (CIK 1494730)",
+      "form": "4",
+      "filed": "2026-06-17",
+      "headline": "Insider transaction reported (Form 4)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml",
+      "expect": [
+        "Personal ledger: sale vs exercise vs gift; 10b5-1 footnote if present",
+        "Cross-check TSLA price/volume vs dossier H2 sell-into-demand thesis",
+        "Separate from SPCX issuer filings (company vs person)"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-06-18",
+          "sent": false
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-06-20",
+          "sent": false
+        },
+        {
+          "kind": "d+7",
+          "due": "2026-06-24",
+          "sent": false
+        }
+      ],
+      "status": "watching",
+      "created": "2026-06-23T22:49:03Z"
+    }
+  ],
+  "closed": []
+}

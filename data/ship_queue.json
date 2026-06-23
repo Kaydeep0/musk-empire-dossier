@@ -1,0 +1,35 @@
+{
+  "updated": "2026-06-23T22:49:03Z",
+  "items": [
+    {
+      "id": "0001628280-26-044069",
+      "status": "draft",
+      "accession": "0001628280-26-044069",
+      "entity": "Elon Musk (CIK 1494730)",
+      "form": "4",
+      "filing_date": "2026-06-17",
+      "created_utc": "2026-06-23T22:49:03Z",
+      "linkedin_post": "\ud83d\udd34 Just in: Elon Musk just filed a Form 4.\n\nInsider transaction reported (Form 4).\n\nCompany 8-Ks tell you what the vehicle did.\n\nForm 4 tells you what the person did.\n\nThose are not the same trade.\n\nForm 4 is direct personal ledger: shares sold, exercised, or gifted change his cash and control. Size and timing vs price strength test H2 (sell into demand)..\n\nThe dossier thesis is simple.\n\nHype builds a vehicle.\n\nControl stays concentrated.\n\nCash exits when shares sell into demand.\n\nTSLA Form 4 sales are the active personal liquidity channel (~$40B cumulative in our ledger).\n\nSPCX economic stake is still gated by lock-ups.\n\nNext dated supply step: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nSource:\nElon Musk (CIK 1494730) | 4 | 2026-06-17\nhttps://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Insider transaction reported (Form 4)",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
+    {
+      "id": "0001628280-26-044955",
+      "status": "draft",
+      "accession": "0001628280-26-044955",
+      "entity": "Space Exploration Technologies (SPCX)",
+      "form": "8-K",
+      "filing_date": "2026-06-23",
+      "created_utc": "2026-06-23T22:48:56Z",
+      "linkedin_post": "\ud83d\udd34 Just in: SpaceX priced ~$25B of inaugural bonds.\n\nNo new shares. This is a debt print, not an equity unlock.\n\nThe filing prices senior unsecured notes.\n\nFive tranches. Roughly $25B total.\n\nCoupons run 5.35% to 6.65%.\n\nMaturities run 2031 to 2056.\n\nExpected settlement: June 26, 2026.\n\nUse of proceeds: intends to use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any rem.\n\nThe June IPO gave SpaceX public-market cash.\n\nBut the Goldman bridge from the Twitter to X to xAI debt relay was still on the balance sheet.\n\nSo the company did not need to sell new shares to fix the cap table.\n\nIt issued bonds instead.\n\nThat means no new insider shares hit the tape from this filing.\n\nMarkets may read it as refi relief.\n\nOne overhang cleared before the supply calendar wakes up.\n\nBut the prospectus still has a date circled: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nInfrastructure filings and supply filings are different animals.\n\nOne fixes the balance sheet.\n\nThe other changes who can sell.\n\nThe pattern our dossier tracks: infrastructure before supply step.\n\nBond/refi filings (bridge repayment) landed before the first major lock-up unlock (Aug 2026). Company clears bank overhang before tradable float expands , reduces forced-sale risk, does not reduce insider share count.\n\nSPCX last $156.11. +16% vs the $135 IPO. -26% vs the day-one high.\n\nSource:\nSpace Exploration Technologies (SPCX) | 8-K | 2026-06-23\nhttps://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Bond offering priced (coupon and maturity set)",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    }
+  ]
+}

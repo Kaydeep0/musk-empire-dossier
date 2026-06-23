@@ -1,0 +1,11 @@
+{
+  "sent": [
+    "2026-06-26|1|SPCX|settlement|Bond offering expected settlement (June 26, 2026",
+    "2026-06-26|3|SPCX|settlement|Bond offering expected settlement (June 26, 2026",
+    "2026-08-20|1|SPCX|catalyst|First major lock-up unlock (~7% pool; roughly do"
+  ],
+  "passed_logged": [],
+  "outcomes_logged": [
+    "outcome|2026-06-26|SPCX|settlement"
+  ]
+}

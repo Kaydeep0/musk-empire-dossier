@@ -1,0 +1,28 @@
+[
+  {
+    "date": "2026-06-26",
+    "entity": "SPCX",
+    "type": "settlement",
+    "event": "Bond offering expected settlement (June 26, 2026)",
+    "hypothesis": "H12",
+    "grade": "neutral",
+    "summary": "Price still at or above IPO after refi settlement; no equity supply added.",
+    "metrics": {
+      "spcx_event_day": "2026-06-23",
+      "spcx_price_event": 156.11,
+      "spcx_price_now": 156.11,
+      "ipo_price": 135.0,
+      "pct_vs_ipo_event": 15.6,
+      "pct_vs_ipo": 15.6,
+      "change_1d_pct": 0.0,
+      "new_filings": []
+    },
+    "context": {
+      "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
+      "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?' Per the filing: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price i....",
+      "what_to_watch": "bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.",
+      "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
+    },
+    "assessed_at": "2026-06-23T22:26:27Z"
+  }
+]

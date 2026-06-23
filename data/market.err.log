@@ -22,3 +22,15 @@ hint: have locally. This is usually caused by another repository pushing to
 hint: the same ref. If you want to integrate the remote changes, use
 hint: 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Traceback (most recent call last):
+  File "/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/empire_memory.py", line 723, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/empire_memory.py", line 716, in main
+    cmd_synthesize(state)
+  File "/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/empire_memory.py", line 669, in cmd_synthesize
+    patterns = detect_patterns(events, canon)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/empire_memory.py", line 480, in detect_patterns
+    upcoming.sort()
+TypeError: '<' not supported between instances of 'dict' and 'dict'
