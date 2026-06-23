@@ -1,0 +1,22 @@
+{
+  "phase": "LIVE_DATA",
+  "phases": [
+    "CONNECT",
+    "LIVE_DATA",
+    "PAPER_VALIDATE",
+    "APPROVED"
+  ],
+  "ibkr_connected": true,
+  "api_readonly": null,
+  "account_readable": true,
+  "market_data_ok": true,
+  "options_chain_ok": true,
+  "live_forward_started": false,
+  "live_backtest_pass": false,
+  "human_approved": false,
+  "approved_at": null,
+  "bot_auto_trade": false,
+  "notes": [],
+  "min_forward_days": 30,
+  "min_forward_trades": 10
+}
