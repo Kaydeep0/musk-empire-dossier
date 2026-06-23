@@ -23,6 +23,7 @@ def main():
     run([py, os.path.join(HERE, "pull_spacex_edgar.py")])
     run([py, os.path.join(HERE, "pull_tesla_edgar.py")])
     run([py, os.path.join(HERE, "pull_spcx_market.py")])
+    run([py, os.path.join(HERE, "pull_portfolio_live.py")])
     # Charts (best effort)
     for script in ("phase3_analyze.py", "networth_timeline.py", "debt_chain_chart.py",
                    "empire_mechanics_chart.py"):

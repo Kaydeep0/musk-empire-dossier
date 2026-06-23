@@ -50,14 +50,19 @@ figure img{display:block;width:100%;max-width:100%;height:auto;border:1px solid 
 .exhibit-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem 1.15rem}
 .exhibit-card h4{margin:0 0 .35rem;font-size:1rem;color:#7a2230}
 .exhibit-card .exhibit-desc{margin:0 0 .85rem;font-size:.88rem;color:#555;line-height:1.45}
-.exhibit-card img{width:100%;height:auto;border:1px solid #e0e0e0;border-radius:4px}
-.exhibit-card .exhibit-link{font-size:.8rem;margin-top:.5rem;display:inline-block}
+.exhibit-figure{display:block;margin:.75rem 0 0;background:#f7f7f7;border:1px solid #e0e0e0;border-radius:6px;padding:.65rem;overflow-x:auto;-webkit-overflow-scrolling:touch;line-height:0}
+.exhibit-figure img{display:block;width:100%;min-width:min(100%,640px);max-width:100%;height:auto;margin:0 auto}
+.exhibit-card .exhibit-link{font-size:.8rem;margin-top:.65rem;display:inline-block}
 figcaption{font-size:.84rem;color:#555;margin-top:.45rem;line-height:1.45}
 nav.toc{display:flex;flex-wrap:wrap;gap:.35rem .65rem;font-size:.88rem;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #eee}
 nav.toc a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
 nav.toc a:hover{border-bottom-color:#7a2230}
 .entity-tag{font-size:.74rem;background:#e8e8e8;padding:.12rem .4rem;border-radius:3px;margin-right:.35rem}
 .upcoming td:first-child{font-weight:600;color:#7a2230}
+.networth-hero{font-size:1.85rem;font-weight:700;color:#7a2230;margin:.35rem 0 .15rem;line-height:1.2}
+.networth-breakdown{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;font-size:.9rem;margin:.5rem 0 1rem}
+.networth-breakdown span{white-space:nowrap}
+.chg-up{color:#1a5c42}.chg-down{color:#7a2230}
 a{color:#7a2230}
 code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
 .intro-lead{font-size:1.02rem;line-height:1.65;margin:.75rem 0 1rem}
@@ -205,6 +210,7 @@ def build_status():
         "latest_tesla_filing": latest_from_index("tesla_filings_index.csv"),
         "sales": sale_stats(),
         "spcx": load_json(os.path.join(DATA, "spcx_market.json"), {}),
+        "portfolio": load_json(os.path.join(DATA, "portfolio_live.json"), {}),
         "spacex_events": load_json(os.path.join(DATA, "spacex_events.json"), {}),
         "tesla_events": load_json(os.path.join(DATA, "tesla_events.json"), {}),
         "debt_chain": read_csv(os.path.join(DATA, "debt_chain.csv")),
@@ -238,9 +244,13 @@ def write_changelog(status):
     lines = [f"# Live changelog\n", f"**Last rebuilt:** {status['updated_at']} (UTC)\n"]
     lf = status.get("latest_musk_filing") or {}
     if lf:
-        lines.append(f"- Latest Musk filing: **{lf.get('form')}** {lf.get('filing_date')} [{lf.get('url')}]\n")
+        lines.append(
+            f"- Latest Musk filing: [{_form_label(lf.get('form'))} {lf.get('filing_date')}]({lf.get('url')})\n"
+        )
     for a in status.get("recent_alerts", [])[:12]:
-        lines.append(f"- `{a['seen_at']}` **{a.get('entity')}** {a['form']} ({a['filing_date']})")
+        lines.append(
+            f"- `{a['seen_at']}` **{a.get('entity')}** [{a['form']}]({a['url']}) ({a['filing_date']})"
+        )
     lines += ["\n---\n", UA_NOTE, ""]
     open(path, "w", encoding="utf-8").write("\n".join(lines))
     return path
@@ -281,6 +291,32 @@ def write_rss(status):
 
 def _esc(s):
     return xml.escape(str(s or ""))
+
+
+def _form_label(form):
+    f = (form or "").strip()
+    if not f:
+        return "Filing"
+    if f.isdigit():
+        return f"Form {f}"
+    return f
+
+
+def _edgar_company_url(cik):
+    c = str(cik or "").strip().lstrip("0") or "0"
+    return f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={c}&owner=exclude&count=40"
+
+
+def _filing_link(filing, fallback="No filing indexed yet"):
+    if not filing or not filing.get("form"):
+        return f'<span class="muted">{_esc(fallback)}</span>'
+    form = _form_label(filing.get("form"))
+    date = filing.get("filing_date") or ""
+    url = (filing.get("url") or "").strip()
+    label = f"{form} · {date}" if date else form
+    if url:
+        return f'<a href="{_esc(url)}">{_esc(label)}</a>'
+    return _esc(label)
 
 
 def _capitalize_first(s):
@@ -357,6 +393,70 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 """
 
 
+def _chg_class(pct):
+    if pct is None:
+        return ""
+    try:
+        v = float(pct)
+    except (TypeError, ValueError):
+        return ""
+    return "chg-up" if v >= 0 else "chg-down"
+
+
+def _portfolio_html(portfolio):
+    if not portfolio or not portfolio.get("holdings"):
+        return (
+            '<p class="muted">Portfolio quotes refresh on each sync (~30 min). '
+            'Run <code>pull_portfolio_live.py</code> to seed data.</p>'
+        )
+    nw = portfolio.get("net_worth_proxy_usd_b")
+    comps = portfolio.get("components_usd_b") or {}
+    parts = []
+    for label, key in (
+        ("Tesla stake", "tesla_stake_usd_b"),
+        ("SpaceX stake", "spacex_stake_usd_b"),
+        ("Cash (sales)", "cash_realized_usd_b"),
+    ):
+        v = comps.get(key)
+        if v is not None:
+            parts.append(f"<span><strong>{label}:</strong> ${v}B</span>")
+    breakdown = "".join(parts)
+    rows = ""
+    for h in portfolio.get("holdings", []):
+        ticker = h.get("ticker") or "—"
+        price = h.get("price")
+        price_s = f"${price}" if price is not None else "—"
+        chg = h.get("change_pct_1d")
+        if chg is not None:
+            chg_s = f'<span class="{_chg_class(chg)}">{chg:+.1f}%</span>'
+        else:
+            chg_s = "—"
+        val = h.get("value_usd_b")
+        val_s = f"${val}B" if val is not None else "—"
+        basis = h.get("basis") or ""
+        note = h.get("note") or ""
+        rows += (
+            f'<tr><td><strong>{_esc(h.get("entity"))}</strong></td>'
+            f'<td>{_esc(ticker)}</td><td>{price_s}</td><td>{chg_s}</td>'
+            f'<td>{val_s}</td><td><code>{_esc(basis)}</code></td>'
+            f'<td class="muted">{_esc(note)}</td></tr>\n'
+        )
+    refresh = portfolio.get("refresh_note") or ""
+    disclaimer = portfolio.get("disclaimer") or UA_NOTE
+    as_of = portfolio.get("as_of_utc") or ""
+    return f"""
+<p class="networth-hero">~${nw}B net-worth proxy</p>
+<p class="muted">As of {_esc(as_of)} UTC. { _esc(refresh) }</p>
+<div class="networth-breakdown">{breakdown}</div>
+<p class="section-note">Counts only what has a public mark today: Tesla shares (Form 4 anchor × live TSLA), SpaceX economic stake (~36% × SPCX price), and cumulative cash from Tesla sales. Private stakes (X, xAI, Boring, Neuralink) are listed but not priced.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Holding</th><th>Ticker</th><th>Price</th><th>1d</th><th>Value</th><th>Basis</th><th>Notes</th></tr></thead>
+<tbody>{rows}</tbody>
+</table></div>
+<p class="muted">{_esc(disclaimer)}</p>
+"""
+
+
 def write_index(status):
     path = os.path.join(PUBLIC, "index.html")
     spcx = status.get("spcx") or {}
@@ -364,6 +464,9 @@ def write_index(status):
     b = spcx.get("bond") or {}
     sales = status.get("sales") or {}
     lf = status.get("latest_musk_filing") or {}
+    sx = status.get("latest_spacex_filing") or {}
+    ts = status.get("latest_tesla_filing") or {}
+    musk_form4_url = _edgar_company_url("1494730") + "&type=4"
 
     # SPCX box
     spcx_html = ""
@@ -395,7 +498,8 @@ def write_index(status):
             continue
         reg_rows += (
             f'<tr><td>{_esc(r.get("entity"))}</td><td>{_esc(r.get("ticker"))}</td>'
-            f'<td><code>{_esc(r.get("cik"))}</code></td><td>{_esc(r.get("kind"))}</td></tr>\n'
+            f'<td><a href="{_edgar_company_url(r.get("cik"))}"><code>{_esc(r.get("cik"))}</code></a></td>'
+            f'<td>{_esc(r.get("kind"))}</td></tr>\n'
         )
 
     # Catalysts
@@ -450,36 +554,39 @@ def write_index(status):
         )
     exhibits_html = ""
     exhibit_files = [
-        "V5_lockup_calendar.png",
-        "V4_value_flow_loop.png",
-        "V3_three_leg_refinancing.png",
+        "V5_lockup_calendar.svg",
+        "V4_value_flow_loop.svg",
+        "V3_three_leg_refinancing.svg",
     ]
     cards = []
     for fname in exhibit_files:
-        rel = f"exhibits/{fname}"
-        pub_path = os.path.join(PUBLIC, rel)
-        if not os.path.isfile(pub_path):
-            svg_rel = rel.replace(".png", ".svg")
-            if os.path.isfile(os.path.join(PUBLIC, svg_rel)):
-                rel = svg_rel
-                fname = fname.replace(".png", ".svg")
-            else:
-                continue
-        title = EXHIBIT_TITLES.get(fname, fname)
-        desc = EXHIBIT_DESCS.get(fname, EXHIBIT_CAPTIONS.get(fname, ""))
-        cap = EXHIBIT_CAPTIONS.get(fname, title)
+        svg_rel = f"exhibits/{fname}"
+        png_rel = svg_rel.replace(".svg", ".png")
+        pub_svg = os.path.join(PUBLIC, svg_rel)
+        pub_png = os.path.join(PUBLIC, png_rel)
+        if not os.path.isfile(pub_svg) and not os.path.isfile(pub_png):
+            continue
+        display_rel = svg_rel if os.path.isfile(pub_svg) else png_rel
+        full_rel = svg_rel if os.path.isfile(pub_svg) else png_rel
+        title_key = fname.replace(".svg", ".png")
+        title = EXHIBIT_TITLES.get(title_key, fname)
+        desc = EXHIBIT_DESCS.get(title_key, EXHIBIT_CAPTIONS.get(title_key, ""))
+        cap = EXHIBIT_CAPTIONS.get(title_key, title)
         cards.append(
             f'<article class="exhibit-card">'
             f'<h4>{_esc(title)}</h4>'
             f'<p class="exhibit-desc">{_esc(desc)}</p>'
-            f'<a href="{rel}"><img src="{rel}" alt="{_esc(cap)}" loading="lazy"/></a>'
-            f'<p class="exhibit-link"><a href="{rel}">Open full size</a></p>'
+            f'<a class="exhibit-figure" href="{full_rel}" target="_blank" rel="noopener">'
+            f'<img src="{display_rel}" alt="{_esc(cap)}" loading="lazy"/>'
+            f'</a>'
+            f'<p class="exhibit-link"><a href="{full_rel}" target="_blank" rel="noopener">Open full size</a></p>'
             f'</article>'
         )
     if cards:
         exhibits_html = f'<div class="exhibits-grid">{"".join(cards)}</div>'
 
     intro = _intro_html(sales.get("total_usd_b", 0))
+    portfolio_html = _portfolio_html(status.get("portfolio") or {})
 
     html = f"""<!DOCTYPE html>
 <html lang="en"><head>
@@ -497,6 +604,7 @@ def write_index(status):
 Updated automatically from EDGAR every 30 minutes.</p>
 <nav class="toc">
 <a href="#start">Start here</a>
+<a href="#portfolio">Portfolio</a>
 <a href="#spcx">SPCX / IPO</a>
 <a href="#catalysts">Catalysts</a>
 <a href="#debt">Debt chain</a>
@@ -510,6 +618,11 @@ Updated automatically from EDGAR every 30 minutes.</p>
 </header>
 
 {intro}
+
+<section id="portfolio" class="box">
+<h2>Live portfolio and net-worth proxy</h2>
+{portfolio_html}
+</section>
 
 <section id="spcx" class="box">
 <h2>SPCX live: SpaceX IPO + latest issuer filing</h2>
@@ -562,15 +675,15 @@ Updated automatically from EDGAR every 30 minutes.</p>
 <section class="box">
 <h2>Latest Musk filing</h2>
 <p class="section-note">Personal CIK 1494730: every buy, sell, option exercise.</p>
-<p><strong>{_esc(lf.get('form','n/a'))}</strong> · {_esc(lf.get('filing_date','n/a'))}<br/>
-<a href="{_esc(lf.get('url','#'))}">View on EDGAR</a></p>
+<p>{_filing_link(lf)}</p>
 <h3>Sales ledger (H2)</h3>
-<p><strong>~${sales.get('total_usd_b',0)}B</strong> cumulative open-market sales parsed from Form 4 code S.</p>
+<p><strong>~${sales.get('total_usd_b',0)}B</strong> cumulative open-market sales parsed from
+<a href="{_esc(musk_form4_url)}">Form 4 code S filings on EDGAR</a>.</p>
 </section>
 <section class="box">
 <h2>Latest issuer filings</h2>
-<p><strong>SpaceX:</strong> {_esc((status.get('latest_spacex_filing') or {}).get('form'))} · {_esc((status.get('latest_spacex_filing') or {}).get('filing_date'))}</p>
-<p><strong>Tesla:</strong> {_esc((status.get('latest_tesla_filing') or {}).get('form'))} · {_esc((status.get('latest_tesla_filing') or {}).get('filing_date'))}</p>
+<p><strong>SpaceX:</strong> {_filing_link(sx)}</p>
+<p><strong>Tesla:</strong> {_filing_link(ts)}</p>
 </section>
 </div>
 

@@ -33,14 +33,19 @@ figure img{display:block;width:100%;max-width:100%;height:auto;border:1px solid 
 .exhibit-card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:1rem 1.1rem 1.15rem}
 .exhibit-card h4{margin:0 0 .35rem;font-size:1rem;color:#7a2230}
 .exhibit-card .exhibit-desc{margin:0 0 .85rem;font-size:.88rem;color:#555;line-height:1.45}
-.exhibit-card img{width:100%;height:auto;border:1px solid #e0e0e0;border-radius:4px}
-.exhibit-card .exhibit-link{font-size:.8rem;margin-top:.5rem;display:inline-block}
+.exhibit-figure{display:block;margin:.75rem 0 0;background:#f7f7f7;border:1px solid #e0e0e0;border-radius:6px;padding:.65rem;overflow-x:auto;-webkit-overflow-scrolling:touch;line-height:0}
+.exhibit-figure img{display:block;width:100%;min-width:min(100%,640px);max-width:100%;height:auto;margin:0 auto}
+.exhibit-card .exhibit-link{font-size:.8rem;margin-top:.65rem;display:inline-block}
 figcaption{font-size:.84rem;color:#555;margin-top:.45rem;line-height:1.45}
 nav.toc{display:flex;flex-wrap:wrap;gap:.35rem .65rem;font-size:.88rem;margin-top:.85rem;padding-top:.75rem;border-top:1px solid #eee}
 nav.toc a{text-decoration:none;padding:.2rem 0;border-bottom:1px solid transparent}
 nav.toc a:hover{border-bottom-color:#7a2230}
 .entity-tag{font-size:.74rem;background:#e8e8e8;padding:.12rem .4rem;border-radius:3px;margin-right:.35rem}
 .upcoming td:first-child{font-weight:600;color:#7a2230}
+.networth-hero{font-size:1.85rem;font-weight:700;color:#7a2230;margin:.35rem 0 .15rem;line-height:1.2}
+.networth-breakdown{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;font-size:.9rem;margin:.5rem 0 1rem}
+.networth-breakdown span{white-space:nowrap}
+.chg-up{color:#1a5c42}.chg-down{color:#7a2230}
 a{color:#7a2230}
 code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
 .intro-lead{font-size:1.02rem;line-height:1.65;margin:.75rem 0 1rem}
@@ -54,12 +59,13 @@ code{font-size:.84em;background:#eee;padding:.12rem .35rem;border-radius:3px}
 </head><body>
 <header>
 <p><span class="badge">LIVE</span> <span class="badge badge-auto">AUTO</span>
-<span class="muted">Updated 2026-06-23T18:09:37Z · GitHub Actions every 30 min</span></p>
+<span class="muted">Updated 2026-06-23T18:16:32Z · GitHub Actions every 30 min</span></p>
 <h1>Musk infrastructure watch</h1>
 <p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
 Updated automatically from EDGAR every 30 minutes.</p>
 <nav class="toc">
 <a href="#start">Start here</a>
+<a href="#portfolio">Portfolio</a>
 <a href="#spcx">SPCX / IPO</a>
 <a href="#catalysts">Catalysts</a>
 <a href="#debt">Debt chain</a>
@@ -126,11 +132,33 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 </section>
 
 
+<section id="portfolio" class="box">
+<h2>Live portfolio and net-worth proxy</h2>
+
+<p class="networth-hero">~$1338.27B net-worth proxy</p>
+<p class="muted">As of 2026-06-23T18:16:29Z UTC. Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.</p>
+<div class="networth-breakdown"><span><strong>Tesla stake:</strong> $270.67B</span><span><strong>SpaceX stake:</strong> $1027.62B</span><span><strong>Cash (sales):</strong> $39.98B</span></div>
+<p class="section-note">Counts only what has a public mark today: Tesla shares (Form 4 anchor × live TSLA), SpaceX economic stake (~36% × SPCX price), and cumulative cash from Tesla sales. Private stakes (X, xAI, Boring, Neuralink) are listed but not priced.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Holding</th><th>Ticker</th><th>Price</th><th>1d</th><th>Value</th><th>Basis</th><th>Notes</th></tr></thead>
+<tbody><tr><td><strong>Tesla Inc</strong></td><td>TSLA</td><td>$381.22</td><td><span class="chg-down">-5.9%</span></td><td>$270.67B</td><td><code>b+m</code></td><td class="muted">Beneficial shares from Form 4 anchor x live price</td></tr>
+<tr><td><strong>SpaceX (SPCX)</strong></td><td>SPCX</td><td>$159.9</td><td><span class="chg-up">+3.4%</span></td><td>$1027.62B</td><td><code>b+m</code></td><td class="muted">~36% econ x 17B total shares proxy at IPO</td></tr>
+<tr><td><strong>Cash (Tesla sales)</strong></td><td>—</td><td>—</td><td>—</td><td>$39.98B</td><td><code>b</code></td><td class="muted">Cumulative Form 4 open-market sales, not salary or dividends</td></tr>
+<tr><td><strong>Twitter / X</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td><code>c</code></td><td class="muted">Private; debt traveled to SpaceX</td></tr>
+<tr><td><strong>xAI</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td><code>c</code></td><td class="muted">Absorbed into SpaceX (no separate mark)</td></tr>
+<tr><td><strong>The Boring Company</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td><code>c</code></td><td class="muted">Private; no public price</td></tr>
+<tr><td><strong>Neuralink</strong></td><td>—</td><td>—</td><td>—</td><td>—</td><td><code>c</code></td><td class="muted">Private; no public price</td></tr>
+</tbody>
+</table></div>
+<p class="muted">Educational proxy only. Private stakes excluded. Not investment advice.</p>
+
+</section>
+
 <section id="spcx" class="box">
 <h2>SPCX live: SpaceX IPO + latest issuer filing</h2>
 <p class="section-note">Space Exploration Technologies listed as SPCX on June 16, 2026. This box pulls the live stock price (basis m) and the latest material 8-K from issuer CIK 1181412 (basis b).</p>
 <p><strong>Senior unsecured notes offering</strong> (<time>2026-06-22</time>, basis b). Disclosed ~$100.8B cash as of 2026-06-19. Use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.. <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm">Read SpaceX 8-K on EDGAR</a></p>
-<p>SPCX last <strong>$162.62</strong> (+5.2% 1d, basis m, as of 2026-06-23T17:41:44Z). Vs IPO $135.0: +20.5%. Vs all-time high $211.39 (2026-06-16): -23.1%.</p>
+<p>SPCX last <strong>$159.87</strong> (+3.4% 1d, basis m, as of 2026-06-23T18:16:29Z). Vs IPO $135.0: +18.4%. Vs all-time high $211.39 (2026-06-16): -24.4%.</p>
 
 </section>
 
@@ -184,21 +212,21 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 <p class="section-note">Five SEC identities polled on a schedule. Form 4s come from Musk CIK 1494730; issuer filings come from company CIKs.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Entity key</th><th>Filings tracked</th><th>Last poll</th></tr></thead>
-<tbody><tr><td>musk</td><td>120</td><td class="muted">2026-06-23T10:41:46</td></tr>
-<tr><td>solarcity</td><td>66</td><td class="muted">2026-06-23T10:41:47</td></tr>
-<tr><td>spacex</td><td>60</td><td class="muted">2026-06-23T10:41:47</td></tr>
-<tr><td>tesla</td><td>120</td><td class="muted">2026-06-23T10:41:47</td></tr>
-<tr><td>twitter</td><td>38</td><td class="muted">2026-06-23T10:41:47</td></tr>
+<tbody><tr><td>musk</td><td>120</td><td class="muted">2026-06-23T11:15:01</td></tr>
+<tr><td>solarcity</td><td>66</td><td class="muted">2026-06-23T11:15:02</td></tr>
+<tr><td>spacex</td><td>60</td><td class="muted">2026-06-23T11:15:02</td></tr>
+<tr><td>tesla</td><td>120</td><td class="muted">2026-06-23T11:15:02</td></tr>
+<tr><td>twitter</td><td>38</td><td class="muted">2026-06-23T11:15:02</td></tr>
 </tbody>
 </table></div>
 <h3>Registered parties (v1 scope)</h3>
 <div class="table-wrap"><table>
 <thead><tr><th>Entity</th><th>Ticker</th><th>CIK</th><th>Kind</th></tr></thead>
-<tbody><tr><td>Elon Musk (reporting person)</td><td></td><td><code>0001494730</code></td><td>person</td></tr>
-<tr><td>Tesla Inc</td><td>TSLA</td><td><code>0001318605</code></td><td>issuer</td></tr>
-<tr><td>Twitter Inc</td><td>TWTR</td><td><code>0001418091</code></td><td>issuer</td></tr>
-<tr><td>SolarCity Corp</td><td>SCTY</td><td><code>0001408356</code></td><td>issuer</td></tr>
-<tr><td>Space Exploration Technologies (SpaceX)</td><td>SPCX</td><td><code>0001181412</code></td><td>issuer</td></tr>
+<tbody><tr><td>Elon Musk (reporting person)</td><td></td><td><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1494730&owner=exclude&count=40"><code>0001494730</code></a></td><td>person</td></tr>
+<tr><td>Tesla Inc</td><td>TSLA</td><td><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1318605&owner=exclude&count=40"><code>0001318605</code></a></td><td>issuer</td></tr>
+<tr><td>Twitter Inc</td><td>TWTR</td><td><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1418091&owner=exclude&count=40"><code>0001418091</code></a></td><td>issuer</td></tr>
+<tr><td>SolarCity Corp</td><td>SCTY</td><td><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1408356&owner=exclude&count=40"><code>0001408356</code></a></td><td>issuer</td></tr>
+<tr><td>Space Exploration Technologies (SpaceX)</td><td>SPCX</td><td><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=1181412&owner=exclude&count=40"><code>0001181412</code></a></td><td>issuer</td></tr>
 </tbody>
 </table></div>
 </section>
@@ -207,15 +235,15 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 <section class="box">
 <h2>Latest Musk filing</h2>
 <p class="section-note">Personal CIK 1494730: every buy, sell, option exercise.</p>
-<p><strong>4</strong> · 2026-06-17<br/>
-<a href="https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml">View on EDGAR</a></p>
+<p><a href="https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml">Form 4 · 2026-06-17</a></p>
 <h3>Sales ledger (H2)</h3>
-<p><strong>~$39.98B</strong> cumulative open-market sales parsed from Form 4 code S.</p>
+<p><strong>~$39.98B</strong> cumulative open-market sales parsed from
+<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=1494730&amp;owner=exclude&amp;count=40&amp;type=4">Form 4 code S filings on EDGAR</a>.</p>
 </section>
 <section class="box">
 <h2>Latest issuer filings</h2>
-<p><strong>SpaceX:</strong> 8-K · 2026-06-22</p>
-<p><strong>Tesla:</strong> 4 · 2026-06-17</p>
+<p><strong>SpaceX:</strong> <a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm">8-K · 2026-06-22</a></p>
+<p><strong>Tesla:</strong> <a href="https://www.sec.gov/Archives/edgar/data/1318605/000110465926075213/xslF345X06/tm2618092-2_4seq1.xml">Form 4 · 2026-06-17</a></p>
 </section>
 </div>
 
@@ -235,7 +263,7 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 <figure><img src="charts/JOURNEY_companies.png" alt="Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO." loading="lazy"/><figcaption>Career arc: Zip2 to PayPal to Tesla to Twitter/X to SpaceX IPO.</figcaption></figure>
 
 <h3>SPCX structural exhibits</h3>
-<div class="exhibits-grid"><article class="exhibit-card"><h4>Lock-up calendar</h4><p class="exhibit-desc">Pre-registered supply steps from the SPCX prospectus. Aug 20 is the first clean test of the scarcity premium.</p><a href="exhibits/V5_lockup_calendar.png"><img src="exhibits/V5_lockup_calendar.png" alt="Lock-up calendar: when insider supply hits the market." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V5_lockup_calendar.png">Open full size</a></p></article><article class="exhibit-card"><h4>Value-flow loop</h4><p class="exhibit-desc">Related-party routes: Tesla Megapacks, Valor leases, IPO proceeds, affiliate billings.</p><a href="exhibits/V4_value_flow_loop.png"><img src="exhibits/V4_value_flow_loop.png" alt="Value flows between Tesla, SpaceX, Valor, and public shareholders." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V4_value_flow_loop.png">Open full size</a></p></article><article class="exhibit-card"><h4>Three-leg refinance</h4><p class="exhibit-desc">How ~$13B Twitter debt became a Goldman bridge, then IPO cash, then senior notes.</p><a href="exhibits/V3_three_leg_refinancing.png"><img src="exhibits/V3_three_leg_refinancing.png" alt="Three-leg refinance: bridge loan, IPO, senior notes." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V3_three_leg_refinancing.png">Open full size</a></p></article></div>
+<div class="exhibits-grid"><article class="exhibit-card"><h4>Lock-up calendar</h4><p class="exhibit-desc">Pre-registered supply steps from the SPCX prospectus. Aug 20 is the first clean test of the scarcity premium.</p><a class="exhibit-figure" href="exhibits/V5_lockup_calendar.svg" target="_blank" rel="noopener"><img src="exhibits/V5_lockup_calendar.svg" alt="Lock-up calendar: when insider supply hits the market." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V5_lockup_calendar.svg" target="_blank" rel="noopener">Open full size</a></p></article><article class="exhibit-card"><h4>Value-flow loop</h4><p class="exhibit-desc">Related-party routes: Tesla Megapacks, Valor leases, IPO proceeds, affiliate billings.</p><a class="exhibit-figure" href="exhibits/V4_value_flow_loop.svg" target="_blank" rel="noopener"><img src="exhibits/V4_value_flow_loop.svg" alt="Value flows between Tesla, SpaceX, Valor, and public shareholders." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V4_value_flow_loop.svg" target="_blank" rel="noopener">Open full size</a></p></article><article class="exhibit-card"><h4>Three-leg refinance</h4><p class="exhibit-desc">How ~$13B Twitter debt became a Goldman bridge, then IPO cash, then senior notes.</p><a class="exhibit-figure" href="exhibits/V3_three_leg_refinancing.svg" target="_blank" rel="noopener"><img src="exhibits/V3_three_leg_refinancing.svg" alt="Three-leg refinance: bridge loan, IPO, senior notes." loading="lazy"/></a><p class="exhibit-link"><a href="exhibits/V3_three_leg_refinancing.svg" target="_blank" rel="noopener">Open full size</a></p></article></div>
 </section>
 
 <footer class="muted" style="margin-top:2rem;border-top:1px solid #ddd;padding-top:1rem">

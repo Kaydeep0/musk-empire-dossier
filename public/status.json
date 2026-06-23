@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T18:09:37Z",
+  "updated_at": "2026-06-23T18:16:32Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -44,15 +44,15 @@
     },
     "market": {
       "ticker": "SPCX",
-      "price": 162.62,
+      "price": 159.87,
       "previous_close": 154.6,
-      "change_pct_1d": 5.19,
+      "change_pct_1d": 3.41,
       "ipo_price": 135.0,
-      "pct_vs_ipo": 20.46,
+      "pct_vs_ipo": 18.42,
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
-      "pct_vs_ath": -23.07,
-      "as_of_utc": "2026-06-23T17:41:44Z",
+      "pct_vs_ath": -24.37,
+      "as_of_utc": "2026-06-23T18:16:29Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -93,6 +93,84 @@
         }
       ]
     }
+  },
+  "portfolio": {
+    "as_of_utc": "2026-06-23T18:16:29Z",
+    "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
+    "net_worth_proxy_usd_b": 1338.27,
+    "components_usd_b": {
+      "cash_realized_usd_b": 39.98,
+      "tesla_stake_usd_b": 270.67,
+      "spacex_stake_usd_b": 1027.62
+    },
+    "holdings": [
+      {
+        "entity": "Tesla Inc",
+        "ticker": "TSLA",
+        "kind": "public",
+        "shares": 710000000,
+        "price": 381.22,
+        "change_pct_1d": -5.88,
+        "value_usd_b": 270.67,
+        "basis": "b+m",
+        "note": "Beneficial shares from Form 4 anchor x live price"
+      },
+      {
+        "entity": "SpaceX (SPCX)",
+        "ticker": "SPCX",
+        "kind": "public",
+        "musk_econ_pct": 0.36,
+        "implied_shares": 6426666666,
+        "price": 159.9,
+        "change_pct_1d": 3.43,
+        "pct_vs_ipo": 18.44,
+        "value_usd_b": 1027.62,
+        "value_at_ipo_usd_b": 867.6,
+        "basis": "b+m",
+        "note": "~36% econ x 17B total shares proxy at IPO"
+      },
+      {
+        "entity": "Cash (Tesla sales)",
+        "ticker": "",
+        "kind": "cash",
+        "value_usd_b": 39.98,
+        "basis": "b",
+        "note": "Cumulative Form 4 open-market sales, not salary or dividends"
+      },
+      {
+        "entity": "Twitter / X",
+        "ticker": "",
+        "kind": "private",
+        "value_usd_b": null,
+        "basis": "c",
+        "note": "Private; debt traveled to SpaceX"
+      },
+      {
+        "entity": "xAI",
+        "ticker": "",
+        "kind": "private",
+        "value_usd_b": null,
+        "basis": "c",
+        "note": "Absorbed into SpaceX (no separate mark)"
+      },
+      {
+        "entity": "The Boring Company",
+        "ticker": "",
+        "kind": "private",
+        "value_usd_b": null,
+        "basis": "c",
+        "note": "Private; no public price"
+      },
+      {
+        "entity": "Neuralink",
+        "ticker": "",
+        "kind": "private",
+        "value_usd_b": null,
+        "basis": "c",
+        "note": "Private; no public price"
+      }
+    ],
+    "disclaimer": "Educational proxy only. Private stakes excluded. Not investment advice."
   },
   "spacex_events": {
     "cik": "0001181412",
@@ -423,27 +501,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-06-23T10:41:46"
+      "updated": "2026-06-23T11:15:01"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-06-23T10:41:47"
+      "updated": "2026-06-23T11:15:02"
     },
     {
       "key": "spacex",
       "tracked": 60,
-      "updated": "2026-06-23T10:41:47"
+      "updated": "2026-06-23T11:15:02"
     },
     {
       "key": "tesla",
       "tracked": 120,
-      "updated": "2026-06-23T10:41:47"
+      "updated": "2026-06-23T11:15:02"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-06-23T10:41:47"
+      "updated": "2026-06-23T11:15:02"
     }
   ],
   "registry": [

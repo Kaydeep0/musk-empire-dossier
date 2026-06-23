@@ -1,0 +1,8 @@
+entity,ticker,kind,shares_or_pct,shares_unit,musk_econ_pct,price_source,basis,notes
+Tesla Inc,TSLA,public,710000000,shares,,yahoo,m+b,710M split-adj shares per Jun 2026 anchor (2018 award exercised)
+Space Exploration Technologies Corp.,SPCX,public,0.36,pct_econ,0.36,yahoo,m+b,~36% economic ownership per SPCX 424(b)(4); value = pct x (price x total shares)
+Cash from Tesla sales,,cash,,,,form4,b,Cumulative Form 4 code S proceeds (~$40B)
+Twitter / X,,private,,,,,c,Delisted; folded into xAI then SpaceX; no public mark
+xAI,,private,,,,,c,Absorbed into SpaceX Feb 2026; no separate ticker
+The Boring Company,,private,,,,,c,Private; funding rounds only
+Neuralink,,private,,,,,c,Private; funding rounds only

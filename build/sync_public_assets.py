@@ -16,44 +16,63 @@ SVG_EXHIBITS = [
     "V5_lockup_calendar.svg",
 ]
 
-EXHIBIT_META = {
-    "V5_lockup_calendar.svg": {
-        "title": "Lock-up calendar",
-        "desc": "When locked insider stock can legally sell. Aug 20 roughly doubles tradable float.",
-    },
-    "V4_value_flow_loop.svg": {
-        "title": "Value-flow loop",
-        "desc": "Cash and equity routes between Tesla, SpaceX, Valor, affiliates, and public shareholders.",
-    },
-    "V3_three_leg_refinancing.svg": {
-        "title": "Three-leg refinance",
-        "desc": "Twitter LBO debt, Goldman bridge, IPO proceeds, senior notes. Bridge cliff Sep 2, 2027.",
-    },
+# Tight crops per diagram (original PDF embed used 0 186 1600 558; full 900px canvas adds whitespace).
+EXHIBIT_VIEWBOX = {
+    "V3_three_leg_refinancing.svg": "80 300 1440 240",
+    "V4_value_flow_loop.svg": "60 230 1480 610",
+    "V5_lockup_calendar.svg": "60 230 1480 510",
 }
 
 
-def normalize_svg(text):
-    """Fix embed crop viewBox and em dashes for web display."""
-    text = text.replace("\u2014", " - ").replace("\u2013", "-")
+def patch_exhibit(name, text):
+    """Web-safe dashes, layout fixes, and tight viewBox for each exhibit."""
+    text = (
+        text.replace("\u2014", " - ")
+        .replace("\u2013", "-")
+        .replace("\u2012", "-")
+        .replace("–", "-")
+        .replace("—", " - ")
+    )
+
+    if name == "V4_value_flow_loop.svg":
+        # Footer sat on top of bottom entity boxes; arrow labels overlapped center hub.
+        text = re.sub(
+            r'(<text x="800" y=")670(" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Recurring intra-empire)',
+            r'\g<1>805\2',
+            text,
+        )
+        text = re.sub(
+            r'(<text x="520" y=")650(" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#C0392B")',
+            r'\g<1>592\2',
+            text,
+        )
+        text = re.sub(
+            r'(<text x="1090" y=")650(" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#5A5A5A")',
+            r'\g<1>592\2',
+            text,
+        )
+        text = re.sub(
+            r'(<text x="1080" y=")360(" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#1B7A4B")',
+            r'\g<1>248\2',
+            text,
+        )
+        text = re.sub(
+            r'(<text x="520" y=")360(" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#B8860B")',
+            r'\g<1>348\2',
+            text,
+        )
+
+    vb = EXHIBIT_VIEWBOX.get(name, "0 186 1600 558")
     text = re.sub(
-        r'viewBox="0 186 1600 558"',
-        'viewBox="0 0 1600 900" width="1600" height="900" preserveAspectRatio="xMidYMid meet"',
+        r'<svg xmlns="http://www.w3.org/2000/svg" viewBox="[^"]*"',
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{vb}" width="1600" height="900" preserveAspectRatio="xMidYMid meet"',
         text,
         count=1,
     )
-    if 'preserveAspectRatio' not in text.split(">", 1)[0]:
-        text = text.replace(
-            "<svg xmlns=",
-            '<svg xmlns=',
-        ).replace(
-            'viewBox="0 0 1600 900"',
-            'viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet"',
-            1,
-        ) if 'viewBox="0 0 1600 900"' in text else text
     return text
 
 
-def svg_to_png(svg_path, png_path, width=1280):
+def svg_to_png(svg_path, png_path, width=1600):
     try:
         import cairosvg
         cairosvg.svg2png(url=svg_path, write_to=png_path, output_width=width)
@@ -90,11 +109,11 @@ def sync_exhibits():
         svg_out = os.path.join(out_dir, name)
         png_name = name.replace(".svg", ".png")
         png_out = os.path.join(out_dir, png_name)
-        text = normalize_svg(open(src, encoding="utf-8").read())
+        text = patch_exhibit(name, open(src, encoding="utf-8").read())
         open(svg_out, "w", encoding="utf-8").write(text)
         if svg_to_png(svg_out, png_out):
             synced.append({"svg": f"exhibits/{name}", "png": f"exhibits/{png_name}", "file": name})
-            print(f"exhibit: {png_name}")
+            print(f"exhibit: {name} + {png_name}")
     return synced
 
 
