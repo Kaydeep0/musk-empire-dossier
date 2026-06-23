@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 186 1600 558">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#5A5A5A"/></marker></defs>
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" rx="0" opacity="1"/>
+<rect x="650" y="460" width="300" height="120" fill="#1A1A1A" rx="14" opacity="1"/>
+<text x="800" y="502" font-family="Helvetica, Arial, sans-serif" font-size="36.0" fill="#FFFFFF" font-weight="bold" text-anchor="middle" letter-spacing="0">SpaceX (SPCX)</text>
+<text x="800" y="534" font-family="Helvetica, Arial, sans-serif" font-size="27.0" fill="#AEC6DD" font-weight="normal" text-anchor="middle" letter-spacing="0">→ xAI → X (Twitter)</text>
+<text x="800" y="562" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#B8860B" font-weight="normal" text-anchor="middle" letter-spacing="0">Musk 82.4–84.4% vote</text>
+<rect x="170" y="262" width="260" height="76" fill="#F7F4EC" rx="10" opacity="1"/>
+<rect x="170" y="262" width="260" height="76" rx="10" fill="none" stroke="#B8860B" stroke-width="2.5"/>
+<text x="300" y="294" font-family="Helvetica, Arial, sans-serif" font-size="28.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Tesla</text>
+<text x="300" y="320" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">Musk ~20% + CEO</text>
+<rect x="170" y="682" width="260" height="76" fill="#F7F4EC" rx="10" opacity="1"/>
+<rect x="170" y="682" width="260" height="76" rx="10" fill="none" stroke="#C0392B" stroke-width="2.5"/>
+<text x="300" y="714" font-family="Helvetica, Arial, sans-serif" font-size="28.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Valor / Gracias</text>
+<text x="300" y="740" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">30 entities · board</text>
+<rect x="1170" y="262" width="260" height="76" fill="#F7F4EC" rx="10" opacity="1"/>
+<rect x="1170" y="262" width="260" height="76" rx="10" fill="none" stroke="#1B7A4B" stroke-width="2.5"/>
+<text x="1300" y="294" font-family="Helvetica, Arial, sans-serif" font-size="28.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Public + Gov + Anthropic</text>
+<text x="1300" y="320" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">outside fuel</text>
+<rect x="1170" y="682" width="260" height="76" fill="#F7F4EC" rx="10" opacity="1"/>
+<rect x="1170" y="682" width="260" height="76" rx="10" fill="none" stroke="#5A5A5A" stroke-width="2.5"/>
+<text x="1300" y="714" font-family="Helvetica, Arial, sans-serif" font-size="28.5" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Boring / Musk Ind. / Craft</text>
+<text x="1300" y="740" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">affiliate services</text>
+<path d="M 430 320 L 650 470" stroke="#B8860B" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<text x="520" y="360" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#B8860B" font-weight="bold" text-anchor="middle" letter-spacing="0">$506M sells + $2B invests → shares back</text>
+<path d="M 430 700 L 665 545" stroke="#C0392B" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<text x="520" y="650" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#C0392B" font-weight="bold" text-anchor="middle" letter-spacing="0">$9.0B leases (≤$20.2B life)</text>
+<path d="M 1170 330 L 950 480" stroke="#1B7A4B" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<text x="1080" y="360" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#1B7A4B" font-weight="bold" text-anchor="middle" letter-spacing="0">$86B IPO · ~$15B/yr Anthropic · ~25% rev Gov</text>
+<path d="M 1170 700 L 950 560" stroke="#5A5A5A" stroke-width="2.5" fill="none" marker-end="url(#ar)"/>
+<text x="1090" y="650" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#5A5A5A" font-weight="bold" text-anchor="middle" letter-spacing="0">lease/service billings</text>
+<text x="800" y="670" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Recurring intra-empire cash loop ~$1.7B/yr vs ~$19.7B/yr outside revenue — the concentration is in control &amp; equity, not the cash. (c read)</text>
+</svg>

@@ -7,3 +7,4 @@ data/watch.err.log
 data/pipeline.log
 data/_tsla_yahoo.json
 .env
+data/.notify.env

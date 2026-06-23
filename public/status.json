@@ -1,13 +1,25 @@
 {
-  "updated_at": "2026-06-23T17:34:37Z",
+  "updated_at": "2026-06-23T17:41:46Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
-  "latest_filing": {
+  "latest_musk_filing": {
     "filing_date": "2026-06-17",
     "form": "4",
     "accession": "0001628280-26-044069",
     "primary_document": "xslF345X06/wk-form4_1781740812.xml",
     "url": "https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml"
+  },
+  "latest_spacex_filing": {
+    "filing_date": "2026-06-22",
+    "form": "8-K",
+    "accession": "0001628280-26-044489",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+  },
+  "latest_tesla_filing": {
+    "filing_date": "2026-06-17",
+    "form": "4",
+    "accession": "0001104659-26-075213",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926075213/xslF345X06/tm2618092-2_4seq1.xml"
   },
   "sales": {
     "total_usd_b": 39.98,
@@ -32,15 +44,15 @@
     },
     "market": {
       "ticker": "SPCX",
-      "price": 163.12,
+      "price": 162.62,
       "previous_close": 154.6,
-      "change_pct_1d": 5.51,
+      "change_pct_1d": 5.19,
       "ipo_price": 135.0,
-      "pct_vs_ipo": 20.83,
+      "pct_vs_ipo": 20.46,
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
-      "pct_vs_ath": -22.83,
-      "as_of_utc": "2026-06-23T17:34:37Z",
+      "pct_vs_ath": -23.07,
+      "as_of_utc": "2026-06-23T17:41:44Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -82,22 +94,524 @@
       ]
     }
   },
-  "watch": {
-    "last_poll": "2026-06-23T10:22:47",
-    "filings_tracked": 172
+  "spacex_events": {
+    "cik": "0001181412",
+    "issuer": "Space Exploration Technologies Corp. (SPCX)",
+    "latest_8k": {
+      "accession": "0001628280-26-044489",
+      "form": "8-K",
+      "filingDate": "2026-06-22",
+      "primaryDocument": "spcx8-kxlaunchseniornotes.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm"
+    },
+    "bond": {
+      "date": "2026-06-22",
+      "event": "Senior unsecured notes offering",
+      "cash_disclosed_b": 100.8,
+      "cash_as_of": "2026-06-19",
+      "target_b": null,
+      "bridge_loan_b": null,
+      "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
+      "basis": "b",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+      "accession": "0001628280-26-044489"
+    },
+    "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-044489",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
+        "filing_date": "2026-06-22",
+        "form": "8-K",
+        "cash_disclosed_b": 100.8,
+        "cash_as_of": "2026-06-19",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true,
+        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
+      }
+    ]
   },
+  "tesla_events": {
+    "cik": "0001318605",
+    "issuer": "Tesla Inc (TSLA)",
+    "latest_material": {
+      "accession": "0001104659-26-053166",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
+      "filing_date": "2026-04-30",
+      "form": "10-K/A",
+      "basis": "b",
+      "pledged_shares": true,
+      "compensation": true,
+      "cross_entity": true,
+      "amount_disclosed_m": 65.0,
+      "headline": "10-K/A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
+    },
+    "events": [
+      {
+        "accession": "0001104659-26-053166",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
+        "filing_date": "2026-04-30",
+        "form": "10-K/A",
+        "basis": "b",
+        "pledged_shares": true,
+        "compensation": true,
+        "cross_entity": true,
+        "amount_disclosed_m": 65.0,
+        "headline": "10-K/A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
+      },
+      {
+        "accession": "0001628280-26-026673",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
+        "filing_date": "2026-04-23",
+        "form": "10-Q",
+        "basis": "b",
+        "related_party": true,
+        "compensation": true,
+        "cross_entity": true,
+        "amount_disclosed_m": 176.0,
+        "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp \u00b7 ~$176.0M disclosed"
+      },
+      {
+        "accession": "0001628280-26-003952",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+        "filing_date": "2026-01-29",
+        "form": "10-K",
+        "basis": "b",
+        "related_party": true,
+        "pledged_shares": true,
+        "compensation": true,
+        "cross_entity": true,
+        "amount_disclosed_m": 371.0,
+        "headline": "10-K \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$371.0M disclosed"
+      },
+      {
+        "accession": "0001104659-25-108507",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925108507/tm2530590d1_8k.htm",
+        "filing_date": "2025-11-07",
+        "form": "8-K",
+        "basis": "b",
+        "compensation": true,
+        "headline": "8-K \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-107871",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925107871/tm252289d50_defa14a.htm",
+        "filing_date": "2025-11-06",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-107096",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925107096/tm252289d49_defa14a.htm",
+        "filing_date": "2025-11-05",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-106380",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925106380/tm252289d48_defa14a.htm",
+        "filing_date": "2025-11-04",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-105632",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925105632/tm252289d47_defa14a.htm",
+        "filing_date": "2025-11-03",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-104992",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925104992/tm252289d46_defa14a.htm",
+        "filing_date": "2025-10-31",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-104464",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925104464/tm252289d45_defa14a.htm",
+        "filing_date": "2025-10-30",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-103800",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103800/tm252289d44_defa14a.htm",
+        "filing_date": "2025-10-29",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-103255",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103255/tm252289d43_defa14a.htm",
+        "filing_date": "2025-10-28",
+        "form": "DEFA14A",
+        "basis": "b",
+        "related_party": true,
+        "compensation": true,
+        "cross_entity": true,
+        "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-102658",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925102658/tm252289d42_defa14a.htm",
+        "filing_date": "2025-10-27",
+        "form": "DEFA14A",
+        "basis": "b",
+        "related_party": true,
+        "compensation": true,
+        "cross_entity": true,
+        "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001104659-25-101876",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925101876/tm252289d41_defa14a.htm",
+        "filing_date": "2025-10-23",
+        "form": "DEFA14A",
+        "basis": "b",
+        "compensation": true,
+        "headline": "DEFA14A \u00b7 CEO comp"
+      },
+      {
+        "accession": "0001628280-25-045968",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm",
+        "filing_date": "2025-10-23",
+        "form": "10-Q",
+        "basis": "b",
+        "compensation": true,
+        "cross_entity": true,
+        "amount_disclosed_m": 176.0,
+        "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 CEO comp \u00b7 ~$176.0M disclosed"
+      }
+    ]
+  },
+  "debt_chain": [
+    {
+      "date": "2022-10-27",
+      "entity": "Twitter",
+      "event": "LBO closes; ~$13B acquisition debt loaded",
+      "debt_outstanding_b": "13.0",
+      "basis": "c",
+      "note": "bank syndicate (Morgan Stanley et al.); banks could not syndicate"
+    },
+    {
+      "date": "2023-04-01",
+      "entity": "X",
+      "event": "Twitter renamed X; debt carried",
+      "debt_outstanding_b": "13.0",
+      "basis": "c",
+      "note": "lenders hold the loans on balance sheet"
+    },
+    {
+      "date": "2025-03-28",
+      "entity": "xAI",
+      "event": "X folded into xAI (X.AI Holdings)",
+      "debt_outstanding_b": "13.0",
+      "basis": "b",
+      "note": "common-control combination (SPCX 424(b)(4))"
+    },
+    {
+      "date": "2026-02-02",
+      "entity": "SpaceX",
+      "event": "xAI(+X) folded into SpaceX; debt recast",
+      "debt_outstanding_b": "13.0",
+      "basis": "b",
+      "note": "common-control combination #2"
+    },
+    {
+      "date": "2026-03-02",
+      "entity": "SpaceX",
+      "event": "+$20B Goldman bridge loan added",
+      "debt_outstanding_b": "30.3",
+      "basis": "b",
+      "note": "total debt ~$30.3B; bridge matures 2027-09-02"
+    },
+    {
+      "date": "2026-06-15",
+      "entity": "SpaceX",
+      "event": "IPO repays inherited debt",
+      "debt_outstanding_b": "11.4",
+      "basis": "b",
+      "note": "$18.9B repaid + $1.16B prepayment penalty; bridge remainder stays"
+    },
+    {
+      "date": "2027-09-02",
+      "entity": "SpaceX",
+      "event": "Bridge maturity (refinancing cliff)",
+      "debt_outstanding_b": "11.4",
+      "basis": "b",
+      "note": "the single largest near-term deadline"
+    }
+  ],
+  "catalysts": [
+    {
+      "date": "2026-06-22",
+      "entity": "SpaceX",
+      "event": "Senior unsecured notes offering; ~$100.8B cash disclosed",
+      "hypothesis": "H12 bridge repayment",
+      "basis": "b",
+      "source": "SpaceX 8-K accession 0001628280-26-044489",
+      "status": "past"
+    },
+    {
+      "date": "2026-08-20",
+      "entity": "SPCX",
+      "event": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
+      "hypothesis": "H5/H6 scarcity premium test",
+      "basis": "b",
+      "source": "SPCX 424(b)(4) lock-up schedule; Spacexsec V5",
+      "status": "future",
+      "days_until": 58
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "SPCX",
+      "event": "Goldman bridge $175.50 trigger window ends",
+      "hypothesis": "H12 debt / refi timing",
+      "basis": "b",
+      "source": "SPCX prospectus; distribution STRATEGY_360",
+      "status": "future",
+      "days_until": 71
+    },
+    {
+      "date": "2026-12-08",
+      "entity": "SPCX",
+      "event": "Remainder lock-up release (180-day customary expiry)",
+      "hypothesis": "H5 supply step",
+      "basis": "b",
+      "source": "SPCX 424(b)(4)",
+      "status": "future",
+      "days_until": 168
+    },
+    {
+      "date": "2027-06-16",
+      "entity": "SPCX",
+      "event": "Musk block unlock (~6.4B shares, largest tranche)",
+      "hypothesis": "H2 exit / H5 supply",
+      "basis": "b",
+      "source": "SPCX lock-up schedule",
+      "status": "future",
+      "days_until": 358
+    },
+    {
+      "date": "2027-09-02",
+      "entity": "SpaceX",
+      "event": "Goldman bridge maturity cliff (~$11.4B remaining)",
+      "hypothesis": "H12+H7 debt chain",
+      "basis": "b",
+      "source": "data/debt_chain.csv; SPCX filings",
+      "status": "future",
+      "days_until": 436
+    }
+  ],
+  "watch": [
+    {
+      "key": "musk",
+      "tracked": 120,
+      "updated": "2026-06-23T10:40:11"
+    },
+    {
+      "key": "solarcity",
+      "tracked": 66,
+      "updated": "2026-06-23T10:40:12"
+    },
+    {
+      "key": "spacex",
+      "tracked": 60,
+      "updated": "2026-06-23T10:40:12"
+    },
+    {
+      "key": "tesla",
+      "tracked": 120,
+      "updated": "2026-06-23T10:40:11"
+    },
+    {
+      "key": "twitter",
+      "tracked": 38,
+      "updated": "2026-06-23T10:40:11"
+    }
+  ],
+  "registry": [
+    {
+      "entity": "Elon Musk (reporting person)",
+      "ticker": "",
+      "cik": "0001494730",
+      "kind": "person",
+      "public_status": "n/a",
+      "musk_role": "reporting insider",
+      "start_year": "2010",
+      "end_year": "",
+      "v1_scope": "yes",
+      "notes": "Section 16 + 13D/G filer identity; spine of the sell timeline"
+    },
+    {
+      "entity": "Tesla Inc",
+      "ticker": "TSLA",
+      "cik": "0001318605",
+      "kind": "issuer",
+      "public_status": "public",
+      "musk_role": "co-founder / CEO / Chairman (former)",
+      "start_year": "2010",
+      "end_year": "",
+      "v1_scope": "yes",
+      "notes": "IPO 2010-06; 2018 & 2025 comp packages; 2021/2022 sale waves; pledged shares"
+    },
+    {
+      "entity": "Twitter Inc",
+      "ticker": "TWTR",
+      "cik": "0001418091",
+      "kind": "issuer",
+      "public_status": "public->private",
+      "musk_role": "13D filer / acquirer",
+      "start_year": "2022",
+      "end_year": "2022",
+      "v1_scope": "yes",
+      "notes": "2022 stake build (late 13G/13D), tender, going-private; debt later travels to X/xAI/SpaceX"
+    },
+    {
+      "entity": "SolarCity Corp",
+      "ticker": "SCTY",
+      "cik": "0001408356",
+      "kind": "issuer",
+      "public_status": "public->acquired",
+      "musk_role": "Chairman / largest shareholder",
+      "start_year": "2012",
+      "end_year": "2016",
+      "v1_scope": "yes",
+      "notes": "IPO 2012; acquired by Tesla 2016 (related-party)"
+    },
+    {
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "ticker": "SPCX",
+      "cik": "0001181412",
+      "kind": "issuer",
+      "public_status": "private->public",
+      "musk_role": "founder / CEO / controlling holder",
+      "start_year": "2025",
+      "end_year": "",
+      "v1_scope": "yes",
+      "notes": "SPCX listing already analyzed in ../Spacexsec; latest iteration of the loop"
+    },
+    {
+      "entity": "PayPal Inc (2002)",
+      "ticker": "PYPL",
+      "cik": "0001103415",
+      "kind": "issuer",
+      "public_status": "public->acquired",
+      "musk_role": "largest shareholder (~11-12%)",
+      "start_year": "2002",
+      "end_year": "2002",
+      "v1_scope": "later",
+      "notes": "IPO 2002-02, acquired by eBay 2002-10; first major cash event; CIK to verify"
+    },
+    {
+      "entity": "X.com / Zip2",
+      "ticker": "",
+      "cik": "",
+      "kind": "",
+      "public_status": "private",
+      "musk_role": "founder",
+      "start_year": "1995",
+      "end_year": "2000",
+      "v1_scope": "later",
+      "notes": "no SEC record; press/secondary only"
+    },
+    {
+      "entity": "The Boring Company",
+      "ticker": "",
+      "cik": "",
+      "kind": "",
+      "public_status": "private",
+      "musk_role": "founder",
+      "start_year": "2016",
+      "end_year": "",
+      "v1_scope": "later",
+      "notes": "private; valuation from funding rounds only"
+    },
+    {
+      "entity": "Neuralink",
+      "ticker": "",
+      "cik": "",
+      "kind": "",
+      "public_status": "private",
+      "musk_role": "founder",
+      "start_year": "2016",
+      "end_year": "",
+      "v1_scope": "later",
+      "notes": "private; valuation from funding rounds only"
+    },
+    {
+      "entity": "xAI",
+      "ticker": "",
+      "cik": "",
+      "kind": "",
+      "public_status": "private->absorbed",
+      "musk_role": "founder",
+      "start_year": "2023",
+      "end_year": "2025",
+      "v1_scope": "later",
+      "notes": "absorbed X then folded into SpaceX per SPCX prospectus"
+    }
+  ],
+  "parties": [
+    {
+      "party": "Valor / Antonio Gracias",
+      "role": "Director + #2 owner + AI compute lessor",
+      "flow": "~$20B life-of-lease; ~$885M paid FY25",
+      "vehicle": "SpaceX (SPCX)"
+    },
+    {
+      "party": "Tesla Inc",
+      "role": "Megapacks, vehicles, services to SpaceX",
+      "flow": "~$778M/yr net to Tesla (2025 proxy)",
+      "vehicle": "TSLA DEF 14A"
+    },
+    {
+      "party": "Tesla \u2192 xAI",
+      "role": "Capital rotation",
+      "flow": "$2.0B Series E",
+      "vehicle": "Tesla / xAI"
+    },
+    {
+      "party": "Goldman Sachs",
+      "role": "Bridge lender + IPO underwriter",
+      "flow": "$20B bridge; matures 2027-09-02",
+      "vehicle": "SpaceX debt chain"
+    },
+    {
+      "party": "Musk revocable trust + GRATs",
+      "role": "Control + economic extraction",
+      "flow": "Form 4 sales ~$40B (TSLA); SPCX lock-ups",
+      "vehicle": "CIK 1494730"
+    }
+  ],
   "recent_alerts": [],
   "charts": [
-    "charts/H2_cumulative_cash.png",
     "charts/H3_sells_into_strength.png",
-    "charts/CLIMB_networth.png",
-    "charts/JOURNEY_companies.png",
     "charts/H12_debt_chain.png",
-    "charts/EMPIRE_actors.png"
+    "charts/EMPIRE_actors.png",
+    "charts/CLIMB_networth.png",
+    "charts/H2_cumulative_cash.png",
+    "charts/JOURNEY_companies.png"
   ],
-  "research": [
-    "research/EMPIRE_MECHANICS.md",
-    "research/STRUCTURE_BRIEF.md",
-    "research/HYPOTHESIS.md"
+  "exhibits": [
+    "exhibits/V5_lockup_calendar.svg",
+    "exhibits/V4_value_flow_loop.svg",
+    "exhibits/V3_three_leg_refinancing.svg"
   ]
 }

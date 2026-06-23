@@ -77,8 +77,9 @@ def main():
         if i + 1 < len(sys.argv):
             entities_arg = set(sys.argv[i + 1].split(","))
 
-    # Always refresh SpaceX issuer EDGAR + market on any pipeline run
+    # Always refresh issuer EDGAR + market on any pipeline run
     run([sys.executable, os.path.join(HERE, "pull_spacex_edgar.py")])
+    run([sys.executable, os.path.join(HERE, "pull_tesla_edgar.py")])
 
     if forms_arg and not needs_full_rebuild(forms_arg):
         log("Non-material forms only: publishing feed without full rebuild")

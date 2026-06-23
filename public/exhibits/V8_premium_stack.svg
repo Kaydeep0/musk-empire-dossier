@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 186 1600 558">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" rx="0" opacity="1"/>
+<rect x="150" y="599" width="150" height="170" fill="#2C5F8A" rx="2" opacity="1"/>
+<text x="318" y="690.0" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">Real-claims FLOOR  (DCF; already embeds growth)</text>
+<text x="292" y="690.0" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#FFFFFF" font-weight="bold" text-anchor="end" letter-spacing="0">$60</text>
+<rect x="150" y="531" width="150" height="68" fill="#1B7A4B" rx="2" opacity="1"/>
+<text x="318" y="571.0" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">A · Scarcity — 4.86% float (supply choke)</text>
+<text x="292" y="571.0" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#FFFFFF" font-weight="bold" text-anchor="end" letter-spacing="0">+$24</text>
+<rect x="150" y="480" width="150" height="51" fill="#5A5A5A" rx="2" opacity="1"/>
+<text x="318" y="511.5" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">B · Forced index demand — ~$22-27B one-time</text>
+<text x="292" y="511.5" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#FFFFFF" font-weight="bold" text-anchor="end" letter-spacing="0">+$18</text>
+<rect x="150" y="418" width="150" height="62" fill="#B8860B" rx="2" opacity="1"/>
+<text x="318" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">C · Retail-liquidity bid — apps · fractional · gamma</text>
+<text x="292" y="455.0" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#FFFFFF" font-weight="bold" text-anchor="end" letter-spacing="0">+$22</text>
+<rect x="150" y="333" width="150" height="85" fill="#A51C30" rx="2" opacity="1"/>
+<text x="318" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#A51C30" font-weight="bold" text-anchor="start" letter-spacing="0">D · Narrative / reflexivity — operator owns X + xAI</text>
+<text x="292" y="381.5" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#FFFFFF" font-weight="bold" text-anchor="end" letter-spacing="0">+$30</text>
+<rect x="150" y="250" width="150" height="83" fill="#1A1A1A" rx="2" opacity="1"/>
+<text x="318" y="297.5" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">E · Residual — growth option + control premium</text>
+<text x="292" y="297.5" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#FFFFFF" font-weight="bold" text-anchor="end" letter-spacing="0">+$29</text>
+<line x1="130" y1="599" x2="920" y2="599" stroke="#5A5A5A" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="120" y="774" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="end" letter-spacing="0">$0</text>
+<text x="120" y="387" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#1A1A1A" font-weight="bold" text-anchor="end" letter-spacing="0">IPO $135</text>
+<line x1="130" y1="387" x2="300" y2="387" stroke="#1A1A1A" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="120" y="256" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#A51C30" font-weight="bold" text-anchor="end" letter-spacing="0">Tape $183</text>
+<rect x="940" y="250" width="590" height="330" fill="#F7F4EC" rx="10" opacity="1"/>
+<text x="962" y="288" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">Each channel bounded by a real instrument:</text>
+<text x="962" y="320" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">A  the Aug unlock measures scarcity (float doubles)</text>
+<text x="962" y="344" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">B  forced flow size; S&amp;P 500 blocked to ~2027</text>
+<text x="962" y="368" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">C  retail 20-35% of volume; $1 fractional buys; 30% carve-out</text>
+<text x="962" y="392" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">D  reflexivity (Soros/Shiller); X + xAI/Grok now inside SPCX</text>
+<text x="962" y="416" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">E  dual-class lit: control premium decays to a discount</text>
+<text x="962" y="460" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#A51C30" font-weight="bold" text-anchor="start" letter-spacing="0">No clean split exists from price alone (d).</text>
+<text x="962" y="484" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">The five instruments BOUND each channel; the $ split is</text>
+<text x="962" y="506" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">a model. Even the $60 floor is a growth DCF, not liquidation</text>
+<text x="962" y="528" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#5A5A5A" font-weight="normal" text-anchor="start" letter-spacing="0">(a strict proven-core floor is lower, ~$21-31/sh).</text>
+</svg>

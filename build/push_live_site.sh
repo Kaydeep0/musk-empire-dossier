@@ -3,9 +3,7 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
-git add public/ data/filings_index.csv data/transactions.csv data/filing_alerts.log \
-  data/spcx_market.json data/spacex_events.json data/spacex_filings_index.csv \
-  data/.watch_state_*.json charts/ 2>/dev/null || true
+git add public/ data/ charts/ 2>/dev/null || true
 if git diff --staged --quiet; then
   echo "nothing to push"
   exit 0

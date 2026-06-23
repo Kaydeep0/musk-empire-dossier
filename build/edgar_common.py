@@ -113,20 +113,6 @@ def post_json(url, payload):
         print(f"webhook failed: {e}")
 
 
-def post_ntfy(title, body, priority="default", tags=""):
-    ntfy = os.environ.get("MUSK_WATCH_NTFY")
-    if not ntfy:
-        return
-    headers = {"User-Agent": UA, "Title": title[:250], "Priority": priority}
-    if tags:
-        headers["Tags"] = tags
-    try:
-        req = urllib.request.Request(ntfy, data=body.encode(), headers=headers)
-        urllib.request.urlopen(req, timeout=15)
-    except Exception as e:
-        print(f"ntfy failed: {e}")
-
-
 def log_alert(entity_label, filing, desc):
     line = (f"{time.strftime('%Y-%m-%dT%H:%M:%S')}\t{filing['filingDate']}\t{filing['form']}\t"
             f"{desc}\t{filing['url']}\t{entity_label}\n")
@@ -135,25 +121,34 @@ def log_alert(entity_label, filing, desc):
         f.write(line)
 
 
+def post_ntfy(title, body, priority="default", tags=""):
+    try:
+        from notify_channels import send_ntfy
+        send_ntfy(title, body, priority=priority, tags=tags)
+    except Exception as e:
+        print(f"ntfy failed: {e}")
+
+
 def alert_filing(entity_label, filing, trigger_linkedin=False):
     form = filing["form"]
     desc = FORM_DESC.get(form, form)
     title = f"New {entity_label} SEC filing"
     subtitle = f"{form} · {filing['filingDate']}"
+    body = f"{desc}\n{filing['filingDate']}\n{filing['url']}"
     notify_mac(title, subtitle, f"{desc} ({filing['filingDate']})")
     log_alert(entity_label, filing, desc)
     print(f"ALERT [{entity_label}] {subtitle}  {desc}\n       {filing['url']}")
-    hook = os.environ.get("MUSK_WATCH_WEBHOOK")
-    if hook:
-        post_json(hook, {"text": f"*{title}*\n{subtitle}: {desc}\n{filing['url']}"})
     priority = "high" if trigger_linkedin else "default"
     tags = "memo" if trigger_linkedin else "sec"
-    post_ntfy(
-        f"{entity_label}: {form} filed",
-        f"{desc}\n{filing['filingDate']}\n{filing['url']}",
-        priority=priority,
-        tags=tags,
-    )
+    try:
+        from notify_channels import alert_all
+        alert_all(f"{entity_label}: {form}", body, priority=priority, tags=tags)
+    except Exception as e:
+        print(f"notify channels failed: {e}")
+        post_ntfy(f"{entity_label}: {form} filed", body, priority=priority, tags=tags)
+        hook = os.environ.get("MUSK_WATCH_WEBHOOK")
+        if hook:
+            post_json(hook, {"text": f"*{title}*\n{subtitle}: {desc}\n{filing['url']}"})
 
 
 def html_to_text(html):

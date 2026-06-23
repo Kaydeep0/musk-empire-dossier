@@ -10,8 +10,7 @@ ROOT = os.path.join(HERE, "..")
 DATA = os.path.join(ROOT, "data")
 DRAFT = os.path.join(DATA, "linkedin_draft_latest.txt")
 SITE = os.environ.get("MUSK_DOSSIER_URL", "https://kaydeep0.github.io/musk-empire-dossier/")
-NTFY = os.environ.get("MUSK_WATCH_NTFY", "https://ntfy.sh/musk-sec-9053334806")
-UA = "Watts Advisor research kiran@conformingcredit.org"
+from notify_channels import alert_all
 
 
 def load_json(path):
@@ -60,22 +59,7 @@ def build_draft(reason, details=None):
 
 
 def notify(title, body, priority="high", tags="warning,memo"):
-    if not NTFY:
-        return
-    req = urllib.request.Request(
-        NTFY,
-        data=body.encode("utf-8"),
-        headers={
-            "User-Agent": UA,
-            "Title": title[:250],
-            "Priority": priority,
-            "Tags": tags,
-        },
-    )
-    try:
-        urllib.request.urlopen(req, timeout=15)
-    except Exception as e:
-        print(f"ntfy failed: {e}")
+    alert_all(title, body, priority=priority, tags=tags)
 
 
 def alert_linkedin_post(reason="site published", details=None):

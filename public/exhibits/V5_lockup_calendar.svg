@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 186 1600 558">
+<rect x="0" y="0" width="1600" height="900" fill="#FFFFFF" rx="0" opacity="1"/>
+<text x="120" y="250" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">THE SUPPLY SCHEDULE — when locked stock can legally sell</text>
+<line x1="120" y1="300" x2="1480" y2="300" stroke="#5A5A5A" stroke-width="3"/>
+<circle cx="120" cy="300" r="9" fill="#1B7A4B"/>
+<text x="120" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Jun 11'26</text>
+<text x="120" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#1B7A4B" font-weight="normal" text-anchor="middle" letter-spacing="0">IPO · ~4.86% float</text>
+<circle cx="337" cy="300" r="9" fill="#B8860B"/>
+<text x="337" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Aug 20 (70d)</text>
+<text x="337" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#B8860B" font-weight="normal" text-anchor="middle" letter-spacing="0">+7% · 319M sh</text>
+<circle cx="582" cy="300" r="9" fill="#C0392B"/>
+<text x="582" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">~Sep Q2 ern</text>
+<text x="582" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#C0392B" font-weight="normal" text-anchor="middle" letter-spacing="0">+20% · 911M sh</text>
+<circle cx="745" cy="300" r="9" fill="#B8860B"/>
+<text x="745" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Sep 9/10</text>
+<text x="745" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#B8860B" font-weight="normal" text-anchor="middle" letter-spacing="0">+7% · 378M sh</text>
+<circle cx="936" cy="300" r="9" fill="#B8860B"/>
+<text x="936" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Oct</text>
+<text x="936" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#B8860B" font-weight="normal" text-anchor="middle" letter-spacing="0">7% ×3 · 328M ea</text>
+<circle cx="1126" cy="300" r="9" fill="#C0392B"/>
+<text x="1126" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Dec 8 (180d)</text>
+<text x="1126" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#C0392B" font-weight="normal" text-anchor="middle" letter-spacing="0">remainder</text>
+<circle cx="1412" cy="300" r="9" fill="#1A1A1A"/>
+<text x="1412" y="326" font-family="Helvetica, Arial, sans-serif" font-size="20.2" fill="#1A1A1A" font-weight="bold" text-anchor="middle" letter-spacing="0">Jun 12'27</text>
+<text x="1412" y="282" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#1A1A1A" font-weight="normal" text-anchor="middle" letter-spacing="0">Musk ~6.4B</text>
+<text x="280" y="398" font-family="Helvetica, Arial, sans-serif" font-size="22.5" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">PRICE  vs  TRADABLE FLOAT — each unlock slides the price down the demand curve</text>
+<line x1="320" y1="700" x2="1010" y2="700" stroke="#1A1A1A" stroke-width="2"/>
+<line x1="320" y1="700" x2="320" y2="422" stroke="#1A1A1A" stroke-width="2"/>
+<text x="665.0" y="734" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">tradable float (share of company)</text>
+<text x="274" y="561.0" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#5A5A5A" text-anchor="middle" transform="rotate(-90 274 561.0)">price / share</text>
+<text x="354.5" y="716" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">5%</text>
+<line x1="354.5" y1="700" x2="354.5" y2="705" stroke="#5A5A5A" stroke-width="1"/>
+<text x="389.0" y="716" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">10%</text>
+<line x1="389.0" y1="700" x2="389.0" y2="705" stroke="#5A5A5A" stroke-width="1"/>
+<text x="492.5" y="716" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">25%</text>
+<line x1="492.5" y1="700" x2="492.5" y2="705" stroke="#5A5A5A" stroke-width="1"/>
+<text x="665.0" y="716" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">50%</text>
+<line x1="665.0" y1="700" x2="665.0" y2="705" stroke="#5A5A5A" stroke-width="1"/>
+<text x="1010.0" y="716" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#5A5A5A" font-weight="normal" text-anchor="middle" letter-spacing="0">100%</text>
+<line x1="1010.0" y1="700" x2="1010.0" y2="705" stroke="#5A5A5A" stroke-width="1"/>
+<line x1="320" y1="682.0645161290323" x2="1010" y2="682.0645161290323" stroke="#2C5F8A" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1018" y="686.0645161290323" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#2C5F8A" font-weight="bold" text-anchor="start" letter-spacing="0">DCF floor $60</text>
+<line x1="320" y1="547.5483870967741" x2="1010" y2="547.5483870967741" stroke="#5A5A5A" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1018" y="551.5483870967741" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#5A5A5A" font-weight="bold" text-anchor="start" letter-spacing="0">IPO $135</text>
+<line x1="320" y1="461.45806451612907" x2="1010" y2="461.45806451612907" stroke="#1A1A1A" stroke-width="1.2" stroke-dasharray="5 4"/>
+<text x="1018" y="465.45806451612907" font-family="Helvetica, Arial, sans-serif" font-size="18.0" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">now $183</text>
+<polyline points="353.5,461.5 358.4,484.0 363.2,501.9 368.0,516.5 372.9,528.8 377.7,539.1 382.5,548.0 387.3,555.8 392.2,562.6 397.0,568.6 401.8,574.0 406.7,578.9 411.5,583.2 416.3,587.2 421.2,590.9 426.0,594.2 430.8,597.3 435.6,600.1 440.5,602.8 445.3,605.2 450.1,607.5 455.0,609.6 459.8,611.7 464.6,613.5 469.5,615.3 474.3,617.0 479.1,618.6 483.9,620.1 488.8,621.5 493.6,622.9 498.4,624.1 503.3,625.4 508.1,626.5 512.9,627.7 517.8,628.7 522.6,629.7 527.4,630.7 532.2,631.7 537.1,632.6 541.9,633.4 546.7,634.2 551.6,635.0 556.4,635.8 561.2,636.6 566.1,637.3 570.9,638.0 575.7,638.6 580.5,639.3 585.4,639.9 590.2,640.5 595.0,641.1 599.9,641.7 604.7,642.2 609.5,642.7 614.4,643.3 619.2,643.8 624.0,644.2 628.8,644.7 633.7,645.2 638.5,645.6 643.3,646.1 648.2,646.5 653.0,646.9 657.8,647.3 662.7,647.7 667.5,648.1 672.3,648.5 677.1,648.8 682.0,649.2 686.8,649.5 691.6,649.9 696.5,650.2 701.3,650.5 706.1,650.8 711.0,651.1 715.8,651.4 720.6,651.7 725.4,652.0 730.3,652.3 735.1,652.6 739.9,652.9 744.8,653.1 749.6,653.4 754.4,653.6 759.3,653.9 764.1,654.1 768.9,654.4 773.7,654.6 778.6,654.8 783.4,655.1 788.2,655.3 793.1,655.5 797.9,655.7 802.7,655.9 807.6,656.1 812.4,656.4 817.2,656.6 822.0,656.7 826.9,656.9 831.7,657.1 836.5,657.3 841.4,657.5 846.2,657.7 851.0,657.9 855.9,658.0 860.7,658.2 865.5,658.4 870.3,658.5 875.2,658.7 880.0,658.9 884.8,659.0 889.7,659.2 894.5,659.3 899.3,659.5 904.2,659.6 909.0,659.8 913.8,659.9 918.6,660.1 923.5,660.2 928.3,660.4 933.1,660.5 938.0,660.6 942.8,660.8 947.6,660.9 952.5,661.0 957.3,661.1 962.1,661.3 966.9,661.4 971.8,661.5 976.6,661.6 981.4,661.8 986.3,661.9 991.1,662.0 995.9,662.1 1000.8,662.2 1005.6,662.3" fill="none" stroke="#B8860B" stroke-width="3.5"/>
+<text x="913.4" y="643.9168247258143" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#B8860B" font-weight="bold" text-anchor="middle" letter-spacing="0">demand curve (stylized)</text>
+<line x1="353.534" y1="700" x2="353.534" y2="461.45806451612907" stroke="#1B7A4B" stroke-width="2" stroke-dasharray="3 3"/>
+<circle cx="353.534" cy="461.45806451612907" r="7" fill="#1B7A4B"/>
+<text x="365.534" y="454.45806451612907" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#1B7A4B" font-weight="bold" text-anchor="start" letter-spacing="0">$183</text>
+<line x1="389.0" y1="700" x2="389.0" y2="558.2056144442186" stroke="#C0392B" stroke-width="2" stroke-dasharray="3 3"/>
+<circle cx="389.0" cy="558.2056144442186" r="7" fill="#C0392B"/>
+<text x="401.0" y="551.2056144442186" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#C0392B" font-weight="bold" text-anchor="start" letter-spacing="0">$129</text>
+<line x1="665.0" y1="700" x2="665.0" y2="647.8861560309231" stroke="#B8860B" stroke-width="2" stroke-dasharray="3 3"/>
+<circle cx="665.0" cy="647.8861560309231" r="7" fill="#B8860B"/>
+<text x="677.0" y="640.8861560309231" font-family="Helvetica, Arial, sans-serif" font-size="24.0" fill="#B8860B" font-weight="bold" text-anchor="start" letter-spacing="0">$79</text>
+<rect x="1150" y="432" width="390" height="268" fill="#F7F4EC" rx="9" opacity="1"/>
+<rect x="1150" y="432" width="8" height="268" fill="#A51C30" rx="0" opacity="1"/>
+<text x="1176" y="466" font-family="Helvetica, Arial, sans-serif" font-size="25.5" fill="#A51C30" font-weight="bold" text-anchor="start" letter-spacing="0">How to read the curve</text>
+<text x="1176" y="494" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#1A1A1A" font-weight="normal" text-anchor="start" letter-spacing="0">Short-run supply is the vertical line:</text>
+<text x="1176" y="514" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#1A1A1A" font-weight="normal" text-anchor="start" letter-spacing="0">the float that can actually trade.</text>
+<text x="1176" y="534" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#1A1A1A" font-weight="normal" text-anchor="start" letter-spacing="0">Each unlock shifts it right, so it meets</text>
+<text x="1176" y="554" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#1A1A1A" font-weight="normal" text-anchor="start" letter-spacing="0">the downward demand curve at a lower</text>
+<text x="1176" y="574" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#1A1A1A" font-weight="normal" text-anchor="start" letter-spacing="0">price. The premium over the $60 floor</text>
+<text x="1176" y="594" font-family="Helvetica, Arial, sans-serif" font-size="21.0" fill="#1A1A1A" font-weight="normal" text-anchor="start" letter-spacing="0">is what supply expansion eats into.</text>
+<line x1="1176" y1="624" x2="1516" y2="624" stroke="#E2DCCE" stroke-width="1"/>
+<circle cx="1184" cy="646" r="6" fill="#1B7A4B"/>
+<text x="1200" y="650" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">today · 4.86% float</text>
+<text x="1516" y="650" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#1B7A4B" font-weight="bold" text-anchor="end" letter-spacing="0">$183</text>
+<circle cx="1184" cy="669" r="6" fill="#C0392B"/>
+<text x="1200" y="673" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">Aug · float doubles</text>
+<text x="1516" y="673" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#C0392B" font-weight="bold" text-anchor="end" letter-spacing="0">$129</text>
+<circle cx="1184" cy="692" r="6" fill="#B8860B"/>
+<text x="1200" y="696" font-family="Helvetica, Arial, sans-serif" font-size="18.8" fill="#1A1A1A" font-weight="bold" text-anchor="start" letter-spacing="0">Q3 · ~50% out</text>
+<text x="1516" y="696" font-family="Helvetica, Arial, sans-serif" font-size="19.5" fill="#B8860B" font-weight="bold" text-anchor="end" letter-spacing="0">$79</text>
+</svg>

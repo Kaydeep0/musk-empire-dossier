@@ -8,7 +8,7 @@
     <key>ProgramArguments</key>
     <array>
         <string>/opt/homebrew/bin/python3</string>
-        <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/watch_entities.py</string>
+        <string>/Users/kiran/Desktop/Company Dossiers /Elon Musk/build/watch_with_env.sh</string>
     </array>
 
     <!-- Run every 15 minutes (900 seconds) -->
@@ -19,9 +19,13 @@
     <key>RunAtLoad</key>
     <true/>
 
-    <!-- Phone push via ntfy.sh (private topic). Pipeline rebuilds public/ on new filings. -->
+    <!-- Email + SMS via data/.notify.env (see build/env.notify.example) -->
     <key>EnvironmentVariables</key>
     <dict>
+        <key>MUSK_ALERT_EMAIL</key>
+        <string>kiran@wattsadvisor.com</string>
+        <key>MUSK_ALERT_SMS</key>
+        <string>+12792692780</string>
         <key>MUSK_WATCH_NTFY</key>
         <string>https://ntfy.sh/musk-sec-9053334806</string>
         <key>MUSK_WATCH_PIPELINE</key>
