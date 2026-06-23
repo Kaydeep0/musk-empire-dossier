@@ -55,12 +55,16 @@
         {
           "kind": "d+1",
           "due": "2026-06-18",
-          "sent": false
+          "sent": true,
+          "note": "Follow-up (d+1): new 8-K filed 2026-06-23 after Insider transaction reported (Form 4). Material event report",
+          "checked_at": "2026-06-23T23:13:15Z"
         },
         {
           "kind": "d+3",
           "due": "2026-06-20",
-          "sent": false
+          "sent": true,
+          "note": "Follow-up (d+3): new 8-K filed 2026-06-23 after Insider transaction reported (Form 4). Material event report",
+          "checked_at": "2026-06-23T23:13:15Z"
         },
         {
           "kind": "d+7",
