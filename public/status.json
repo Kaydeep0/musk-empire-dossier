@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T22:38:36Z",
+  "updated_at": "2026-06-23T22:39:42Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -26.15,
-      "as_of_utc": "2026-06-23T21:45:49Z",
+      "as_of_utc": "2026-06-23T21:47:38Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -105,7 +105,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-06-23T22:00:11Z",
+    "as_of_utc": "2026-06-23T21:47:38Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1314.19,
     "components_usd_b": {
@@ -686,115 +686,32 @@
       ]
     }
   ],
-  "material_timeline": [
-    {
-      "ts": "2026-06-23T22:26:29Z",
-      "kind": "date_outcome",
-      "date": "2026-06-26",
-      "entity": "SPCX",
-      "type": "settlement",
-      "event": "Bond offering expected settlement (June 26, 2026)",
-      "hypothesis": "H12",
-      "days_until": null,
-      "context": {
-        "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
-        "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?' Per the filing: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price i....",
-        "what_to_watch": "bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.",
-        "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
-      },
-      "grade": "neutral",
-      "summary": "Price still at or above IPO after refi settlement; no equity supply added.",
-      "metrics": {
-        "spcx_event_day": "2026-06-23",
-        "spcx_price_event": 156.11,
-        "spcx_price_now": 156.11,
-        "ipo_price": 135.0,
-        "pct_vs_ipo_event": 15.6,
-        "pct_vs_ipo": 15.6,
-        "change_1d_pct": 0.0,
-        "new_filings": []
-      }
-    },
-    {
-      "ts": "2026-06-23T22:21:30Z",
-      "kind": "reminder_sent",
-      "date": "2026-08-20",
-      "entity": "SPCX",
-      "type": "catalyst",
-      "event": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
-      "hypothesis": "H5/H6 scarcity premium test",
-      "days_until": 1,
-      "context": {
-        "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
-        "why_it_matters": "Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.",
-        "what_to_watch": "Float change vs prospectus pool size, first-week volume, price reaction, and any Form 4 or 8-K confirming sales or transfers.",
-        "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
-      },
-      "days_before": 1,
-      "reminder_key": "2026-08-20|1|SPCX|catalyst|First major lock-up unlock (~7% pool; roughly do"
-    },
-    {
-      "ts": "2026-06-23T22:21:28Z",
-      "kind": "reminder_sent",
-      "date": "2026-06-26",
-      "entity": "SPCX",
-      "type": "settlement",
-      "event": "Bond offering expected settlement (June 26, 2026)",
-      "hypothesis": "H12",
-      "days_until": 3,
-      "context": {
-        "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
-        "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?'",
-        "what_to_watch": "Credit reception vs Mag7 peers, SPCX price vs IPO, any 8-K confirming bridge payoff, and whether equity trades as a levered growth proxy after the overhang clears.",
-        "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
-      },
-      "days_before": 3,
-      "reminder_key": "2026-06-26|3|SPCX|settlement|Bond offering expected settlement (June 26, 2026"
-    },
-    {
-      "ts": "2026-06-23T22:21:27Z",
-      "kind": "reminder_sent",
-      "date": "2026-06-26",
-      "entity": "SPCX",
-      "type": "settlement",
-      "event": "Bond offering expected settlement (June 26, 2026)",
-      "hypothesis": "H12",
-      "days_until": 1,
-      "context": {
-        "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
-        "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?'",
-        "what_to_watch": "Credit reception vs Mag7 peers, SPCX price vs IPO, any 8-K confirming bridge payoff, and whether equity trades as a levered growth proxy after the overhang clears.",
-        "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
-      },
-      "days_before": 1,
-      "reminder_key": "2026-06-26|1|SPCX|settlement|Bond offering expected settlement (June 26, 2026"
-    }
-  ],
+  "material_timeline": [],
   "watch": [
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-06-23T11:15:01"
+      "updated": "2026-06-23T21:46:29"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-06-23T11:15:02"
+      "updated": "2026-06-23T21:46:29"
     },
     {
       "key": "spacex",
-      "tracked": 60,
-      "updated": "2026-06-23T11:15:02"
+      "tracked": 61,
+      "updated": "2026-06-23T21:46:31"
     },
     {
       "key": "tesla",
       "tracked": 120,
-      "updated": "2026-06-23T11:15:02"
+      "updated": "2026-06-23T21:46:29"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-06-23T11:15:02"
+      "updated": "2026-06-23T21:46:29"
     }
   ],
   "registry": [
@@ -953,12 +870,12 @@
   ],
   "recent_alerts": [
     {
-      "seen_at": "2026-06-23T15:12:26",
+      "seen_at": "2026-06-23T21:46:30",
       "filing_date": "2026-06-23",
       "form": "8-K",
       "description": "Material event report",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-      "entity": "Space Exploration Technologies (SPCX)"
+      "entity": "Space Exploration Technologies (SpaceX)"
     }
   ],
   "filing_analyses": [
