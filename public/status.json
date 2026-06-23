@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-23T18:16:32Z",
+  "updated_at": "2026-06-23T18:24:12Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -44,15 +44,15 @@
     },
     "market": {
       "ticker": "SPCX",
-      "price": 159.87,
+      "price": 160.46,
       "previous_close": 154.6,
-      "change_pct_1d": 3.41,
+      "change_pct_1d": 3.79,
       "ipo_price": 135.0,
-      "pct_vs_ipo": 18.42,
+      "pct_vs_ipo": 18.86,
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
-      "pct_vs_ath": -24.37,
-      "as_of_utc": "2026-06-23T18:16:29Z",
+      "pct_vs_ath": -24.1,
+      "as_of_utc": "2026-06-23T18:24:12Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -95,13 +95,13 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-06-23T18:16:29Z",
+    "as_of_utc": "2026-06-23T18:24:12Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-    "net_worth_proxy_usd_b": 1338.27,
+    "net_worth_proxy_usd_b": 1342.22,
     "components_usd_b": {
       "cash_realized_usd_b": 39.98,
-      "tesla_stake_usd_b": 270.67,
-      "spacex_stake_usd_b": 1027.62
+      "tesla_stake_usd_b": 271.02,
+      "spacex_stake_usd_b": 1031.22
     },
     "holdings": [
       {
@@ -109,9 +109,9 @@
         "ticker": "TSLA",
         "kind": "public",
         "shares": 710000000,
-        "price": 381.22,
-        "change_pct_1d": -5.88,
-        "value_usd_b": 270.67,
+        "price": 381.72,
+        "change_pct_1d": -5.76,
+        "value_usd_b": 271.02,
         "basis": "b+m",
         "note": "Beneficial shares from Form 4 anchor x live price"
       },
@@ -121,10 +121,10 @@
         "kind": "public",
         "musk_econ_pct": 0.36,
         "implied_shares": 6426666666,
-        "price": 159.9,
-        "change_pct_1d": 3.43,
-        "pct_vs_ipo": 18.44,
-        "value_usd_b": 1027.62,
+        "price": 160.46,
+        "change_pct_1d": 3.79,
+        "pct_vs_ipo": 18.86,
+        "value_usd_b": 1031.22,
         "value_at_ipo_usd_b": 867.6,
         "basis": "b+m",
         "note": "~36% econ x 17B total shares proxy at IPO"
