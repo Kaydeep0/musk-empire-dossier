@@ -17,7 +17,9 @@
         {
           "kind": "d+1",
           "due": "2026-06-24",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set).",
+          "checked_at": "2026-06-24T04:05:02Z"
         },
         {
           "kind": "d+3",
@@ -37,7 +39,9 @@
       ],
       "status": "watching",
       "created": "2026-06-23T22:38:09Z"
-    },
+    }
+  ],
+  "closed": [
     {
       "lane": "musk",
       "accession": "0001628280-26-044069",
@@ -69,12 +73,13 @@
         {
           "kind": "d+7",
           "due": "2026-06-24",
-          "sent": false
+          "sent": true,
+          "note": "[Musk] Follow-up (d+7): no new filing yet since 2026-06-17 (Insider transaction reported (Form 4)).",
+          "checked_at": "2026-06-24T04:05:02Z"
         }
       ],
-      "status": "watching",
+      "status": "complete",
       "created": "2026-06-23T22:49:03Z"
     }
-  ],
-  "closed": []
+  ]
 }
