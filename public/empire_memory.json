@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-24T23:12:02Z",
+  "updated_at": "2026-06-25T04:05:34Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-06-24T23:12:02Z",
+    "updated_at": "2026-06-25T04:05:34Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-06-24, the memory agent tracks 32 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-06-25, the memory agent tracks 33 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -82,7 +82,7 @@
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 32
+    "event_count": 33
   },
   "patterns": [
     {
@@ -500,6 +500,18 @@
         "catalyst",
         "settlement",
         "H12"
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "entity_key": "portfolio",
+      "entity": "Portfolio proxy",
+      "type": "market_sync",
+      "headline": "SPCX $154.54 TSLA $375.53 NW $1299.79B",
+      "url": null,
+      "tags": [
+        "market",
+        "timeseries"
       ]
     },
     {
