@@ -1,34 +1,24 @@
-🔴 Just in: Elon Musk just filed a Form 4.
+🔴 Just in: SpaceX disclosed a ~$12B move.
 
-Insider transaction reported (Form 4).
+Map filing to next dated catalyst on the calendar before sizing risk.
 
-Company 8-Ks tell you what the vehicle did.
+Key size disclosed: ~$12.0B.
 
-Form 4 tells you what the person did.
+Items filed: Item 8.01: Other Events; Item 9.01: Financial Statements and Exhibits.
 
-Those are not the same trade.
+Demand vs supply (what actually moves the stock):.
 
-Form 4 is direct personal ledger: shares sold, exercised, or gifted change his cash and control. Size and timing vs price strength test H2 (sell into demand)..
-
-The dossier thesis is simple.
-
-Hype builds a vehicle.
-
-Control stays concentrated.
-
-Cash exits when shares sell into demand.
-
-TSLA Form 4 sales are the active personal liquidity channel (~$40B cumulative in our ledger).
-
-SPCX economic stake is still gated by lock-ups.
-
-Next dated supply step: 2026-08-20.
+Next dated catalyst: 2026-08-20.
 
 First major lock-up unlock (~7% pool; roughly doubles tradable float).
 
+Pattern flagged: infrastructure before supply step.
+
+SPCX $153.25 (+14% vs IPO).
+
 Source:
-Elon Musk (CIK 1494730) | 4 | 2026-06-17
-https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml
+Space Exploration Technologies (SpaceX) | 8-K | 2026-06-26
+https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 

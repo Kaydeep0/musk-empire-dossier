@@ -2,11 +2,11 @@
   "cik": "0001181412",
   "issuer": "Space Exploration Technologies Corp. (SPCX)",
   "latest_8k": {
-    "accession": "0001628280-26-044955",
+    "accession": "0001628280-26-045763",
     "form": "8-K",
-    "filingDate": "2026-06-23",
-    "primaryDocument": "spcx-pricing8xk.htm",
-    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"
+    "filingDate": "2026-06-26",
+    "primaryDocument": "spcx-closing8xkjune2026.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm"
   },
   "bond": {
     "date": "2026-06-22",
@@ -21,6 +21,15 @@
     "accession": "0001628280-26-044489"
   },
   "events": [
+    {
+      "basis": "b",
+      "accession": "0001628280-26-045763",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+      "filing_date": "2026-06-26",
+      "form": "8-K",
+      "event": "Senior unsecured notes offering",
+      "bond_offering": true
+    },
     {
       "basis": "b",
       "accession": "0001628280-26-044955",

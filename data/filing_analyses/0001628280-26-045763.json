@@ -1,0 +1,29 @@
+{
+  "entity": "Space Exploration Technologies (SpaceX)",
+  "form": "8-K",
+  "filing_date": "2026-06-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+  "accession": "0001628280-26-045763",
+  "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
+  "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
+  "generated_utc": "2026-06-26T21:25:51Z",
+  "summary": "New debt or securities offering commenced\nKey size disclosed: ~$12.0B\nItems filed: Item 8.01: Other Events; Item 9.01: Financial Statements and Exhibits",
+  "engineer": "Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.\nInfrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.",
+  "trader": "Map filing to next dated catalyst on the calendar before sizing risk.\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
+  "cfa": "Treat as corporate finance or governance signal until quantified in financials.\nDebt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).",
+  "elon": "Map to Musk only if he is reporting person, related party, or control person named in the exhibit.",
+  "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 Re-read for explicit share count, ATM, secondary, or lock-up language.",
+  "facts": {
+    "headline": "New debt or securities offering commenced",
+    "items": [
+      "Item 8.01: Other Events",
+      "Item 9.01: Financial Statements and Exhibits"
+    ],
+    "tranches": [],
+    "total_offering_b": 12.0,
+    "use_of_proceeds": "",
+    "settlement": "",
+    "has_bridge_repay": false,
+    "has_cash_disclosure": false
+  }
+}

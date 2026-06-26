@@ -11,15 +11,15 @@
   },
   "market": {
     "ticker": "SPCX",
-    "price": 153.25,
+    "price": 153.23,
     "previous_close": 153.0,
-    "change_pct_1d": 0.16,
+    "change_pct_1d": 0.15,
     "ipo_price": 135.0,
-    "pct_vs_ipo": 13.52,
+    "pct_vs_ipo": 13.5,
     "ath_price": 211.39,
     "ath_date": "2026-06-16",
-    "pct_vs_ath": -27.5,
-    "as_of_utc": "2026-06-26T19:59:17Z",
+    "pct_vs_ath": -27.51,
+    "as_of_utc": "2026-06-26T21:26:56Z",
     "basis": "m",
     "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
   },
@@ -27,11 +27,11 @@
     "cik": "0001181412",
     "issuer": "Space Exploration Technologies Corp. (SPCX)",
     "latest_8k": {
-      "accession": "0001628280-26-044955",
+      "accession": "0001628280-26-045763",
       "form": "8-K",
-      "filingDate": "2026-06-23",
-      "primaryDocument": "spcx-pricing8xk.htm",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm"
+      "filingDate": "2026-06-26",
+      "primaryDocument": "spcx-closing8xkjune2026.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm"
     },
     "bond": {
       "date": "2026-06-22",
@@ -46,6 +46,15 @@
       "accession": "0001628280-26-044489"
     },
     "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-045763",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+        "filing_date": "2026-06-26",
+        "form": "8-K",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true
+      },
       {
         "basis": "b",
         "accession": "0001628280-26-044955",

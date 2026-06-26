@@ -43,6 +43,38 @@
       ],
       "status": "watching",
       "created": "2026-06-23T22:38:09Z"
+    },
+    {
+      "lane": "spacex",
+      "accession": "0001628280-26-045763",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "8-K",
+      "filed": "2026-06-26",
+      "headline": "New debt or securities offering commenced",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+      "settlement": "",
+      "expect": [
+        "Next supply step on material dates calendar (Aug 20 unlock)"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-06-27",
+          "sent": false
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-06-29",
+          "sent": false
+        },
+        {
+          "kind": "d+7",
+          "due": "2026-07-03",
+          "sent": false
+        }
+      ],
+      "status": "watching",
+      "created": "2026-06-26T21:25:51Z"
     }
   ],
   "closed": [
