@@ -24,7 +24,9 @@
         {
           "kind": "d+3",
           "due": "2026-06-26",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+3): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set).",
+          "checked_at": "2026-06-26T04:13:13Z"
         },
         {
           "kind": "d+7",
@@ -34,7 +36,9 @@
         {
           "kind": "settlement",
           "due": "2026-06-26",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (settlement): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set). Expected settlement: June 26, 2026.",
+          "checked_at": "2026-06-26T04:13:13Z"
         }
       ],
       "status": "watching",
