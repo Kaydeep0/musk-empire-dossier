@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T23:15:01Z",
+  "updated_at": "2026-06-27T03:58:16Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -27.51,
-      "as_of_utc": "2026-06-26T23:14:54Z",
+      "as_of_utc": "2026-06-27T03:58:10Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,7 +114,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-06-26T23:14:54Z",
+    "as_of_utc": "2026-06-27T03:58:10Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1294.33,
     "components_usd_b": {
@@ -486,7 +486,7 @@
       "source": "SpaceX 8-K accession 0001628280-26-044489",
       "url": null,
       "accession": null,
-      "days_until": -4,
+      "days_until": -5,
       "status": "past",
       "context": {
         "what_it_is": "A pre-registered date for SpaceX from SEC docs or the dossier calendar.",
@@ -516,8 +516,8 @@
       "source": "SEC 8-K filed 2026-06-23",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
       "accession": "0001628280-26-044955",
-      "days_until": 0,
-      "status": "soon",
+      "days_until": -1,
+      "status": "past",
       "context": {
         "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
         "why_it_matters": "This is not new equity hitting the market. It closes the refi chapter: proceeds typically retire the Goldman bridge tied to the Twitter to X to xAI relay. After settlement, the story shifts from 'can they refinance?' to 'what supply date is next?' Per the filing: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price i....",
@@ -549,7 +549,7 @@
       "source": "SPCX 424(b)(4) lock-up schedule; Spacexsec V5",
       "url": null,
       "accession": null,
-      "days_until": 55,
+      "days_until": 54,
       "status": "upcoming",
       "context": {
         "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
@@ -582,7 +582,7 @@
       "source": "SPCX prospectus; distribution STRATEGY_360",
       "url": null,
       "accession": null,
-      "days_until": 68,
+      "days_until": 67,
       "status": "future",
       "context": {
         "what_it_is": "A contractual window tied to the Goldman bridge facility ends. Pricing or refi triggers tied to the stock price may no longer apply the same way.",
@@ -615,7 +615,7 @@
       "source": "SPCX 424(b)(4)",
       "url": null,
       "accession": null,
-      "days_until": 165,
+      "days_until": 164,
       "status": "future",
       "context": {
         "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
@@ -648,7 +648,7 @@
       "source": "SPCX lock-up schedule",
       "url": null,
       "accession": null,
-      "days_until": 355,
+      "days_until": 354,
       "status": "future",
       "context": {
         "what_it_is": "The largest Musk-linked SPCX lock-up tranche becomes eligible to sell. This is the biggest single supply step on the calendar.",
@@ -681,7 +681,7 @@
       "source": "data/debt_chain.csv; SPCX filings",
       "url": null,
       "accession": null,
-      "days_until": 433,
+      "days_until": 432,
       "status": "future",
       "context": {
         "what_it_is": "A large debt facility comes due or must be refinanced. This is a balance-sheet cliff, not a share unlock.",
@@ -792,27 +792,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-06-26T23:13:21"
+      "updated": "2026-06-27T03:57:07"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-06-26T23:13:22"
+      "updated": "2026-06-27T03:57:07"
     },
     {
       "key": "spacex",
       "tracked": 62,
-      "updated": "2026-06-26T23:13:22"
+      "updated": "2026-06-27T03:57:07"
     },
     {
       "key": "tesla",
       "tracked": 120,
-      "updated": "2026-06-26T23:13:21"
+      "updated": "2026-06-27T03:57:07"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-06-26T23:13:22"
+      "updated": "2026-06-27T03:57:07"
     }
   ],
   "registry": [
@@ -1100,7 +1100,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-06-26T23:14:55Z",
+    "updated_at": "2026-06-27T03:58:10Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -1674,9 +1674,19 @@
         "tesla_stake_b": 269.59,
         "cash_b": 39.98,
         "sync_ts": "2026-06-26T23:14:54Z"
+      },
+      {
+        "date": "2026-06-27",
+        "sync_ts": "2026-06-27T03:58:10Z",
+        "spcx": 153.23,
+        "tsla": 379.71,
+        "net_worth_b": 1294.33,
+        "spacex_stake_b": 984.76,
+        "tesla_stake_b": 269.59,
+        "cash_b": 39.98
       }
     ],
-    "live_sync_count": 24,
+    "live_sync_count": 25,
     "annotations": {
       "catalysts": [
         {
@@ -1738,24 +1748,24 @@
       ]
     },
     "latest": {
-      "date": "2026-06-26",
-      "net_worth_b": 1294.33,
+      "date": "2026-06-27",
+      "sync_ts": "2026-06-27T03:58:10Z",
       "spcx": 153.23,
       "tsla": 379.71,
+      "net_worth_b": 1294.33,
       "spacex_stake_b": 984.76,
       "tesla_stake_b": 269.59,
-      "cash_b": 39.98,
-      "sync_ts": "2026-06-26T23:14:54Z"
+      "cash_b": 39.98
     }
   },
   "empire_memory": {
-    "updated_at": "2026-06-26T23:15:01Z",
+    "updated_at": "2026-06-27T03:58:16Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-06-26T23:15:01Z",
+      "updated_at": "2026-06-27T03:58:16Z",
       "disclaimer": "Educational research memory. Not investment advice.",
-      "narrative": "As of 2026-06-26, the memory agent tracks 37 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+      "narrative": "As of 2026-06-27, the memory agent tracks 38 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
         {
           "date": "2027-09-02",
@@ -1832,7 +1842,7 @@
       ],
       "pattern_count": 6,
       "entity_count": 5,
-      "event_count": 37
+      "event_count": 38
     },
     "patterns": [
       {
@@ -1842,8 +1852,8 @@
         "hypothesis": "H12",
         "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
         "entities": [
-          "spacex",
-          "twitter"
+          "twitter",
+          "spacex"
         ],
         "evidence_ids": [
           "debt-2023-04-01-twitter",
@@ -2236,6 +2246,18 @@
           "catalyst",
           "catalyst",
           "H5/H6 scarcity premi"
+        ]
+      },
+      {
+        "date": "2026-06-27",
+        "entity_key": "portfolio",
+        "entity": "Portfolio proxy",
+        "type": "market_sync",
+        "headline": "SPCX $153.23 TSLA $379.71 NW $1294.33B",
+        "url": null,
+        "tags": [
+          "market",
+          "timeseries"
         ]
       },
       {

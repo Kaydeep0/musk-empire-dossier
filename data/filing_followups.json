@@ -60,7 +60,9 @@
         {
           "kind": "d+1",
           "due": "2026-06-27",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-06-26 (New debt or securities offering commenced).",
+          "checked_at": "2026-06-27T03:58:16Z"
         },
         {
           "kind": "d+3",
