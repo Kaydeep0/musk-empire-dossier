@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-29T21:40:48Z",
+  "updated_at": "2026-06-29T23:04:42Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -22.33,
-      "as_of_utc": "2026-06-29T21:40:40Z",
+      "as_of_utc": "2026-06-29T23:04:35Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,7 +114,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-06-29T21:40:40Z",
+    "as_of_utc": "2026-06-29T23:04:35Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1387.58,
     "components_usd_b": {
@@ -809,27 +809,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-06-29T21:38:55"
+      "updated": "2026-06-29T23:03:02"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-06-29T21:38:56"
+      "updated": "2026-06-29T23:03:03"
     },
     {
       "key": "spacex",
       "tracked": 62,
-      "updated": "2026-06-29T21:38:56"
+      "updated": "2026-06-29T23:03:03"
     },
     {
       "key": "tesla",
       "tracked": 120,
-      "updated": "2026-06-29T21:38:55"
+      "updated": "2026-06-29T23:03:02"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-06-29T21:38:55"
+      "updated": "2026-06-29T23:03:02"
     }
   ],
   "registry": [
@@ -1117,7 +1117,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-06-29T21:40:41Z",
+    "updated_at": "2026-06-29T23:04:36Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -1711,10 +1711,10 @@
         "spacex_stake_b": 1055.19,
         "tesla_stake_b": 292.41,
         "cash_b": 39.98,
-        "sync_ts": "2026-06-29T21:40:40Z"
+        "sync_ts": "2026-06-29T23:04:35Z"
       }
     ],
-    "live_sync_count": 46,
+    "live_sync_count": 47,
     "annotations": {
       "catalysts": [
         {
@@ -1783,15 +1783,15 @@
       "spacex_stake_b": 1055.19,
       "tesla_stake_b": 292.41,
       "cash_b": 39.98,
-      "sync_ts": "2026-06-29T21:40:40Z"
+      "sync_ts": "2026-06-29T23:04:35Z"
     }
   },
   "empire_memory": {
-    "updated_at": "2026-06-29T21:40:48Z",
+    "updated_at": "2026-06-29T23:04:42Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-06-29T21:40:48Z",
+      "updated_at": "2026-06-29T23:04:42Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-06-29, the memory agent tracks 40 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
