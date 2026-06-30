@@ -1,50 +1,6 @@
 {
   "active": [
     {
-      "accession": "0001628280-26-044955",
-      "entity": "Space Exploration Technologies (SPCX)",
-      "form": "8-K",
-      "filed": "2026-06-23",
-      "headline": "Bond offering priced (coupon and maturity set)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-      "settlement": "June 26, 2026",
-      "expect": [
-        "Confirm settlement or bridge payoff in a follow-on 8-K",
-        "Watch SPCX price and credit reception after bond pricing",
-        "Next supply step on material dates calendar (Aug 20 unlock)"
-      ],
-      "checks": [
-        {
-          "kind": "d+1",
-          "due": "2026-06-24",
-          "sent": true,
-          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set).",
-          "checked_at": "2026-06-24T04:05:02Z"
-        },
-        {
-          "kind": "d+3",
-          "due": "2026-06-26",
-          "sent": true,
-          "note": "[SpaceX] Follow-up (d+3): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set).",
-          "checked_at": "2026-06-26T04:13:13Z"
-        },
-        {
-          "kind": "d+7",
-          "due": "2026-06-30",
-          "sent": false
-        },
-        {
-          "kind": "settlement",
-          "due": "2026-06-26",
-          "sent": true,
-          "note": "[SpaceX] Follow-up (settlement): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set). Expected settlement: June 26, 2026.",
-          "checked_at": "2026-06-26T04:13:13Z"
-        }
-      ],
-      "status": "watching",
-      "created": "2026-06-23T22:38:09Z"
-    },
-    {
       "lane": "spacex",
       "accession": "0001628280-26-045763",
       "entity": "Space Exploration Technologies (SpaceX)",
@@ -120,6 +76,52 @@
       ],
       "status": "complete",
       "created": "2026-06-23T22:49:03Z"
+    },
+    {
+      "accession": "0001628280-26-044955",
+      "entity": "Space Exploration Technologies (SPCX)",
+      "form": "8-K",
+      "filed": "2026-06-23",
+      "headline": "Bond offering priced (coupon and maturity set)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
+      "settlement": "June 26, 2026",
+      "expect": [
+        "Confirm settlement or bridge payoff in a follow-on 8-K",
+        "Watch SPCX price and credit reception after bond pricing",
+        "Next supply step on material dates calendar (Aug 20 unlock)"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-06-24",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set).",
+          "checked_at": "2026-06-24T04:05:02Z"
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-06-26",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+3): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set).",
+          "checked_at": "2026-06-26T04:13:13Z"
+        },
+        {
+          "kind": "d+7",
+          "due": "2026-06-30",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+7): new 8-K 2026-06-26 after Bond offering priced (coupon and maturity set. Material event report",
+          "checked_at": "2026-06-30T04:08:06Z"
+        },
+        {
+          "kind": "settlement",
+          "due": "2026-06-26",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (settlement): no new filing yet since 2026-06-23 (Bond offering priced (coupon and maturity set). Expected settlement: June 26, 2026.",
+          "checked_at": "2026-06-26T04:13:13Z"
+        }
+      ],
+      "status": "complete",
+      "created": "2026-06-23T22:38:09Z"
     }
   ]
 }
