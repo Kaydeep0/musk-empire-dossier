@@ -1,6 +1,6 @@
 # Live changelog
 
-**Last rebuilt:** 2026-06-30T16:25:49Z (UTC)
+**Last rebuilt:** 2026-06-30T20:07:03Z (UTC)
 
 - Latest Musk filing: [Form 4 2026-06-17](https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml)
 
