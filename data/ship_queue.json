@@ -1,6 +1,21 @@
 {
-  "updated": "2026-06-26T21:25:52Z",
+  "updated": "2026-07-02T16:07:31Z",
   "items": [
+    {
+      "id": "0001628280-26-046717",
+      "status": "draft",
+      "accession": "0001628280-26-046717",
+      "entity": "Tesla Inc",
+      "form": "8-K",
+      "filing_date": "2026-07-02",
+      "created_utc": "2026-07-02T16:07:31Z",
+      "linkedin_post": "\ud83d\udd34 Just in: Tesla disclosed a ~$12B move.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nKey size disclosed: ~$12.0B.\n\nItems filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed \"filed\" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial Statements and Exhibits.\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $157.54 (+17% vs IPO).\n\nSource:\nTesla Inc | 8-K | 2026-07-02\nhttps://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Operating results or guidance",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001628280-26-045763",
       "status": "draft",

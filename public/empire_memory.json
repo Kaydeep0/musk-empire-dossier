@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-07-02T12:13:16Z",
+  "updated_at": "2026-07-02T16:09:13Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-07-02T12:13:16Z",
+    "updated_at": "2026-07-02T16:09:13Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-07-02, the memory agent tracks 43 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-07-02, the memory agent tracks 45 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -82,7 +82,7 @@
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 43
+    "event_count": 45
   },
   "patterns": [
     {
@@ -92,8 +92,8 @@
       "hypothesis": "H12",
       "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
       "entities": [
-        "spacex",
-        "twitter"
+        "twitter",
+        "spacex"
       ],
       "evidence_ids": [
         "debt-2023-04-01-twitter",
@@ -227,10 +227,23 @@
           "Megapack sales to SpaceX"
         ]
       },
-      "event_count": 0,
-      "last_event_date": null,
-      "last_event_summary": null,
-      "themes": []
+      "event_count": 2,
+      "last_event_date": "2026-07-02",
+      "last_event_summary": "Material event report",
+      "themes": [
+        {
+          "tag": "debt_refi",
+          "count": 1
+        },
+        {
+          "tag": "insider_trade",
+          "count": 1
+        },
+        {
+          "tag": "supply",
+          "count": 1
+        }
+      ]
     },
     "twitter": {
       "label": "Twitter Inc",
@@ -499,6 +512,28 @@
         "market",
         "timeseries"
       ]
+    },
+    {
+      "date": "2026-07-02",
+      "entity_key": "tesla",
+      "entity": "Tesla Inc",
+      "type": "filing_brief",
+      "headline": "Operating results or guidance",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm",
+      "tags": [
+        "debt_refi",
+        "insider_trade",
+        "supply"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "entity_key": "tesla",
+      "entity": "Tesla Inc",
+      "type": "sec_alert",
+      "headline": "Material event report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm",
+      "tags": null
     },
     {
       "date": "2026-07-01",
