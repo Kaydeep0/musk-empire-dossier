@@ -4,7 +4,7 @@ Map filing to next dated catalyst on the calendar before sizing risk.
 
 Key size disclosed: ~$12.0B.
 
-Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed "filed" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial Statements and Exhibits.
+Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K, "Results of Operations and Financial Condition" and shall not be deemed "filed" for purposes of Section; Item 9: 01 Financial Statements and Exhibits.
 
 Demand vs supply (what actually moves the stock):.
 
@@ -14,11 +14,11 @@ First major lock-up unlock (~7% pool; roughly doubles tradable float).
 
 Pattern flagged: infrastructure before supply step.
 
-SPCX $157.54 (+17% vs IPO).
+SPCX $116.65 (-14% vs IPO).
 
 Source:
-Tesla Inc | 8-K | 2026-07-02
-https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm
+Tesla Inc | 8-K | 2026-07-22
+https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 
