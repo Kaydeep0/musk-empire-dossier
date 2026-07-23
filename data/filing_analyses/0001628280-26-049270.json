@@ -1,0 +1,33 @@
+{
+  "entity": "Tesla Inc",
+  "form": "10-Q",
+  "filing_date": "2026-07-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+  "accession": "0001628280-26-049270",
+  "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
+  "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
+  "generated_utc": "2026-07-23T10:28:14Z",
+  "summary": "Operating results or guidance\nKey size disclosed: ~$400.0B\nUse of proceeds: Use of Proceeds 38 Item 3.\nItems filed: Item 1: Financial Statements 4 Consolidated Balance Sheets 4 Consolidated Statements of Operations 5 Consolidated Statements of; Item 2: Management's Discussion and Analysis of Financial Condition and Results of Operations 28 Item 3; Item 4: Controls and Procedures 37 PART II",
+  "engineer": "Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.",
+  "trader": "Map filing to next dated catalyst on the calendar before sizing risk.\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
+  "cfa": "Treat as corporate finance or governance signal until quantified in financials.",
+  "elon": "Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.",
+  "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 Re-read for explicit share count, ATM, secondary, or lock-up language.",
+  "facts": {
+    "headline": "Operating results or guidance",
+    "items": [
+      "Item 1: Financial Statements 4 Consolidated Balance Sheets 4 Consolidated Statements of Operations 5 Consolidated Statements of",
+      "Item 2: Management's Discussion and Analysis of Financial Condition and Results of Operations 28 Item 3",
+      "Item 4: Controls and Procedures 37 PART II",
+      "Item 1: Legal Proceedings 38 Item 1A",
+      "Item 2: Unregistered Sales of Equity Securities and Use of Proceeds 38 Item 3",
+      "Item 4: Mine Safety Disclosures 38 Item 5"
+    ],
+    "tranches": [],
+    "total_offering_b": 400.0,
+    "use_of_proceeds": "Use of Proceeds 38 Item 3.",
+    "settlement": "",
+    "has_bridge_repay": false,
+    "has_cash_disclosure": true
+  }
+}

@@ -2,18 +2,28 @@
   "cik": "0001318605",
   "issuer": "Tesla Inc (TSLA)",
   "latest_material": {
-    "accession": "0001104659-26-053166",
-    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
-    "filing_date": "2026-04-30",
-    "form": "10-K/A",
+    "accession": "0001628280-26-049270",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+    "filing_date": "2026-07-23",
+    "form": "10-Q",
     "basis": "b",
-    "pledged_shares": true,
+    "related_party": true,
     "compensation": true,
     "cross_entity": true,
-    "amount_disclosed_m": 65.0,
-    "headline": "10-K/A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
+    "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
   },
   "events": [
+    {
+      "accession": "0001628280-26-049270",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+      "filing_date": "2026-07-23",
+      "form": "10-Q",
+      "basis": "b",
+      "related_party": true,
+      "compensation": true,
+      "cross_entity": true,
+      "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
+    },
     {
       "accession": "0001104659-26-053166",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
@@ -153,17 +163,6 @@
       "basis": "b",
       "compensation": true,
       "headline": "DEFA14A \u00b7 CEO comp"
-    },
-    {
-      "accession": "0001628280-25-045968",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm",
-      "filing_date": "2025-10-23",
-      "form": "10-Q",
-      "basis": "b",
-      "compensation": true,
-      "cross_entity": true,
-      "amount_disclosed_m": 176.0,
-      "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 CEO comp \u00b7 ~$176.0M disclosed"
     }
   ]
 }

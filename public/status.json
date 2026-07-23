@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T06:35:41Z",
+  "updated_at": "2026-07-23T10:29:26Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -16,10 +16,10 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm"
   },
   "latest_tesla_filing": {
-    "filing_date": "2026-07-22",
-    "form": "8-K",
-    "accession": "0001628280-26-049213",
-    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm"
+    "filing_date": "2026-07-23",
+    "form": "10-Q",
+    "accession": "0001628280-26-049270",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
   },
   "sales": {
     "total_usd_b": 39.98,
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -45.48,
-      "as_of_utc": "2026-07-23T06:35:33Z",
+      "as_of_utc": "2026-07-23T10:29:20Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,7 +114,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-07-23T06:35:33Z",
+    "as_of_utc": "2026-07-23T10:29:20Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1046.27,
     "components_usd_b": {
@@ -251,18 +251,28 @@
     "cik": "0001318605",
     "issuer": "Tesla Inc (TSLA)",
     "latest_material": {
-      "accession": "0001104659-26-053166",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
-      "filing_date": "2026-04-30",
-      "form": "10-K/A",
+      "accession": "0001628280-26-049270",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+      "filing_date": "2026-07-23",
+      "form": "10-Q",
       "basis": "b",
-      "pledged_shares": true,
+      "related_party": true,
       "compensation": true,
       "cross_entity": true,
-      "amount_disclosed_m": 65.0,
-      "headline": "10-K/A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
+      "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
     },
     "events": [
+      {
+        "accession": "0001628280-26-049270",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "filing_date": "2026-07-23",
+        "form": "10-Q",
+        "basis": "b",
+        "related_party": true,
+        "compensation": true,
+        "cross_entity": true,
+        "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
+      },
       {
         "accession": "0001104659-26-053166",
         "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
@@ -402,17 +412,6 @@
         "basis": "b",
         "compensation": true,
         "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001628280-25-045968",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025045968/tsla-20250930.htm",
-        "filing_date": "2025-10-23",
-        "form": "10-Q",
-        "basis": "b",
-        "compensation": true,
-        "cross_entity": true,
-        "amount_disclosed_m": 176.0,
-        "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 CEO comp \u00b7 ~$176.0M disclosed"
       }
     ]
   },
@@ -809,27 +808,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-07-23T06:34:21"
+      "updated": "2026-07-23T10:28:13"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-07-23T06:34:22"
+      "updated": "2026-07-23T10:28:16"
     },
     {
       "key": "spacex",
       "tracked": 62,
-      "updated": "2026-07-23T06:34:22"
+      "updated": "2026-07-23T10:28:17"
     },
     {
       "key": "tesla",
-      "tracked": 122,
-      "updated": "2026-07-23T06:34:22"
+      "tracked": 123,
+      "updated": "2026-07-23T10:28:16"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-07-23T06:34:22"
+      "updated": "2026-07-23T10:28:16"
     }
   ],
   "registry": [
@@ -988,6 +987,14 @@
   ],
   "recent_alerts": [
     {
+      "seen_at": "2026-07-23T10:28:16",
+      "filing_date": "2026-07-23",
+      "form": "10-Q",
+      "description": "Quarterly report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+      "entity": "Tesla Inc"
+    },
+    {
       "seen_at": "2026-07-22T21:14:45",
       "filing_date": "2026-07-22",
       "form": "8-K",
@@ -1021,6 +1028,69 @@
     }
   ],
   "filing_analyses": [
+    {
+      "entity": "Tesla Inc",
+      "form": "10-Q",
+      "filing_date": "2026-07-23",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+      "accession": "0001628280-26-049270",
+      "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
+      "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
+      "generated_utc": "2026-07-23T10:28:14Z",
+      "summary": "Operating results or guidance\nKey size disclosed: ~$400.0B\nUse of proceeds: Use of Proceeds 38 Item 3.\nItems filed: Item 1: Financial Statements 4 Consolidated Balance Sheets 4 Consolidated Statements of Operations 5 Consolidated Statements of; Item 2: Management's Discussion and Analysis of Financial Condition and Results of Operations 28 Item 3; Item 4: Controls and Procedures 37 PART II",
+      "engineer": "Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.",
+      "trader": "Map filing to next dated catalyst on the calendar before sizing risk.\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
+      "cfa": "Treat as corporate finance or governance signal until quantified in financials.",
+      "elon": "Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.",
+      "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 Re-read for explicit share count, ATM, secondary, or lock-up language.",
+      "facts": {
+        "headline": "Operating results or guidance",
+        "items": [
+          "Item 1: Financial Statements 4 Consolidated Balance Sheets 4 Consolidated Statements of Operations 5 Consolidated Statements of",
+          "Item 2: Management's Discussion and Analysis of Financial Condition and Results of Operations 28 Item 3",
+          "Item 4: Controls and Procedures 37 PART II",
+          "Item 1: Legal Proceedings 38 Item 1A",
+          "Item 2: Unregistered Sales of Equity Securities and Use of Proceeds 38 Item 3",
+          "Item 4: Mine Safety Disclosures 38 Item 5"
+        ],
+        "tranches": [],
+        "total_offering_b": 400.0,
+        "use_of_proceeds": "Use of Proceeds 38 Item 3.",
+        "settlement": "",
+        "has_bridge_repay": false,
+        "has_cash_disclosure": true
+      }
+    },
+    {
+      "entity": "Tesla Inc",
+      "form": "8-K",
+      "filing_date": "2026-07-22",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm",
+      "accession": "0001628280-26-049213",
+      "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
+      "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
+      "generated_utc": "2026-07-22T21:14:42Z",
+      "summary": "Operating results or guidance\nKey size disclosed: ~$12.0B\nItems filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K, \"Results of Operations and Financial Condition\" and shall not be deemed \"filed\" for purposes of Section; Item 9: 01 Financial Statements and Exhibits",
+      "engineer": "Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.",
+      "trader": "Map filing to next dated catalyst on the calendar before sizing risk.\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
+      "cfa": "Treat as corporate finance or governance signal until quantified in financials.",
+      "elon": "Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.",
+      "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 Re-read for explicit share count, ATM, secondary, or lock-up language.",
+      "facts": {
+        "headline": "Operating results or guidance",
+        "items": [
+          "Item 2: 02 Results of Operations and Financial Condition",
+          "Item 2: 02 of Form 8-K, \"Results of Operations and Financial Condition\" and shall not be deemed \"filed\" for purposes of Section",
+          "Item 9: 01 Financial Statements and Exhibits"
+        ],
+        "tranches": [],
+        "total_offering_b": 12.0,
+        "use_of_proceeds": "",
+        "settlement": "",
+        "has_bridge_repay": false,
+        "has_cash_disclosure": false
+      }
+    },
     {
       "entity": "Space Exploration Technologies (SPCX)",
       "form": "8-K",
@@ -1073,36 +1143,6 @@
         "use_of_proceeds": "intends to use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
         "settlement": "June 26, 2026",
         "has_bridge_repay": true,
-        "has_cash_disclosure": false
-      }
-    },
-    {
-      "entity": "Tesla Inc",
-      "form": "8-K",
-      "filing_date": "2026-07-22",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm",
-      "accession": "0001628280-26-049213",
-      "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
-      "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
-      "generated_utc": "2026-07-22T21:14:42Z",
-      "summary": "Operating results or guidance\nKey size disclosed: ~$12.0B\nItems filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K, \"Results of Operations and Financial Condition\" and shall not be deemed \"filed\" for purposes of Section; Item 9: 01 Financial Statements and Exhibits",
-      "engineer": "Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.",
-      "trader": "Map filing to next dated catalyst on the calendar before sizing risk.\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
-      "cfa": "Treat as corporate finance or governance signal until quantified in financials.",
-      "elon": "Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.",
-      "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 Re-read for explicit share count, ATM, secondary, or lock-up language.",
-      "facts": {
-        "headline": "Operating results or guidance",
-        "items": [
-          "Item 2: 02 Results of Operations and Financial Condition",
-          "Item 2: 02 of Form 8-K, \"Results of Operations and Financial Condition\" and shall not be deemed \"filed\" for purposes of Section",
-          "Item 9: 01 Financial Statements and Exhibits"
-        ],
-        "tranches": [],
-        "total_offering_b": 12.0,
-        "use_of_proceeds": "",
-        "settlement": "",
-        "has_bridge_repay": false,
         "has_cash_disclosure": false
       }
     },
@@ -1193,7 +1233,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-07-23T06:35:33Z",
+    "updated_at": "2026-07-23T10:29:21Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -1868,7 +1908,7 @@
       },
       {
         "date": "2026-07-23",
-        "sync_ts": "2026-07-23T06:35:33Z",
+        "sync_ts": "2026-07-23T10:29:20Z",
         "spcx": 115.26,
         "tsla": 374.01,
         "net_worth_b": 1046.27,
@@ -1877,7 +1917,7 @@
         "cash_b": 39.98
       }
     ],
-    "live_sync_count": 235,
+    "live_sync_count": 236,
     "annotations": {
       "catalysts": [
         {
@@ -1940,7 +1980,7 @@
     },
     "latest": {
       "date": "2026-07-23",
-      "sync_ts": "2026-07-23T06:35:33Z",
+      "sync_ts": "2026-07-23T10:29:20Z",
       "spcx": 115.26,
       "tsla": 374.01,
       "net_worth_b": 1046.27,
@@ -1950,13 +1990,13 @@
     }
   },
   "empire_memory": {
-    "updated_at": "2026-07-23T06:35:41Z",
+    "updated_at": "2026-07-23T10:29:26Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-07-23T06:35:41Z",
+      "updated_at": "2026-07-23T10:29:26Z",
       "disclaimer": "Educational research memory. Not investment advice.",
-      "narrative": "As of 2026-07-23, the memory agent tracks 68 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+      "narrative": "As of 2026-07-23, the memory agent tracks 70 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
         {
           "date": "2027-09-02",
@@ -2033,7 +2073,7 @@
       ],
       "pattern_count": 6,
       "entity_count": 5,
-      "event_count": 68
+      "event_count": 70
     },
     "patterns": [
       {
@@ -2178,21 +2218,21 @@
             "Megapack sales to SpaceX"
           ]
         },
-        "event_count": 4,
-        "last_event_date": "2026-07-22",
-        "last_event_summary": "Material event report",
+        "event_count": 6,
+        "last_event_date": "2026-07-23",
+        "last_event_summary": "Quarterly report",
         "themes": [
           {
             "tag": "debt_refi",
-            "count": 2
+            "count": 3
           },
           {
             "tag": "insider_trade",
-            "count": 2
+            "count": 3
           },
           {
             "tag": "supply",
-            "count": 2
+            "count": 3
           }
         ]
       },
@@ -2463,6 +2503,28 @@
           "market",
           "timeseries"
         ]
+      },
+      {
+        "date": "2026-07-23",
+        "entity_key": "tesla",
+        "entity": "Tesla Inc",
+        "type": "filing_brief",
+        "headline": "Operating results or guidance",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "tags": [
+          "debt_refi",
+          "insider_trade",
+          "supply"
+        ]
+      },
+      {
+        "date": "2026-07-23",
+        "entity_key": "tesla",
+        "entity": "Tesla Inc",
+        "type": "sec_alert",
+        "headline": "Quarterly report",
+        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+        "tags": null
       },
       {
         "date": "2026-07-22",
