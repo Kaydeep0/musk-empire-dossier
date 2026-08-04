@@ -1,9 +1,11 @@
 # Live changelog
 
-**Last rebuilt:** 2026-08-04T19:45:00Z (UTC)
+**Last rebuilt:** 2026-08-04T21:18:05Z (UTC)
 
 - Latest Musk filing: [Form 4 2026-06-17](https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml)
 
+- `2026-08-04T21:16:49` **Space Exploration Technologies (SpaceX)** [8-K](https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm) (2026-08-04)
+- `2026-08-04T21:16:48` **Space Exploration Technologies (SpaceX)** [10-Q](https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm) (2026-08-04)
 - `2026-07-23T10:28:16` **Tesla Inc** [10-Q](https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm) (2026-07-23)
 - `2026-07-22T21:14:45` **Tesla Inc** [8-K](https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm) (2026-07-22)
 - `2026-07-02T16:07:32` **Tesla Inc** [8-K](https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm) (2026-07-02)

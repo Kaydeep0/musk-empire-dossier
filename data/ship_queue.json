@@ -1,6 +1,34 @@
 {
-  "updated": "2026-07-23T10:28:14Z",
+  "updated": "2026-08-04T21:16:48Z",
   "items": [
+    {
+      "id": "0001628280-26-052515",
+      "status": "draft",
+      "accession": "0001628280-26-052515",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "8-K",
+      "filing_date": "2026-08-04",
+      "created_utc": "2026-08-04T21:16:48Z",
+      "linkedin_post": "\ud83d\udd34 Just in: SpaceX disclosed a ~$12B move.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nKey size disclosed: ~$12.0B.\n\nItems filed: Item 2.02: Results of Operations and Financial Condition; Item 2: 02, including Exhibit 99; Item 9.01: Financial Statements and Exhibits.\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $124.69 (-8% vs IPO).\n\nSource:\nSpace Exploration Technologies (SpaceX) | 8-K | 2026-08-04\nhttps://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Operating results or guidance",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
+    {
+      "id": "0001628280-26-052535",
+      "status": "draft",
+      "accession": "0001628280-26-052535",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "10-Q",
+      "filing_date": "2026-08-04",
+      "created_utc": "2026-08-04T21:16:46Z",
+      "linkedin_post": null,
+      "brief_headline": "Bond offering priced (coupon and maturity set)",
+      "public_actions": [],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001628280-26-049270",
       "status": "draft",
