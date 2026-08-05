@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T14:22:45Z",
+  "updated_at": "2026-08-05T17:48:34Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -44,15 +44,15 @@
     },
     "market": {
       "ticker": "SPCX",
-      "price": 114.57,
+      "price": 111.71,
       "previous_close": 125.33,
-      "change_pct_1d": -8.59,
+      "change_pct_1d": -10.87,
       "ipo_price": 135.0,
-      "pct_vs_ipo": -15.13,
+      "pct_vs_ipo": -17.26,
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
-      "pct_vs_ath": -45.8,
-      "as_of_utc": "2026-08-05T14:22:40Z",
+      "pct_vs_ath": -47.16,
+      "as_of_utc": "2026-08-05T17:48:27Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,13 +114,13 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-08-05T14:22:40Z",
+    "as_of_utc": "2026-08-05T17:48:27Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-    "net_worth_proxy_usd_b": 1008.67,
+    "net_worth_proxy_usd_b": 987.08,
     "components_usd_b": {
       "cash_realized_usd_b": 39.98,
-      "tesla_stake_usd_b": 230.2,
-      "spacex_stake_usd_b": 738.49
+      "tesla_stake_usd_b": 229.18,
+      "spacex_stake_usd_b": 717.92
     },
     "holdings": [
       {
@@ -128,9 +128,9 @@
         "ticker": "TSLA",
         "kind": "public",
         "shares": 710000000,
-        "price": 324.23,
-        "change_pct_1d": -0.95,
-        "value_usd_b": 230.2,
+        "price": 322.79,
+        "change_pct_1d": -1.39,
+        "value_usd_b": 229.18,
         "basis": "b+m",
         "note": "Beneficial shares from Form 4 anchor x live price"
       },
@@ -140,10 +140,10 @@
         "kind": "public",
         "musk_econ_pct": 0.36,
         "implied_shares": 6426666666,
-        "price": 114.91,
-        "change_pct_1d": -8.31,
-        "pct_vs_ipo": -14.88,
-        "value_usd_b": 738.49,
+        "price": 111.71,
+        "change_pct_1d": -10.87,
+        "pct_vs_ipo": -17.25,
+        "value_usd_b": 717.92,
         "value_at_ipo_usd_b": 867.6,
         "basis": "b+m",
         "note": "~36% econ x 17B total shares proxy at IPO"
@@ -808,27 +808,27 @@
     {
       "key": "musk",
       "tracked": 120,
-      "updated": "2026-08-05T14:21:05"
+      "updated": "2026-08-05T17:45:58"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-08-05T14:21:06"
+      "updated": "2026-08-05T17:45:59"
     },
     {
       "key": "spacex",
       "tracked": 64,
-      "updated": "2026-08-05T14:21:06"
+      "updated": "2026-08-05T17:46:00"
     },
     {
       "key": "tesla",
       "tracked": 123,
-      "updated": "2026-08-05T14:21:05"
+      "updated": "2026-08-05T17:45:59"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-08-05T14:21:05"
+      "updated": "2026-08-05T17:45:59"
     }
   ],
   "registry": [
@@ -1312,7 +1312,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-08-05T14:22:40Z",
+    "updated_at": "2026-08-05T17:48:28Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -2045,16 +2045,16 @@
       },
       {
         "date": "2026-08-05",
-        "net_worth_b": 1008.67,
-        "spcx": 114.91,
-        "tsla": 324.23,
-        "spacex_stake_b": 738.49,
-        "tesla_stake_b": 230.2,
+        "net_worth_b": 987.08,
+        "spcx": 111.71,
+        "tsla": 322.79,
+        "spacex_stake_b": 717.92,
+        "tesla_stake_b": 229.18,
         "cash_b": 39.98,
-        "sync_ts": "2026-08-05T14:22:40Z"
+        "sync_ts": "2026-08-05T17:48:27Z"
       }
     ],
-    "live_sync_count": 347,
+    "live_sync_count": 348,
     "annotations": {
       "catalysts": [
         {
@@ -2117,21 +2117,21 @@
     },
     "latest": {
       "date": "2026-08-05",
-      "net_worth_b": 1008.67,
-      "spcx": 114.91,
-      "tsla": 324.23,
-      "spacex_stake_b": 738.49,
-      "tesla_stake_b": 230.2,
+      "net_worth_b": 987.08,
+      "spcx": 111.71,
+      "tsla": 322.79,
+      "spacex_stake_b": 717.92,
+      "tesla_stake_b": 229.18,
       "cash_b": 39.98,
-      "sync_ts": "2026-08-05T14:22:40Z"
+      "sync_ts": "2026-08-05T17:48:27Z"
     }
   },
   "empire_memory": {
-    "updated_at": "2026-08-05T14:22:45Z",
+    "updated_at": "2026-08-05T17:48:34Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-08-05T14:22:45Z",
+      "updated_at": "2026-08-05T17:48:34Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-08-05, the memory agent tracks 87 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
