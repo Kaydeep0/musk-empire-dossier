@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-04T23:07:58Z",
+  "updated_at": "2026-08-05T02:55:09Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-08-04T23:07:58Z",
+    "updated_at": "2026-08-05T02:55:09Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-08-04, the memory agent tracks 86 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-08-05, the memory agent tracks 87 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -82,7 +82,7 @@
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 86
+    "event_count": 87
   },
   "patterns": [
     {
@@ -92,8 +92,8 @@
       "hypothesis": "H12",
       "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
       "entities": [
-        "spacex",
-        "twitter"
+        "twitter",
+        "spacex"
       ],
       "evidence_ids": [
         "debt-2023-04-01-twitter",
@@ -499,6 +499,18 @@
         "catalyst",
         "catalyst",
         "H5/H6 scarcity premi"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "entity_key": "portfolio",
+      "entity": "Portfolio proxy",
+      "type": "market_sync",
+      "headline": "SPCX $125.33 TSLA $327.35 NW $1077.85B",
+      "url": null,
+      "tags": [
+        "market",
+        "timeseries"
       ]
     },
     {
@@ -1288,18 +1300,6 @@
       "entity": "SpaceX",
       "type": "debt_chain",
       "headline": "xAI(+X) folded into SpaceX; debt recast",
-      "url": null,
-      "tags": [
-        "debt_travel",
-        "H12"
-      ]
-    },
-    {
-      "date": "2025-03-28",
-      "entity_key": "twitter",
-      "entity": "xAI",
-      "type": "debt_chain",
-      "headline": "X folded into xAI (X.AI Holdings)",
       "url": null,
       "tags": [
         "debt_travel",
