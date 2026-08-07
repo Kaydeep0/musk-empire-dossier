@@ -23,7 +23,9 @@
         {
           "kind": "d+3",
           "due": "2026-08-07",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+3): new 10-Q 2026-08-04 after Operating results or guidance. Quarterly report",
+          "checked_at": "2026-08-07T00:08:14Z"
         },
         {
           "kind": "d+7",
