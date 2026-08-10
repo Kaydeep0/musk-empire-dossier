@@ -1,10 +1,10 @@
 {
-  "as_of_utc": "2026-08-10T16:59:41Z",
+  "as_of_utc": "2026-08-10T19:06:09Z",
   "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-  "net_worth_proxy_usd_b": 1128.45,
+  "net_worth_proxy_usd_b": 1128.54,
   "components_usd_b": {
     "cash_realized_usd_b": 39.98,
-    "tesla_stake_usd_b": 233.92,
+    "tesla_stake_usd_b": 234.01,
     "spacex_stake_usd_b": 854.55
   },
   "holdings": [
@@ -13,9 +13,9 @@
       "ticker": "TSLA",
       "kind": "public",
       "shares": 710000000,
-      "price": 329.46,
-      "change_pct_1d": 0.27,
-      "value_usd_b": 233.92,
+      "price": 329.59,
+      "change_pct_1d": 0.31,
+      "value_usd_b": 234.01,
       "basis": "b+m",
       "note": "Beneficial shares from Form 4 anchor x live price"
     },
