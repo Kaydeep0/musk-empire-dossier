@@ -1,11 +1,11 @@
 {
-  "as_of_utc": "2026-08-12T02:22:53Z",
+  "as_of_utc": "2026-08-12T05:41:32Z",
   "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-  "net_worth_proxy_usd_b": 1132.89,
+  "net_worth_proxy_usd_b": 1167.92,
   "components_usd_b": {
     "cash_realized_usd_b": 39.98,
     "tesla_stake_usd_b": 236.3,
-    "spacex_stake_usd_b": 856.61
+    "spacex_stake_usd_b": 891.64
   },
   "holdings": [
     {
@@ -25,10 +25,10 @@
       "kind": "public",
       "musk_econ_pct": 0.36,
       "implied_shares": 6426666666,
-      "price": 133.29,
-      "change_pct_1d": -3.93,
-      "pct_vs_ipo": -1.27,
-      "value_usd_b": 856.61,
+      "price": 138.74,
+      "change_pct_1d": 4.23,
+      "pct_vs_ipo": 2.77,
+      "value_usd_b": 891.64,
       "value_at_ipo_usd_b": 867.6,
       "basis": "b+m",
       "note": "~36% econ x 17B total shares proxy at IPO"
