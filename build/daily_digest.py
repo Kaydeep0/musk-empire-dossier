@@ -180,6 +180,20 @@ def build_digest_body(items):
     except Exception:
         pass
 
+    try:
+        from spacex_signal_timeseries import format_digest_section, upsert_from_live
+
+        # Ensure today's point exists before rendering the digest table
+        try:
+            upsert_from_live()
+        except Exception:
+            pass
+        section = format_digest_section(limit=12)
+        if section:
+            lines += [section, ""]
+    except Exception:
+        pass
+
     lines += [
         "Instant alerts still fire for new 8-K/Form 4 briefs and 1/3-day date reminders.",
         "",
@@ -203,11 +217,20 @@ def build_digest_html(body, items):
   <div style="font-size:14px;color:#555;line-height:1.5;">{esc(ctx.get('why_it_matters', ''))}</div>
 </div>"""
 
+    spcx_html = ""
+    try:
+        from spacex_signal_timeseries import format_digest_html
+
+        spcx_html = format_digest_html(limit=12)
+    except Exception:
+        pass
+
     return f"""<!DOCTYPE html>
-<html><body style="font-family:-apple-system,sans-serif;max-width:560px;margin:0 auto;padding:16px;">
+<html><body style="font-family:-apple-system,sans-serif;max-width:640px;margin:0 auto;padding:16px;">
 <p style="color:#2563eb;font-weight:600;">DAILY DOSSIER DIGEST</p>
 <p>{esc(_utc_now().strftime('%A %B %d, %Y'))}</p>
 {sections or '<p>No 7-day heads-up dates today. See live calendar on site.</p>'}
+{spcx_html}
 <p style="margin-top:20px;"><a href="{DOSSIER_SITE}">Open live dossier</a></p>
 <p style="font-size:12px;color:#888;">Educational only. Not investment advice.</p>
 </body></html>"""

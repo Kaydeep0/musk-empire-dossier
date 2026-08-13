@@ -6,5 +6,6 @@ data/watch.out.log
 data/watch.err.log
 data/pipeline.log
 data/_tsla_yahoo.json
+data/spacex_signal_timeseries.jsonl
 .env
 data/.notify.env
