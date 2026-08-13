@@ -16,7 +16,7 @@
         "lock-up adjacent sales"
       ]
     },
-    "event_count": 5,
+    "event_count": 7,
     "last_event_date": "2026-12-31",
     "last_event_summary": "TSLA open-market sales 2026: 1 trades, $0.00B",
     "themes": [
@@ -31,9 +31,21 @@
       {
         "tag": "tesla",
         "count": 5
+      },
+      {
+        "tag": "debt_refi",
+        "count": 1
+      },
+      {
+        "tag": "insider_trade",
+        "count": 1
+      },
+      {
+        "tag": "supply",
+        "count": 1
       }
     ],
-    "updated": "2026-08-13T19:10:18Z"
+    "updated": "2026-08-13T20:50:42Z"
   },
   "tesla": {
     "key": "tesla",
@@ -69,7 +81,7 @@
         "count": 3
       }
     ],
-    "updated": "2026-08-13T19:10:18Z"
+    "updated": "2026-08-13T20:50:42Z"
   },
   "twitter": {
     "key": "twitter",
@@ -98,7 +110,7 @@
         "count": 3
       }
     ],
-    "updated": "2026-08-13T19:10:18Z"
+    "updated": "2026-08-13T20:50:42Z"
   },
   "solarcity": {
     "key": "solarcity",
@@ -115,7 +127,7 @@
     "last_event_date": null,
     "last_event_summary": null,
     "themes": [],
-    "updated": "2026-08-13T19:10:18Z"
+    "updated": "2026-08-13T20:50:42Z"
   },
   "spacex": {
     "key": "spacex",
@@ -172,6 +184,6 @@
         "count": 2
       }
     ],
-    "updated": "2026-08-13T19:10:18Z"
+    "updated": "2026-08-13T20:50:42Z"
   }
 }

@@ -1,5 +1,32 @@
 {
-  "active": [],
+  "active": [
+    {
+      "lane": "musk",
+      "accession": "0001104659-26-095936",
+      "entity": "Elon Musk (reporting person)",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-08-13",
+      "headline": "Material event (SCHEDULE 13G)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "expect": [
+        "Map to control, related-party, or personal liquidity channel"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-08-14",
+          "sent": false
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-08-16",
+          "sent": false
+        }
+      ],
+      "status": "watching",
+      "created": "2026-08-13T20:49:30Z"
+    }
+  ],
   "closed": [
     {
       "lane": "musk",

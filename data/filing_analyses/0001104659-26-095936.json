@@ -1,0 +1,33 @@
+{
+  "entity": "Elon Musk (reporting person)",
+  "form": "SCHEDULE 13G",
+  "filing_date": "2026-08-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml",
+  "accession": "0001104659-26-095936",
+  "dossier_url": "https://kaydeep0.github.io/musk-empire-dossier",
+  "github_url": "https://github.com/kaydeep0/musk-empire-dossier",
+  "generated_utc": "2026-08-13T20:49:30Z",
+  "summary": "Material event (SCHEDULE 13G)\nItems filed: Item 1: (a) Name of issuer: Space Exploration Technologies Corp; Item 2: (a) Name of person filing: Elon R; Item 3: If this statement is filed pursuant to \u00a7\u00a7 240",
+  "engineer": "Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.",
+  "trader": "Map filing to next dated catalyst on the calendar before sizing risk.\nNext dated supply/demand events on our calendar:\n  \u2022 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)\n  \u2022 2026-09-02: Goldman bridge $175.50 trigger window ends\n  \u2022 2026-12-08: Remainder lock-up release (180-day customary expiry)",
+  "cfa": "Treat as corporate finance or governance signal until quantified in financials.",
+  "elon": "Form 4 is direct personal ledger: shares sold, exercised, or gifted change his cash and control. Size and timing vs price strength test H2 (sell into demand).\nCluster with other insiders and catalyst calendar before inferring intent (10b5-1 plan vs discretionary).",
+  "supply_demand": "Demand vs supply (what actually moves the stock):\n\u2022 Re-read for explicit share count, ATM, secondary, or lock-up language.",
+  "facts": {
+    "headline": "Material event (SCHEDULE 13G)",
+    "items": [
+      "Item 1: (a) Name of issuer: Space Exploration Technologies Corp",
+      "Item 2: (a) Name of person filing: Elon R",
+      "Item 3: If this statement is filed pursuant to \u00a7\u00a7 240",
+      "Item 4: Ownership (a) Amount beneficially owned: 6,418,547,515 shares of Class A common stock, par value $0",
+      "Item 5: Ownership of 5 Percent or Less of a Class",
+      "Item 6: Ownership of more than 5 Percent on Behalf of Another Person"
+    ],
+    "tranches": [],
+    "total_offering_b": null,
+    "use_of_proceeds": "",
+    "settlement": "",
+    "has_bridge_repay": false,
+    "has_cash_disclosure": false
+  }
+}
