@@ -1,11 +1,11 @@
 {
-  "as_of_utc": "2026-08-13T13:23:45Z",
+  "as_of_utc": "2026-08-13T15:03:18Z",
   "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-  "net_worth_proxy_usd_b": 1211.77,
+  "net_worth_proxy_usd_b": 1182.87,
   "components_usd_b": {
     "cash_realized_usd_b": 39.98,
-    "tesla_stake_usd_b": 232.53,
-    "spacex_stake_usd_b": 939.26
+    "tesla_stake_usd_b": 237.05,
+    "spacex_stake_usd_b": 905.84
   },
   "holdings": [
     {
@@ -13,9 +13,9 @@
       "ticker": "TSLA",
       "kind": "public",
       "shares": 710000000,
-      "price": 327.51,
-      "change_pct_1d": -1.59,
-      "value_usd_b": 232.53,
+      "price": 333.88,
+      "change_pct_1d": 1.94,
+      "value_usd_b": 237.05,
       "basis": "b+m",
       "note": "Beneficial shares from Form 4 anchor x live price"
     },
@@ -25,10 +25,10 @@
       "kind": "public",
       "musk_econ_pct": 0.36,
       "implied_shares": 6426666666,
-      "price": 146.15,
-      "change_pct_1d": 9.65,
-      "pct_vs_ipo": 8.26,
-      "value_usd_b": 939.26,
+      "price": 140.95,
+      "change_pct_1d": -3.56,
+      "pct_vs_ipo": 4.41,
+      "value_usd_b": 905.84,
       "value_at_ipo_usd_b": 867.6,
       "basis": "b+m",
       "note": "~36% econ x 17B total shares proxy at IPO"
