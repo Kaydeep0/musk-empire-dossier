@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-12T22:48:38Z",
+  "updated_at": "2026-08-13T02:24:43Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-08-12T22:48:38Z",
+    "updated_at": "2026-08-13T02:24:43Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-08-12, the memory agent tracks 94 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-08-13, the memory agent tracks 95 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -82,7 +82,7 @@
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 94
+    "event_count": 95
   },
   "patterns": [
     {
@@ -499,6 +499,18 @@
         "catalyst",
         "catalyst",
         "H5/H6 scarcity premi"
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "entity_key": "portfolio",
+      "entity": "Portfolio proxy",
+      "type": "market_sync",
+      "headline": "SPCX $146.15 TSLA $327.51 NW $1211.77B",
+      "url": null,
+      "tags": [
+        "market",
+        "timeseries"
       ]
     },
     {
@@ -1293,15 +1305,6 @@
         "market",
         "timeseries"
       ]
-    },
-    {
-      "date": "2026-06-23",
-      "entity_key": "spacex",
-      "entity": "Space Exploration Technologies (SPCX)",
-      "type": "sec_alert",
-      "headline": "Material event report",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-      "tags": null
     }
   ]
 }
