@@ -94,7 +94,7 @@ body{max-width:1040px}
 </head><body>
 <header>
 <p><span class="badge">LIVE</span> <span class="badge badge-auto">AUTO</span>
-<span class="muted">Updated 2026-08-13T20:50:42Z · GitHub Actions every 30 min</span></p>
+<span class="muted">Updated 2026-08-13T21:25:11Z · GitHub Actions every 30 min</span></p>
 <h1>Musk infrastructure watch</h1>
 <p class="muted">Live SEC dossier testing a falsifiable thesis about how narrative converts to cash across Musk vehicles.
 Updated automatically from EDGAR every 30 minutes.</p>
@@ -115,6 +115,8 @@ Updated automatically from EDGAR every 30 minutes.</p>
 <a href="feed.xml">RSS</a>
 <a href="status.json">JSON</a>
 <a href="timeseries.json">Time series</a>
+<a href="#spcx-unlock">SPCX unlock series</a>
+<a href="spacex_timeseries.json">Unlock JSON</a>
 </nav>
 </header>
 
@@ -391,90 +393,60 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 
 </section>
 
+<section id="spcx-unlock" class="box">
+<h2>SPCX time series — price × SEC × inventory</h2>
+<p class="section-note">Daily close vs IPO, cumulative tradable float from the V5 lock-up ladder, and SEC / calendar events on that day. Grades whether the scarcity premium holds as inventory frees up (Aug 20 first major unlock).</p>
+<p class="section-note">SPCX tracker: $141.29 · +4.7% vs IPO $135.0 · tradable float ~4.86% (IPO float (~4.86%)) · next inventory free-up 2026-08-20 (7d → ~9.72% float) · Aug-20 unlock test not graded yet (date still ahead) (<a href="spacex_timeseries.json">JSON</a>)</p>
+<div style="margin:18px 0;padding:14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">
+  <div style="font-weight:700;margin-bottom:6px;">SPCX time series — price × SEC × inventory</div>
+  <p style="margin:0 0 12px;font-size:14px;line-height:1.45;color:#334155;">SPCX tracker: $141.29 · +4.7% vs IPO $135.0 · tradable float ~4.86% (IPO float (~4.86%)) · next inventory free-up 2026-08-20 (7d → ~9.72% float) · Aug-20 unlock test not graded yet (date still ahead)</p>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;">
+    <thead><tr style="border-bottom:2px solid #0f172a;text-align:left;">
+      <th style="padding:6px 8px;">Date</th>
+      <th style="padding:6px 8px;text-align:right;">Price</th>
+      <th style="padding:6px 8px;text-align:right;">vs IPO</th>
+      <th style="padding:6px 8px;text-align:right;">Float%</th>
+      <th style="padding:6px 8px;text-align:center;">Inv free</th>
+      <th style="padding:6px 8px;text-align:right;">SEC</th>
+      <th style="padding:6px 8px;">Event</th>
+    </tr></thead>
+    <tbody><tr style=""><td style="padding:6px 8px">2026-08-13</td><td style="padding:6px 8px;text-align:right">$141.29</td><td style="padding:6px 8px;text-align:right">4.66%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-12</td><td style="padding:6px 8px;text-align:right">$146.15</td><td style="padding:6px 8px;text-align:right">8.26%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-11</td><td style="padding:6px 8px;text-align:right">$133.29</td><td style="padding:6px 8px;text-align:right">-1.27%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-10</td><td style="padding:6px 8px;text-align:right">$138.74</td><td style="padding:6px 8px;text-align:right">2.77%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-07</td><td style="padding:6px 8px;text-align:right">$133.11</td><td style="padding:6px 8px;text-align:right">-1.4%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-06</td><td style="padding:6px 8px;text-align:right">$114.92</td><td style="padding:6px 8px;text-align:right">-14.87%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-05</td><td style="padding:6px 8px;text-align:right">$108.27</td><td style="padding:6px 8px;text-align:right">-19.8%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-08-04</td><td style="padding:6px 8px;text-align:right">$125.33</td><td style="padding:6px 8px;text-align:right">-7.16%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right">3</td><td style="padding:6px 8px;font-size:12px">Latest SpaceX 8-K</td></tr><tr style=""><td style="padding:6px 8px">2026-08-03</td><td style="padding:6px 8px;text-align:right">$114.53</td><td style="padding:6px 8px;text-align:right">-15.16%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-07-31</td><td style="padding:6px 8px;text-align:right">$108.37</td><td style="padding:6px 8px;text-align:right">-19.73%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-07-30</td><td style="padding:6px 8px;text-align:right">$112.2</td><td style="padding:6px 8px;text-align:right">-16.89%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-07-29</td><td style="padding:6px 8px;text-align:right">$112.55</td><td style="padding:6px 8px;text-align:right">-16.63%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-07-28</td><td style="padding:6px 8px;text-align:right">$116.41</td><td style="padding:6px 8px;text-align:right">-13.77%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr><tr style=""><td style="padding:6px 8px">2026-07-27</td><td style="padding:6px 8px;text-align:right">$113.5</td><td style="padding:6px 8px;text-align:right">-15.93%</td><td style="padding:6px 8px;text-align:right">4.86%</td><td style="padding:6px 8px;text-align:center">—</td><td style="padding:6px 8px;text-align:right"></td><td style="padding:6px 8px;font-size:12px">—</td></tr></tbody>
+  </table>
+  <p style="margin:10px 0 0;font-size:12px;color:#64748b;">
+    Inv free = lock-up / float step that day. Float% = cumulative tradable inventory from V5 calendar.
+  </p>
+</div>
+
+</section>
+
 <section id="briefs" class="box">
 <h2>Filing briefs <span class="section-tag">multi-lens</span></h2>
 <p class="section-note">Auto-generated when the SEC watcher fires. Same perspectives as email alerts: engineer, trader, CFA, Elon personally, demand and supply.</p>
 
 <article class="brief-card">
-<h3>Elon Musk (reporting person) · SCHEDULE 13G · 2026-08-13</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml">EDGAR filing</a> · generated 2026-08-13T20:49:30Z</p>
-<p><strong>In one line:</strong> Material event (SCHEDULE 13G) Items filed: Item 1: (a) Name of issuer: Space Exploration Technologies Corp; Item 2: (a) Name of person filing: Elon R; Item 3: If this statement is filed pursuant to §§ 240…</p>
+<h3>Elon Musk (CIK 1494730) · 4 · 2026-06-17</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1494730/000162828026044069/xslF345X06/wk-form4_1781740812.xml">EDGAR filing</a> · generated 2026-06-23T22:49:03Z</p>
+<p><strong>In one line:</strong> Insider transaction reported (Form 4)…</p>
 <div class="brief-lenses">
-<div class="brief-lens"><div class="bl-title">Everyone</div>Material event (SCHEDULE 13G)</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.</div>
-<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
+<div class="brief-lens"><div class="bl-title">Everyone</div>Insider transaction reported (Form 4)</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Insider ledger update: mechanical SEC reporting of ownership changes. Check whether sale is 10b5-1, tax, or discretionary.</div>
+<div class="brief-lens"><div class="bl-title">Trader</div>Form 4: check size vs 20-day volume, cluster with other insiders, and whether price is into strength (dossier H2/H6).<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
 <div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.</div>
 <div class="brief-lens"><div class="bl-title">Elon personally</div>Form 4 is direct personal ledger: shares sold, exercised, or gifted change his cash and control. Size and timing vs price strength test H2 (sell into demand).<br>Cluster with other insiders and catalyst calendar before inferring intent (10b5-1 plan vs discretionary).</div>
-<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
+<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• SUPPLY: insider sale increases free float available at the margin; clustered Form 4s are the dossier's primary supply signal (H2/H5).<br>• DEMAND: depends on retail/institutional absorption that day; cross-check vs unlock windows and hype cycle.</div>
 </div>
 </article>
 
 <article class="brief-card">
-<h3>Space Exploration Technologies (SPCX) · 8-K · 2026-06-23</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm">EDGAR filing</a> · generated 2026-06-23T22:48:56Z</p>
-<p><strong>In one line:</strong> Bond offering priced (coupon and maturity set) Total priced: ~$25.0B across 5 tranches:   • $7.0B @ 5.350% due 2031   • $6.0B @ 5.650% due 2033…</p>
+<h3>Space Exploration Technologies (SpaceX) · 10-Q · 2026-08-04</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm">EDGAR filing</a> · generated 2026-08-04T21:16:46Z</p>
+<p><strong>In one line:</strong> Bond offering priced (coupon and maturity set) Key size disclosed: ~$93.5B Use of proceeds: intends to use the net proceeds from the IPO to fund its growth strategy, including the expansion of the Company's AI compute infrastructure, enhancements to the Company's launch infrastru…</p>
 <div class="brief-lenses">
 <div class="brief-lens"><div class="bl-title">Everyone</div>Bond offering priced (coupon and maturity set)</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Capital stack move: unsecured notes replace short-dated bridge bank debt. Operationally this buys runway to fund Starlink, Starship, and xAI compute without issuing new equity today.<br>Engineering implication: proceeds retire the bridge facility that was funding the post-IPO debt overhang from the Twitter/X/xAI chain. Fixed-rate tranches lock in cost of capital out to 2031–2056 instead of floating bank exposure.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
-<div class="brief-lens"><div class="bl-title">Trader</div>Tradeable read: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape.<br>Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price if market was discounting refi risk. Medium-term: adds ~$25B fixed coupons to the capital structure.<br>Watch: bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
-<div class="brief-lens"><div class="bl-title">CFA</div>Credit / structure: senior unsecured notes rank pari passu with existing unsubordinated debt. This extends duration and fixes coupons.<br>Blended coupon on priced tranches: ~5.86% (simple size-weighted).<br>Use of proceeds (bridge repayment + fees + general corporate) implies IPO cash and note proceeds are closing the Goldman bridge chapter, not returning capital to shareholders.<br>Equity holder lens: no dilution from this filing, but higher financial leverage and future interest burden. Monitor coverage once 10-Q debt footnotes update.<br>Debt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).</div>
-<div class="brief-lens"><div class="bl-title">Elon personally</div>This is a company-level bond print, not a Musk Form 4. He does not receive cash from it personally today. His ~36% economic SPCX stake still cannot be sold until lock-up releases (largest block unlock: Jun 16, 2027 per prospectus).<br>Personally, the win is balance-sheet cleanup: the Goldman bridge tied to the Twitter -&gt; X -&gt; xAI -&gt; SpaceX debt relay gets retired with public-market notes. That removes a near-term refi sword over the vehicle he controls.<br>Loop read (H2/H12): Musk builds hype, takes the empire public, retains control, then realizes personal cash by selling existing stake into retail demand at dated unlock steps. This filing is infrastructure (debt refi), not the exit step.<br>Watch his personal ledger separately: TSLA Form 4 sales (~$40B cumulative in our dossier) remain the active personal liquidity channel while SPCX is gated.</div>
-<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• EQUITY SUPPLY: unchanged by this filing. Lock-up calendar still drives tradable float (next step Aug 20, 2026 ~7% pool per prospectus).<br>• EQUITY DEMAND: debt deal can attract institutional credit buyers, not retail share buyers. Indirect bid possible if refi overhang clears.<br>• DEBT SUPPLY: +~$25.0B new notes to market (institutional allocation).<br>• FLOAT PSYCHOLOGY: removing bridge uncertainty may reduce forced-sale risk premium; does not add insider shares.</div>
-</div>
-</article>
-
-<article class="brief-card">
-<h3>Tesla Inc · 8-K · 2026-07-22</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm">EDGAR filing</a> · generated 2026-07-22T21:14:42Z</p>
-<p><strong>In one line:</strong> Operating results or guidance Key size disclosed: ~$12.0B Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K, "Results of Operations and Financial Condition" and shall not be deemed "filed" for purposes of Section; Item 9: 01 Financial S…</p>
-<div class="brief-lenses">
-<div class="brief-lens"><div class="bl-title">Everyone</div>Operating results or guidance</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.</div>
-<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
-<div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.</div>
-<div class="brief-lens"><div class="bl-title">Elon personally</div>Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.</div>
-<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
-</div>
-</article>
-
-<article class="brief-card">
-<h3>Space Exploration Technologies (SpaceX) · 8-K · 2026-06-26</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm">EDGAR filing</a> · generated 2026-06-26T21:25:51Z</p>
-<p><strong>In one line:</strong> New debt or securities offering commenced Key size disclosed: ~$12.0B Items filed: Item 8.01: Other Events; Item 9.01: Financial Statements and Exhibits…</p>
-<div class="brief-lenses">
-<div class="brief-lens"><div class="bl-title">Everyone</div>New debt or securities offering commenced</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Debt refi event: filing confirms bridge repayment intent. Reduces near-term bank covenant / maturity engineering risk on the ops side.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
 <div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
 <div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.<br>Debt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).</div>
 <div class="brief-lens"><div class="bl-title">Elon personally</div>Map to Musk only if he is reporting person, related party, or control person named in the exhibit.</div>
-<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
-</div>
-</article>
-
-<article class="brief-card">
-<h3>Space Exploration Technologies (SpaceX) · 8-K · 2026-08-04</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm">EDGAR filing</a> · generated 2026-08-04T21:16:48Z</p>
-<p><strong>In one line:</strong> Operating results or guidance Key size disclosed: ~$12.0B Items filed: Item 2.02: Results of Operations and Financial Condition; Item 2: 02, including Exhibit 99; Item 9.01: Financial Statements and Exhibits…</p>
-<div class="brief-lenses">
-<div class="brief-lens"><div class="bl-title">Everyone</div>Operating results or guidance</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
-<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
-<div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.<br>Debt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).</div>
-<div class="brief-lens"><div class="bl-title">Elon personally</div>Map to Musk only if he is reporting person, related party, or control person named in the exhibit.</div>
-<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
-</div>
-</article>
-
-<article class="brief-card">
-<h3>Tesla Inc · 8-K · 2026-07-02</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm">EDGAR filing</a> · generated 2026-07-02T16:07:31Z</p>
-<p><strong>In one line:</strong> Operating results or guidance Key size disclosed: ~$12.0B Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed "filed" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial …</p>
-<div class="brief-lenses">
-<div class="brief-lens"><div class="bl-title">Everyone</div>Operating results or guidance</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.</div>
-<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
-<div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.</div>
-<div class="brief-lens"><div class="bl-title">Elon personally</div>Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.</div>
 <div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
 </div>
 </article>
@@ -494,12 +466,68 @@ Related parties = channels he can act through without a headline "Musk sold." Ch
 </article>
 
 <article class="brief-card">
-<h3>Space Exploration Technologies (SpaceX) · 10-Q · 2026-08-04</h3>
-<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm">EDGAR filing</a> · generated 2026-08-04T21:16:46Z</p>
-<p><strong>In one line:</strong> Bond offering priced (coupon and maturity set) Key size disclosed: ~$93.5B Use of proceeds: intends to use the net proceeds from the IPO to fund its growth strategy, including the expansion of the Company's AI compute infrastructure, enhancements to the Company's launch infrastru…</p>
+<h3>Space Exploration Technologies (SPCX) · 8-K · 2026-06-23</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm">EDGAR filing</a> · generated 2026-06-23T22:48:56Z</p>
+<p><strong>In one line:</strong> Bond offering priced (coupon and maturity set) Total priced: ~$25.0B across 5 tranches:   • $7.0B @ 5.350% due 2031   • $6.0B @ 5.650% due 2033…</p>
 <div class="brief-lenses">
 <div class="brief-lens"><div class="bl-title">Everyone</div>Bond offering priced (coupon and maturity set)</div>
-<div class="brief-lens"><div class="bl-title">Engineer</div>Debt refi event: filing confirms bridge repayment intent. Reduces near-term bank covenant / maturity engineering risk on the ops side.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Capital stack move: unsecured notes replace short-dated bridge bank debt. Operationally this buys runway to fund Starlink, Starship, and xAI compute without issuing new equity today.<br>Engineering implication: proceeds retire the bridge facility that was funding the post-IPO debt overhang from the Twitter/X/xAI chain. Fixed-rate tranches lock in cost of capital out to 2031–2056 instead of floating bank exposure.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
+<div class="brief-lens"><div class="bl-title">Trader</div>Tradeable read: this is a DEBT print, not new equity float. Near-term SPCX supply impact is indirect (sentiment / overhang), not shares hitting the tape.<br>Bridge paydown removes a known overhang from the June IPO narrative. Short-term: can support price if market was discounting refi risk. Medium-term: adds ~$25B fixed coupons to the capital structure.<br>Watch: bond pricing reception (order book), credit spreads vs Mag7, and whether SPCX equity trades as a levered growth proxy after settlement.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
+<div class="brief-lens"><div class="bl-title">CFA</div>Credit / structure: senior unsecured notes rank pari passu with existing unsubordinated debt. This extends duration and fixes coupons.<br>Blended coupon on priced tranches: ~5.86% (simple size-weighted).<br>Use of proceeds (bridge repayment + fees + general corporate) implies IPO cash and note proceeds are closing the Goldman bridge chapter, not returning capital to shareholders.<br>Equity holder lens: no dilution from this filing, but higher financial leverage and future interest burden. Monitor coverage once 10-Q debt footnotes update.<br>Debt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).</div>
+<div class="brief-lens"><div class="bl-title">Elon personally</div>This is a company-level bond print, not a Musk Form 4. He does not receive cash from it personally today. His ~36% economic SPCX stake still cannot be sold until lock-up releases (largest block unlock: Jun 16, 2027 per prospectus).<br>Personally, the win is balance-sheet cleanup: the Goldman bridge tied to the Twitter -&gt; X -&gt; xAI -&gt; SpaceX debt relay gets retired with public-market notes. That removes a near-term refi sword over the vehicle he controls.<br>Loop read (H2/H12): Musk builds hype, takes the empire public, retains control, then realizes personal cash by selling existing stake into retail demand at dated unlock steps. This filing is infrastructure (debt refi), not the exit step.<br>Watch his personal ledger separately: TSLA Form 4 sales (~$40B cumulative in our dossier) remain the active personal liquidity channel while SPCX is gated.</div>
+<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• EQUITY SUPPLY: unchanged by this filing. Lock-up calendar still drives tradable float (next step Aug 20, 2026 ~7% pool per prospectus).<br>• EQUITY DEMAND: debt deal can attract institutional credit buyers, not retail share buyers. Indirect bid possible if refi overhang clears.<br>• DEBT SUPPLY: +~$25.0B new notes to market (institutional allocation).<br>• FLOAT PSYCHOLOGY: removing bridge uncertainty may reduce forced-sale risk premium; does not add insider shares.</div>
+</div>
+</article>
+
+<article class="brief-card">
+<h3>Tesla Inc · 8-K · 2026-07-02</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm">EDGAR filing</a> · generated 2026-07-02T16:07:31Z</p>
+<p><strong>In one line:</strong> Operating results or guidance Key size disclosed: ~$12.0B Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed "filed" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial …</p>
+<div class="brief-lenses">
+<div class="brief-lens"><div class="bl-title">Everyone</div>Operating results or guidance</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.</div>
+<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
+<div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.</div>
+<div class="brief-lens"><div class="bl-title">Elon personally</div>Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.</div>
+<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
+</div>
+</article>
+
+<article class="brief-card">
+<h3>Tesla Inc · 8-K · 2026-07-22</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1318605/000162828026049213/tsla-20260722.htm">EDGAR filing</a> · generated 2026-07-22T21:14:42Z</p>
+<p><strong>In one line:</strong> Operating results or guidance Key size disclosed: ~$12.0B Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K, "Results of Operations and Financial Condition" and shall not be deemed "filed" for purposes of Section; Item 9: 01 Financial S…</p>
+<div class="brief-lenses">
+<div class="brief-lens"><div class="bl-title">Everyone</div>Operating results or guidance</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.</div>
+<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
+<div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.</div>
+<div class="brief-lens"><div class="bl-title">Elon personally</div>Issuer filing: affects TSLA capital structure and governance, not necessarily Musk's personal sales today. Cross-check CIK 1494730 Form 4 stream for his moves.</div>
+<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
+</div>
+</article>
+
+<article class="brief-card">
+<h3>Elon Musk (reporting person) · SCHEDULE 13G · 2026-08-13</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml">EDGAR filing</a> · generated 2026-08-13T20:49:30Z</p>
+<p><strong>In one line:</strong> Material event (SCHEDULE 13G) Items filed: Item 1: (a) Name of issuer: Space Exploration Technologies Corp; Item 2: (a) Name of person filing: Elon R; Item 3: If this statement is filed pursuant to §§ 240…</p>
+<div class="brief-lenses">
+<div class="brief-lens"><div class="bl-title">Everyone</div>Material event (SCHEDULE 13G)</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.</div>
+<div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
+<div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.</div>
+<div class="brief-lens"><div class="bl-title">Elon personally</div>Form 4 is direct personal ledger: shares sold, exercised, or gifted change his cash and control. Size and timing vs price strength test H2 (sell into demand).<br>Cluster with other insiders and catalyst calendar before inferring intent (10b5-1 plan vs discretionary).</div>
+<div class="brief-lens"><div class="bl-title">Demand &amp; supply</div>Demand vs supply (what actually moves the stock):<br>• Re-read for explicit share count, ATM, secondary, or lock-up language.</div>
+</div>
+</article>
+
+<article class="brief-card">
+<h3>Space Exploration Technologies (SpaceX) · 8-K · 2026-08-04</h3>
+<p class="brief-meta"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026052515/spcx-20260804.htm">EDGAR filing</a> · generated 2026-08-04T21:16:48Z</p>
+<p><strong>In one line:</strong> Operating results or guidance Key size disclosed: ~$12.0B Items filed: Item 2.02: Results of Operations and Financial Condition; Item 2: 02, including Exhibit 99; Item 9.01: Financial Statements and Exhibits…</p>
+<div class="brief-lenses">
+<div class="brief-lens"><div class="bl-title">Everyone</div>Operating results or guidance</div>
+<div class="brief-lens"><div class="bl-title">Engineer</div>Read the exhibit for operational detail (contracts, launches, compute). 8-K body is often legal wrapper; Exhibit 99.1 carries the substance.<br>Infrastructure lens: this issuer runs launch, satellite, and AI compute capex cycles measured in billions. Debt taps public markets; equity supply is still gated by lock-ups in the prospectus.</div>
 <div class="brief-lens"><div class="bl-title">Trader</div>Map filing to next dated catalyst on the calendar before sizing risk.<br>Next dated supply/demand events on our calendar:<br>  • 2026-08-20: First major lock-up unlock (~7% pool; roughly doubles tradable float)<br>  • 2026-09-02: Goldman bridge $175.50 trigger window ends<br>  • 2026-12-08: Remainder lock-up release (180-day customary expiry)</div>
 <div class="brief-lens"><div class="bl-title">CFA</div>Treat as corporate finance or governance signal until quantified in financials.<br>Debt chain context: 2027-09-02 Bridge maturity (refinancing cliff) (~$11.4B outstanding per dossier model).</div>
 <div class="brief-lens"><div class="bl-title">Elon personally</div>Map to Musk only if he is reporting person, related party, or control person named in the exhibit.</div>

@@ -288,6 +288,10 @@ def build_status():
         "recent_alerts": alerts(30),
         "filing_analyses": load_filing_analyses(8),
         "timeseries": load_json(os.path.join(PUBLIC, "timeseries.json"), {}),
+        "spacex_unlock_series": load_json(
+            os.path.join(PUBLIC, "spacex_timeseries.json"),
+            load_json(os.path.join(DATA, "spacex_signal_timeseries.json"), {}),
+        ),
         "empire_memory": load_json(os.path.join(PUBLIC, "empire_memory.json"), {}),
         "charts": [
             "charts/H3_sells_into_strength.png", "charts/H12_debt_chain.png",
@@ -771,6 +775,22 @@ def write_index(status):
     ts = status.get("latest_tesla_filing") or {}
     musk_form4_url = _edgar_company_url("1494730") + "&type=4"
 
+    # SPCX unlock / inventory time series (price × SEC × float ladder)
+    unlock_html = ""
+    try:
+        sys.path.insert(0, HERE)
+        from spacex_signal_timeseries import format_digest_html
+
+        unlock_html = (
+            format_digest_html(limit=14)
+            + '<p class="muted" style="margin-top:8px"><a href="spacex_timeseries.json">Download unlock series JSON</a></p>'
+        )
+    except Exception:
+        unlock_html = (
+            '<p class="muted">SPCX unlock series seeds on sync '
+            '(<code>spacex_signal_timeseries.py</code>).</p>'
+        )
+
     # SPCX box
     spcx_html = ""
     if b:
@@ -949,6 +969,8 @@ Updated automatically from EDGAR every 30 minutes.</p>
 <a href="feed.xml">RSS</a>
 <a href="status.json">JSON</a>
 <a href="timeseries.json">Time series</a>
+<a href="#spcx-unlock">SPCX unlock series</a>
+<a href="spacex_timeseries.json">Unlock JSON</a>
 </nav>
 </header>
 
@@ -968,6 +990,12 @@ Updated automatically from EDGAR every 30 minutes.</p>
 <h2>SPCX live: SpaceX IPO + latest issuer filing</h2>
 <p class="section-note">Space Exploration Technologies listed as SPCX on June 16, 2026. This box pulls the live stock price (basis m) and the latest material 8-K from issuer CIK 1181412 (basis b).</p>
 {spcx_html or '<p class="muted">Market and bond data refresh on each sync.</p>'}
+</section>
+
+<section id="spcx-unlock" class="box">
+<h2>SPCX time series — price × SEC × inventory</h2>
+<p class="section-note">Daily close vs IPO, cumulative tradable float from the V5 lock-up ladder, and SEC / calendar events on that day. Grades whether the scarcity premium holds as inventory frees up (Aug 20 first major unlock).</p>
+{unlock_html}
 </section>
 
 <section id="briefs" class="box">
