@@ -1,6 +1,21 @@
 {
-  "updated": "2026-08-13T20:49:30Z",
+  "updated": "2026-08-14T13:17:12Z",
   "items": [
+    {
+      "id": "0001628280-26-056945",
+      "status": "draft",
+      "accession": "0001628280-26-056945",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "8-K",
+      "filing_date": "2026-08-14",
+      "created_utc": "2026-08-14T13:17:12Z",
+      "linkedin_post": "\ud83d\udd34 Just in: SpaceX disclosed a ~$60B move.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nKey size disclosed: ~$60.0B.\n\nItems filed: Item 2: 01 Completion of Acquisition or Disposition of Assets; Item 3: 02 Unregistered Sales of Equity Securities; Item 2: 01 of this Current Report on Form 8-K is incorporated by reference into this Item 3.\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $141.29 (+5% vs IPO).\n\nSource:\nSpace Exploration Technologies (SpaceX) | 8-K | 2026-08-14\nhttps://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Material event (8-K)",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001104659-26-095936",
       "status": "draft",
