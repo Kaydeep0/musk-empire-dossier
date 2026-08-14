@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-08-14T16:59:55Z",
+  "updated_utc": "2026-08-14T19:01:35Z",
   "ticker": "SPCX",
   "ipo_price": 135.0,
   "ipo_date": "2026-06-13",
@@ -953,10 +953,10 @@
     },
     {
       "date": "2026-08-14",
-      "price": 137.71,
-      "volume": 59677304,
-      "pct_vs_ipo": 2.01,
-      "pct_vs_ath": -34.86,
+      "price": 139.63,
+      "volume": 79532061,
+      "pct_vs_ipo": 3.43,
+      "pct_vs_ath": -33.95,
       "ath_ref": 211.39,
       "float_pct": 4.86,
       "float_label": "IPO float (~4.86%)",
