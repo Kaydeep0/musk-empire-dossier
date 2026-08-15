@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T06:47:18Z",
+  "updated_at": "2026-08-15T08:36:35Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -9,18 +9,8 @@
     "primary_document": "xslSCHEDULE_13G_X02/primary_doc.xml",
     "url": "https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml"
   },
-  "latest_spacex_filing": {
-    "filing_date": "2026-08-14",
-    "form": "8-K",
-    "accession": "0001628280-26-056945",
-    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm"
-  },
-  "latest_tesla_filing": {
-    "filing_date": "2026-07-23",
-    "form": "10-Q",
-    "accession": "0001628280-26-049270",
-    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm"
-  },
+  "latest_spacex_filing": null,
+  "latest_tesla_filing": null,
   "sales": {
     "total_usd_b": 39.98,
     "by_year_usd_b": {
@@ -32,16 +22,7 @@
     }
   },
   "spcx": {
-    "bond": {
-      "date": "2026-06-22",
-      "event": "Senior unsecured notes offering",
-      "cash_disclosed_b": 100.8,
-      "cash_as_of": "2026-06-19",
-      "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
-      "basis": "b",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-      "accession": "0001628280-26-044489"
-    },
+    "bond": null,
     "market": {
       "ticker": "SPCX",
       "price": 140.0,
@@ -52,69 +33,20 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -33.77,
-      "as_of_utc": "2026-08-15T06:47:09Z",
+      "as_of_utc": "2026-08-15T08:36:27Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
     "spacex_edgar": {
       "cik": "0001181412",
       "issuer": "Space Exploration Technologies Corp. (SPCX)",
-      "latest_8k": {
-        "accession": "0001628280-26-056945",
-        "form": "8-K",
-        "filingDate": "2026-08-14",
-        "primaryDocument": "spcx-20260814.htm",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm"
-      },
-      "bond": {
-        "date": "2026-06-22",
-        "event": "Senior unsecured notes offering",
-        "cash_disclosed_b": 100.8,
-        "cash_as_of": "2026-06-19",
-        "target_b": null,
-        "bridge_loan_b": null,
-        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
-        "basis": "b",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-        "accession": "0001628280-26-044489"
-      },
-      "events": [
-        {
-          "basis": "b",
-          "accession": "0001628280-26-045763",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
-          "filing_date": "2026-06-26",
-          "form": "8-K",
-          "event": "Senior unsecured notes offering",
-          "bond_offering": true
-        },
-        {
-          "basis": "b",
-          "accession": "0001628280-26-044955",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-          "filing_date": "2026-06-23",
-          "form": "8-K",
-          "event": "Senior unsecured notes offering",
-          "bond_offering": true,
-          "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
-        },
-        {
-          "basis": "b",
-          "accession": "0001628280-26-044489",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-          "filing_date": "2026-06-22",
-          "form": "8-K",
-          "cash_disclosed_b": 100.8,
-          "cash_as_of": "2026-06-19",
-          "event": "Senior unsecured notes offering",
-          "bond_offering": true,
-          "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
-        }
-      ]
+      "latest_8k": null,
+      "bond": null,
+      "events": []
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-08-15T06:47:09Z",
+    "as_of_utc": "2026-08-15T08:36:27Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1182.72,
     "components_usd_b": {
@@ -194,226 +126,15 @@
   "spacex_events": {
     "cik": "0001181412",
     "issuer": "Space Exploration Technologies Corp. (SPCX)",
-    "latest_8k": {
-      "accession": "0001628280-26-056945",
-      "form": "8-K",
-      "filingDate": "2026-08-14",
-      "primaryDocument": "spcx-20260814.htm",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026056945/spcx-20260814.htm"
-    },
-    "bond": {
-      "date": "2026-06-22",
-      "event": "Senior unsecured notes offering",
-      "cash_disclosed_b": 100.8,
-      "cash_as_of": "2026-06-19",
-      "target_b": null,
-      "bridge_loan_b": null,
-      "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
-      "basis": "b",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-      "accession": "0001628280-26-044489"
-    },
-    "events": [
-      {
-        "basis": "b",
-        "accession": "0001628280-26-045763",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
-        "filing_date": "2026-06-26",
-        "form": "8-K",
-        "event": "Senior unsecured notes offering",
-        "bond_offering": true
-      },
-      {
-        "basis": "b",
-        "accession": "0001628280-26-044955",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-        "filing_date": "2026-06-23",
-        "form": "8-K",
-        "event": "Senior unsecured notes offering",
-        "bond_offering": true,
-        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
-      },
-      {
-        "basis": "b",
-        "accession": "0001628280-26-044489",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-        "filing_date": "2026-06-22",
-        "form": "8-K",
-        "cash_disclosed_b": 100.8,
-        "cash_as_of": "2026-06-19",
-        "event": "Senior unsecured notes offering",
-        "bond_offering": true,
-        "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
-      }
-    ]
+    "latest_8k": null,
+    "bond": null,
+    "events": []
   },
   "tesla_events": {
     "cik": "0001318605",
     "issuer": "Tesla Inc (TSLA)",
-    "latest_material": {
-      "accession": "0001628280-26-049270",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
-      "filing_date": "2026-07-23",
-      "form": "10-Q",
-      "basis": "b",
-      "related_party": true,
-      "compensation": true,
-      "cross_entity": true,
-      "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
-    },
-    "events": [
-      {
-        "accession": "0001628280-26-049270",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
-        "filing_date": "2026-07-23",
-        "form": "10-Q",
-        "basis": "b",
-        "related_party": true,
-        "compensation": true,
-        "cross_entity": true,
-        "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-26-053166",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926053166/tm2611837d1_10ka.htm",
-        "filing_date": "2026-04-30",
-        "form": "10-K/A",
-        "basis": "b",
-        "pledged_shares": true,
-        "compensation": true,
-        "cross_entity": true,
-        "amount_disclosed_m": 65.0,
-        "headline": "10-K/A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
-      },
-      {
-        "accession": "0001628280-26-026673",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026026673/tsla-20260331.htm",
-        "filing_date": "2026-04-23",
-        "form": "10-Q",
-        "basis": "b",
-        "related_party": true,
-        "compensation": true,
-        "cross_entity": true,
-        "amount_disclosed_m": 176.0,
-        "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp \u00b7 ~$176.0M disclosed"
-      },
-      {
-        "accession": "0001628280-26-003952",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
-        "filing_date": "2026-01-29",
-        "form": "10-K",
-        "basis": "b",
-        "related_party": true,
-        "pledged_shares": true,
-        "compensation": true,
-        "cross_entity": true,
-        "amount_disclosed_m": 371.0,
-        "headline": "10-K \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$371.0M disclosed"
-      },
-      {
-        "accession": "0001104659-25-108507",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925108507/tm2530590d1_8k.htm",
-        "filing_date": "2025-11-07",
-        "form": "8-K",
-        "basis": "b",
-        "compensation": true,
-        "headline": "8-K \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-107871",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925107871/tm252289d50_defa14a.htm",
-        "filing_date": "2025-11-06",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-107096",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925107096/tm252289d49_defa14a.htm",
-        "filing_date": "2025-11-05",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-106380",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925106380/tm252289d48_defa14a.htm",
-        "filing_date": "2025-11-04",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-105632",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925105632/tm252289d47_defa14a.htm",
-        "filing_date": "2025-11-03",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-104992",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925104992/tm252289d46_defa14a.htm",
-        "filing_date": "2025-10-31",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-104464",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925104464/tm252289d45_defa14a.htm",
-        "filing_date": "2025-10-30",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-103800",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103800/tm252289d44_defa14a.htm",
-        "filing_date": "2025-10-29",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-103255",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103255/tm252289d43_defa14a.htm",
-        "filing_date": "2025-10-28",
-        "form": "DEFA14A",
-        "basis": "b",
-        "related_party": true,
-        "compensation": true,
-        "cross_entity": true,
-        "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-102658",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925102658/tm252289d42_defa14a.htm",
-        "filing_date": "2025-10-27",
-        "form": "DEFA14A",
-        "basis": "b",
-        "related_party": true,
-        "compensation": true,
-        "cross_entity": true,
-        "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
-      },
-      {
-        "accession": "0001104659-25-101876",
-        "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925101876/tm252289d41_defa14a.htm",
-        "filing_date": "2025-10-23",
-        "form": "DEFA14A",
-        "basis": "b",
-        "compensation": true,
-        "headline": "DEFA14A \u00b7 CEO comp"
-      }
-    ]
+    "latest_material": null,
+    "events": []
   },
   "debt_chain": [
     {
@@ -1333,7 +1054,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-08-15T06:47:10Z",
+    "updated_at": "2026-08-15T08:36:27Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -2094,7 +1815,7 @@
       },
       {
         "date": "2026-08-15",
-        "sync_ts": "2026-08-15T06:47:09Z",
+        "sync_ts": "2026-08-15T08:36:27Z",
         "spcx": 140.0,
         "tsla": 342.27,
         "net_worth_b": 1182.72,
@@ -2103,7 +1824,7 @@
         "cash_b": 39.98
       }
     ],
-    "live_sync_count": 448,
+    "live_sync_count": 449,
     "annotations": {
       "catalysts": [
         {
@@ -2143,30 +1864,11 @@
           "type": "catalyst"
         }
       ],
-      "filings": [
-        {
-          "date": "2026-06-26",
-          "label": "Senior unsecured notes offering",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
-          "type": "filing"
-        },
-        {
-          "date": "2026-06-23",
-          "label": "Senior unsecured notes offering",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
-          "type": "filing"
-        },
-        {
-          "date": "2026-06-22",
-          "label": "Senior unsecured notes offering",
-          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
-          "type": "filing"
-        }
-      ]
+      "filings": []
     },
     "latest": {
       "date": "2026-08-15",
-      "sync_ts": "2026-08-15T06:47:09Z",
+      "sync_ts": "2026-08-15T08:36:27Z",
       "spcx": 140.0,
       "tsla": 342.27,
       "net_worth_b": 1182.72,
@@ -2176,7 +1878,7 @@
     }
   },
   "spacex_unlock_series": {
-    "updated_utc": "2026-08-15T06:47:10Z",
+    "updated_utc": "2026-08-15T08:36:27Z",
     "ticker": "SPCX",
     "ipo_price": 135.0,
     "ipo_date": "2026-06-13",
@@ -3186,11 +2888,11 @@
     ]
   },
   "empire_memory": {
-    "updated_at": "2026-08-15T06:47:18Z",
+    "updated_at": "2026-08-15T08:36:35Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-08-15T06:47:18Z",
+      "updated_at": "2026-08-15T08:36:35Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-08-15, the memory agent tracks 101 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
