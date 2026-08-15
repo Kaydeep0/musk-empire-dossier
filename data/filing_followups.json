@@ -44,7 +44,9 @@
         {
           "kind": "d+1",
           "due": "2026-08-15",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-08-14 (Material event (8-K)).",
+          "checked_at": "2026-08-15T01:35:27Z"
         },
         {
           "kind": "d+3",
