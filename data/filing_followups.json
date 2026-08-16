@@ -1,34 +1,6 @@
 {
   "active": [
     {
-      "lane": "musk",
-      "accession": "0001104659-26-095936",
-      "entity": "Elon Musk (reporting person)",
-      "form": "SCHEDULE 13G",
-      "filed": "2026-08-13",
-      "headline": "Material event (SCHEDULE 13G)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml",
-      "expect": [
-        "Map to control, related-party, or personal liquidity channel"
-      ],
-      "checks": [
-        {
-          "kind": "d+1",
-          "due": "2026-08-14",
-          "sent": true,
-          "note": "[Musk] Follow-up (d+1): new SCHEDULE 13G 2026-08-13 after Material event (SCHEDULE 13G). SCHEDULE 13G",
-          "checked_at": "2026-08-14T02:23:04Z"
-        },
-        {
-          "kind": "d+3",
-          "due": "2026-08-16",
-          "sent": false
-        }
-      ],
-      "status": "watching",
-      "created": "2026-08-13T20:49:30Z"
-    },
-    {
       "lane": "spacex",
       "accession": "0001628280-26-056945",
       "entity": "Space Exploration Technologies (SpaceX)",
@@ -224,6 +196,36 @@
       ],
       "status": "complete",
       "created": "2026-08-04T21:16:48Z"
+    },
+    {
+      "lane": "musk",
+      "accession": "0001104659-26-095936",
+      "entity": "Elon Musk (reporting person)",
+      "form": "SCHEDULE 13G",
+      "filed": "2026-08-13",
+      "headline": "Material event (SCHEDULE 13G)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml",
+      "expect": [
+        "Map to control, related-party, or personal liquidity channel"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-08-14",
+          "sent": true,
+          "note": "[Musk] Follow-up (d+1): new SCHEDULE 13G 2026-08-13 after Material event (SCHEDULE 13G). SCHEDULE 13G",
+          "checked_at": "2026-08-14T02:23:04Z"
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-08-16",
+          "sent": true,
+          "note": "[Musk] Follow-up (d+3): new SCHEDULE 13G 2026-08-13 after Material event (SCHEDULE 13G). SCHEDULE 13G",
+          "checked_at": "2026-08-16T01:42:12Z"
+        }
+      ],
+      "status": "complete",
+      "created": "2026-08-13T20:49:30Z"
     }
   ]
 }
