@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T20:35:24Z",
+  "updated_at": "2026-08-20T22:34:24Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -36.61,
-      "as_of_utc": "2026-08-20T20:35:18Z",
+      "as_of_utc": "2026-08-20T22:34:18Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,7 +114,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-08-20T20:35:18Z",
+    "as_of_utc": "2026-08-20T22:34:18Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1146.19,
     "components_usd_b": {
@@ -826,27 +826,27 @@
     {
       "key": "musk",
       "tracked": 121,
-      "updated": "2026-08-20T20:33:55"
+      "updated": "2026-08-20T22:32:43"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-08-20T20:33:55"
+      "updated": "2026-08-20T22:32:44"
     },
     {
       "key": "spacex",
       "tracked": 65,
-      "updated": "2026-08-20T20:33:55"
+      "updated": "2026-08-20T22:32:44"
     },
     {
       "key": "tesla",
       "tracked": 123,
-      "updated": "2026-08-20T20:33:55"
+      "updated": "2026-08-20T22:32:43"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-08-20T20:33:55"
+      "updated": "2026-08-20T22:32:44"
     }
   ],
   "registry": [
@@ -1351,7 +1351,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-08-20T20:35:18Z",
+    "updated_at": "2026-08-20T22:34:19Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -2132,10 +2132,10 @@
         "spacex_stake_b": 861.17,
         "tesla_stake_b": 245.04,
         "cash_b": 39.98,
-        "sync_ts": "2026-08-20T20:35:18Z"
+        "sync_ts": "2026-08-20T22:34:18Z"
       }
     ],
-    "live_sync_count": 515,
+    "live_sync_count": 516,
     "annotations": {
       "catalysts": [
         {
@@ -2204,11 +2204,11 @@
       "spacex_stake_b": 861.17,
       "tesla_stake_b": 245.04,
       "cash_b": 39.98,
-      "sync_ts": "2026-08-20T20:35:18Z"
+      "sync_ts": "2026-08-20T22:34:18Z"
     }
   },
   "spacex_unlock_series": {
-    "updated_utc": "2026-08-20T20:35:18Z",
+    "updated_utc": "2026-08-20T22:34:19Z",
     "ticker": "SPCX",
     "ipo_price": 135.0,
     "ipo_date": "2026-06-13",
@@ -3298,7 +3298,7 @@
       {
         "date": "2026-08-20",
         "price": 134.0,
-        "volume": 117409257,
+        "volume": 119519743,
         "pct_vs_ipo": -0.74,
         "pct_vs_ath": -36.61,
         "ath_ref": 211.39,
@@ -3326,11 +3326,11 @@
     ]
   },
   "empire_memory": {
-    "updated_at": "2026-08-20T20:35:24Z",
+    "updated_at": "2026-08-20T22:34:24Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-08-20T20:35:24Z",
+      "updated_at": "2026-08-20T22:34:24Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-08-20, the memory agent tracks 106 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
@@ -3419,8 +3419,8 @@
         "hypothesis": "H12",
         "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
         "entities": [
-          "twitter",
-          "spacex"
+          "spacex",
+          "twitter"
         ],
         "evidence_ids": [
           "debt-2023-04-01-twitter",
