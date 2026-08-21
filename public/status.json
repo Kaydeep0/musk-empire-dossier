@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T01:41:16Z",
+  "updated_at": "2026-08-21T03:14:03Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -36.61,
-      "as_of_utc": "2026-08-21T01:41:09Z",
+      "as_of_utc": "2026-08-21T03:13:57Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,7 +114,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-08-21T01:41:09Z",
+    "as_of_utc": "2026-08-21T03:13:57Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1146.19,
     "components_usd_b": {
@@ -705,6 +705,51 @@
   ],
   "material_timeline": [
     {
+      "ts": "2026-08-21T01:41:19Z",
+      "kind": "date_outcome",
+      "date": "2026-08-20",
+      "entity": "SPCX",
+      "type": "catalyst",
+      "event": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
+      "hypothesis": "H5/H6 scarcity premium test",
+      "days_until": null,
+      "context": {
+        "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
+        "why_it_matters": "Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.",
+        "what_to_watch": "Float change vs prospectus pool size, first-week volume, price reaction, and any Form 4 or 8-K confirming sales or transfers.",
+        "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
+      },
+      "grade": "contradicts",
+      "summary": "Price below IPO after unlock step; scarcity thesis under pressure.",
+      "metrics": {
+        "spcx_event_day": "2026-08-20",
+        "spcx_price_event": 134.0,
+        "spcx_price_now": 134.0,
+        "ipo_price": 135.0,
+        "pct_vs_ipo_event": -0.7,
+        "pct_vs_ipo": -0.7,
+        "change_1d_pct": 0.0,
+        "new_filings": []
+      }
+    },
+    {
+      "ts": "2026-08-21T01:41:16Z",
+      "kind": "date_passed",
+      "date": "2026-08-20",
+      "entity": "SPCX",
+      "type": "catalyst",
+      "event": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
+      "hypothesis": "H5/H6 scarcity premium test",
+      "days_until": -1,
+      "context": {
+        "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
+        "why_it_matters": "Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.",
+        "what_to_watch": "Float change vs prospectus pool size, first-week volume, price reaction, and any Form 4 or 8-K confirming sales or transfers.",
+        "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
+      },
+      "note": "Major date has passed; check filings and price action."
+    },
+    {
       "ts": "2026-08-17T01:40:07Z",
       "kind": "reminder_sent",
       "date": "2026-08-20",
@@ -826,27 +871,27 @@
     {
       "key": "musk",
       "tracked": 121,
-      "updated": "2026-08-21T01:39:37"
+      "updated": "2026-08-21T03:12:53"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-08-21T01:39:38"
+      "updated": "2026-08-21T03:12:53"
     },
     {
       "key": "spacex",
       "tracked": 65,
-      "updated": "2026-08-21T01:39:38"
+      "updated": "2026-08-21T03:12:53"
     },
     {
       "key": "tesla",
       "tracked": 123,
-      "updated": "2026-08-21T01:39:37"
+      "updated": "2026-08-21T03:12:53"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-08-21T01:39:38"
+      "updated": "2026-08-21T03:12:53"
     }
   ],
   "registry": [
@@ -1351,7 +1396,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-08-21T01:41:09Z",
+    "updated_at": "2026-08-21T03:13:57Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -2136,7 +2181,7 @@
       },
       {
         "date": "2026-08-21",
-        "sync_ts": "2026-08-21T01:41:09Z",
+        "sync_ts": "2026-08-21T03:13:57Z",
         "spcx": 134.0,
         "tsla": 345.13,
         "net_worth_b": 1146.19,
@@ -2145,7 +2190,7 @@
         "cash_b": 39.98
       }
     ],
-    "live_sync_count": 517,
+    "live_sync_count": 518,
     "annotations": {
       "catalysts": [
         {
@@ -2208,7 +2253,7 @@
     },
     "latest": {
       "date": "2026-08-21",
-      "sync_ts": "2026-08-21T01:41:09Z",
+      "sync_ts": "2026-08-21T03:13:57Z",
       "spcx": 134.0,
       "tsla": 345.13,
       "net_worth_b": 1146.19,
@@ -2218,7 +2263,7 @@
     }
   },
   "spacex_unlock_series": {
-    "updated_utc": "2026-08-21T01:41:10Z",
+    "updated_utc": "2026-08-21T03:13:57Z",
     "ticker": "SPCX",
     "ipo_price": 135.0,
     "ipo_date": "2026-06-13",
@@ -3356,11 +3401,11 @@
     ]
   },
   "empire_memory": {
-    "updated_at": "2026-08-21T01:41:16Z",
+    "updated_at": "2026-08-21T03:14:03Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-08-21T01:41:16Z",
+      "updated_at": "2026-08-21T03:14:03Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-08-21, the memory agent tracks 107 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
