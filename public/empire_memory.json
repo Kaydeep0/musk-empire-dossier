@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-08-20T22:34:24Z",
+  "updated_at": "2026-08-21T01:41:16Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-08-20T22:34:24Z",
+    "updated_at": "2026-08-21T01:41:16Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-08-20, the memory agent tracks 106 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-08-21, the memory agent tracks 107 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -68,10 +68,10 @@
         "type": "catalyst"
       },
       {
-        "date": "2026-08-20",
-        "entity": "SPCX",
-        "headline": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
-        "type": "catalyst"
+        "date": "2026-08-21",
+        "entity": "Portfolio proxy",
+        "headline": "SPCX $134.0 TSLA $345.13 NW $1146.19B",
+        "type": "market_sync"
       },
       {
         "date": "2026-08-20",
@@ -82,7 +82,7 @@
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 106
+    "event_count": 107
   },
   "patterns": [
     {
@@ -139,16 +139,16 @@
       "name": "Supply staircase H1 2026-27",
       "strength": "watch",
       "hypothesis": "H5/H6",
-      "summary": "6 catalysts in next 120 days: 2026-08-20 First major lock-up unlock (~7% pool; ro; 2026-08-20 First major lock-up unlock (~7% pool; ro; 2026-09-02 Goldman bridge $175.50 trigger window en; 2026-09-02 Goldman bridge $175.50 trigger window en. Pattern to watch: each step tests whether retail absorbs insider-adjacent supply.",
+      "summary": "4 catalysts in next 120 days: 2026-09-02 Goldman bridge $175.50 trigger window en; 2026-09-02 Goldman bridge $175.50 trigger window en; 2026-12-08 Remainder lock-up release (180-day custo; 2026-12-08 Remainder lock-up release (180-day custo. Pattern to watch: each step tests whether retail absorbs insider-adjacent supply.",
       "entities": [
         "spacex",
         "musk"
       ],
       "evidence_ids": [
-        "catalyst-2026-08-20-spacex",
-        "catalyst-2026-08-20-spacex-catalyst",
         "catalyst-2026-09-02-spacex",
-        "catalyst-2026-09-02-spacex-catalyst"
+        "catalyst-2026-09-02-spacex-catalyst",
+        "catalyst-2026-12-08-spacex",
+        "catalyst-2026-12-08-spacex-catalyst"
       ]
     },
     {
@@ -484,6 +484,18 @@
         "catalyst",
         "catalyst",
         "H12 debt / refi timi"
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "entity_key": "portfolio",
+      "entity": "Portfolio proxy",
+      "type": "market_sync",
+      "headline": "SPCX $134.0 TSLA $345.13 NW $1146.19B",
+      "url": null,
+      "tags": [
+        "market",
+        "timeseries"
       ]
     },
     {
@@ -1291,18 +1303,6 @@
     },
     {
       "date": "2026-06-29",
-      "entity_key": "portfolio",
-      "entity": "Portfolio proxy",
-      "type": "market_sync",
-      "headline": "SPCX $153.23 TSLA $379.71 NW $1294.33B",
-      "url": null,
-      "tags": [
-        "market",
-        "timeseries"
-      ]
-    },
-    {
-      "date": "2026-06-28",
       "entity_key": "portfolio",
       "entity": "Portfolio proxy",
       "type": "market_sync",

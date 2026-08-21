@@ -24,5 +24,31 @@
       "thesis_note": "Infrastructure filing (H12) before tradable float expands (H5/H6)."
     },
     "assessed_at": "2026-06-23T22:26:27Z"
+  },
+  {
+    "date": "2026-08-20",
+    "entity": "SPCX",
+    "type": "catalyst",
+    "event": "First major lock-up unlock (~7% pool; roughly doubles tradable float)",
+    "hypothesis": "H5/H6 scarcity premium test",
+    "grade": "contradicts",
+    "summary": "Price below IPO after unlock step; scarcity thesis under pressure.",
+    "metrics": {
+      "spcx_event_day": "2026-08-20",
+      "spcx_price_event": 134.0,
+      "spcx_price_now": 134.0,
+      "ipo_price": 135.0,
+      "pct_vs_ipo_event": -0.7,
+      "pct_vs_ipo": -0.7,
+      "change_1d_pct": 0.0,
+      "new_filings": []
+    },
+    "context": {
+      "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
+      "why_it_matters": "Debt filings fix the balance sheet. Unlock dates change who can sell. This is a direct supply event: more shares can hit the tape even if the company does not issue new stock.",
+      "what_to_watch": "Float change vs prospectus pool size, first-week volume, price reaction, and any Form 4 or 8-K confirming sales or transfers.",
+      "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
+    },
+    "assessed_at": "2026-08-21T01:41:16Z"
   }
 ]
