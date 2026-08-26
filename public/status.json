@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T04:46:41Z",
+  "updated_at": "2026-08-26T06:58:00Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -35,8 +35,8 @@
     "bond": {
       "date": "2026-06-22",
       "event": "Senior unsecured notes offering",
-      "cash_disclosed_b": null,
-      "cash_as_of": null,
+      "cash_disclosed_b": 100.8,
+      "cash_as_of": "2026-06-19",
       "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
       "basis": "b",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
@@ -52,7 +52,7 @@
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
       "pct_vs_ath": -34.74,
-      "as_of_utc": "2026-08-26T04:46:34Z",
+      "as_of_utc": "2026-08-26T06:57:54Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -69,8 +69,8 @@
       "bond": {
         "date": "2026-06-22",
         "event": "Senior unsecured notes offering",
-        "cash_disclosed_b": null,
-        "cash_as_of": null,
+        "cash_disclosed_b": 100.8,
+        "cash_as_of": "2026-06-19",
         "target_b": null,
         "bridge_loan_b": null,
         "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
@@ -79,6 +79,15 @@
         "accession": "0001628280-26-044489"
       },
       "events": [
+        {
+          "basis": "b",
+          "accession": "0001628280-26-045763",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+          "filing_date": "2026-06-26",
+          "form": "8-K",
+          "event": "Senior unsecured notes offering",
+          "bond_offering": true
+        },
         {
           "basis": "b",
           "accession": "0001628280-26-044955",
@@ -95,6 +104,8 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
           "filing_date": "2026-06-22",
           "form": "8-K",
+          "cash_disclosed_b": 100.8,
+          "cash_as_of": "2026-06-19",
           "event": "Senior unsecured notes offering",
           "bond_offering": true,
           "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
@@ -103,7 +114,7 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-08-26T04:46:34Z",
+    "as_of_utc": "2026-08-26T06:57:54Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
     "net_worth_proxy_usd_b": 1175.22,
     "components_usd_b": {
@@ -193,8 +204,8 @@
     "bond": {
       "date": "2026-06-22",
       "event": "Senior unsecured notes offering",
-      "cash_disclosed_b": null,
-      "cash_as_of": null,
+      "cash_disclosed_b": 100.8,
+      "cash_as_of": "2026-06-19",
       "target_b": null,
       "bridge_loan_b": null,
       "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
@@ -203,6 +214,15 @@
       "accession": "0001628280-26-044489"
     },
     "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-045763",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+        "filing_date": "2026-06-26",
+        "form": "8-K",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true
+      },
       {
         "basis": "b",
         "accession": "0001628280-26-044955",
@@ -219,6 +239,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
         "filing_date": "2026-06-22",
         "form": "8-K",
+        "cash_disclosed_b": 100.8,
+        "cash_as_of": "2026-06-19",
         "event": "Senior unsecured notes offering",
         "bond_offering": true,
         "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
@@ -849,27 +871,27 @@
     {
       "key": "musk",
       "tracked": 121,
-      "updated": "2026-08-26T04:45:00"
+      "updated": "2026-08-26T06:56:48"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-08-26T04:45:01"
+      "updated": "2026-08-26T06:56:48"
     },
     {
       "key": "spacex",
       "tracked": 65,
-      "updated": "2026-08-26T04:45:01"
+      "updated": "2026-08-26T06:56:48"
     },
     {
       "key": "tesla",
       "tracked": 123,
-      "updated": "2026-08-26T04:45:00"
+      "updated": "2026-08-26T06:56:48"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-08-26T04:45:01"
+      "updated": "2026-08-26T06:56:48"
     }
   ],
   "registry": [
@@ -1374,7 +1396,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-08-26T04:46:34Z",
+    "updated_at": "2026-08-26T06:57:54Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -2191,7 +2213,7 @@
       },
       {
         "date": "2026-08-26",
-        "sync_ts": "2026-08-26T04:46:34Z",
+        "sync_ts": "2026-08-26T06:57:54Z",
         "spcx": 137.95,
         "tsla": 350.25,
         "net_worth_b": 1175.22,
@@ -2200,7 +2222,7 @@
         "cash_b": 39.98
       }
     ],
-    "live_sync_count": 579,
+    "live_sync_count": 580,
     "annotations": {
       "catalysts": [
         {
@@ -2242,6 +2264,12 @@
       ],
       "filings": [
         {
+          "date": "2026-06-26",
+          "label": "Senior unsecured notes offering",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+          "type": "filing"
+        },
+        {
           "date": "2026-06-23",
           "label": "Senior unsecured notes offering",
           "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
@@ -2257,7 +2285,7 @@
     },
     "latest": {
       "date": "2026-08-26",
-      "sync_ts": "2026-08-26T04:46:34Z",
+      "sync_ts": "2026-08-26T06:57:54Z",
       "spcx": 137.95,
       "tsla": 350.25,
       "net_worth_b": 1175.22,
@@ -2267,7 +2295,7 @@
     }
   },
   "spacex_unlock_series": {
-    "updated_utc": "2026-08-26T04:46:34Z",
+    "updated_utc": "2026-08-26T06:57:55Z",
     "ticker": "SPCX",
     "ipo_price": 135.0,
     "ipo_date": "2026-06-13",
@@ -3505,11 +3533,11 @@
     ]
   },
   "empire_memory": {
-    "updated_at": "2026-08-26T04:46:41Z",
+    "updated_at": "2026-08-26T06:58:00Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-08-26T04:46:41Z",
+      "updated_at": "2026-08-26T06:58:00Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-08-26, the memory agent tracks 112 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
