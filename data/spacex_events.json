@@ -23,15 +23,6 @@
   "events": [
     {
       "basis": "b",
-      "accession": "0001628280-26-045763",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
-      "filing_date": "2026-06-26",
-      "form": "8-K",
-      "event": "Senior unsecured notes offering",
-      "bond_offering": true
-    },
-    {
-      "basis": "b",
       "accession": "0001628280-26-044955",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
       "filing_date": "2026-06-23",
