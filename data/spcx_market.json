@@ -19,7 +19,7 @@
     "ath_price": 211.39,
     "ath_date": "2026-06-16",
     "pct_vs_ath": -34.74,
-    "as_of_utc": "2026-08-26T10:40:25Z",
+    "as_of_utc": "2026-08-26T13:02:35Z",
     "basis": "m",
     "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
   },
@@ -46,6 +46,15 @@
       "accession": "0001628280-26-044489"
     },
     "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-045763",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+        "filing_date": "2026-06-26",
+        "form": "8-K",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true
+      },
       {
         "basis": "b",
         "accession": "0001628280-26-044955",

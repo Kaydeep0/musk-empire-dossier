@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T10:40:26Z",
+  "updated_at": "2026-08-26T13:02:36Z",
   "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
   "ipo_price": 135.0,
   "series": [
@@ -816,7 +816,7 @@
     },
     {
       "date": "2026-08-26",
-      "sync_ts": "2026-08-26T10:40:25Z",
+      "sync_ts": "2026-08-26T13:02:35Z",
       "spcx": 137.95,
       "tsla": 350.25,
       "net_worth_b": 1175.22,
@@ -825,7 +825,7 @@
       "cash_b": 39.98
     }
   ],
-  "live_sync_count": 582,
+  "live_sync_count": 583,
   "annotations": {
     "catalysts": [
       {
@@ -867,6 +867,12 @@
     ],
     "filings": [
       {
+        "date": "2026-06-26",
+        "label": "Senior unsecured notes offering",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+        "type": "filing"
+      },
+      {
         "date": "2026-06-23",
         "label": "Senior unsecured notes offering",
         "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
@@ -882,7 +888,7 @@
   },
   "latest": {
     "date": "2026-08-26",
-    "sync_ts": "2026-08-26T10:40:25Z",
+    "sync_ts": "2026-08-26T13:02:35Z",
     "spcx": 137.95,
     "tsla": 350.25,
     "net_worth_b": 1175.22,
