@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-27T08:36:19Z",
+  "updated_at": "2026-08-27T20:15:21Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -35,8 +35,8 @@
     "bond": {
       "date": "2026-06-22",
       "event": "Senior unsecured notes offering",
-      "cash_disclosed_b": 100.8,
-      "cash_as_of": "2026-06-19",
+      "cash_disclosed_b": null,
+      "cash_as_of": null,
       "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
       "basis": "b",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
@@ -44,15 +44,15 @@
     },
     "market": {
       "ticker": "SPCX",
-      "price": 139.63,
-      "previous_close": 137.95,
-      "change_pct_1d": 1.22,
+      "price": 140.87,
+      "previous_close": 139.63,
+      "change_pct_1d": 0.89,
       "ipo_price": 135.0,
-      "pct_vs_ipo": 3.43,
+      "pct_vs_ipo": 4.35,
       "ath_price": 211.39,
       "ath_date": "2026-06-16",
-      "pct_vs_ath": -33.95,
-      "as_of_utc": "2026-08-27T08:36:12Z",
+      "pct_vs_ath": -33.36,
+      "as_of_utc": "2026-08-27T20:15:16Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -69,8 +69,8 @@
       "bond": {
         "date": "2026-06-22",
         "event": "Senior unsecured notes offering",
-        "cash_disclosed_b": 100.8,
-        "cash_as_of": "2026-06-19",
+        "cash_disclosed_b": null,
+        "cash_as_of": null,
         "target_b": null,
         "bridge_loan_b": null,
         "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
@@ -95,8 +95,6 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
           "filing_date": "2026-06-22",
           "form": "8-K",
-          "cash_disclosed_b": 100.8,
-          "cash_as_of": "2026-06-19",
           "event": "Senior unsecured notes offering",
           "bond_offering": true,
           "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
@@ -105,13 +103,13 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-08-27T08:36:12Z",
+    "as_of_utc": "2026-08-27T20:15:16Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-    "net_worth_proxy_usd_b": 1182.87,
+    "net_worth_proxy_usd_b": 1197.22,
     "components_usd_b": {
       "cash_realized_usd_b": 39.98,
-      "tesla_stake_usd_b": 245.53,
-      "spacex_stake_usd_b": 897.36
+      "tesla_stake_usd_b": 251.92,
+      "spacex_stake_usd_b": 905.32
     },
     "holdings": [
       {
@@ -119,9 +117,9 @@
         "ticker": "TSLA",
         "kind": "public",
         "shares": 710000000,
-        "price": 345.82,
-        "change_pct_1d": -1.26,
-        "value_usd_b": 245.53,
+        "price": 354.81,
+        "change_pct_1d": 2.6,
+        "value_usd_b": 251.92,
         "basis": "b+m",
         "note": "Beneficial shares from Form 4 anchor x live price"
       },
@@ -131,10 +129,10 @@
         "kind": "public",
         "musk_econ_pct": 0.36,
         "implied_shares": 6426666666,
-        "price": 139.63,
-        "change_pct_1d": 1.22,
-        "pct_vs_ipo": 3.43,
-        "value_usd_b": 897.36,
+        "price": 140.87,
+        "change_pct_1d": 0.89,
+        "pct_vs_ipo": 4.35,
+        "value_usd_b": 905.32,
         "value_at_ipo_usd_b": 867.6,
         "basis": "b+m",
         "note": "~36% econ x 17B total shares proxy at IPO"
@@ -195,8 +193,8 @@
     "bond": {
       "date": "2026-06-22",
       "event": "Senior unsecured notes offering",
-      "cash_disclosed_b": 100.8,
-      "cash_as_of": "2026-06-19",
+      "cash_disclosed_b": null,
+      "cash_as_of": null,
       "target_b": null,
       "bridge_loan_b": null,
       "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes.",
@@ -221,8 +219,6 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044489/spcx8-kxlaunchseniornotes.htm",
         "filing_date": "2026-06-22",
         "form": "8-K",
-        "cash_disclosed_b": 100.8,
-        "cash_as_of": "2026-06-19",
         "event": "Senior unsecured notes offering",
         "bond_offering": true,
         "use_of_proceeds": "use the net proceeds from the Notes offering to repay the outstanding borrowings under its bridge loan facility in full, to pay related fees and expenses, and any remaining amount for general corporate purposes."
@@ -853,27 +849,27 @@
     {
       "key": "musk",
       "tracked": 121,
-      "updated": "2026-08-27T08:34:18"
+      "updated": "2026-08-27T20:14:11"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-08-27T08:34:19"
+      "updated": "2026-08-27T20:14:11"
     },
     {
       "key": "spacex",
       "tracked": 65,
-      "updated": "2026-08-27T08:34:19"
+      "updated": "2026-08-27T20:14:11"
     },
     {
       "key": "tesla",
       "tracked": 123,
-      "updated": "2026-08-27T08:34:18"
+      "updated": "2026-08-27T20:14:11"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-08-27T08:34:18"
+      "updated": "2026-08-27T20:14:11"
     }
   ],
   "registry": [
@@ -1378,19 +1374,10 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-08-27T08:36:14Z",
+    "updated_at": "2026-08-27T20:15:17Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
-      {
-        "date": "2026-05-27",
-        "net_worth_b": 352.64,
-        "spcx": null,
-        "tsla": 440.36,
-        "spacex_stake_b": null,
-        "tesla_stake_b": 312.66,
-        "cash_b": 39.98
-      },
       {
         "date": "2026-05-28",
         "net_worth_b": 353.87,
@@ -2196,16 +2183,16 @@
       },
       {
         "date": "2026-08-27",
-        "sync_ts": "2026-08-27T08:36:12Z",
-        "spcx": 139.63,
-        "tsla": 345.82,
-        "net_worth_b": 1182.87,
-        "spacex_stake_b": 897.36,
-        "tesla_stake_b": 245.53,
-        "cash_b": 39.98
+        "net_worth_b": 1197.22,
+        "spcx": 140.87,
+        "tsla": 354.81,
+        "spacex_stake_b": 905.32,
+        "tesla_stake_b": 251.92,
+        "cash_b": 39.98,
+        "sync_ts": "2026-08-27T20:15:16Z"
       }
     ],
-    "live_sync_count": 588,
+    "live_sync_count": 589,
     "annotations": {
       "catalysts": [
         {
@@ -2262,17 +2249,17 @@
     },
     "latest": {
       "date": "2026-08-27",
-      "sync_ts": "2026-08-27T08:36:12Z",
-      "spcx": 139.63,
-      "tsla": 345.82,
-      "net_worth_b": 1182.87,
-      "spacex_stake_b": 897.36,
-      "tesla_stake_b": 245.53,
-      "cash_b": 39.98
+      "net_worth_b": 1197.22,
+      "spcx": 140.87,
+      "tsla": 354.81,
+      "spacex_stake_b": 905.32,
+      "tesla_stake_b": 251.92,
+      "cash_b": 39.98,
+      "sync_ts": "2026-08-27T20:15:16Z"
     }
   },
   "spacex_unlock_series": {
-    "updated_utc": "2026-08-27T08:36:14Z",
+    "updated_utc": "2026-08-27T20:15:17Z",
     "ticker": "SPCX",
     "ipo_price": 135.0,
     "ipo_date": "2026-06-13",
@@ -3509,10 +3496,10 @@
       },
       {
         "date": "2026-08-27",
-        "price": 139.63,
-        "volume": 60739400,
-        "pct_vs_ipo": 3.43,
-        "pct_vs_ath": -33.95,
+        "price": 140.87,
+        "volume": 54838555,
+        "pct_vs_ipo": 4.35,
+        "pct_vs_ath": -33.36,
         "ath_ref": 211.39,
         "float_pct": 9.72,
         "float_label": "First major lock-up unlock (~7% pool; float ~doubles)",
@@ -3530,11 +3517,11 @@
     ]
   },
   "empire_memory": {
-    "updated_at": "2026-08-27T08:36:19Z",
+    "updated_at": "2026-08-27T20:15:21Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-08-27T08:36:19Z",
+      "updated_at": "2026-08-27T20:15:21Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-08-27, the memory agent tracks 113 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
@@ -3623,8 +3610,8 @@
         "hypothesis": "H12",
         "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
         "entities": [
-          "twitter",
-          "spacex"
+          "spacex",
+          "twitter"
         ],
         "evidence_ids": [
           "debt-2023-04-01-twitter",
