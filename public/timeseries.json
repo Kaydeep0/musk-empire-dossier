@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T23:11:13Z",
+  "updated_at": "2026-08-27T08:36:14Z",
   "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
   "ipo_price": 135.0,
   "series": [
@@ -814,9 +814,19 @@
       "tesla_stake_b": 245.53,
       "cash_b": 39.98,
       "sync_ts": "2026-08-26T23:11:12Z"
+    },
+    {
+      "date": "2026-08-27",
+      "sync_ts": "2026-08-27T08:36:12Z",
+      "spcx": 139.63,
+      "tsla": 345.82,
+      "net_worth_b": 1182.87,
+      "spacex_stake_b": 897.36,
+      "tesla_stake_b": 245.53,
+      "cash_b": 39.98
     }
   ],
-  "live_sync_count": 587,
+  "live_sync_count": 588,
   "annotations": {
     "catalysts": [
       {
@@ -858,12 +868,6 @@
     ],
     "filings": [
       {
-        "date": "2026-06-26",
-        "label": "Senior unsecured notes offering",
-        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
-        "type": "filing"
-      },
-      {
         "date": "2026-06-23",
         "label": "Senior unsecured notes offering",
         "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
@@ -878,13 +882,13 @@
     ]
   },
   "latest": {
-    "date": "2026-08-26",
-    "net_worth_b": 1182.87,
+    "date": "2026-08-27",
+    "sync_ts": "2026-08-27T08:36:12Z",
     "spcx": 139.63,
     "tsla": 345.82,
+    "net_worth_b": 1182.87,
     "spacex_stake_b": 897.36,
     "tesla_stake_b": 245.53,
-    "cash_b": 39.98,
-    "sync_ts": "2026-08-26T23:11:12Z"
+    "cash_b": 39.98
   }
 }
