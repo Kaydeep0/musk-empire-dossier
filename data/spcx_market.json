@@ -11,15 +11,15 @@
   },
   "market": {
     "ticker": "SPCX",
-    "price": 140.87,
-    "previous_close": 139.63,
-    "change_pct_1d": 0.89,
+    "price": 141.5,
+    "previous_close": 140.87,
+    "change_pct_1d": 0.45,
     "ipo_price": 135.0,
-    "pct_vs_ipo": 4.35,
+    "pct_vs_ipo": 4.81,
     "ath_price": 211.39,
     "ath_date": "2026-06-16",
-    "pct_vs_ath": -33.36,
-    "as_of_utc": "2026-08-28T06:03:40Z",
+    "pct_vs_ath": -33.06,
+    "as_of_utc": "2026-08-28T20:07:38Z",
     "basis": "m",
     "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
   },
@@ -46,6 +46,15 @@
       "accession": "0001628280-26-044489"
     },
     "events": [
+      {
+        "basis": "b",
+        "accession": "0001628280-26-045763",
+        "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm",
+        "filing_date": "2026-06-26",
+        "form": "8-K",
+        "event": "Senior unsecured notes offering",
+        "bond_offering": true
+      },
       {
         "basis": "b",
         "accession": "0001628280-26-044955",
