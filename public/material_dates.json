@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02T22:30:33Z",
+  "updated": "2026-09-03T03:53:22Z",
   "site": "https://kaydeep0.github.io/musk-empire-dossier/",
   "dates": [
     {
@@ -13,7 +13,7 @@
       "source": "SpaceX 8-K accession 0001628280-26-044489",
       "url": null,
       "accession": null,
-      "days_until": -72,
+      "days_until": -73,
       "status": "past",
       "context": {
         "what_it_is": "A pre-registered date for SpaceX from SEC docs or the dossier calendar.",
@@ -43,7 +43,7 @@
       "source": "SEC 8-K filed 2026-06-23",
       "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026044955/spcx-pricing8xk.htm",
       "accession": "0001628280-26-044955",
-      "days_until": -68,
+      "days_until": -69,
       "status": "past",
       "context": {
         "what_it_is": "The bond trade settles. Cash moves from buyers to the company. The notes become live debt on the balance sheet.",
@@ -76,7 +76,7 @@
       "source": "SPCX 424(b)(4) lock-up schedule; Spacexsec V5",
       "url": null,
       "accession": null,
-      "days_until": -13,
+      "days_until": -14,
       "status": "past",
       "context": {
         "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
@@ -109,8 +109,8 @@
       "source": "SPCX prospectus; distribution STRATEGY_360",
       "url": null,
       "accession": null,
-      "days_until": 0,
-      "status": "soon",
+      "days_until": -1,
+      "status": "past",
       "context": {
         "what_it_is": "A contractual window tied to the Goldman bridge facility ends. Pricing or refi triggers tied to the stock price may no longer apply the same way.",
         "why_it_matters": "The bridge was the short-dated debt left from the Twitter acquisition chain. Missing this window can mean repricing, extension, or forced refi at worse terms.",
@@ -142,7 +142,7 @@
       "source": "SPCX 424(b)(4)",
       "url": null,
       "accession": null,
-      "days_until": 97,
+      "days_until": 96,
       "status": "future",
       "context": {
         "what_it_is": "Shares that were restricted at IPO become free to trade. Tradable float expands; insiders and early holders may sell.",
@@ -175,7 +175,7 @@
       "source": "SPCX lock-up schedule",
       "url": null,
       "accession": null,
-      "days_until": 287,
+      "days_until": 286,
       "status": "future",
       "context": {
         "what_it_is": "The largest Musk-linked SPCX lock-up tranche becomes eligible to sell. This is the biggest single supply step on the calendar.",
@@ -208,7 +208,7 @@
       "source": "data/debt_chain.csv; SPCX filings",
       "url": null,
       "accession": null,
-      "days_until": 365,
+      "days_until": 364,
       "status": "future",
       "context": {
         "what_it_is": "A large debt facility comes due or must be refinanced. This is a balance-sheet cliff, not a share unlock.",
@@ -284,6 +284,32 @@
         "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
       },
       "assessed_at": "2026-08-21T01:41:16Z"
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "SPCX",
+      "type": "catalyst",
+      "event": "Goldman bridge $175.50 trigger window ends",
+      "hypothesis": "H12 debt / refi timing",
+      "grade": "watch",
+      "summary": "Cliff date passed; monitor credit spreads and refi 8-Ks.",
+      "metrics": {
+        "spcx_event_day": "2026-09-02",
+        "spcx_price_event": 140.71,
+        "spcx_price_now": 140.71,
+        "ipo_price": 135.0,
+        "pct_vs_ipo_event": 4.2,
+        "pct_vs_ipo": 4.2,
+        "change_1d_pct": 0.0,
+        "new_filings": []
+      },
+      "context": {
+        "what_it_is": "A contractual window tied to the Goldman bridge facility ends. Pricing or refi triggers tied to the stock price may no longer apply the same way.",
+        "why_it_matters": "The bridge was the short-dated debt left from the Twitter acquisition chain. Missing this window can mean repricing, extension, or forced refi at worse terms.",
+        "what_to_watch": "New debt 8-Ks, bridge balance in footnotes, credit spread moves, and whether bond proceeds already retired the facility.",
+        "thesis_note": "H12 debt buys time; this is a timing hinge on the traveling-debt chain (H7)."
+      },
+      "assessed_at": "2026-09-03T03:53:19Z"
     }
   ]
 }

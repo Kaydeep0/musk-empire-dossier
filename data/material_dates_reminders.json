@@ -9,10 +9,12 @@
   ],
   "passed_logged": [
     "passed|2026-06-26|SPCX|settlement",
-    "passed|2026-08-20|SPCX|catalyst"
+    "passed|2026-08-20|SPCX|catalyst",
+    "passed|2026-09-02|SPCX|catalyst"
   ],
   "outcomes_logged": [
     "outcome|2026-06-26|SPCX|settlement",
-    "outcome|2026-08-20|SPCX|catalyst"
+    "outcome|2026-08-20|SPCX|catalyst",
+    "outcome|2026-09-02|SPCX|catalyst"
   ]
 }

@@ -50,5 +50,31 @@
       "thesis_note": "Tests H5/H6: does scarcity premium survive when float roughly doubles?"
     },
     "assessed_at": "2026-08-21T01:41:16Z"
+  },
+  {
+    "date": "2026-09-02",
+    "entity": "SPCX",
+    "type": "catalyst",
+    "event": "Goldman bridge $175.50 trigger window ends",
+    "hypothesis": "H12 debt / refi timing",
+    "grade": "watch",
+    "summary": "Cliff date passed; monitor credit spreads and refi 8-Ks.",
+    "metrics": {
+      "spcx_event_day": "2026-09-02",
+      "spcx_price_event": 140.71,
+      "spcx_price_now": 140.71,
+      "ipo_price": 135.0,
+      "pct_vs_ipo_event": 4.2,
+      "pct_vs_ipo": 4.2,
+      "change_1d_pct": 0.0,
+      "new_filings": []
+    },
+    "context": {
+      "what_it_is": "A contractual window tied to the Goldman bridge facility ends. Pricing or refi triggers tied to the stock price may no longer apply the same way.",
+      "why_it_matters": "The bridge was the short-dated debt left from the Twitter acquisition chain. Missing this window can mean repricing, extension, or forced refi at worse terms.",
+      "what_to_watch": "New debt 8-Ks, bridge balance in footnotes, credit spread moves, and whether bond proceeds already retired the facility.",
+      "thesis_note": "H12 debt buys time; this is a timing hinge on the traveling-debt chain (H7)."
+    },
+    "assessed_at": "2026-09-03T03:53:19Z"
   }
 ]
