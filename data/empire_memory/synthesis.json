@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-09T23:57:57Z",
+  "updated_at": "2026-09-10T04:25:50Z",
   "disclaimer": "Educational research memory. Not investment advice.",
-  "narrative": "As of 2026-09-09, the memory agent tracks 126 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+  "narrative": "As of 2026-09-10, the memory agent tracks 127 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
   "recent_events": [
     {
       "date": "2027-09-02",
@@ -52,6 +52,12 @@
       "type": "catalyst"
     },
     {
+      "date": "2026-09-10",
+      "entity": "Portfolio proxy",
+      "headline": "SPCX $147.55 TSLA $367.81 NW $1249.38B",
+      "type": "market_sync"
+    },
+    {
       "date": "2026-09-09",
       "entity": "Portfolio proxy",
       "headline": "SPCX $153.47 TSLA $368.16 NW $1287.67B",
@@ -68,15 +74,9 @@
       "entity": "Portfolio proxy",
       "headline": "SPCX $147.95 TSLA $354.08 NW $1242.21B",
       "type": "market_sync"
-    },
-    {
-      "date": "2026-09-06",
-      "entity": "Portfolio proxy",
-      "headline": "SPCX $147.95 TSLA $354.08 NW $1242.21B",
-      "type": "market_sync"
     }
   ],
   "pattern_count": 6,
   "entity_count": 5,
-  "event_count": 126
+  "event_count": 127
 }
