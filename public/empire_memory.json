@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-09-10T23:54:20Z",
+  "updated_at": "2026-09-11T04:00:27Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-09-10T23:54:20Z",
+    "updated_at": "2026-09-11T04:00:27Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-09-10, the memory agent tracks 127 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-09-11, the memory agent tracks 128 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -56,6 +56,12 @@
         "type": "catalyst"
       },
       {
+        "date": "2026-09-11",
+        "entity": "Portfolio proxy",
+        "headline": "SPCX $148.18 TSLA $363.56 NW $1250.41B",
+        "type": "market_sync"
+      },
+      {
         "date": "2026-09-10",
         "entity": "Portfolio proxy",
         "headline": "SPCX $147.55 TSLA $367.81 NW $1249.38B",
@@ -72,17 +78,11 @@
         "entity": "Portfolio proxy",
         "headline": "SPCX $147.95 TSLA $354.08 NW $1242.21B",
         "type": "market_sync"
-      },
-      {
-        "date": "2026-09-07",
-        "entity": "Portfolio proxy",
-        "headline": "SPCX $147.95 TSLA $354.08 NW $1242.21B",
-        "type": "market_sync"
       }
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 127
+    "event_count": 128
   },
   "patterns": [
     {
@@ -92,8 +92,8 @@
       "hypothesis": "H12",
       "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
       "entities": [
-        "spacex",
-        "twitter"
+        "twitter",
+        "spacex"
       ],
       "evidence_ids": [
         "debt-2023-04-01-twitter",
@@ -455,6 +455,18 @@
         "catalyst",
         "catalyst",
         "H5 supply step"
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "entity_key": "portfolio",
+      "entity": "Portfolio proxy",
+      "type": "market_sync",
+      "headline": "SPCX $148.18 TSLA $363.56 NW $1250.41B",
+      "url": null,
+      "tags": [
+        "market",
+        "timeseries"
       ]
     },
     {
@@ -1295,18 +1307,6 @@
       "entity": "Portfolio proxy",
       "type": "market_sync",
       "headline": "SPCX $123.99 TSLA $380.84 NW $1107.22B",
-      "url": null,
-      "tags": [
-        "market",
-        "timeseries"
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "entity_key": "portfolio",
-      "entity": "Portfolio proxy",
-      "type": "market_sync",
-      "headline": "SPCX $131.11 TSLA $391.06 NW $1160.23B",
       "url": null,
       "tags": [
         "market",
