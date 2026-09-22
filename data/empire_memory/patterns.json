@@ -6,8 +6,8 @@
     "hypothesis": "H12",
     "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
     "entities": [
-      "twitter",
-      "spacex"
+      "spacex",
+      "twitter"
     ],
     "evidence_ids": [
       "debt-2023-04-01-twitter",
