@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-09-24T04:08:58Z",
+  "as_of_utc": "2026-09-24T11:28:18Z",
   "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
   "net_worth_proxy_usd_b": 1263.33,
   "components_usd_b": {
