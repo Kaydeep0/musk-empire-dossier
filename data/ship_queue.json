@@ -1,6 +1,21 @@
 {
-  "updated": "2026-08-14T13:17:12Z",
+  "updated": "2026-09-29T22:04:29Z",
   "items": [
+    {
+      "id": "0001628280-26-063820",
+      "status": "draft",
+      "accession": "0001628280-26-063820",
+      "entity": "Tesla Inc",
+      "form": "8-K",
+      "filing_date": "2026-09-29",
+      "created_utc": "2026-09-29T22:04:29Z",
+      "linkedin_post": "\ud83d\udd34 Just in: Tesla disclosed a ~$20B move.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nKey size disclosed: ~$20.0B.\n\nUse of proceeds: Use of Proceeds and Pricing The proceeds of loans under the Facilities, and letters of credit issued under the Five-Year Revolving Facility, may be used for general corporate purposes or for any other purpose not otherwise prohibited by the applicable Credit Agreement..\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-12-08.\n\nRemainder lock-up release (180-day customary expiry).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $148.52 (+10% vs IPO).\n\nSource:\nTesla Inc | 8-K | 2026-09-29\nhttps://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Material event (8-K)",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001628280-26-056945",
       "status": "draft",
