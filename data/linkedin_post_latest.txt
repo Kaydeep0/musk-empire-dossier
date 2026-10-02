@@ -1,10 +1,10 @@
-🔴 Just in: Tesla disclosed a ~$20B move.
+🔴 Just in: Tesla disclosed a ~$12B move.
 
 Map filing to next dated catalyst on the calendar before sizing risk.
 
-Key size disclosed: ~$20.0B.
+Key size disclosed: ~$12.0B.
 
-Use of proceeds: Use of Proceeds and Pricing The proceeds of loans under the Facilities, and letters of credit issued under the Five-Year Revolving Facility, may be used for general corporate purposes or for any other purpose not otherwise prohibited by the applicable Credit Agreement..
+Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed "filed" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial Statements and Exhibits.
 
 Demand vs supply (what actually moves the stock):.
 
@@ -14,11 +14,11 @@ Remainder lock-up release (180-day customary expiry).
 
 Pattern flagged: infrastructure before supply step.
 
-SPCX $148.52 (+10% vs IPO).
+SPCX $148.07 (+10% vs IPO).
 
 Source:
-Tesla Inc | 8-K | 2026-09-29
-https://www.sec.gov/Archives/edgar/data/1318605/000162828026063820/tsla-20260929.htm
+Tesla Inc | 8-K | 2026-10-02
+https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 

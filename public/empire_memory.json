@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-02T12:14:24Z",
+  "updated_at": "2026-10-02T19:06:13Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-10-02T12:14:24Z",
+    "updated_at": "2026-10-02T19:06:13Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-10-02, the memory agent tracks 151 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-10-02, the memory agent tracks 153 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -62,27 +62,27 @@
         "type": "market_sync"
       },
       {
+        "date": "2026-10-02",
+        "entity": "Tesla Inc",
+        "headline": "Operating results or guidance",
+        "type": "filing_brief"
+      },
+      {
+        "date": "2026-10-02",
+        "entity": "Tesla Inc",
+        "headline": "Material event report",
+        "type": "sec_alert"
+      },
+      {
         "date": "2026-10-01",
         "entity": "Portfolio proxy",
         "headline": "SPCX $150.86 TSLA $354.81 NW $1261.43B",
-        "type": "market_sync"
-      },
-      {
-        "date": "2026-09-30",
-        "entity": "Portfolio proxy",
-        "headline": "SPCX $149.24 TSLA $352.84 NW $1249.62B",
-        "type": "market_sync"
-      },
-      {
-        "date": "2026-09-29",
-        "entity": "Portfolio proxy",
-        "headline": "SPCX $145.47 TSLA $357.45 NW $1228.66B",
         "type": "market_sync"
       }
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 151
+    "event_count": 153
   },
   "patterns": [
     {
@@ -92,8 +92,8 @@
       "hypothesis": "H12",
       "summary": "7 dated steps from Twitter LBO through X/xAI to SpaceX bridge and refi. Leverage migrates via common-control combinations, not clean paydown at each step.",
       "entities": [
-        "twitter",
-        "spacex"
+        "spacex",
+        "twitter"
       ],
       "evidence_ids": [
         "debt-2023-04-01-twitter",
@@ -237,21 +237,21 @@
           "Megapack sales to SpaceX"
         ]
       },
-      "event_count": 8,
-      "last_event_date": "2026-09-29",
+      "event_count": 10,
+      "last_event_date": "2026-10-02",
       "last_event_summary": "Material event report",
       "themes": [
         {
           "tag": "debt_refi",
-          "count": 4
+          "count": 5
         },
         {
           "tag": "insider_trade",
-          "count": 4
+          "count": 5
         },
         {
           "tag": "supply",
-          "count": 4
+          "count": 5
         }
       ]
     },
@@ -468,6 +468,28 @@
         "market",
         "timeseries"
       ]
+    },
+    {
+      "date": "2026-10-02",
+      "entity_key": "tesla",
+      "entity": "Tesla Inc",
+      "type": "filing_brief",
+      "headline": "Operating results or guidance",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+      "tags": [
+        "debt_refi",
+        "insider_trade",
+        "supply"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "entity_key": "tesla",
+      "entity": "Tesla Inc",
+      "type": "sec_alert",
+      "headline": "Material event report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm",
+      "tags": null
     },
     {
       "date": "2026-10-01",
@@ -1295,28 +1317,6 @@
         "market",
         "timeseries"
       ]
-    },
-    {
-      "date": "2026-08-04",
-      "entity_key": "spacex",
-      "entity": "Space Exploration Technologies (SpaceX)",
-      "type": "filing_brief",
-      "headline": "Bond offering priced (coupon and maturity set)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
-      "tags": [
-        "debt_refi",
-        "bond_offering",
-        "supply"
-      ]
-    },
-    {
-      "date": "2026-08-04",
-      "entity_key": "spacex",
-      "entity": "Space Exploration Technologies (SpaceX)",
-      "type": "sec_alert",
-      "headline": "Quarterly report",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm",
-      "tags": null
     }
   ]
 }
