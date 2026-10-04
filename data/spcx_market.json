@@ -19,7 +19,7 @@
     "ath_price": 160.42,
     "ath_date": "2026-07-06",
     "pct_vs_ath": -0.91,
-    "as_of_utc": "2026-10-03T20:52:14Z",
+    "as_of_utc": "2026-10-04T00:26:24Z",
     "basis": "m",
     "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
   },
