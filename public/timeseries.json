@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-10T05:17:40Z",
+  "updated_at": "2026-10-10T12:14:14Z",
   "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
   "ipo_price": 135.0,
   "series": [
@@ -1095,7 +1095,7 @@
     },
     {
       "date": "2026-10-10",
-      "sync_ts": "2026-10-10T05:17:40Z",
+      "sync_ts": "2026-10-10T12:14:13Z",
       "spcx": 162.57,
       "tsla": 382.7,
       "net_worth_b": 1356.48,
@@ -1104,7 +1104,7 @@
       "cash_b": 39.98
     }
   ],
-  "live_sync_count": 782,
+  "live_sync_count": 783,
   "annotations": {
     "catalysts": [
       {
@@ -1167,7 +1167,7 @@
   },
   "latest": {
     "date": "2026-10-10",
-    "sync_ts": "2026-10-10T05:17:40Z",
+    "sync_ts": "2026-10-10T12:14:13Z",
     "spcx": 162.57,
     "tsla": 382.7,
     "net_worth_b": 1356.48,
