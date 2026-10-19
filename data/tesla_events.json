@@ -2,17 +2,48 @@
   "cik": "0001318605",
   "issuer": "Tesla Inc (TSLA)",
   "latest_material": {
-    "accession": "0001628280-26-049270",
-    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
-    "filing_date": "2026-07-23",
-    "form": "10-Q",
+    "accession": "0001104659-26-116700",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+    "filing_date": "2026-10-19",
+    "form": "DEF 14A",
     "basis": "b",
-    "related_party": true,
+    "pledged_shares": true,
     "compensation": true,
     "cross_entity": true,
-    "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
+    "amount_disclosed_m": 65.0,
+    "headline": "DEF 14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
   },
   "events": [
+    {
+      "accession": "0001104659-26-116716",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116716/tm267596d6_defa14a.htm",
+      "filing_date": "2026-10-19",
+      "form": "DEFA14A",
+      "basis": "b",
+      "compensation": true,
+      "headline": "DEFA14A \u00b7 CEO comp"
+    },
+    {
+      "accession": "0001104659-26-116707",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116707/tm267596d3_defa14a.htm",
+      "filing_date": "2026-10-19",
+      "form": "DEFA14A",
+      "basis": "b",
+      "compensation": true,
+      "headline": "DEFA14A \u00b7 CEO comp"
+    },
+    {
+      "accession": "0001104659-26-116700",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+      "filing_date": "2026-10-19",
+      "form": "DEF 14A",
+      "basis": "b",
+      "pledged_shares": true,
+      "compensation": true,
+      "cross_entity": true,
+      "amount_disclosed_m": 65.0,
+      "headline": "DEF 14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$65.0M disclosed"
+    },
     {
       "accession": "0001628280-26-049270",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
@@ -128,37 +159,6 @@
       "accession": "0001104659-25-103800",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103800/tm252289d44_defa14a.htm",
       "filing_date": "2025-10-29",
-      "form": "DEFA14A",
-      "basis": "b",
-      "compensation": true,
-      "headline": "DEFA14A \u00b7 CEO comp"
-    },
-    {
-      "accession": "0001104659-25-103255",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103255/tm252289d43_defa14a.htm",
-      "filing_date": "2025-10-28",
-      "form": "DEFA14A",
-      "basis": "b",
-      "related_party": true,
-      "compensation": true,
-      "cross_entity": true,
-      "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
-    },
-    {
-      "accession": "0001104659-25-102658",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925102658/tm252289d42_defa14a.htm",
-      "filing_date": "2025-10-27",
-      "form": "DEFA14A",
-      "basis": "b",
-      "related_party": true,
-      "compensation": true,
-      "cross_entity": true,
-      "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp"
-    },
-    {
-      "accession": "0001104659-25-101876",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925101876/tm252289d41_defa14a.htm",
-      "filing_date": "2025-10-23",
       "form": "DEFA14A",
       "basis": "b",
       "compensation": true,

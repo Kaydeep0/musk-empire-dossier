@@ -1,10 +1,8 @@
-🔴 Just in: Tesla disclosed a ~$12B move.
+🔴 Just in: Tesla dropped a new proxy. Read the dates.
 
 Map filing to next dated catalyst on the calendar before sizing risk.
 
-Key size disclosed: ~$12.0B.
-
-Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed "filed" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial Statements and Exhibits.
+Key size disclosed: ~$400.0B.
 
 Demand vs supply (what actually moves the stock):.
 
@@ -14,11 +12,11 @@ Remainder lock-up release (180-day customary expiry).
 
 Pattern flagged: infrastructure before supply step.
 
-SPCX $148.07 (+10% vs IPO).
+SPCX $146.03 (+8% vs IPO).
 
 Source:
-Tesla Inc | 8-K | 2026-10-02
-https://www.sec.gov/Archives/edgar/data/1318605/000162828026064366/tsla-20261002.htm
+Tesla Inc | DEF 14A | 2026-10-19
+https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 
