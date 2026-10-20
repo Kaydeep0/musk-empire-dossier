@@ -45,7 +45,7 @@
         "count": 1
       }
     ],
-    "updated": "2026-10-20T18:26:18Z"
+    "updated": "2026-10-20T23:06:22Z"
   },
   "tesla": {
     "key": "tesla",
@@ -81,7 +81,7 @@
         "count": 9
       }
     ],
-    "updated": "2026-10-20T18:26:18Z"
+    "updated": "2026-10-20T23:06:22Z"
   },
   "twitter": {
     "key": "twitter",
@@ -110,7 +110,7 @@
         "count": 3
       }
     ],
-    "updated": "2026-10-20T18:26:18Z"
+    "updated": "2026-10-20T23:06:22Z"
   },
   "solarcity": {
     "key": "solarcity",
@@ -127,7 +127,7 @@
     "last_event_date": null,
     "last_event_summary": null,
     "themes": [],
-    "updated": "2026-10-20T18:26:18Z"
+    "updated": "2026-10-20T23:06:22Z"
   },
   "spacex": {
     "key": "spacex",
@@ -147,13 +147,13 @@
         "Valor leases"
       ]
     },
-    "event_count": 31,
+    "event_count": 33,
     "last_event_date": "2027-09-02",
     "last_event_summary": "Goldman bridge maturity cliff (~$11.4B remaining)",
     "themes": [
       {
         "tag": "supply",
-        "count": 19
+        "count": 20
       },
       {
         "tag": "catalyst",
@@ -161,7 +161,7 @@
       },
       {
         "tag": "debt_refi",
-        "count": 6
+        "count": 7
       },
       {
         "tag": "H12",
@@ -184,6 +184,6 @@
         "count": 2
       }
     ],
-    "updated": "2026-10-20T18:26:18Z"
+    "updated": "2026-10-20T23:06:22Z"
   }
 }

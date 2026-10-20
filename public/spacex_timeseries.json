@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-20T18:26:13Z",
+  "updated_utc": "2026-10-20T23:06:18Z",
   "ticker": "SPCX",
   "ipo_price": 135.0,
   "ipo_date": "2026-06-13",
@@ -2324,10 +2324,10 @@
     },
     {
       "date": "2026-10-20",
-      "price": 147.93,
-      "volume": 60023678,
-      "pct_vs_ipo": 9.58,
-      "pct_vs_ath": -13.95,
+      "price": 147.79,
+      "volume": 99549776,
+      "pct_vs_ipo": 9.47,
+      "pct_vs_ath": -14.04,
       "ath_ref": 171.92,
       "float_pct": 9.72,
       "float_label": "First major lock-up unlock (~7% pool; float ~doubles)",
@@ -2338,9 +2338,24 @@
       "next_unlock_float_pct": 15.0,
       "days_to_next_unlock": 49,
       "inventory_freeing_today": false,
-      "sec_event_count": 0,
-      "sec_events": [],
-      "sec_headline": null
+      "sec_event_count": 2,
+      "sec_events": [
+        {
+          "kind": "spacex_8k",
+          "form": "8-K",
+          "label": "Latest SpaceX 8-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm",
+          "accession": "0001628280-26-066482"
+        },
+        {
+          "kind": "alert",
+          "form": "8-K",
+          "label": "Material event report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm",
+          "entity": "Space Exploration Technologies (SpaceX)"
+        }
+      ],
+      "sec_headline": "Latest SpaceX 8-K"
     }
   ]
 }
