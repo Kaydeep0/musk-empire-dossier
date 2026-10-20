@@ -15,6 +15,16 @@
   },
   "events": [
     {
+      "accession": "0001104659-26-116948",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116948/tm267596d7_defa14a.htm",
+      "filing_date": "2026-10-19",
+      "form": "DEFA14A",
+      "basis": "b",
+      "compensation": true,
+      "cross_entity": true,
+      "headline": "DEFA14A \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 CEO comp"
+    },
+    {
       "accession": "0001104659-26-116716",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116716/tm267596d6_defa14a.htm",
       "filing_date": "2026-10-19",
@@ -150,15 +160,6 @@
       "accession": "0001104659-25-104464",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925104464/tm252289d45_defa14a.htm",
       "filing_date": "2025-10-30",
-      "form": "DEFA14A",
-      "basis": "b",
-      "compensation": true,
-      "headline": "DEFA14A \u00b7 CEO comp"
-    },
-    {
-      "accession": "0001104659-25-103800",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925103800/tm252289d44_defa14a.htm",
-      "filing_date": "2025-10-29",
       "form": "DEFA14A",
       "basis": "b",
       "compensation": true,
