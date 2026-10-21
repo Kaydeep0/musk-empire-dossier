@@ -16,7 +16,9 @@
         {
           "kind": "d+1",
           "due": "2026-10-21",
-          "sent": false
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-10-20 (Operating results or guidance).",
+          "checked_at": "2026-10-21T04:07:55Z"
         },
         {
           "kind": "d+3",
