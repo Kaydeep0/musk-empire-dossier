@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-22T18:27:33Z",
+  "updated_utc": "2026-10-22T23:09:16Z",
   "ticker": "SPCX",
   "ipo_price": 135.0,
   "ipo_date": "2026-06-13",
@@ -2379,10 +2379,10 @@
     },
     {
       "date": "2026-10-22",
-      "price": 145.24,
-      "volume": 141943364,
-      "pct_vs_ipo": 7.59,
-      "pct_vs_ath": -15.52,
+      "price": 144.75,
+      "volume": 195759405,
+      "pct_vs_ipo": 7.22,
+      "pct_vs_ath": -15.8,
       "ath_ref": 171.92,
       "float_pct": 9.72,
       "float_label": "First major lock-up unlock (~7% pool; float ~doubles)",
@@ -2393,9 +2393,17 @@
       "next_unlock_float_pct": 15.0,
       "days_to_next_unlock": 47,
       "inventory_freeing_today": false,
-      "sec_event_count": 0,
-      "sec_events": [],
-      "sec_headline": null
+      "sec_event_count": 1,
+      "sec_events": [
+        {
+          "kind": "alert",
+          "form": "10-Q",
+          "label": "Quarterly report",
+          "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm",
+          "entity": "Space Exploration Technologies (SpaceX)"
+        }
+      ],
+      "sec_headline": "Quarterly report"
     }
   ]
 }

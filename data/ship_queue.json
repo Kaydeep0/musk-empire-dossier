@@ -1,6 +1,19 @@
 {
-  "updated": "2026-10-22T13:38:36Z",
+  "updated": "2026-10-22T23:06:54Z",
   "items": [
+    {
+      "id": "0001628280-26-066880",
+      "status": "draft",
+      "accession": "0001628280-26-066880",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "10-Q",
+      "filing_date": "2026-10-22",
+      "created_utc": "2026-10-22T23:06:54Z",
+      "linkedin_post": null,
+      "brief_headline": "Bond offering priced (coupon and maturity set)",
+      "public_actions": [],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001628280-26-066775",
       "status": "draft",

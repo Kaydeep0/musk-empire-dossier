@@ -1,4 +1,6 @@
 filing_date,form,accession,url
+2026-10-22,S-8,0001628280-26-066903,https://www.sec.gov/Archives/edgar/data/1181412/000162828026066903/spacex-cursorformsx8.htm
+2026-10-22,10-Q,0001628280-26-066880,https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm
 2026-10-20,8-K,0001628280-26-066482,https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm
 2026-09-30,4/A,0001213900-26-105393,https://www.sec.gov/Archives/edgar/data/1181412/000121390026105393/xslF345X06/ownership.xml
 2026-09-24,4,0001628280-26-063378,https://www.sec.gov/Archives/edgar/data/1181412/000162828026063378/xslF345X06/wk-form4_1790280657.xml
@@ -77,5 +79,3 @@ filing_date,form,accession,url
 2018-04-18,D,0001181412-18-000001,https://www.sec.gov/Archives/edgar/data/1181412/000118141218000001/xslFormDX01/primary_doc.xml
 2017-11-27,D/A,0001181412-17-000002,https://www.sec.gov/Archives/edgar/data/1181412/000118141217000002/xslFormDX01/primary_doc.xml
 2017-08-08,D,0001181412-17-000001,https://www.sec.gov/Archives/edgar/data/1181412/000118141217000001/xslFormDX01/primary_doc.xml
-2015-01-26,D,0001181412-15-000001,https://www.sec.gov/Archives/edgar/data/1181412/000118141215000001/xslFormDX01/primary_doc.xml
-2010-11-09,D,0001181412-10-000001,https://www.sec.gov/Archives/edgar/data/1181412/000118141210000001/xslFormDX01/primary_doc.xml
