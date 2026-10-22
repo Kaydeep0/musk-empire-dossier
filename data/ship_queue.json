@@ -1,6 +1,19 @@
 {
-  "updated": "2026-10-21T21:27:00Z",
+  "updated": "2026-10-22T13:38:36Z",
   "items": [
+    {
+      "id": "0001628280-26-066775",
+      "status": "draft",
+      "accession": "0001628280-26-066775",
+      "entity": "Tesla Inc",
+      "form": "10-Q",
+      "filing_date": "2026-10-22",
+      "created_utc": "2026-10-22T13:38:36Z",
+      "linkedin_post": null,
+      "brief_headline": "Operating results or guidance",
+      "public_actions": [],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001628280-26-066738",
       "status": "draft",
