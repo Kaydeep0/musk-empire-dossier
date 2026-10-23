@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T23:09:16Z",
+  "updated_at": "2026-10-23T04:12:32Z",
   "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
   "ipo_price": 135.0,
   "series": [
@@ -1222,9 +1222,19 @@
       "tesla_stake_b": 265.95,
       "cash_b": 39.98,
       "sync_ts": "2026-10-22T23:09:15Z"
+    },
+    {
+      "date": "2026-10-23",
+      "sync_ts": "2026-10-23T04:12:31Z",
+      "spcx": 144.75,
+      "tsla": 374.58,
+      "net_worth_b": 1236.19,
+      "spacex_stake_b": 930.26,
+      "tesla_stake_b": 265.95,
+      "cash_b": 39.98
     }
   ],
-  "live_sync_count": 838,
+  "live_sync_count": 839,
   "annotations": {
     "catalysts": [
       {
@@ -1286,13 +1296,13 @@
     ]
   },
   "latest": {
-    "date": "2026-10-22",
-    "net_worth_b": 1236.19,
+    "date": "2026-10-23",
+    "sync_ts": "2026-10-23T04:12:31Z",
     "spcx": 144.75,
     "tsla": 374.58,
+    "net_worth_b": 1236.19,
     "spacex_stake_b": 930.26,
     "tesla_stake_b": 265.95,
-    "cash_b": 39.98,
-    "sync_ts": "2026-10-22T23:09:15Z"
+    "cash_b": 39.98
   }
 }
