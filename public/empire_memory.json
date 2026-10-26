@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-10-26T04:34:19Z",
+  "updated_at": "2026-10-26T12:37:44Z",
   "disclaimer": "Educational research memory. Not investment advice.",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
   "synthesis": {
-    "updated_at": "2026-10-26T04:34:19Z",
+    "updated_at": "2026-10-26T12:37:44Z",
     "disclaimer": "Educational research memory. Not investment advice.",
-    "narrative": "As of 2026-10-26, the memory agent tracks 194 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
+    "narrative": "As of 2026-10-26, the memory agent tracks 196 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
     "recent_events": [
       {
         "date": "2027-09-02",
@@ -62,27 +62,27 @@
         "type": "market_sync"
       },
       {
+        "date": "2026-10-26",
+        "entity": "Space Exploration Technologies (SpaceX)",
+        "headline": "Operating results or guidance",
+        "type": "filing_brief"
+      },
+      {
+        "date": "2026-10-26",
+        "entity": "Space Exploration Technologies (SpaceX)",
+        "headline": "Material event report",
+        "type": "sec_alert"
+      },
+      {
         "date": "2026-10-25",
         "entity": "Portfolio proxy",
         "headline": "SPCX $147.49 TSLA $372.22 NW $1252.13B",
-        "type": "market_sync"
-      },
-      {
-        "date": "2026-10-24",
-        "entity": "Portfolio proxy",
-        "headline": "SPCX $144.75 TSLA $374.58 NW $1236.19B",
-        "type": "market_sync"
-      },
-      {
-        "date": "2026-10-23",
-        "entity": "Portfolio proxy",
-        "headline": "SPCX $144.75 TSLA $374.58 NW $1236.19B",
         "type": "market_sync"
       }
     ],
     "pattern_count": 6,
     "entity_count": 5,
-    "event_count": 194
+    "event_count": 196
   },
   "patterns": [
     {
@@ -311,13 +311,13 @@
           "Valor leases"
         ]
       },
-      "event_count": 35,
+      "event_count": 37,
       "last_event_date": "2027-09-02",
       "last_event_summary": "Goldman bridge maturity cliff (~$11.4B remaining)",
       "themes": [
         {
           "tag": "supply",
-          "count": 21
+          "count": 22
         },
         {
           "tag": "catalyst",
@@ -325,7 +325,7 @@
         },
         {
           "tag": "debt_refi",
-          "count": 8
+          "count": 9
         },
         {
           "tag": "bond_offering",
@@ -468,6 +468,27 @@
         "market",
         "timeseries"
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "entity_key": "spacex",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "type": "filing_brief",
+      "headline": "Operating results or guidance",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+      "tags": [
+        "debt_refi",
+        "supply"
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "entity_key": "spacex",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "type": "sec_alert",
+      "headline": "Material event report",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+      "tags": null
     },
     {
       "date": "2026-10-25",
@@ -1263,30 +1284,6 @@
     },
     {
       "date": "2026-09-08",
-      "entity_key": "portfolio",
-      "entity": "Portfolio proxy",
-      "type": "market_sync",
-      "headline": "SPCX $147.95 TSLA $354.08 NW $1242.21B",
-      "url": null,
-      "tags": [
-        "market",
-        "timeseries"
-      ]
-    },
-    {
-      "date": "2026-09-07",
-      "entity_key": "portfolio",
-      "entity": "Portfolio proxy",
-      "type": "market_sync",
-      "headline": "SPCX $147.95 TSLA $354.08 NW $1242.21B",
-      "url": null,
-      "tags": [
-        "market",
-        "timeseries"
-      ]
-    },
-    {
-      "date": "2026-09-06",
       "entity_key": "portfolio",
       "entity": "Portfolio proxy",
       "type": "market_sync",

@@ -2,11 +2,11 @@
   "cik": "0001181412",
   "issuer": "Space Exploration Technologies Corp. (SPCX)",
   "latest_8k": {
-    "accession": "0001628280-26-066482",
+    "accession": "0001104659-26-118614",
     "form": "8-K",
-    "filingDate": "2026-10-20",
-    "primaryDocument": "spcx-20261020.htm",
-    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026066482/spcx-20261020.htm"
+    "filingDate": "2026-10-26",
+    "primaryDocument": "tm2628247d1_8k.htm",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm"
   },
   "bond": {
     "date": "2026-06-22",

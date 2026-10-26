@@ -35,6 +35,38 @@
       ],
       "status": "watching",
       "created": "2026-10-20T23:04:05Z"
+    },
+    {
+      "lane": "spacex",
+      "accession": "0001104659-26-118614",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "8-K",
+      "filed": "2026-10-26",
+      "headline": "Operating results or guidance",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm",
+      "settlement": "",
+      "expect": [
+        "Next supply step on material dates calendar (Aug 20 unlock)"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-10-27",
+          "sent": false
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-10-29",
+          "sent": false
+        },
+        {
+          "kind": "d+7",
+          "due": "2026-11-02",
+          "sent": false
+        }
+      ],
+      "status": "watching",
+      "created": "2026-10-26T12:36:00Z"
     }
   ],
   "closed": [

@@ -1,10 +1,10 @@
-🔴 Just in: Tesla disclosed a ~$12B move.
+🔴 Just in: SpaceX disclosed a ~$40B move.
 
 Map filing to next dated catalyst on the calendar before sizing risk.
 
-Key size disclosed: ~$12.0B.
+Key size disclosed: ~$40.0B.
 
-Items filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K, "Results of Operations and Financial Condition" and shall not be deemed "filed" for purposes of Section; Item 9: 01 Financial Statements and Exhibits.
+Items filed: Item 8.01: Other Events.
 
 Demand vs supply (what actually moves the stock):.
 
@@ -14,11 +14,11 @@ Remainder lock-up release (180-day customary expiry).
 
 Pattern flagged: infrastructure before supply step.
 
-SPCX $162.46 (+20% vs IPO).
+SPCX $147.49 (+9% vs IPO).
 
 Source:
-Tesla Inc | 8-K | 2026-10-21
-https://www.sec.gov/Archives/edgar/data/1318605/000162828026066738/tsla-20261021.htm
+Space Exploration Technologies (SpaceX) | 8-K | 2026-10-26
+https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 
