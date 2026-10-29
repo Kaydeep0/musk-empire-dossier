@@ -1,10 +1,6 @@
-🔴 Just in: SpaceX disclosed a ~$40B move.
+🔴 Just in: Tesla dropped a new proxy. Read the dates.
 
 Map filing to next dated catalyst on the calendar before sizing risk.
-
-Key size disclosed: ~$40.0B.
-
-Items filed: Item 8.01: Other Events.
 
 Demand vs supply (what actually moves the stock):.
 
@@ -14,11 +10,11 @@ Remainder lock-up release (180-day customary expiry).
 
 Pattern flagged: infrastructure before supply step.
 
-SPCX $147.49 (+9% vs IPO).
+SPCX $143.74 (+6% vs IPO).
 
 Source:
-Space Exploration Technologies (SpaceX) | 8-K | 2026-10-26
-https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm
+Tesla Inc | DEFA14A | 2026-10-29
+https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 
