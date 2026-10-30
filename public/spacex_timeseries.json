@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-30T19:06:11Z",
+  "updated_utc": "2026-10-30T23:33:14Z",
   "ticker": "SPCX",
   "ipo_price": 135.0,
   "ipo_date": "2026-06-13",
@@ -2562,10 +2562,10 @@
     },
     {
       "date": "2026-10-30",
-      "price": 135.46,
-      "volume": 90329826,
-      "pct_vs_ipo": 0.34,
-      "pct_vs_ath": -21.21,
+      "price": 134.72,
+      "volume": 121658895,
+      "pct_vs_ipo": -0.21,
+      "pct_vs_ath": -21.64,
       "ath_ref": 171.92,
       "float_pct": 9.72,
       "float_label": "First major lock-up unlock (~7% pool; float ~doubles)",
