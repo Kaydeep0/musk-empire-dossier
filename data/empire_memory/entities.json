@@ -45,7 +45,7 @@
         "count": 1
       }
     ],
-    "updated": "2026-11-02T20:09:37Z"
+    "updated": "2026-11-03T03:24:35Z"
   },
   "tesla": {
     "key": "tesla",
@@ -64,24 +64,24 @@
         "Megapack sales to SpaceX"
       ]
     },
-    "event_count": 25,
-    "last_event_date": "2026-10-29",
+    "event_count": 27,
+    "last_event_date": "2026-11-02",
     "last_event_summary": "Proxy additional materials",
     "themes": [
       {
         "tag": "debt_refi",
-        "count": 12
+        "count": 13
       },
       {
         "tag": "insider_trade",
-        "count": 12
+        "count": 13
       },
       {
         "tag": "supply",
-        "count": 12
+        "count": 13
       }
     ],
-    "updated": "2026-11-02T20:09:37Z"
+    "updated": "2026-11-03T03:24:35Z"
   },
   "twitter": {
     "key": "twitter",
@@ -110,7 +110,7 @@
         "count": 3
       }
     ],
-    "updated": "2026-11-02T20:09:37Z"
+    "updated": "2026-11-03T03:24:35Z"
   },
   "solarcity": {
     "key": "solarcity",
@@ -127,7 +127,7 @@
     "last_event_date": null,
     "last_event_summary": null,
     "themes": [],
-    "updated": "2026-11-02T20:09:37Z"
+    "updated": "2026-11-03T03:24:35Z"
   },
   "spacex": {
     "key": "spacex",
@@ -184,6 +184,6 @@
         "count": 2
       }
     ],
-    "updated": "2026-11-02T20:09:37Z"
+    "updated": "2026-11-03T03:24:35Z"
   }
 }

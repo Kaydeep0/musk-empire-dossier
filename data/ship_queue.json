@@ -1,6 +1,21 @@
 {
-  "updated": "2026-10-29T23:51:47Z",
+  "updated": "2026-11-03T03:23:00Z",
   "items": [
+    {
+      "id": "0001104659-26-121458",
+      "status": "draft",
+      "accession": "0001104659-26-121458",
+      "entity": "Tesla Inc",
+      "form": "DEFA14A",
+      "filing_date": "2026-11-02",
+      "created_utc": "2026-11-03T03:23:00Z",
+      "linkedin_post": "\ud83d\udd34 Just in: Tesla dropped a new proxy. Read the dates.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-12-08.\n\nRemainder lock-up release (180-day customary expiry).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $138.4 (+3% vs IPO).\n\nSource:\nTesla Inc | DEFA14A | 2026-11-02\nhttps://www.sec.gov/Archives/edgar/data/1318605/000110465926121458/tm267596d9_defa14a.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
+      "brief_headline": "Material event (DEFA14A)",
+      "public_actions": [
+        "linkedin"
+      ],
+      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
+    },
     {
       "id": "0001104659-26-120263",
       "status": "draft",
@@ -271,21 +286,6 @@
       "created_utc": "2026-07-02T16:07:31Z",
       "linkedin_post": "\ud83d\udd34 Just in: Tesla disclosed a ~$12B move.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nKey size disclosed: ~$12.0B.\n\nItems filed: Item 2: 02 Results of Operations and Financial Condition; Item 2: 02 of Form 8-K and shall not be deemed \"filed\" for purposes of Section 18 of the Securities Exchange Act of 1934, as ame; Item 9: 01 Financial Statements and Exhibits.\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $157.54 (+17% vs IPO).\n\nSource:\nTesla Inc | 8-K | 2026-07-02\nhttps://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
       "brief_headline": "Operating results or guidance",
-      "public_actions": [
-        "linkedin"
-      ],
-      "approve_hint": "Copy LinkedIn block to post if approved. Reply SKIP to discard."
-    },
-    {
-      "id": "0001628280-26-045763",
-      "status": "draft",
-      "accession": "0001628280-26-045763",
-      "entity": "Space Exploration Technologies (SpaceX)",
-      "form": "8-K",
-      "filing_date": "2026-06-26",
-      "created_utc": "2026-06-26T21:25:52Z",
-      "linkedin_post": "\ud83d\udd34 Just in: SpaceX disclosed a ~$12B move.\n\nMap filing to next dated catalyst on the calendar before sizing risk.\n\nKey size disclosed: ~$12.0B.\n\nItems filed: Item 8.01: Other Events; Item 9.01: Financial Statements and Exhibits.\n\nDemand vs supply (what actually moves the stock):.\n\nNext dated catalyst: 2026-08-20.\n\nFirst major lock-up unlock (~7% pool; roughly doubles tradable float).\n\nPattern flagged: infrastructure before supply step.\n\nSPCX $153.25 (+14% vs IPO).\n\nSource:\nSpace Exploration Technologies (SpaceX) | 8-K | 2026-06-26\nhttps://www.sec.gov/Archives/edgar/data/1181412/000162828026045763/spcx-closing8xkjune2026.htm\n\nDossier: https://kaydeep0.github.io/musk-empire-dossier/\n\nEducational only. Not investment advice.",
-      "brief_headline": "New debt or securities offering commenced",
       "public_actions": [
         "linkedin"
       ],
