@@ -1,9 +1,11 @@
 # Live changelog
 
-**Last rebuilt:** 2026-11-06T19:17:06Z (UTC)
+**Last rebuilt:** 2026-11-07T00:02:38Z (UTC)
 
 - Latest Musk filing: [SCHEDULE 13G 2026-08-13](https://www.sec.gov/Archives/edgar/data/1494730/000110465926095936/xslSCHEDULE_13G_X02/primary_doc.xml)
 
+- `2026-11-07T00:00:26` **Space Exploration Technologies (SpaceX)** [8-K](https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm) (2026-11-06)
+- `2026-11-07T00:00:24` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926123945/tm267596d10_defa14a.htm) (2026-11-06)
 - `2026-11-03T03:23:01` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926121458/tm267596d9_defa14a.htm) (2026-11-02)
 - `2026-10-29T23:51:49` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926120263/tm267596d8_defa14a.htm) (2026-10-29)
 - `2026-10-26T12:36:02` **Space Exploration Technologies (SpaceX)** [8-K](https://www.sec.gov/Archives/edgar/data/1181412/000110465926118614/tm2628247d1_8k.htm) (2026-10-26)
@@ -14,8 +16,6 @@
 - `2026-10-20T00:59:02` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116948/tm267596d7_defa14a.htm) (2026-10-19)
 - `2026-10-19T15:25:00` **Tesla Inc** [DEF 14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm) (2026-10-19)
 - `2026-10-19T15:24:59` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116707/tm267596d3_defa14a.htm) (2026-10-19)
-- `2026-10-19T15:24:58` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116713/tm267596d5_defa14a.htm) (2026-10-19)
-- `2026-10-19T15:24:56` **Tesla Inc** [DEFA14A](https://www.sec.gov/Archives/edgar/data/1318605/000110465926116716/tm267596d6_defa14a.htm) (2026-10-19)
 
 ---
 

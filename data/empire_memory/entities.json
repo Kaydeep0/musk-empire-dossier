@@ -45,7 +45,7 @@
         "count": 1
       }
     ],
-    "updated": "2026-11-06T19:17:06Z"
+    "updated": "2026-11-07T00:02:38Z"
   },
   "tesla": {
     "key": "tesla",
@@ -64,24 +64,24 @@
         "Megapack sales to SpaceX"
       ]
     },
-    "event_count": 27,
-    "last_event_date": "2026-11-02",
+    "event_count": 29,
+    "last_event_date": "2026-11-06",
     "last_event_summary": "Proxy additional materials",
     "themes": [
       {
         "tag": "debt_refi",
-        "count": 13
+        "count": 14
       },
       {
         "tag": "insider_trade",
-        "count": 13
+        "count": 14
       },
       {
         "tag": "supply",
-        "count": 13
+        "count": 14
       }
     ],
-    "updated": "2026-11-06T19:17:06Z"
+    "updated": "2026-11-07T00:02:38Z"
   },
   "twitter": {
     "key": "twitter",
@@ -110,7 +110,7 @@
         "count": 3
       }
     ],
-    "updated": "2026-11-06T19:17:06Z"
+    "updated": "2026-11-07T00:02:38Z"
   },
   "solarcity": {
     "key": "solarcity",
@@ -127,7 +127,7 @@
     "last_event_date": null,
     "last_event_summary": null,
     "themes": [],
-    "updated": "2026-11-06T19:17:06Z"
+    "updated": "2026-11-07T00:02:38Z"
   },
   "spacex": {
     "key": "spacex",
@@ -147,13 +147,13 @@
         "Valor leases"
       ]
     },
-    "event_count": 37,
+    "event_count": 39,
     "last_event_date": "2027-09-02",
     "last_event_summary": "Goldman bridge maturity cliff (~$11.4B remaining)",
     "themes": [
       {
         "tag": "supply",
-        "count": 22
+        "count": 23
       },
       {
         "tag": "catalyst",
@@ -161,7 +161,7 @@
       },
       {
         "tag": "debt_refi",
-        "count": 9
+        "count": 10
       },
       {
         "tag": "bond_offering",
@@ -184,6 +184,6 @@
         "count": 2
       }
     ],
-    "updated": "2026-11-06T19:17:06Z"
+    "updated": "2026-11-07T00:02:38Z"
   }
 }
