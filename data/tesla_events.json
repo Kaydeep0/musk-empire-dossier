@@ -2,15 +2,24 @@
   "cik": "0001318605",
   "issuer": "Tesla Inc (TSLA)",
   "latest_material": {
-    "accession": "0001104659-26-123945",
-    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926123945/tm267596d10_defa14a.htm",
-    "filing_date": "2026-11-06",
+    "accession": "0001104659-26-124575",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926124575/tm267596d11_defa14a.htm",
+    "filing_date": "2026-11-09",
     "form": "DEFA14A",
     "basis": "b",
     "compensation": true,
     "headline": "DEFA14A \u00b7 CEO comp"
   },
   "events": [
+    {
+      "accession": "0001104659-26-124575",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926124575/tm267596d11_defa14a.htm",
+      "filing_date": "2026-11-09",
+      "form": "DEFA14A",
+      "basis": "b",
+      "compensation": true,
+      "headline": "DEFA14A \u00b7 CEO comp"
+    },
     {
       "accession": "0001104659-26-123945",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926123945/tm267596d10_defa14a.htm",
@@ -150,15 +159,6 @@
       "accession": "0001104659-25-107871",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925107871/tm252289d50_defa14a.htm",
       "filing_date": "2025-11-06",
-      "form": "DEFA14A",
-      "basis": "b",
-      "compensation": true,
-      "headline": "DEFA14A \u00b7 CEO comp"
-    },
-    {
-      "accession": "0001104659-25-107096",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465925107096/tm252289d49_defa14a.htm",
-      "filing_date": "2025-11-05",
       "form": "DEFA14A",
       "basis": "b",
       "compensation": true,
