@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T09:34:07Z",
+  "updated_at": "2026-11-12T18:03:01Z",
   "site_url": "https://kaydeep0.github.io/musk-empire-dossier/",
   "disclaimer": "Educational only. Not investment advice.",
   "latest_musk_filing": {
@@ -44,15 +44,15 @@
     },
     "market": {
       "ticker": "SPCX",
-      "price": 139.75,
-      "previous_close": 143.09,
-      "change_pct_1d": -2.33,
+      "price": 142.75,
+      "previous_close": 139.75,
+      "change_pct_1d": 2.15,
       "ipo_price": 135.0,
-      "pct_vs_ipo": 3.52,
+      "pct_vs_ipo": 5.74,
       "ath_price": 171.92,
       "ath_date": "2026-10-06",
-      "pct_vs_ath": -18.71,
-      "as_of_utc": "2026-11-12T09:34:01Z",
+      "pct_vs_ath": -16.97,
+      "as_of_utc": "2026-11-12T18:02:55Z",
       "basis": "m",
       "source": "Yahoo Finance chart API (point-in-time; re-pull before citing)"
     },
@@ -114,13 +114,13 @@
     }
   },
   "portfolio": {
-    "as_of_utc": "2026-11-12T09:34:01Z",
+    "as_of_utc": "2026-11-12T18:02:55Z",
     "refresh_note": "Updated each sync (~30 min via GitHub Actions). Yahoo data is delayed, not tick-by-tick.",
-    "net_worth_proxy_usd_b": 1215.61,
+    "net_worth_proxy_usd_b": 1235.33,
     "components_usd_b": {
       "cash_realized_usd_b": 39.98,
-      "tesla_stake_usd_b": 277.5,
-      "spacex_stake_usd_b": 898.13
+      "tesla_stake_usd_b": 277.94,
+      "spacex_stake_usd_b": 917.41
     },
     "holdings": [
       {
@@ -128,9 +128,9 @@
         "ticker": "TSLA",
         "kind": "public",
         "shares": 710000000,
-        "price": 390.84,
-        "change_pct_1d": 2.91,
-        "value_usd_b": 277.5,
+        "price": 391.47,
+        "change_pct_1d": 0.16,
+        "value_usd_b": 277.94,
         "basis": "b+m",
         "note": "Beneficial shares from Form 4 anchor x live price"
       },
@@ -140,10 +140,10 @@
         "kind": "public",
         "musk_econ_pct": 0.36,
         "implied_shares": 6426666666,
-        "price": 139.75,
-        "change_pct_1d": -2.33,
-        "pct_vs_ipo": 3.52,
-        "value_usd_b": 898.13,
+        "price": 142.75,
+        "change_pct_1d": 2.15,
+        "pct_vs_ipo": 5.74,
+        "value_usd_b": 917.41,
         "value_at_ipo_usd_b": 867.6,
         "basis": "b+m",
         "note": "~36% econ x 17B total shares proxy at IPO"
@@ -952,27 +952,27 @@
     {
       "key": "musk",
       "tracked": 121,
-      "updated": "2026-11-12T09:32:42"
+      "updated": "2026-11-12T18:01:11"
     },
     {
       "key": "solarcity",
       "tracked": 66,
-      "updated": "2026-11-12T09:32:42"
+      "updated": "2026-11-12T18:01:11"
     },
     {
       "key": "spacex",
       "tracked": 69,
-      "updated": "2026-11-12T09:32:42"
+      "updated": "2026-11-12T18:01:11"
     },
     {
       "key": "tesla",
       "tracked": 136,
-      "updated": "2026-11-12T09:32:42"
+      "updated": "2026-11-12T18:01:11"
     },
     {
       "key": "twitter",
       "tracked": 38,
-      "updated": "2026-11-12T09:32:42"
+      "updated": "2026-11-12T18:01:11"
     }
   ],
   "registry": [
@@ -1569,7 +1569,7 @@
     }
   ],
   "timeseries": {
-    "updated_at": "2026-11-12T09:34:01Z",
+    "updated_at": "2026-11-12T18:02:55Z",
     "disclaimer": "Educational proxy. Yahoo daily + sync snapshots. Not investment advice.",
     "ipo_price": 135.0,
     "series": [
@@ -2995,16 +2995,16 @@
       },
       {
         "date": "2026-11-12",
-        "sync_ts": "2026-11-12T09:34:01Z",
-        "spcx": 139.75,
-        "tsla": 390.84,
-        "net_worth_b": 1215.61,
-        "spacex_stake_b": 898.13,
-        "tesla_stake_b": 277.5,
-        "cash_b": 39.98
+        "net_worth_b": 1235.33,
+        "spcx": 142.75,
+        "tsla": 391.47,
+        "spacex_stake_b": 917.41,
+        "tesla_stake_b": 277.94,
+        "cash_b": 39.98,
+        "sync_ts": "2026-11-12T18:02:55Z"
       }
     ],
-    "live_sync_count": 916,
+    "live_sync_count": 917,
     "annotations": {
       "catalysts": [
         {
@@ -3067,17 +3067,17 @@
     },
     "latest": {
       "date": "2026-11-12",
-      "sync_ts": "2026-11-12T09:34:01Z",
-      "spcx": 139.75,
-      "tsla": 390.84,
-      "net_worth_b": 1215.61,
-      "spacex_stake_b": 898.13,
-      "tesla_stake_b": 277.5,
-      "cash_b": 39.98
+      "net_worth_b": 1235.33,
+      "spcx": 142.75,
+      "tsla": 391.47,
+      "spacex_stake_b": 917.41,
+      "tesla_stake_b": 277.94,
+      "cash_b": 39.98,
+      "sync_ts": "2026-11-12T18:02:55Z"
     }
   },
   "spacex_unlock_series": {
-    "updated_utc": "2026-11-12T09:34:02Z",
+    "updated_utc": "2026-11-12T18:02:55Z",
     "ticker": "SPCX",
     "ipo_price": 135.0,
     "ipo_date": "2026-06-13",
@@ -5900,10 +5900,10 @@
       },
       {
         "date": "2026-11-12",
-        "price": 139.75,
-        "volume": 112785200,
-        "pct_vs_ipo": 3.52,
-        "pct_vs_ath": -18.71,
+        "price": 142.75,
+        "volume": 66000085,
+        "pct_vs_ipo": 5.74,
+        "pct_vs_ath": -16.97,
         "ath_ref": 171.92,
         "float_pct": 9.72,
         "float_label": "First major lock-up unlock (~7% pool; float ~doubles)",
@@ -5921,11 +5921,11 @@
     ]
   },
   "empire_memory": {
-    "updated_at": "2026-11-12T09:34:07Z",
+    "updated_at": "2026-11-12T18:03:01Z",
     "disclaimer": "Educational research memory. Not investment advice.",
     "site_url": "https://kaydeep0.github.io/musk-empire-dossier",
     "synthesis": {
-      "updated_at": "2026-11-12T09:34:07Z",
+      "updated_at": "2026-11-12T18:03:01Z",
       "disclaimer": "Educational research memory. Not investment advice.",
       "narrative": "As of 2026-11-12, the memory agent tracks 223 events across 5 entities (Musk, SPCX, Tesla, and related vehicles). Confirmed patterns: Debt travels across vehicles; Payday is the sale (TSLA); Debt print \u2260 equity exit. Emerging now: Infrastructure before supply step; Repeatable empire loop. On watch: Supply staircase H1 2026-27. SPCX last signal (2027-09-02): Goldman bridge maturity cliff (~$11.4B remaining). Musk ledger focus: TSLA Form 4 sales ~$40B cumulative; SPCX locked until 2027-06-16.",
       "recent_events": [
