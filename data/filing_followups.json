@@ -1,42 +1,5 @@
 {
-  "active": [
-    {
-      "lane": "spacex",
-      "accession": "0001628280-26-071689",
-      "entity": "Space Exploration Technologies (SpaceX)",
-      "form": "8-K",
-      "filed": "2026-11-06",
-      "headline": "Material event (8-K)",
-      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
-      "settlement": "",
-      "expect": [
-        "Next supply step on material dates calendar (Aug 20 unlock)"
-      ],
-      "checks": [
-        {
-          "kind": "d+1",
-          "due": "2026-11-07",
-          "sent": true,
-          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-11-06 (Material event (8-K)).",
-          "checked_at": "2026-11-07T00:02:38Z"
-        },
-        {
-          "kind": "d+3",
-          "due": "2026-11-09",
-          "sent": true,
-          "note": "[SpaceX] Follow-up (d+3): no new filing yet since 2026-11-06 (Material event (8-K)).",
-          "checked_at": "2026-11-09T01:33:41Z"
-        },
-        {
-          "kind": "d+7",
-          "due": "2026-11-13",
-          "sent": false
-        }
-      ],
-      "status": "watching",
-      "created": "2026-11-07T00:00:25Z"
-    }
-  ],
+  "active": [],
   "closed": [
     {
       "lane": "musk",
@@ -342,6 +305,44 @@
       ],
       "status": "complete",
       "created": "2026-10-26T12:36:00Z"
+    },
+    {
+      "lane": "spacex",
+      "accession": "0001628280-26-071689",
+      "entity": "Space Exploration Technologies (SpaceX)",
+      "form": "8-K",
+      "filed": "2026-11-06",
+      "headline": "Material event (8-K)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026071689/spcx-20261104.htm",
+      "settlement": "",
+      "expect": [
+        "Next supply step on material dates calendar (Aug 20 unlock)"
+      ],
+      "checks": [
+        {
+          "kind": "d+1",
+          "due": "2026-11-07",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+1): no new filing yet since 2026-11-06 (Material event (8-K)).",
+          "checked_at": "2026-11-07T00:02:38Z"
+        },
+        {
+          "kind": "d+3",
+          "due": "2026-11-09",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+3): no new filing yet since 2026-11-06 (Material event (8-K)).",
+          "checked_at": "2026-11-09T01:33:41Z"
+        },
+        {
+          "kind": "d+7",
+          "due": "2026-11-13",
+          "sent": true,
+          "note": "[SpaceX] Follow-up (d+7): no new filing yet since 2026-11-06 (Material event (8-K)).",
+          "checked_at": "2026-11-13T00:59:51Z"
+        }
+      ],
+      "status": "complete",
+      "created": "2026-11-07T00:00:25Z"
     }
   ]
 }
