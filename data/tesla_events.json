@@ -2,15 +2,24 @@
   "cik": "0001318605",
   "issuer": "Tesla Inc (TSLA)",
   "latest_material": {
-    "accession": "0001104659-26-129146",
-    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129146/tm267596d13_defa14a.htm",
-    "filing_date": "2026-11-17",
+    "accession": "0001104659-26-129807",
+    "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129807/tm267596d14_defa14a.htm",
+    "filing_date": "2026-11-18",
     "form": "DEFA14A",
     "basis": "b",
     "compensation": true,
     "headline": "DEFA14A \u00b7 CEO comp"
   },
   "events": [
+    {
+      "accession": "0001104659-26-129807",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129807/tm267596d14_defa14a.htm",
+      "filing_date": "2026-11-18",
+      "form": "DEFA14A",
+      "basis": "b",
+      "compensation": true,
+      "headline": "DEFA14A \u00b7 CEO comp"
+    },
     {
       "accession": "0001104659-26-129146",
       "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926129146/tm267596d13_defa14a.htm",
@@ -150,19 +159,6 @@
       "cross_entity": true,
       "amount_disclosed_m": 176.0,
       "headline": "10-Q \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 CEO comp \u00b7 ~$176.0M disclosed"
-    },
-    {
-      "accession": "0001628280-26-003952",
-      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
-      "filing_date": "2026-01-29",
-      "form": "10-K",
-      "basis": "b",
-      "related_party": true,
-      "pledged_shares": true,
-      "compensation": true,
-      "cross_entity": true,
-      "amount_disclosed_m": 371.0,
-      "headline": "10-K \u00b7 cross-entity (SpaceX/xAI/Megapack) \u00b7 related-party \u00b7 pledged shares \u00b7 CEO comp \u00b7 ~$371.0M disclosed"
     }
   ]
 }
