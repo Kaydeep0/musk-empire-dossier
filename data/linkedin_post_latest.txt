@@ -10,11 +10,11 @@ Remainder lock-up release (180-day customary expiry).
 
 Pattern flagged: infrastructure before supply step.
 
-SPCX $138.43 (+3% vs IPO).
+SPCX $128.88 (-5% vs IPO).
 
 Source:
-Tesla Inc | DEFA14A | 2026-11-19
-https://www.sec.gov/Archives/edgar/data/1318605/000110465926130227/tm267596d15_defa14a.htm
+Tesla Inc | DEFA14A | 2026-11-20
+https://www.sec.gov/Archives/edgar/data/1318605/000110465926130698/tm267596d16_defa14a.htm
 
 Dossier: https://kaydeep0.github.io/musk-empire-dossier/
 
